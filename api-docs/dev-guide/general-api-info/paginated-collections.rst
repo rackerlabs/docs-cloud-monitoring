@@ -1,4 +1,4 @@
-.._paginated-collections:
+.. _paginated-collections:
 
 Paginated collections
 ~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -7,7 +7,7 @@ Update an agent token
     PUT /agent_tokens/{tokenId}
 
 Update agent tokens using a valid set of parameters from the
-`agent tokens attributes <http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-agent-tokens.html>`__
+:ref: `agent tokens attributes <agent-token-operations>`
 table.
 
 The following table shows the possible response codes for this operation:
@@ -54,7 +54,7 @@ The following table shows the header parameters for the request:
 +=================+================+===============================================+
 |X-Auth-Token     |String          |A valid authentication token with              |
 |                 |*(Required)*    |administrative access. For details, see        |
-|                 |                |:ref:`Get your credentials <auth-credentials>` |  
+|                 |                |:ref:`Get your credentials <auth-credentials>` |
 +-----------------+----------------+-----------------------------------------------+
 
 **Example Update agent token: JSON request**

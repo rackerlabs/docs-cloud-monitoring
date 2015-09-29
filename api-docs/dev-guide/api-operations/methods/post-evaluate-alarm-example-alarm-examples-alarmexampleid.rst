@@ -9,7 +9,8 @@ Evaluate alarm example
 This operation evaluates the template of a
 single alarm example by posting the alarm to an endpoint. The
 operation uses the arbitrary key/value pairs as specified by the fields
-section of the :ref:`Get alarm example by ID <get-alarm-example-by-id>` operation.
+section of the :ref:`Get alarm example by ID <get-alarm-example-by-id>`
+operation.
 
 The following table shows the possible response codes for this operation:
 

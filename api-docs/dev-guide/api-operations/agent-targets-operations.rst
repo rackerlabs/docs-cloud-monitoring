@@ -12,6 +12,6 @@ of the host server. By focusing on specific targets, you can
 efficiently narrow the metric data the agent gathers.
 
 For information about agent check types, see
-`Available check types and fields <http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/appendix-check-types.html>`_.
+:ref: `Available check types and fields <available-check-types-and-fields>`.
 
 .. include:: methods/get-list-agent-check-targets-entities-entityid-agent-check-types-agentchecktype-targets.rst

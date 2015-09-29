@@ -12,7 +12,7 @@ You can complete partial updates for a suppression. When you submit
 the request only include values for the attributes you want to update.
 The values on omitted parameters are not updated. Note that updating
 a list completely replaces the previous list. Refer to the
-`suppressions attributes <http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-suppressions.html>`__
+:ref:`suppressions attributes <suppressions-operations>`
 table.
 
 .. note::
@@ -72,7 +72,7 @@ The following table shows the header parameters for the request:
 +=================+================+===============================================+
 |X-Auth-Token     |String          |A valid authentication token with              |
 |                 |*(Required)*    |administrative access. For details, see        |
-|                 |                |:ref:`Get your credentials <auth-credentials>` |  
+|                 |                |:ref:`Get your credentials <auth-credentials>` |
 +-----------------+----------------+-----------------------------------------------+
 
 **Example Update suppression: JSON request**

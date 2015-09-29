@@ -9,8 +9,8 @@ Get data points by  metric name
 Queries for all data points of ``metricName`` between two points in time.
 
 ``metricName`` refers to the fully concatenated metric described in
-`Metrics API operations
-<http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/metrics-api.html#metrics-operations>`__.
+:ref: `Metrics API operations
+<metrics-operations>`.
 
 This operation does not require a request body.
 

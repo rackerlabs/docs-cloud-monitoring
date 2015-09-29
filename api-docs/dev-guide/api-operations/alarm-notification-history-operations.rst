@@ -13,7 +13,7 @@ offering a means of viewing the history of an alarm's statuses.
 Alarm notification history is accessible as a time series collection.
 When accessing a time series collection, two parameters beyond the
 base paginated collection API are available: from and to. For details,
-see `Time Series Collection <http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/api-time-series-collections.html>`_.
+see :ref: `Time Series Collection <time-series-collections>`.
 
 By default alarm notification history is stored for 30 days and the
 API queries the last 7 days of information.
