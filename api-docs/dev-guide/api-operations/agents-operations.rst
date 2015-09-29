@@ -34,7 +34,7 @@ and securely into your infrastructure:
   See the `source repository <https://github.com/virgo-agent-toolkit/rackspace-monitoring-agent>`_.
 
 Security
-~~~~~~~~
+^^^^^^^^
 
 The agent implements several layers of security to protect your
 infrastructure:
@@ -62,8 +62,8 @@ infrastructure:
   a single machine, off-line. This means that the security of updates
   is separated from that of the endpoint.
 
-Agent IDS
-~~~~~~~~~
+Agent IDs
+^^^^^^^^^
 
 Agent IDs are user specified strings that are a maximum of 255
 characters and can contain letters, numbers, dashes (-) and
@@ -73,7 +73,7 @@ fully qualified domain name (FQDN) of the host on which the agent
 is installed.
 
 Agents API operations
-~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^
 
 Use the agents API operations to get information about agents and agent
 connections.
