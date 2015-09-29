@@ -17,7 +17,7 @@ results. This allows you to test the check parameters.
    be run, but rather creates a duplicate check with the same
    parameters as the original, and performs the test using that.
    You can copy the results of a test check response and paste
-   it directly into a :ref:`test alarm <test-an-alarm>`__.
+   it directly into a :ref:`test alarm <test-an-alarm>`.
 
 There is no request body, just posting to the URL executes the request.
 

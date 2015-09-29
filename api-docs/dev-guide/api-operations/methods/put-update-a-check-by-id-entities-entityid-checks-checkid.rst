@@ -9,7 +9,7 @@ Update a check by ID
 Updates the specified check with the attribute values
 included in the request body. You only have to specify the attributes
 that you want to update. Refer to the
-`Check attributes table <http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-checks.html>`__.
+:ref:`Check attributes table <check-operations>`.
 
 The following table shows the possible response codes for this operation:
 
@@ -55,7 +55,7 @@ The following table shows the header parameters for the request:
 +=================+================+===============================================+
 |X-Auth-Token     |String          |A valid authentication token with              |
 |                 |*(Required)*    |administrative access. For details, see        |
-|                 |                |:ref:`Get your credentials <auth-credentials>` |  
+|                 |                |:ref:`Get your credentials <auth-credentials>` |
 +-----------------+----------------+-----------------------------------------------+
 
 
