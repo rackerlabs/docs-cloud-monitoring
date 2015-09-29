@@ -22,7 +22,7 @@ helpful if you use the `Rackspace Cloud Monitoring Getting Started Guide`_.
 The ``raxmon`` CLI runs on your local workstation (not the servers you
 plan to monitor).
 
-..  note:: 
+..  note::
     The **$** symbol represents a command line prompt, do not type it.
 
 .. _Rackspace Cloud Monitoring Getting Started Guide: http://docs.rackspace.com/cm/api/v1.0/cm-getting-started/content/tutorials.html
@@ -41,7 +41,7 @@ workstation:
 -  Make sure you install ``raxmon`` on your local workstation (not the
    server you plan to monitor). This allows you to install ``raxmon``
    once to monitor many remote servers.
-   
+
 
 .. _install-raxmon:
 
@@ -51,7 +51,7 @@ Install raxmon
 Follow these steps to install ``raxmon`` on your local workstation if
 you don't already have a version installed.
 
-Version 0.4.6 or higher is required. If you have an earlier version installed, 
+Version 0.4.6 or higher is required. If you have an earlier version installed,
 :ref:`upgrade raxmon <install-upgrade-raxmon>`.
 
  
@@ -69,22 +69,22 @@ Version 0.4.6 or higher is required. If you have an earlier version installed,
    python ``pip`` command.  If you need access to that tool, enter these
    commands:
 
-   .. code:: 
+   .. code::
 
-       $ sudo yum install -y python-setuptools  
+       $ sudo yum install -y python-setuptools
 
-   .. code:: 
+   .. code::
 
-       $ sudo easy_install pip  
+       $ sudo easy_install pip
 
 #. **Install raxmon.**
 
    Enter this command to install ``raxmon`` :
 
-   .. code:: 
+   .. code::
 
-       $ sudo pip install rackspace-monitoring-cli  
-       
+       $ sudo pip install rackspace-monitoring-cli
+
 
 .. _install-upgrade-raxmon:
 
@@ -101,20 +101,20 @@ version installed. Version 0.4.6 or higher is required.
 
    Remove the previous version of ``raxmon`` before running the upgrade:
 
-   .. code:: 
+   .. code::
 
-       $ sudo pip uninstall rackspace-monitoring-cli  
+       $ sudo pip uninstall rackspace-monitoring-cli
 
 #. **Upgrade to the latest version.**
 
    Enter this command:
 
-   .. code:: 
+   .. code::
 
-       $ sudo pip install --upgrade rackspace-monitoring-cli 
-       
-    
-.. _install-configure-raxmon:        
+       $ sudo pip install --upgrade rackspace-monitoring-cli
+
+
+.. _install-configure-raxmon:
 
 Configure raxmon
 ^^^^^^^^^^^^^^^^^
@@ -140,9 +140,9 @@ configuration file.
    in your home directory. You need to supply both your Rackspace
    username and API key.
 
-   .. code:: 
+   .. code::
 
-       $  vi ~/.raxrc  
+       $  vi ~/.raxrc
 
    Be sure to specify the correct identity endpoint for your account
    location. For details, see `Rackspace Cloud Identity Service
@@ -150,7 +150,7 @@ configuration file.
    Here is an example of the ``.raxrc`` file with the Rackspace
    credentials and URLs:
 
-   .. code:: 
+   .. code::
 
        [credentials]
        username=MyRackspaceAcct
@@ -164,17 +164,17 @@ configuration file.
 
        [ssl]
        verify=true
-       
 
-.. _install-agent: 
+
+.. _install-agent:
 
 Install the agent
 ~~~~~~~~~~~~~~~~~~~~
 
-`Install the agent using meta packages <monitor-install-agent-meta-packages>`
-`Install the agent with copy and paste <monitor-install-agent-copy-paste>`
-`Install the agent step-by-step <install-configure.html#agentInstallSteps>`__
-`Install the agent on Windows <install-configure.html#agentInstallWindows>`__
+* :ref:`Install the agent using meta packages <install-agent-meta-packages>`
+* :ref:`Install the agent with copy and paste <install-agent-copy-paste>`
+* :ref:`Install the agent step-by-step <install-agent-step-by-step>`
+* :ref:`Install the agent on Windows <install-agent-windows>`
 
 Use of the Cloud Monitoring Agent is optional. If you choose to use the
 agent, you must install it on each server that you want to monitor.
@@ -190,8 +190,8 @@ Package Manager installation is supported for the following OSs:
 For more information about the agent, see `How the monitoring agent
 works <http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/Concepts.html#how-agent-works>`__.
 For information about the agent endpoints, including attributes and code
-samples, see the `agent
-API <http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-agent.html>`__
+samples, see the :ref:`Agent
+API operations <agents-operations>`
 section. The Cloud Monitoring agent is distributed under the `Apache
 license <http://www.apache.org/licenses/LICENSE-2.0.html>`__.
 
@@ -201,25 +201,25 @@ For information about installing the agent from source, see
 This section offers information on three methods of installing the
 monitoring agent:
 
--  The\ `meta packages
-   method <install-configure.html#agentMetaPackages>`__. Use the meta
+-  The\ :ref:`meta packages
+   method <install-agent-meta-packages>`. Use the meta
    packages procedure for the simplest, and recommended, method.
 
--  The\ `copy-and-paste agent installation
-   method <install-configure.html#agentCopyPasteInstall>`__. This method
+-  The\ :ref:`copy-and-paste agent installation
+   method <install-agent-copy-paste>`. This method
    provides simple commands, per environment, that you can use to
    quickly install the monitoring agent. This method is fine if you are
    doing a small deployment and don't need to use scripts to install the
    agent multiple times.
 
--  The\ `granular step procedure
-   method <install-configure.html#agentInstallSteps>`__. Use the step
+-  The\ :ref:`granular step procedure
+   method <install-agent-step-by-step>`. Use the step
    procedure if you want to understand, and possibly customize, each
    step of the agent installation. This method is also valuable if you
    will be automating the agent installation process over several or
    many servers.
 
-..  note:: 
+..  note::
     Another option for agent installation is to use the `The Cloud
     Intelligence control panel <intelligence.rackspace.com>`__. The Cloud
     Intelligence control panel provides easy monitoring configuration and
@@ -254,7 +254,7 @@ Next, `run the agent setup
 program <install-configure.html#setup-agent>`__.
 
 
-.. install-agent-copy-paste:
+.. _install-agent-copy-paste:
 
 Install the agent with copy and paste
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -286,49 +286,49 @@ Ubuntu
 
    -  **Ubuntu 10.04**:
 
-      .. code::  
+      .. code::
 
           sudo sh -c 'echo "deb http://stable.packages.cloudmonitoring.rackspace.com/ubuntu-10.04-x86_64 cloudmonitoring main" > /etc/apt/sources.list.d/rackspace-monitoring-agent.list'
 
    -  **Ubuntu 12.04**:
 
-      .. code::  
+      .. code::
 
           sudo sh -c 'echo "deb http://stable.packages.cloudmonitoring.rackspace.com/ubuntu-12.04-x86_64 cloudmonitoring main" > /etc/apt/sources.list.d/rackspace-monitoring-agent.list'
 
    -  **Ubuntu 14.04**:
 
-      .. code::  
+      .. code::
 
           sudo sh -c 'echo "deb http://stable.packages.cloudmonitoring.rackspace.com/ubuntu-14.04-x86_64 cloudmonitoring main" > /etc/apt/sources.list.d/rackspace-monitoring-agent.list'
 
    -  **Ubuntu 14.10**:
 
-      .. code::  
+      .. code::
 
           sudo sh -c 'echo "deb http://stable.packages.cloudmonitoring.rackspace.com/ubuntu-14.10-x86_64 cloudmonitoring main" > /etc/apt/sources.list.d/rackspace-monitoring-agent.list'
 
    -  **Ubuntu 15.04**:
 
-      .. code::  
+      .. code::
 
           sudo sh -c 'echo "deb http://stable.packages.cloudmonitoring.rackspace.com/ubuntu-15.04-x86_64 cloudmonitoring main" > /etc/apt/sources.list.d/rackspace-monitoring-agent.list'
 
 #. Download the signing key for the agent repository and add it to APT:
 
-   .. code::  
+   .. code::
 
        curl https://monitoring.api.rackspacecloud.com/pki/agent/linux.asc | sudo apt-key add -
 
 #. Run an APT update to get package information for the new repository:
 
-   .. code::  
+   .. code::
 
        sudo apt-get update
 
 #. Install the agent.
 
-   .. code::  
+   .. code::
 
        sudo apt-get install rackspace-monitoring-agent
 
@@ -348,43 +348,43 @@ Debian
 
    -  **Debian Squeeze**:
 
-      .. code::  
+      .. code::
 
           sudo sh -c 'echo "deb http://stable.packages.cloudmonitoring.rackspace.com/debian-squeeze-x86_64 cloudmonitoring main" > /etc/apt/sources.list.d/rackspace-monitoring-agent.list'
 
    -  **Debian Testing**:
 
-      .. code::  
+      .. code::
 
           sudo sh -c 'echo "deb http://stable.packages.cloudmonitoring.rackspace.com/debian-testing-x86_64 cloudmonitoring main" > /etc/apt/sources.list.d/rackspace-monitoring-agent.list'
 
    -  **Debian Unstable**:
 
-      .. code::  
+      .. code::
 
           sudo sh -c 'echo "deb http://stable.packages.cloudmonitoring.rackspace.com/debian-unstable-x86_64 cloudmonitoring main" > /etc/apt/sources.list.d/rackspace-monitoring-agent.list'
 
    -  **Debian Wheezy**:
 
-      .. code::  
+      .. code::
 
           sudo sh -c 'echo "deb http://stable.packages.cloudmonitoring.rackspace.com/debian-wheezy-x86_64 cloudmonitoring main" > /etc/apt/sources.list.d/rackspace-monitoring-agent.list'
 
 #. Download the signing key for the agent repository and add it to APT.
 
-   .. code::  
+   .. code::
 
        curl https://monitoring.api.rackspacecloud.com/pki/agent/linux.asc | sudo apt-key add -
 
 #. Run an APT update to get package information for the new repository.
 
-   .. code::  
+   .. code::
 
        sudo apt-get update
 
 #. Install the agent.
 
-   .. code::  
+   .. code::
 
        sudo apt-get install rackspace-monitoring-agent
 
@@ -405,21 +405,21 @@ Red Hat
 
    -  **Red Hat 5**:
 
-      .. code::  
+      .. code::
 
           curl https://monitoring.api.rackspacecloud.com/pki/agent/redhat-5.asc > /tmp/signing-key.asc
           sudo rpm --import /tmp/signing-key.asc
 
    -  **Red Hat 6**:
 
-      .. code::  
+      .. code::
 
           curl https://monitoring.api.rackspacecloud.com/pki/agent/redhat-6.asc > /tmp/signing-key.asc
           sudo rpm --import /tmp/signing-key.asc
 
    -  **Red Hat 7**:
 
-      .. code::  
+      .. code::
 
           curl https://monitoring.api.rackspacecloud.com/pki/agent/redhat-7.asc > /tmp/signing-key.asc
           sudo rpm --import /tmp/signing-key.asc
@@ -433,7 +433,7 @@ Red Hat
 
    -  **Red Hat 5**:
 
-      .. code::  
+      .. code::
 
           [rackspace]
           name=Rackspace Monitoring
@@ -442,7 +442,7 @@ Red Hat
 
    -  **Red Hat 6**:
 
-      .. code::  
+      .. code::
 
           [rackspace]
           name=Rackspace Monitoring
@@ -451,7 +451,7 @@ Red Hat
 
    -  **Red Hat 7**:
 
-      .. code::  
+      .. code::
 
           [rackspace]
           name=Rackspace Monitoring
@@ -460,7 +460,7 @@ Red Hat
 
 #. Install the agent.
 
-   .. code:: 
+   .. code::
 
        sudo yum install rackspace-monitoring-agent
 
@@ -481,42 +481,42 @@ Fedora
 
    -  **Fedora 16**:
 
-      .. code::  
+      .. code::
 
           curl https://monitoring.api.rackspacecloud.com/pki/agent/fedora-16.asc > /tmp/signing-key.asc
           sudo rpm --import /tmp/signing-key.asc
 
    -  **Fedora 17**:
 
-      .. code::  
+      .. code::
 
           curl https://monitoring.api.rackspacecloud.com/pki/agent/fedora-17.asc > /tmp/signing-key.asc
           sudo rpm --import /tmp/signing-key.asc
 
    -  **Fedora 18**:
 
-      .. code::  
+      .. code::
 
           curl https://monitoring.api.rackspacecloud.com/pki/agent/fedora-18.asc > /tmp/signing-key.asc
           sudo rpm --import /tmp/signing-key.asc
 
    -  **Fedora 19**:
 
-      .. code::  
+      .. code::
 
           curl https://monitoring.api.rackspacecloud.com/pki/agent/fedora-19.asc > /tmp/signing-key.asc
           sudo rpm --import /tmp/signing-key.asc
 
    -  **Fedora 20**:
 
-      .. code::  
+      .. code::
 
           curl https://monitoring.api.rackspacecloud.com/pki/agent/fedora-20.asc > /tmp/signing-key.asc
           sudo rpm --import /tmp/signing-key.asc
 
    -  **Fedora 21**:
 
-      .. code::  
+      .. code::
 
           curl https://monitoring.api.rackspacecloud.com/pki/agent/fedora-21.asc > /tmp/signing-key.asc
           sudo rpm --import /tmp/signing-key.asc
@@ -530,7 +530,7 @@ Fedora
 
    -  **Fedora 16**:
 
-      .. code::  
+      .. code::
 
           [rackspace]
           name=Rackspace Monitoring
@@ -539,7 +539,7 @@ Fedora
 
    -  **Fedora 17**:
 
-      .. code::  
+      .. code::
 
           [rackspace]
           name=Rackspace Monitoring
@@ -548,7 +548,7 @@ Fedora
 
    -  **Fedora 18**:
 
-      .. code::  
+      .. code::
 
           [rackspace]
           name=Rackspace Monitoring
@@ -557,7 +557,7 @@ Fedora
 
    -  **Fedora 19**:
 
-      .. code::  
+      .. code::
 
           [rackspace]
           name=Rackspace Monitoring
@@ -566,7 +566,7 @@ Fedora
 
    -  **Fedora 20**:
 
-      .. code::  
+      .. code::
 
           [rackspace]
           name=Rackspace Monitoring
@@ -575,7 +575,7 @@ Fedora
 
    -  **Fedora 21**:
 
-      .. code::  
+      .. code::
 
           [rackspace]
           name=Rackspace Monitoring
@@ -584,7 +584,7 @@ Fedora
 
 #. Install the agent.
 
-   .. code::  
+   .. code::
 
        sudo yum install rackspace-monitoring-agent
 
@@ -605,21 +605,21 @@ CentOS
 
    -  **CentOS 5**:
 
-      .. code::  
+      .. code::
 
           curl https://monitoring.api.rackspacecloud.com/pki/agent/centos-5.asc > /tmp/signing-key.asc
           sudo rpm --import /tmp/signing-key.asc
 
    -  **CentOS 6**:
 
-      .. code::  
+      .. code::
 
           curl https://monitoring.api.rackspacecloud.com/pki/agent/centos-6.asc > /tmp/signing-key.asc
           sudo rpm --import /tmp/signing-key.asc
 
    -  **CentOS 7**:
 
-      .. code::  
+      .. code::
 
           curl https://monitoring.api.rackspacecloud.com/pki/agent/centos-7.asc > /tmp/signing-key.asc
           sudo rpm --import /tmp/signing-key.asc
@@ -633,7 +633,7 @@ CentOS
 
    -  **CentOS 5**:
 
-      .. code::  
+      .. code::
 
           [rackspace]
           name=Rackspace Monitoring
@@ -642,7 +642,7 @@ CentOS
 
    -  **CentOS 6**:
 
-      .. code::  
+      .. code::
 
           [rackspace]
           name=Rackspace Monitoring
@@ -651,7 +651,7 @@ CentOS
 
    -  **CentOS 7**:
 
-      .. code::  
+      .. code::
 
           [rackspace]
           name=Rackspace Monitoring
@@ -660,7 +660,7 @@ CentOS
 
 #. Install the agent.
 
-   .. code::  
+   .. code::
 
        sudo yum install rackspace-monitoring-agent
 
@@ -699,7 +699,7 @@ most recent versions of Ubuntu or Debian.
 #. Add the following content to the ``rackspace-monitoring-agent.list``
    file:
 
-   .. code:: 
+   .. code::
 
        deb <repo-name> cloudmonitoring main
 
@@ -722,25 +722,25 @@ most recent versions of Ubuntu or Debian.
    For example, to install Ubuntu, version 14.04, your file would
    contain this content:
 
-   .. code:: 
+   .. code::
 
        deb http://stable.packages.cloudmonitoring.rackspace.com/ubuntu-14.04-x86_64 cloudmonitoring main
 
 #. Add a signing key for the apt repository.
 
-   .. code:: 
+   .. code::
 
        $ curl https://monitoring.api.rackspacecloud.com/pki/agent/linux.asc | sudo apt-key add -
 
 #. Update your apt-get program to recognize the new repository.
 
-   .. code:: 
+   .. code::
 
        $ sudo apt-get update
 
 #. Install the agent.
 
-   .. code:: 
+   .. code::
 
        $ sudo apt-get install rackspace-monitoring-agent
 
@@ -760,13 +760,13 @@ running a Red Hat, Fedora, or CentOS operating system.
 
 #. Enable the signing key.
 
-   .. code:: 
+   .. code::
 
-       $ curl https://monitoring.api.rackspacecloud.com/pki/agent/<signing-key> > /tmp/signing-key.asc 
+       $ curl https://monitoring.api.rackspacecloud.com/pki/agent/<signing-key> > /tmp/signing-key.asc
 
-   .. code:: 
+   .. code::
 
-       $ sudo rpm --import /tmp/signing-key.asc 
+       $ sudo rpm --import /tmp/signing-key.asc
 
    ``<signing-key>`` is the correct signing key for your OS:
 
@@ -800,13 +800,13 @@ running a Red Hat, Fedora, or CentOS operating system.
 
    For example, on Red Hat version 5, you enter:
 
-   .. code:: 
+   .. code::
 
-       $ curl https://monitoring.api.rackspacecloud.com/pki/agent/redhat-5.asc > /tmp/signing-key.asc 
+       $ curl https://monitoring.api.rackspacecloud.com/pki/agent/redhat-5.asc > /tmp/signing-key.asc
 
-   .. code:: 
+   .. code::
 
-       $ sudo rpm --import /tmp/signing-key.asc 
+       $ sudo rpm --import /tmp/signing-key.asc
 
 #. Set up the yum repository by creating a text file named
    ``rackspace-cloud-monitoring.repo`` in the
@@ -814,7 +814,7 @@ running a Red Hat, Fedora, or CentOS operating system.
 
 #. Add the following content to the ``rackspace-cloud-monitoring`` file:
 
-   .. code:: 
+   .. code::
 
        [rackspace]
        name=Rackspace Monitoring
@@ -850,7 +850,7 @@ running a Red Hat, Fedora, or CentOS operating system.
    For example, to install Red Hat version 6, your file would contain
    the following content:
 
-   .. code:: 
+   .. code::
 
        [rackspace]
        name=Rackspace Monitoring
@@ -859,11 +859,11 @@ running a Red Hat, Fedora, or CentOS operating system.
 
 #. Install the agent packages.
 
-   .. code:: 
+   .. code::
 
        $ sudo yum update
 
-   .. code:: 
+   .. code::
 
        $ sudo yum install rackspace-monitoring-agent
 
@@ -900,7 +900,7 @@ installer.
    and is restarted by the Windows Service Manager. To prevent this
    continuous restarting, run the setup program immediately after
    installing the agent.
-   
+
 
 .. _configure-agent:
 
@@ -954,7 +954,7 @@ You can also manually edit the agent configuration file. See
 `Section 4.3.2, “Configure the agent manually
 ” <install-configure.html#agent-config-manual>`__ for details.
 
-..  note:: 
+..  note::
     The Setup program supports the HTTP proxy environment variable.
 
  
@@ -969,19 +969,19 @@ You can also manually edit the agent configuration file. See
 
    -  On Linux: Enter the following command to run the Setup program:
 
-      .. code:: 
+      .. code::
 
           $ rackspace-monitoring-agent --setup
 
       Use this command to run Setup with the HTTP proxy variable:
 
-      .. code:: 
+      .. code::
 
           $ HTTP_PROXY=<ip_address:port> rackspace-monitoring-agent --setup
 
       Alternately, you can use an FQDN:
 
-      .. code:: 
+      .. code::
 
           $ HTTP_PROXY=<FQDN> rackspace-monitoring-agent --setup
 
@@ -990,28 +990,28 @@ You can also manually edit the agent configuration file. See
 
          style="margin-left: 0.5in; margin-right: 0.5in;">
 
-      ..  note:: 
+      ..  note::
          If you are using PowerShell, precede the path with an ampersand
          (&).
 
       For a 64-bit system with the 64-bit agent installed, enter the
       following command:
 
-      .. code:: 
+      .. code::
 
           $"C:\Program Files\Rackspace Monitoring\rackspace-monitoring-agent.exe" -o --setup
 
       For a 64-bit system with the 32-bit agent installed, enter the
       following command:
 
-      .. code:: 
+      .. code::
 
           $"C:\Program Files (x86)\Rackspace Monitoring\rackspace-monitoring-agent.exe" -o --setup
 
       For a 32-bit system with the 32-bit agent installed, enter the
       following command:
 
-      .. code:: 
+      .. code::
 
           $"C:\Program Files\Rackspace Monitoring\rackspace-monitoring-agent.exe" -o --setup
 
@@ -1037,7 +1037,7 @@ You can also manually edit the agent configuration file. See
 
    The next prompt displays a list of Cloud Monitoring entities.
 
-..  note:: 
+..  note::
     A Cloud Monitoring entity is created automatically for every Rackspace
     cloud server on your account. But if you install the agent on a
     dedicated server, or on a server not hosted with Rackspace, including a
@@ -1068,7 +1068,7 @@ Users <http://www.rackspace.com/knowledge_center/article/monitoring-differences-
 Configure the agent manually
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-..  note:: 
+..  note::
     Using the Setup program is the preferred way to set up the agent. This
     section is provided as an alternate method of setting up the agent. If
     you used the Setup program to complete the agent configuration, skip
@@ -1089,9 +1089,9 @@ Configure the agent manually
 
 #. **Create an entity in the monitoring service, as follows:**
 
-   .. code:: 
+   .. code::
 
-       $ raxmon-entities-create --label=<entityLabel>   
+       $ raxmon-entities-create --label=<entityLabel>
 
    ``<entityLabel>`` is a name for the new entity. This entity
    represents the server where you're installing the agent. For example,
@@ -1106,7 +1106,7 @@ Configure the agent manually
    that you just created. Cloud Monitoring uses this ID for two-way
    communication between the agent and the Cloud Monitoring endpoint.
 
-   .. code:: 
+   .. code::
 
        $ raxmon-entities-update --id=<entityId> --agent-id=<agentId>
 
@@ -1128,9 +1128,9 @@ Configure the agent manually
    Monitoring endpoint. The token ensures that no one masquerades as
    your server.
 
-   .. code:: 
+   .. code::
 
-       $ raxmon-agent-tokens-create --label="<agent-token-label>"   
+       $ raxmon-agent-tokens-create --label="<agent-token-label>"
 
    ``<agent-token-label>`` is the name for your agent token. You can use
    any name.
@@ -1138,7 +1138,7 @@ Configure the agent manually
 #. Enter the following command to see a list of tokens, including the
    one you just created.
 
-   .. code:: 
+   .. code::
 
        $ raxmon-agent-tokens-list
 
@@ -1150,14 +1150,14 @@ Configure the agent manually
    rackspace-monitoring-agent.cfg file, or create it if it does not
    exist.
 
-   .. code:: 
+   .. code::
 
-       $ sudo vi /etc/rackspace-monitoring-agent.cfg  
+       $ sudo vi /etc/rackspace-monitoring-agent.cfg
 
 #. Add the following content to the ``rackspace-monitoring-agent.cfg``
    file:
 
-   .. code:: 
+   .. code::
 
        monitoring_id <agentId>
        monitoring_token <agentToken>
@@ -1173,13 +1173,13 @@ Configure the agent manually
 
 #. To set the HTTP proxy variable, add this:
 
-   .. code:: 
+   .. code::
 
        $ HTTP_PROXY=<ip_address:port> rackspace-monitoring-agent --setup
 
    You can also use an FQDN:
 
-   .. code:: 
+   .. code::
 
        $ HTTP_PROXY=<FQDN> rackspace-monitoring-agent --setup
 
@@ -1189,7 +1189,7 @@ Configure the agent manually
        The IP address and port, or fully qualified domain name, for the
        resource on which you are installing the agent.
 
-#. .. code:: 
+#. .. code::
 
        monitoring_update disabled
 
@@ -1215,7 +1215,7 @@ automatically create monitoring checks and alarms for a given server or
 servers. Server-side monitoring configuration helps you set up
 monitoring more quickly.
 
-..  note:: 
+..  note::
     You must update your agent to take advantage of this new feature. The
     required agent version is 1.0.0-68 or later.
 
@@ -1235,7 +1235,7 @@ alarm must be given a unique “handle” under the ``alarms`` field;
 alarm “handle” to uniquely identify that alarm within the file. The
 system uses the file name to uniquely identify checks and their alarms.
 
-..  note:: 
+..  note::
 	The handle is not the same as the alarm label in the API (or alarm name,
 	in the Cloud Control Panel) or the ``alarmId``. Rather, it is a name
 	that, along with the YAML file name, uniquely identifies that alarm. It
@@ -1281,7 +1281,7 @@ Example server-side configuration YAML files
 `HTTP check <install-configure.html#agent-config-file-examples-http>`__
 
 This section provides two examples of YAML configuration. More examples
-are provided in the 
+are provided in the
 :ref:`Server-Side agent configuration YAML file examples <server-side-yaml-config-examples>`.
 
 File system check
@@ -1297,14 +1297,14 @@ within the context of this check in the same manner that the file name
 uniquely identifies this check among other server-side created checks
 for this entity.
 
-..  note:: 
+..  note::
 	You can find existing ``notification_plan_id`` values and ``criteria``
 	values through the API or the Cloud Control Panel.
 
  
 **Example 4.1. File system check YAML file example**
 
-.. code:: 
+.. code::
 
     type        : agent.filesystem
     label       : Check for Main Disk
@@ -1333,8 +1333,8 @@ for this entity.
                 }
                 if (percentage(metric['used'], metric['total']) > 90) {
                     return new AlarmStatus(WARNING, 'Less than 10% free space left.');
-                }            
-                
+                }
+
 
 HTTP check
 ;;;;;;;;;;;;;;
@@ -1348,23 +1348,23 @@ and other agent configuration options. The alarm has the handle of
  
 **Example 4.2. HTTP check YAML file example**
 
-.. code:: 
+.. code::
 
     type           : remote.http
     label          : Website check 1
     timeout        : 30
     period         : 90
     target_alias   : default
-    details        : 
+    details        :
         url        : http://www.foo.com
         method     : GET
-    monitoring_zones_poll: 
+    monitoring_zones_poll:
                    - mzord
     alarms         :
         alarm1     :
             label                 : http connect alarm
             notification_plan_id  : npTechnicalContactsEmail
-                
+
 
 For additional server-side agent configuration file examples, see
 “Server-Side Agent Configuration YAML File Examples”
@@ -1388,7 +1388,7 @@ Create a server-side configuration YAML file
    create the indentation is unimportant as long as parallel elements
    have the same left justification.
 
-#. 
+#.
 
    -  Save the YAML file in the ``rackspace-monitoring-agent.conf.d``
       subdirectory under the ``config`` directory:
@@ -1400,7 +1400,7 @@ Create a server-side configuration YAML file
 
 When you start the agent, it creates the checks and alarms.
 
-..  note:: 
+..  note::
 	Ensure that your agent has been set up via the `agent Setup
 	program <install-configure.html#setup-agent>`__, or has a valid
 	monitoring\_token in the ``/etc/rackspace-monitoring-agent.cfg`` file as
@@ -1437,7 +1437,7 @@ particular server or on a group of servers?
 **A:** On a single server, you can look at the agent log file for
 success or error messages:
 
-.. code:: 
+.. code::
 
     Wed Apr 23 03:47:49 2014 INF: Confd -> config_file post overall success
     Wed Apr 23 03:47:49 2014 INF: Confd -> config_file post operation result: success for file handle: mem.yaml at parsing
@@ -1453,7 +1453,7 @@ endpoint to verify that the agent created an alarm. Look for the
 ``confd_name`` field to have a string value and the ``confd_hash`` to be
 a valid SHA1 hash.
 
-.. code:: 
+.. code::
 
             {
                 "id": "chlLIGmg4X",
@@ -1510,9 +1510,9 @@ start the agent.
 
    Enter the following command:
 
-   .. code:: 
+   .. code::
 
-       $ sudo service rackspace-monitoring-agent start 
+       $ sudo service rackspace-monitoring-agent start
 
 -  On Windows:
 
@@ -1528,9 +1528,9 @@ start the agent.
 The ``rackspace-monitoring-agent`` command lets you manage the agent.
 Enter the following command to see the available options:
 
-.. code:: 
+.. code::
 
-    $ rackspace-monitoring-agent --help 
+    $ rackspace-monitoring-agent --help
 
 .. _first-steps:
 
@@ -1545,7 +1545,7 @@ some agent checks.
 
 #. If you have not installed ``raxmon`` yet, do that now. See
    :ref:`Install and configure raxmon <install-configure-raxmon>`.
-   If you prefer to use the API instead of the ``raxmon`` CLI, see the API operations 
+   If you prefer to use the API instead of the ``raxmon`` CLI, see the API operations
    reference for the `entity`_ and `checks`_ resources.
 
 #. Create some monitoring checks for the agent to run.
@@ -1556,15 +1556,15 @@ some agent checks.
    system being monitored. And *entityId* is the ID for the entity that
    you associated with the agent.
 
-   .. code:: 
+   .. code::
 
-       $ raxmon-checks-create --entity-id=<entityId> --type=agent.memory --period=30 --label=mem 
+       $ raxmon-checks-create --entity-id=<entityId> --type=agent.memory --period=30 --label=mem
 
-   .. code:: 
+   .. code::
 
-       $ raxmon-checks-create --entity-id=<entityId> --type=agent.cpu --period=30 --label=cpu  
+       $ raxmon-checks-create --entity-id=<entityId> --type=agent.cpu --period=30 --label=cpu
 
-   .. code:: 
+   .. code::
 
        $ raxmon-checks-create --entity-id=<entityId> --type=agent.filesystem --period=30 --label=root --details="target=/"
 

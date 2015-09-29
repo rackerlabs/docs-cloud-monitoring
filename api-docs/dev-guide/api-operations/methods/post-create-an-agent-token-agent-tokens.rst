@@ -6,8 +6,9 @@ Create an agent token
 
     POST /agent_tokens
 
-Create agent tokens using a valid set of parameters from the
-:ref: `agent tokens attributes <agent-token-operations>`table.
+
+Create agent tokens using a valid set of parameters from the :ref:`agent
+token attributes <agent-token-operations>` table.
 
 The following table shows the possible response codes for this operation:
 

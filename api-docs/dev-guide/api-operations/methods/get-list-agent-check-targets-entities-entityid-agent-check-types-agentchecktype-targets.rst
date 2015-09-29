@@ -27,11 +27,6 @@ and ``agent.plugin``.
   only, no subdirectories are enumerated or listed. NOTE: On Unix-like
   systems the plugins returned must have execute bits set.
 
-
-For more information, see
-`Agent check types
-<>`__.
-
 The following table shows the possible response codes for this operation:
 
 +--------------------------+-------------------------+-------------------------+

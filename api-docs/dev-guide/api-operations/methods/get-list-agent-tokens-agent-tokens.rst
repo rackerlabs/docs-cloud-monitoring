@@ -9,7 +9,7 @@ List agent tokens
 List the agent tokens.
 
 This operation can be paginated. For information, see
-:ref: `Paginated collections <paginated-collections>`.
+:ref:`Paginated collections <paginated-collections>`.
 
 The following table shows the possible response codes for this operation:
 

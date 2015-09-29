@@ -11,7 +11,6 @@ actual list of target devices is specific to the configuration
 of the host server. By focusing on specific targets, you can
 efficiently narrow the metric data the agent gathers.
 
-For information about agent check types, see
-:ref: `Available check types and fields <available-check-types-and-fields>`.
+For information about agent check types, see :ref:`Available check types and fields <available-check-types-and-fields>`.
 
 .. include:: methods/get-list-agent-check-targets-entities-entityid-agent-check-types-agentchecktype-targets.rst

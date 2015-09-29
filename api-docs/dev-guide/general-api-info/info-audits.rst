@@ -1,4 +1,4 @@
-.._audits:
+.. _audits:
 
 Audits
 ~~~~~~~~~
