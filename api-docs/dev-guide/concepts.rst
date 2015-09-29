@@ -77,7 +77,7 @@ Monitoring key terms and concepts
     resource.
 
 .. _gloss-id:
- 
+
 **ID or Id**
     All objects in the monitoring system are identified by a uniquely
     generated identifier, generally expressed as Id, that consists of a
@@ -164,7 +164,6 @@ Monitoring key terms and concepts
     silences the notifications from an alarm or a set of alarms for a
     given amount of time. For more details and examples, see the API operation
     reference for the :ref:`suppressions <suppressions-operations>` resource.
-
 
 
 .. _how-cloud-monitoring-works:

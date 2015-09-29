@@ -74,6 +74,10 @@ executed that describes how to send different notifications.
 Check availability
 ~~~~~~~~~~~~~~~~~~~~
 
+=======
+Check availability
+^^^^^^^^^^^^^^^^^^
+
 As mentioned above the default evaluation of a check depends upon
 whether the check is able to run successfully. We can illustrate this
 concept using the HTTP check as an example. If the alarm checks
@@ -85,6 +89,7 @@ availability of the check is determined by the ability to run the check.
    It is **very important** to understand this concept. All checks that
    go into a ``CRITICAL`` state will always force an alarm on an
    entity, ``CRITICAL``.
+
 
 .. _alarm-language-anatomy-query:
 
@@ -145,6 +150,7 @@ Following are some example string literals:
      '\u0027abc'     /* A string containing an escaped unicode character */
 
 **Numeric literals**
+
 Numeric literals are written without quotation marks. Following are some
 examples of numeric literals:
 
@@ -300,7 +306,6 @@ format to the point in time metric. It looks like this:
 
      return new AlarmStatus(WARNING, 'The check took #{duration}s to execute');
      
-
 .. note::
    String Interpolation will substitute a #{``metric-name``} for its
    corresponding point in time value.
@@ -329,7 +334,6 @@ policies and their trade-offs are described next.
    than one and a half times (1.5 x) the ``consecutiveCount`` x
    ``check period``, the observation is not considered in
    determining the alert state.
-
 
 **One alert policy**
 
@@ -371,6 +375,7 @@ policies and their trade-offs are described next.
 	election process. In this case, a machine has to be marked down,
 	then the checks are re-evaluated as a group. If they come to a
 	consensus (with the downed collector) then an alert is generated.
+
 
 .. note::
    Email alert notifications may show some zones in a state that is
@@ -611,3 +616,4 @@ change on the server or a man in the middle attack.
     --notification-plan-id=nplU9hLUgc \
     --check-id=chTFHxHn0p \
     --criteria="if (metric['fingerprint'] != '13dd6c5df600f9a15c67ea5db491ac9a') { return new AlarmStatus(CRITICAL, 'Incorrect SSH Host Fingerprint'); }"
+

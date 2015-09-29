@@ -36,6 +36,7 @@ The official Ruby client library is based on the open-source `Fog library`_.
 
 **Command line interface (CLI): Raxmon tool**
 
+<<<<<<< HEAD
 You can use the Raxmon CLI utility to interact with the API. 
    
 - Review the CLI code and documentation in the `rackspace-monitoring-cli github repository`_. 

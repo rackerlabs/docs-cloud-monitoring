@@ -20,7 +20,7 @@ Configuration`_ article on the Rackspace Blog.
 .. contents:: 
    :local:
    :depth: 2
-
+   
 
 .. _agent-plugin-check-with-multiple-parameters:
 
