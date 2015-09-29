@@ -1,13 +1,10 @@
-.. _concepts: 
+.. _concepts:
 
 Concepts
------------
-
-
+--------
 The concepts section describes Cloud Monitoring key terms, and then
 provides a high-level overview of how cloud monitoring and the
 monitoring agent work.
-
 
 .. _key-terms-and-concepts:
 
@@ -22,8 +19,8 @@ Monitoring key terms and concepts
     data; however, a few properties can be modified with the API, such
     as the ``metadata`` and ``webhook_token``. For more information, see
     :ref:`Update properties on an account <update-properties-on-an-account>`.
-    
-.. _alarm-and-alerts-def: 
+
+.. _alarm-and-alerts-def:
 
  **Alarm and alert**
     An alarm contains a set of rules that determine when the monitoring
@@ -40,7 +37,7 @@ Monitoring key terms and concepts
 
     The alarms language lets you pinpoint the value that will trigger
     the alarm. To learn how to use the alarm language to create robust
-    monitors, see :ref:`Alert Triggering and Alarms <alert-triggering-alarms>`.
+    monitors, see :ref:`Alert Triggering and Alarms <alert-triggers-and-alarms-reference>`.
 
 .. _check-and-check-types-def:
 
@@ -75,12 +72,12 @@ Monitoring key terms and concepts
     that you want to monitor. Entities are automatically created for for
     the Rackspace products that have Cloud Monitoring integration, like
     Cloud Servers and Cloud Databases. You can also create entities
-    yourself. For more information, see the API operations reference for the 
-    :ref:`entity <entities-operations>`. 
+    yourself. For more information, see the API operations reference for the
+    :ref:`entity <entities-operations>`.
     resource.
-    
- .. _gloss-id:
- 
+
+.. _gloss-id:
+
 **ID or Id**
     All objects in the monitoring system are identified by a uniquely
     generated identifier, generally expressed as Id, that consists of a
@@ -89,7 +86,7 @@ Monitoring key terms and concepts
     operations on it. For example, when you want to create a check and
     associate it with an entity, you must know the entity's Id.
 
- .. _metric-concepts:
+.. _metric-concepts:
  
 **Metric, cumulative and instantaneous**
     A metric is a measurement of activity or state on a monitored
@@ -99,7 +96,7 @@ Monitoring key terms and concepts
     create graphs.
 
     For more information, see the API operations reference information for 
-    `Cumulative and instantaneous metrics <cumulative-metrics>`.
+    :ref:`Cumulative and instantaneous metrics <cumulative-metrics>`.
 
 .. _monitoring-agent-concept:
   
@@ -114,9 +111,9 @@ Monitoring key terms and concepts
     using specified agent check types, and can be used with the other
     Cloud Monitoring features such as alarms. See `Agent check
     types <check-type-operations>`_ for a list of agent check types.
-
+    
     To learn about installing and configuring monitoring agents, read the 
-    `Install and configure <install-and-configure>` section.
+    :ref:`Install and configure <install-and-configure>` section.
 
 .. _zones:
  
@@ -127,13 +124,13 @@ Monitoring key terms and concepts
     zone is similar to that of a datacenter, however in the monitoring
     system, you can think of it more as a geographical region.
 
-    You can launch checks for a particular entity from multiple monitoring zones. This 
-    allows you to observe the performance of an entity from different regions of the 
-    world. It is also a way to prevent noisy alarms. For example, if the check from one 
+    You can launch checks for a particular entity from multiple monitoring zones. This
+    allows you to observe the performance of an entity from different regions of the
+    world. It is also a way to prevent noisy alarms. For example, if the check from one
     monitoring zone reports that an entity is down, a second or third monitoring
-    zone might report that the entity is up and running. This gives you a better picture 
+    zone might report that the entity is up and running. This gives you a better picture
     of an entity's overall health.
-    
+
 .. _notification-and-notification-types:
 
  **Notification and notification type**
@@ -156,8 +153,8 @@ Monitoring key terms and concepts
     -  Warning
 
     -  OK
-    
- .. _gloss-suppress:   
+
+ .. _gloss-suppress:
 
  **Suppression**
     Once you've set up your monitoring to your satisfaction, there may
@@ -165,20 +162,18 @@ Monitoring key terms and concepts
     time period (e.g. a period of scheduled maintenance). In this
     situation, you can choose to set up a suppression. A suppression
     silences the notifications from an alarm or a set of alarms for a
-    given amount of time. For more details and examples, see the API operation 
-    reference for the :ref: `suppressions <suppressions-operations>` resource.
-
+    given amount of time. For more details and examples, see the API operation
+    reference for the :ref:`suppressions <suppressions-operations>` resource.
 
 
 .. _how-cloud-monitoring-works:
 
 How cloud monitoring works
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Rackspace Cloud Monitoring helps you track all your resources; from
 websites to web servers, routers, load balancers, and more. The
 following image illustrates a basic cloud monitoring workflow.
-
  
 **Figure: Rackspace Cloud Monitoring workflow**
 
@@ -209,10 +204,10 @@ following image illustrates a basic cloud monitoring workflow.
    a URL.
 
 
- .. _agent-works:   
- 
+ .. _agent-works:
+
 How the monitoring agent works
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Cloud Monitoring also provides the optional Monitoring Agent which you
 install on the servers you want to monitor. While Cloud Monitoring can
@@ -238,5 +233,5 @@ Some examples of agent checks include:
 -  Custom (user-definable plug-ins able to monitor any process or
    statistic on a server or from an application)
 
-The :ref:`Install and configure <install-and-configure>` section tells you how 
+The :ref:`Install and configure <install-and-configure>` section tells you how
 to get the Monitoring Agent up and running.

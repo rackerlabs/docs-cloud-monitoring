@@ -7,13 +7,9 @@ Create an alarm
     POST /entities/{entityId}/alarms
 
 Create a new alarm by using a valid set of attributes from the
-`alarms attributes
-<http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-alarms.html>`__
-table.
+:ref:`alarms attributes table <alarms-operations>`.
 
-For more information,
-see ` Alarm language
-<http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/alerts-language.html#concepts-alarms-alarm-language>`__.
+For more information, see :ref:`Alarm language <alert-triggers-and-alarms-reference>`.
 
 The following table shows the possible response codes for this operation:
 
@@ -49,16 +45,14 @@ Request
 """""""
 The following table shows the header parameters for the request:
 
-+-----------------+----------------+-------------------------------------------+
-|Name             |Type            |Description                                |
-+=================+================+===========================================+
-|X-Auth-Token     |String          |A valid authentication token with          |
-|                 |*(Required)*    |administrative access. For details, see `  |
-|                 |                |Retrieving an authentication token         |
-|                 |                |<http://docs.rackspace.com/cm/api/v1.0/cm- |
-|                 |                |devguide/content/general-api-info-         |
-|                 |                |authentication.html#Authenticate-d1e171>`__|
-+-----------------+----------------+-------------------------------------------+
++-----------------+----------------+-----------------------------------------------+
+|Name             |Type            |Description                                    |
++=================+================+===============================================+
+|X-Auth-Token     |String          |A valid authentication token with              |
+|                 |*(Required)*    |administrative access. For details, see        |
+|                 |                |:ref:`Get your credentials <auth-credentials>` |  
++-----------------+----------------+-----------------------------------------------+
+
 
 **Example Create alarm: JSON request**
 

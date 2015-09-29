@@ -6,8 +6,6 @@ Test a check
 
     POST /entities/{entityId}/test-check
 
-Test a check before creating it.
-
 This operation causes Rackspace Cloud Monitoring to attempt to
 run the check on the specified monitoring zones and return the results.
 This operation allows you to test the check parameters in a single
@@ -15,7 +13,7 @@ step before the check is actually created in the system.
 
 .. note::
    You can copy the results of a test check response and paste it
-   directly into a `test alarm <http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-alarms.html#POST_alarmsTest_entities__entityId__test-alarm_service-alarms>`__.
+   directly into a :ref:`test alarm <test-a-check>`.
 
 The following table shows the possible response codes for this operation:
 
@@ -53,20 +51,17 @@ Request
 """""""
 The following table shows the header parameters for the request:
 
-+-----------------+----------------+-------------------------------------------+
-|Name             |Type            |Description                                |
-+=================+================+===========================================+
-|entityId         |String          |The ID for the monitoring zone. Use the    |
-|                 |*(Required)*    |List entities operation to find the        |
-|                 |                |``entityId`` if you don't know it.         |
-+-----------------+----------------+-------------------------------------------+
-|X-Auth-Token     |String          |A valid authentication token with          |
-|                 |*(Required)*    |administrative access. For details, see `  |
-|                 |                |Retrieving an authentication token         |
-|                 |                |<http://docs.rackspace.com/cm/api/v1.0/cm- |
-|                 |                |devguide/content/general-api-info-         |
-|                 |                |authentication.html#Authenticate-d1e171>`__|
-+-----------------+----------------+-------------------------------------------+
++-----------------+----------------+-----------------------------------------------+
+|Name             |Type            |Description                                    |
++=================+================+===============================================+
+|entityId         |String          |The ID for the monitoring zone. Use the        |
+|                 |*(Required)*    |List entities operation to find the            |
+|                 |                |``entityId`` if you don't know it.             |
++-----------------+----------------+-----------------------------------------------+
+|X-Auth-Token     |String          |A valid authentication token with              |
+|                 |*(Required)*    |administrative access. For details, see        |
+|                 |                |:ref:`Get your credentials <auth-credentials>` |  
++-----------------+----------------+-----------------------------------------------+
 
 **Example Test check: JSON request**
 

@@ -1,18 +1,20 @@
 .. _alarms-operations:
 
-~~~~~~
 Alarms
 ~~~~~~
+
 Alarms bind alerting rules, entities, and notification plans into
 a logical unit. Alarms are responsible for determining a state
 (OK, WARNING or CRITICAL) based on the result of a check, and executing
 a notification plan whenever that state changes. You create alerting
-rules by using the alarm domain-specific language (DSL). For information
-about using the DSL, see
-`Appendix A <http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/alerts-language.html>`_.
+rules by using the alarm domain-specific language (DSL). 
+
+For information
+about using the DSL, see :ref:`Alert Triggering and Alarms <alert-triggers-and-alarms-reference>`.
 For alarm examples by check, see :ref:`alarm-example-operations`.
 
 **Attributes**
+
 +--------------------------+----------------------------+----------------------------------+
 | Name                     | Description                | Validation                       |
 +==========================+============================+==================================+

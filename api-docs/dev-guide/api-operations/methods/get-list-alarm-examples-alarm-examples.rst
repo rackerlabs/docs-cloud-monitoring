@@ -38,16 +38,14 @@ Request
 """""""
 The following table shows the header parameters for the request:
 
-+-----------------+----------------+-------------------------------------------+
-|Name             |Type            |Description                                |
-+=================+================+===========================================+
-|X-Auth-Token     |String          |A valid authentication token with          |
-|                 |*(Required)*    |administrative access. For details, see `  |
-|                 |                |Retrieving an authentication token         |
-|                 |                |<http://docs.rackspace.com/cm/api/v1.0/cm- |
-|                 |                |devguide/content/general-api-info-         |
-|                 |                |authentication.html#Authenticate-d1e171>`__|
-+-----------------+----------------+-------------------------------------------+
++-----------------+----------------+-----------------------------------------------+
+|Name             |Type            |Description                                    |
++=================+================+===============================================+
+|X-Auth-Token     |String          |A valid authentication token with              |
+|                 |*(Required)*    |administrative access. For details, see        |
+|                 |                |:ref:`Get your credentials <auth-credentials>` |  
++-----------------+----------------+-----------------------------------------------+
+
 
 .. note:: This operation does not accept a request body.
 

@@ -1,12 +1,14 @@
-.. _overview: 
+.. _overview:
 
-Overview
-----------
+About the API
+-----------------------------------------
 
-Rackspace Cloud Monitoring analyzes cloud services and dedicated
-infrastructure using a simple, yet powerful API. The API currently
-includes monitoring for external services. The key benefits you receive
-from using this API include the following:
+The Rackspace Cloud Monitoring API service enables developers to analyze cloud services 
+and dedicated infrastructure through a simple Representational State Transfer 
+(REST) web service interface.
+
+The API currently supports monitoring for external services. The key benefits you receive
+from using the Rackspace Cloud Monitoring API include the following:
 
 **Use of Domain Specific Language (DSL)**
     The Rackspace Cloud Monitoring API uses a DSL, which makes it a
@@ -15,7 +17,7 @@ from using this API include the following:
     thresholds for metrics or performing an inverse string match become
     much easier with a concise, special purpose language created for
     defining alarms. For alarm concept information, see :ref:`Alarm and
-    alert <monitor-concepts>`.
+    alert <concepts>`.
 
 **Monitoring from Multiple Datacenters**
     Rackspace Cloud Monitoring allows you to simultaneously monitor the
@@ -23,8 +25,7 @@ from using this API include the following:
     provides a clear picture of overall system health. It includes
     tunable parameters to interpret mixed results which help you to
     create deliberate and accurate alerting policies. For more
-    information, see `Alert
-    Policies <alerts-language.html#concepts-alarms-alert-policies>`__.
+    information, see :ref:`Alert Policies <alert-policies-and-types>`.
 
 **Alarms and Notifications**
     When an alarm occurs on a monitored resource, Rackspace Cloud
