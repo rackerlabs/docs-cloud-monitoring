@@ -8,8 +8,7 @@ Create a notification
 
 Create a new notification in the monitoring system by using a
 valid set of attributes from the
-`notifications attributes
-<http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-notifications.html>`__
+:ref:`notifications attributes <notification-operations>`
 table.
 
 The following table shows the possible response codes for this operation:
@@ -51,7 +50,7 @@ The following table shows the header parameters for the request:
 +=================+================+===============================================+
 |X-Auth-Token     |String          |A valid authentication token with              |
 |                 |*(Required)*    |administrative access. For details, see        |
-|                 |                |:ref:`Get your credentials <auth-credentials>` |  
+|                 |                |:ref:`Get your credentials <auth-credentials>` |
 +-----------------+----------------+-----------------------------------------------+
 
 **Example Create webhook notification: JSON request**
