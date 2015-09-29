@@ -3,8 +3,8 @@
 About the API
 -----------------------------------------
 
-The Rackspace Cloud Monitoring API service enables developers to analyze cloud services 
-and dedicated infrastructure through a simple Representational State Transfer 
+The Rackspace Cloud Monitoring API service enables developers to analyze cloud services
+and dedicated infrastructure through a simple Representational State Transfer
 (REST) web service interface.
 
 The API currently supports monitoring for external services. The key benefits you receive
@@ -33,20 +33,20 @@ from using the Rackspace Cloud Monitoring API include the following:
     appropriate action to either prevent an adverse situation from
     occurring or rectify a situation that has already occurred. These
     notifications are sent based on the severity of the alert as defined
-    in the notification plan. For more information, see 
+    in the notification plan. For more information, see
     :ref:`Notifications <notification-plans-operations>`.
 
 **Collection of Data**
     Rackspace Cloud Monitoring allows you to collect a variety of data
     that you can use for other tasks, such as researching trends or
     measuring critical data. For more information, see
-    `Metrics <http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/metrics-api.html>`__.
+    :ref:`Metrics <metrics-operations>`.
 
 For more information about the basic foundations of this API, see
 :ref:`Monitoring key terms and concepts <concepts>`.
 
 .. toctree:: :hidden:
    :maxdepth: 2
-   
+
    additional-resources
    Pricing and terms of servie <pricing-service-level>
