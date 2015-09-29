@@ -13,7 +13,7 @@ step before the check is actually created in the system.
 
 .. note::
    You can copy the results of a test check response and paste it
-   directly into a :ref:`test alarm <test-a-check>`.
+   directly into a :ref:`test alarm <test-an-alarm>`.
 
 The following table shows the possible response codes for this operation:
 
@@ -60,7 +60,7 @@ The following table shows the header parameters for the request:
 +-----------------+----------------+-----------------------------------------------+
 |X-Auth-Token     |String          |A valid authentication token with              |
 |                 |*(Required)*    |administrative access. For details, see        |
-|                 |                |:ref:`Get your credentials <auth-credentials>` |  
+|                 |                |:ref:`Get your credentials <auth-credentials>` |
 +-----------------+----------------+-----------------------------------------------+
 
 **Example Test check: JSON request**

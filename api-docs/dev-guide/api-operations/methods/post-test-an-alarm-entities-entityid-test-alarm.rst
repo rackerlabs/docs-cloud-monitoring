@@ -30,7 +30,7 @@ value above that threshold and an "OK" response if you provide a metric with
 a value below that threshold.
 
 When you test an alarm, you provide a list of check data, which you can
-retrieve from a ```test check`` <http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-checks.html#POST_checkTestNew_entities__entityId__test-check_service-checks>`__ operation.
+retrieve from a :ref:`test check <test-a-check>` operation.
 
 .. note::
    A ``consecutiveCount`` of 1 is always used for these calls.
@@ -73,7 +73,7 @@ The following table shows the header parameters for the request:
 +=================+================+===============================================+
 |X-Auth-Token     |String          |A valid authentication token with              |
 |                 |*(Required)*    |administrative access. For details, see        |
-|                 |                |:ref:`Get your credentials <auth-credentials>` |  
+|                 |                |:ref:`Get your credentials <auth-credentials>` |
 +-----------------+----------------+-----------------------------------------------+
 
 **Example Test alarms criteria**
