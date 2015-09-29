@@ -74,10 +74,6 @@ executed that describes how to send different notifications.
 Check availability
 ~~~~~~~~~~~~~~~~~~~~
 
-=======
-Check availability
-^^^^^^^^^^^^^^^^^^
-
 As mentioned above the default evaluation of a check depends upon
 whether the check is able to run successfully. We can illustrate this
 concept using the HTTP check as an example. If the alarm checks
