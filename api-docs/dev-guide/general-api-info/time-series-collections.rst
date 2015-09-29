@@ -1,3 +1,5 @@
+.. _time-series-collections:
+
 Time series collections
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

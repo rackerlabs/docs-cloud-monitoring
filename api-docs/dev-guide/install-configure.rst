@@ -961,9 +961,8 @@ You can also manually edit the agent configuration file. See
 **To run the agent Setup program**
 
 #. Before you start, ensure that you have your Rackspace user name and
-   API key. If you do not, see the instructions in `Retrieving an
-   authentication
-   token <http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/general-api-info-authentication.html#Authenticate-d1e171>`__.
+   API key. If you do not, see the instructions in :ref:`Get credentials <auth-credentials>`.
+
 
 #. Log in as the root user on the server where you installed the agent
    package.
@@ -1282,9 +1281,8 @@ Example server-side configuration YAML files
 `HTTP check <install-configure.html#agent-config-file-examples-http>`__
 
 This section provides two examples of YAML configuration. More examples
-are provided in the `Server-Side agent configuration YAML file
-examples <http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/yaml-files.html>`__
-appendix.
+are provided in the 
+:ref:`Server-Side agent configuration YAML file examples <server-side-yaml-config-examples>`.
 
 File system check
 ;;;;;;;;;;;;;;;;;;;

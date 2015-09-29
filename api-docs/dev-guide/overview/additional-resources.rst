@@ -25,14 +25,9 @@ other Rackspace Cloud APIs.
   `Rackspace API Documentation`_.
 
 - To learn about using Cloud Monitoring with Rackspace Cloud SDKs, see `Software Development Kits & Tools`_.
-  
 
-
-You can also follow updates and announcements via twitter at
-http://www.twitter.com/rackspace.
-
-This API uses standard HTTP 1.1 response codes as documented at
-http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html.
+- This API uses standard HTTP 1.1 response codes as documented in the `HTTP Status Code Definitions`_ 
+  specification.
 
 .. _Rackspace Cloud website: http://www.rackspace.com/cloud/
 
@@ -41,3 +36,4 @@ http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html.
 .. _Getting Started Guide: http://docs.rackspace.com/cm/api/v1.0/cm-getting-started/content/Introduction.html
 .. _Rackspace API Documentation: https://developer.rackspace.com/docs/
 .. _Software Development Kits & Tools: https://developer.rackspace.com/docs/#sdks
+.. _HTTP Status Code Definitions: http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html

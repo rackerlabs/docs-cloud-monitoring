@@ -1,4 +1,4 @@
-.. _changelogs-operations.rst:
+.. _changelogs-operations:
 
 Changelogs
 ~~~~~~~~~~
@@ -6,7 +6,7 @@ The monitoring service records changelogs for alarm statuses.
 Changelogs are accessible as a time series collection. When accessing a
 time series collection, two parameters beyond the base paginated
 collection API are available: from and to. For details,
-see `Time Series Collection <http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/api-time-series-collections.html>`_.
+see :ref:`Time Series Collection <time-series-collections>`.
 
 By default the API queries the last 7 days of changelog information.
 
