@@ -107,7 +107,7 @@ c-style comments ``/* */``.
 
 **String Literals**
 
-String literals are surrounded with either ' or ''. String literals
+String literals are surrounded with either ``'`` or ``''``. String literals
 support the following escape sequences:
 
 +-------------------+-------------------------------------+
@@ -121,7 +121,7 @@ support the following escape sequences:
 +-------------------+-------------------------------------+
 | ``\b``            | Backspace                           |
 +-------------------+-------------------------------------+
-| ``\f ``           | Formfeed                            |
+| ``\f``            | Formfeed                            |
 +-------------------+-------------------------------------+
 | ``\n``            | Newline                             |
 +-------------------+-------------------------------------+
@@ -168,7 +168,7 @@ setting declarations:
      :set <name>=<value>
 
 The current version of the product supports two settings. The first setting
-specifies the :ref:`consistency level <alert-policies-and-policy-types>`.
+specifies the :ref:`consistency level <alert-policies-and-types>`.
 
 .. code::
 

@@ -4,23 +4,23 @@
 Server-Side agent configuration YAML file examples 
 ===================================================
 
-Review the server-side agent configuration examples to learn how to apply monitoring 
-configurations across your environment. 
+Review the server-side agent configuration examples to learn how to apply monitoring
+configurations across your environment.
 
-After you create the configuration files, they can serve as templates that can be 
-shared, updated, and used with automation tools to standardize, maintain, and 
-update monitoring configurations as required.  
+After you create the configuration files, they can serve as templates that can be
+shared, updated, and used with automation tools to standardize, maintain, and
+update monitoring configurations as required.
 
-For more information, see the 'Monitor Like a Pro With Server-Side 
+For more information, see the 'Monitor Like a Pro With Server-Side
 Configuration`_ article on the Rackspace Blog.
 
 
-.. _Monitor Like a Pro With Server-Side  Configuration: http://blog.rackspace.com/monitor-like-a-pro-with-server-side-configuration/
+.. _Monitor Like a Pro With Server-Side Configuration: http://blog.rackspace.com/monitor-like-a-pro-with-server-side-configuration/
 
-.. contents:: 
+.. contents::
    :local:
    :depth: 2
-   
+
 
 .. _agent-plugin-check-with-multiple-parameters:
 
@@ -32,7 +32,7 @@ configuration, shows how to setup a script,
 "Test-LatencyServer2Server.sh", to run with 2 parameters,
 ``10.10.10.123`` and ``destination.com``, passed on its command-lines.
 
-.. code::  
+.. code::
 
     type        : agent.plugin
     label       : Server to Server Latency Test Script
@@ -60,7 +60,7 @@ CPU check with alarm
 This example YAML file for server-side agent configuration creates a CPU
 check with alarm, file name: "cpu.yaml".
 
-.. code::  
+.. code::
 
     type    : agent.cpu
     label   : CPU
@@ -89,7 +89,7 @@ This example YAML file for server-side agent configuration creates a
 filesystem check for the root filesystem with alarm, file name:
 "filesystem.yaml".
 
-.. code::  
+.. code::
 
     type    : agent.filesystem
     label   : Filesystem - /
@@ -120,7 +120,7 @@ Load average check without an alarm
 This example YAML file for server-side agent configuration creates a
 load average check without an alarm, file name: "loadavg.yaml".
 
-.. code::  
+.. code::
 
     type    : agent.load_average
     label   : Load average
@@ -128,7 +128,7 @@ load average check without an alarm, file name: "loadavg.yaml".
     timeout : 10
 
 
-.. _memory-check-with-alarm: 
+.. _memory-check-with-alarm:
 
 Memory check with alarm
 --------------------------
@@ -136,7 +136,7 @@ Memory check with alarm
 This example YAML file for server-side agent configuration creates a
 memory check with alarm with an alarm, file name: "memory.yaml".
 
-.. code::  
+.. code::
 
     type    : agent.memory
     label   : Memory
@@ -161,7 +161,7 @@ memory check with alarm with an alarm, file name: "memory.yaml".
                 return new AlarmStatus(OK, "Memory usage is below your
     warning
     threshold of 80%");
-    
+
 
 .. _network-check-without-alarms:
 
@@ -171,7 +171,7 @@ Network check without alarms
 This example YAML file for server-side agent configuration creates a
 network check without alarms, file name: "network.eth0.yaml".
 
-.. code::  
+.. code::
 
     type    : agent.network
     label   : Network - eth0
