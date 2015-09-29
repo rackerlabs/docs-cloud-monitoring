@@ -73,7 +73,7 @@ Monitoring key terms and concepts
     the Rackspace products that have Cloud Monitoring integration, like
     Cloud Servers and Cloud Databases. You can also create entities
     yourself. For more information, see the API operations reference for the
-    :ref:`entity <entities-operations>`.
+    :ref:`entity <entities-operations>`
     resource.
 
 .. _gloss-id:
@@ -95,7 +95,7 @@ Monitoring key terms and concepts
     an alarm, causing an alert to be sent. Metrics can also be used to
     create graphs.
 
-    For more information, see the API operations reference information for 
+    For more information, see the API operations reference information for
     :ref:`Cumulative and instantaneous metrics <cumulative-metrics>`.
 
 .. _monitoring-agent-concept:
@@ -109,10 +109,11 @@ Monitoring key terms and concepts
     the rest of Cloud Monitoring so that the metrics can be analyzed,
     alerted on, and archived. These metrics are gathered via checks
     using specified agent check types, and can be used with the other
-    Cloud Monitoring features such as alarms. See `Agent check
-    types <check-type-operations>`_ for a list of agent check types.
-    
-    To learn about installing and configuring monitoring agents, read the 
+    Cloud Monitoring features such as alarms. See
+    :rax-docs:`Agent check types <cm/api/v1.0/cm-devguide/content/appendix-check-types-agent.html>`
+    for a list of agent check types.
+
+    To learn about installing and configuring monitoring agents, read the
     :ref:`Install and configure <install-and-configure>` section.
 
 .. _zones:
