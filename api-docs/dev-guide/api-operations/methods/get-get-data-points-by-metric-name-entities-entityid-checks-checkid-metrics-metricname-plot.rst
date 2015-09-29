@@ -72,7 +72,7 @@ The following table shows the header parameters for the request:
 +=================+================+===============================================+
 |X-Auth-Token     |String          |A valid authentication token with              |
 |                 |*(Required)*    |administrative access. For details, see        |
-|                 |                |:ref:`Get your credentials <auth-credentials>` |  
+|                 |                |:ref:`Get your credentials <auth-credentials>` |
 +-----------------+----------------+-----------------------------------------------+
 
 
@@ -105,10 +105,7 @@ The following table shows the URI parameters for the request:
 |                 |                |are absent, the query will not validate    |
 |                 |                |and will return an error. For more         |
 |                 |                |information about querying by points, see  |
-|                 |                |`Data granularity                          |
-|                 |                |<http://docs.rackspace.com/cm/api/v1.0/cm- |
-|                 |                |devguide/content/metrics-api.html#metrics- |
-|                 |                |data-granularity>`__.                      |
+|                 |                |:ref:`Data granularity <data>`.            |
 +-----------------+----------------+-------------------------------------------+
 |{granularity}    |String          |``resolution={granularity}`` The           |
 |                 |*(Required)*    |granularity of data to query. Valid values |
@@ -117,10 +114,8 @@ The following table shows the URI parameters for the request:
 |                 |                |required. If both are absent, the query    |
 |                 |                |will not validate and will return an       |
 |                 |                |error. For more information about querying |
-|                 |                |by resolution, see `Data granularity       |
-|                 |                |<http://docs.rackspace.com/cm/api/v1.0/cm- |
-|                 |                |devguide/content/metrics-api.html#metrics- |
-|                 |                |data-granularity>`__.                      |
+|                 |                |by resolution, see :ref:`Data granularity  |
+|                 |                |<data>`.                                   |
 +-----------------+----------------+-------------------------------------------+
 |{stats}          |String          |``select={stats}`` The stats that you want |
 |                 |*(Required)*    |returned for the data. The stats available |

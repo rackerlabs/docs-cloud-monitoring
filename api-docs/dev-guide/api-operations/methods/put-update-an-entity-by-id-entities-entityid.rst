@@ -14,7 +14,7 @@ For Rackspace Managed Cloud resources, many fields are managed by
 Rackspace. If you update these entities, you can only update the
 ``metadata`` and ``agent_id`` fields using this API operation.
 Otherwise, refer to the
-`Entities attributes table <http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-entities.html>`__.
+:ref:`Entities attributes table <entities-operations>`.
 
 The following table shows the possible response codes for this operation:
 
@@ -60,7 +60,7 @@ The following table shows the header parameters for the request:
 +=================+================+===============================================+
 |X-Auth-Token     |String          |A valid authentication token with              |
 |                 |*(Required)*    |administrative access. For details, see        |
-|                 |                |:ref:`Get your credentials <auth-credentials>` |  
+|                 |                |:ref:`Get your credentials <auth-credentials>` |
 +-----------------+----------------+-----------------------------------------------+
 
 .. note:: This operation does not accept a request body.
