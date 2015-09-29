@@ -8,7 +8,7 @@ Create a notification
 
 Create a new notification in the monitoring system by using a
 valid set of attributes from the
-:ref:`notifications attributes <notification-operations>`
+:ref:`notifications attributes <notifications-operations>`
 table.
 
 The following table shows the possible response codes for this operation:

@@ -1,9 +1,11 @@
+.._paginated-collections:
+
 Paginated collections
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To reduce load on the service, list operations will return a maximum
 number of items at a time. To navigate the collection, the parameters
-limit and marker can be set in the URI, for example 
+limit and marker can be set in the URI, for example
 ``?limit=200&marker=enCCCCCC``. The marker parameter is the ID of a
 first item in the next page. This item can be found in the metadata
 object under the ``next_marker`` tag. Items are sorted by the ID name in
@@ -26,7 +28,7 @@ having to input the limit parameter.
  
 **Example 3.8. List Entities, First Page: XML**
 
-.. code::  
+.. code::
 
     <?xml version="1.0" encoding="utf-8"?>
     <container>
@@ -56,12 +58,12 @@ having to input the limit parameter.
       </metadata>
     </container>
 
-              
+
 
  
 **Example 3.9. List Entities, First Page: JSON**
 
-.. code::  
+.. code::
 
     {
         "values": [
@@ -91,12 +93,12 @@ having to input the limit parameter.
         }
     }
 
-              
+
 
  
 **Example 3.10. List Entities, Second Page: XML**
 
-.. code::  
+.. code::
 
     <?xml version="1.0" encoding="utf-8"?>
     <container>
@@ -123,12 +125,12 @@ having to input the limit parameter.
       </metadata>
     </container>
 
-              
+
 
  
 **Example 3.11. List Entities, Second Page: JSON**
 
-.. code::  
+.. code::
 
     {
         "values": [
@@ -155,7 +157,7 @@ having to input the limit parameter.
         }
     }
 
-              
+
 
 In the JSON representation, paginated collections contain a values
 property that contains the items in the collection. The link to the next
