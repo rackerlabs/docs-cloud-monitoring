@@ -201,18 +201,18 @@ For information about installing the agent from source, see
 This section offers information on three methods of installing the
 monitoring agent:
 
--  The\ :ref:`meta packages
+-  The :ref:`meta packages
    method <install-agent-meta-packages>`. Use the meta
    packages procedure for the simplest, and recommended, method.
 
--  The\ :ref:`copy-and-paste agent installation
+-  The :ref:`copy-and-paste agent installation
    method <install-agent-copy-paste>`. This method
    provides simple commands, per environment, that you can use to
    quickly install the monitoring agent. This method is fine if you are
    doing a small deployment and don't need to use scripts to install the
    agent multiple times.
 
--  The\ :ref:`granular step procedure
+-  The :ref:`granular step procedure
    method <install-agent-step-by-step>`. Use the step
    procedure if you want to understand, and possibly customize, each
    step of the agent installation. This method is also valuable if you
@@ -221,7 +221,7 @@ monitoring agent:
 
 ..  note::
     Another option for agent installation is to use the `The Cloud
-    Intelligence control panel <intelligence.rackspace.com>`__. The Cloud
+    Intelligence control panel <http://intelligence.rackspace.com>`__. The Cloud
     Intelligence control panel provides easy monitoring configuration and
     set up as well as graphs for visualizing Cloud Monitoring. You log in
     with your MyCloud Control Panel log in, but the Cloud Intelligence
@@ -250,8 +250,7 @@ package.
 
 #. Find your operating system and enter the commands provided.
 
-Next, `run the agent setup
-program <install-configure.html#setup-agent>`__.
+Next, :ref:`run the agent setup program <run-agent-setup-program>`
 
 
 .. _install-agent-copy-paste:
@@ -261,15 +260,15 @@ Install the agent with copy and paste
 
 Find your operating system and follow those instructions.
 
--  `Ubuntu <install-agent-copy-ubuntu>`
+-  :ref:`Ubuntu <install-agent-copy-paste-ubuntu>`
 
--  `Debian <install-agent-copy-paste-debian>`
+-  :ref:`Debian <install-agent-copy-paste-debian>`
 
--  `Red Hat <install-agent-copy-paste-redhat>`
+-  :ref:`Red Hat <install-agent-copy-paste-redhat>`
 
--  `Fedora <install-agent-copy-paste-fedora>`
+-  :ref:`Fedora <install-agent-copy-paste-fedora>`
 
--  `CentOS <install-agent-copy-paste-centos>`
+-  :ref:`CentOS <install-agent-copy-paste-centos>`
 
 
 .. _install-agent-copy-paste-ubuntu:
@@ -332,8 +331,7 @@ Ubuntu
 
        sudo apt-get install rackspace-monitoring-agent
 
-Next, `run the agent setup
-program <install-configure.html#setup-agent>`__.
+Next, :ref:`run the agent setup program <run-agent-setup-program>`
 
 .. _install-agent-copy-paste-debian:
 
@@ -388,8 +386,7 @@ Debian
 
        sudo apt-get install rackspace-monitoring-agent
 
-Next, `run the agent setup
-program <install-configure.html#setup-agent>`__.
+Next, :ref:`run the agent setup program <run-agent-setup-program>`
 
 
 .. _install-agent-copy-paste-redhat:
@@ -464,8 +461,7 @@ Red Hat
 
        sudo yum install rackspace-monitoring-agent
 
-Next, `run the agent setup
-program <install-configure.html#setup-agent>`__.
+Next, :ref:`run the agent setup program <run-agent-setup-program>`.
 
 
 .. _install-agent-copy-paste-fedora:
@@ -588,8 +584,7 @@ Fedora
 
        sudo yum install rackspace-monitoring-agent
 
-Next, `run the agent setup
-program <install-configure.html#setup-agent>`__.
+Next, :ref:`run the agent setup program <run-agent-setup-program>`
 
 
 .. _install-agent-copy-paste-centos:
@@ -664,16 +659,15 @@ CentOS
 
        sudo yum install rackspace-monitoring-agent
 
-Next, `run the agent setup
-program <install-configure.html#setup-agent>`__.
+Next, :ref:`run the agent setup program <run-agent-setup-program>`
 
 .. _install-agent-step-by-step:
 
 Install the agent step-by-step
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-`Ubuntu or Debian <monitor-install-agent-steps-ubuntu-debian>`
-`Red Hat, Fedora, or CentOS <monitor-install-agent-steps-redhat-fedora-centos>`
+* :ref:`Ubuntu or Debian <install-agent-steps-ubuntu-debian>`
+* :ref:`Red Hat, Fedora, or CentOS <install-agent-steps-redhat-fedora-centos>`
 
 This section provides granular details about each step of the agent
 installation process.
@@ -744,8 +738,8 @@ most recent versions of Ubuntu or Debian.
 
        $ sudo apt-get install rackspace-monitoring-agent
 
-Next, `run the agent setup
-program <install-configure.html#setup-agent>`__.
+Next, :ref:`run the agent setup program <run-agent-setup-program>`
+
 
 .. _install-agent-steps-redhat-fedora-centos:
 
@@ -867,8 +861,7 @@ running a Red Hat, Fedora, or CentOS operating system.
 
        $ sudo yum install rackspace-monitoring-agent
 
-Next, `run the agent setup
-program <install-configure.html#setup-agent>`__.
+Next, :ref:`run the agent setup program <run-agent-setup-program>`
 
 
 .. _install-agent-windows:
@@ -894,8 +887,7 @@ installer.
 #. Run the installer. The installer automatically exits when it is
    complete.
 
-#. Next, run `the agent setup
-   program <install-configure.html#setup-agent-SETUP>`__ to generate a
+#. Next, :ref:`run the agent setup program <run-agent-setup-program>` to generate a
    configuration file. Without a configuration file, the agent closes
    and is restarted by the Windows Service Manager. To prevent this
    continuous restarting, run the setup program immediately after
@@ -907,23 +899,23 @@ installer.
 Configure the agent
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-`Configure the agent with the Setup program <monitor-configure-agent-with-setup>`__
-`Configure the agent manually <monitor-configure-agent-manually>`
-`Configure the agent with YAML files <install-configure.html#agent-config-file>`__
+* :ref:`Configure the agent with the Setup program <configure-agent-with-setup>`
+* :ref:`Configure the agent manually <configure-agent-manually>`
+* :ref:`Configure the agent with YAML files <configure-agent-with-YAML>`
 
 You have a few options to choose from for configuring the monitoring
 agent:
 
 -  The `agent Setup
-   program <install-configure.html#setup-agent-SETUP>`__. This is an
+   program: ref:<configure-agent-with-setup>`. This is an
    easy way to configure the agent and handles several tasks for you.
 
--  `Manually configure the
-   agent <install-configure.html#agent-config-manual>`__. Manual agent
+-  :ref:`Manually configure the
+   agent <configure-agent-manually>`. Manual agent
    configuration gives you access to each step.
 
--  `YAML file agent
-   configuration <install-configure.html#agent-config-file>`__. The YAML
+-  :ref:`YAML file agent
+   configuration <configure-agent-with-YAML>`. The YAML
    file agent configuration lets you create a re-usable YAML file for
    each check you want for the agent.
 
@@ -951,12 +943,15 @@ agent. Setup completes the following configuration tasks for you:
 -  Associates the agent with a monitoring entity.
 
 You can also manually edit the agent configuration file. See
-`Section 4.3.2, “Configure the agent manually
-” <install-configure.html#agent-config-manual>`__ for details.
+:ref:`Configure the agent manually <configure-agent-manually>` for details.
 
 ..  note::
     The Setup program supports the HTTP proxy environment variable.
 
+.. _run-agent-setup-program:
+
+Run the agent setup program
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
  
 **To run the agent Setup program**
 
@@ -1056,8 +1051,8 @@ You can also manually edit the agent configuration file. See
     interface <https://intelligence.rackspace.com/>`__, and you can
     configure it as described in this guide. You'll use the entity ID when
     you create checks to monitor the health of your server; see
-    `Section 4.5, “First steps with the
-    agent” <install-configure.html#agent-first-steps>`__.
+    :ref:`First steps with the
+    agent <first-steps>`.
 
 To learn more, see the article `Monitoring: Differences Between
 Rackspace Server Users and Non-Rackspace Server
@@ -1078,8 +1073,7 @@ Configure the agent manually
 **To manually set up the agent**
 
 #. If you have not installed ``raxmon`` yet, install it on your local
-   workstation. See
-   `install-config-raxmon <install-configure.html#install-config-raxmon>`__.
+   workstation. See :ref:`Install and configure raxmon <install-configure-raxmon>`.
 
    If you prefer to use the API, instead of the raxmon CLI, see the
    `entities
@@ -1193,8 +1187,7 @@ Configure the agent manually
 
        monitoring_update disabled
 
-You're now ready to start the agent. See `Section 4.4, “Start the
-agent” <install-configure.html#run-agent>`__.
+You're now ready to start the agent. See :ref:`Start the agent <start-the-agent>`.
 
 
 .. _configure-agent-with-YAML:
@@ -1202,9 +1195,9 @@ agent” <install-configure.html#run-agent>`__.
 Configure the agent with YAML files
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-`Example server-side configuration YAML files <install-configure.html#agent-config-file-examples>`__
-`How to use a server-side configuration YAML file <install-configure.html#agent-config-file-usage>`__
-`Troubleshoot agent configuration with YAML files <install-configure.html#agent-config-file-troubleshooting>`__
+* :ref:`Example server-side configuration YAML file <configure-server-side-YAML>`
+* :ref:`How to use a server-side configuration YAML file <configure-use-server-side-YAML>`
+* :ref:`Troubleshoot agent configuration with YAML files <troubleshoot-agent-configuration-with-YAML>`
 
 The server-side monitoring configuration is a new method that enables
 you to easily configure Cloud Monitoring on the server that you want to
@@ -1261,9 +1254,7 @@ deployment. API write requests (PUT or POST) to the ``confd_name`` and
 ``confd_hash`` fields are ignored. When using the API, you can tell if a
 change was made to a server-side configuration object without using
 server-side configuration, if the ``confd_name`` field is non-null and
-the ``confd_hash`` field is 0 (zero). For details about agent
-configuration options, see the `Manual Agent
-Configuration <install-configure.html#agent-config-manual>`__.
+the ``confd_hash`` field is 0 (zero).
 
 After authentication, the agent reads the YAML configuration files and
 sends them to the monitoring server. The monitoring service parses the
@@ -1277,12 +1268,14 @@ that check and associated alarms from the monitoring service.
 Example server-side configuration YAML files
 ................................................
 
-`File system check <install-configure.html#agent-config-file-examples-file-system>`__
-`HTTP check <install-configure.html#agent-config-file-examples-http>`__
+* :ref:`File system check <file-sytem-check>`
+* :ref:`HTTP check <http-check>`
 
 This section provides two examples of YAML configuration. More examples
 are provided in the
 :ref:`Server-Side agent configuration YAML file examples <server-side-yaml-config-examples>`.
+
+.. _file-sytem-check:
 
 File system check
 ;;;;;;;;;;;;;;;;;;;
@@ -1335,6 +1328,8 @@ for this entity.
                     return new AlarmStatus(WARNING, 'Less than 10% free space left.');
                 }
 
+
+.. _http-check:
 
 HTTP check
 ;;;;;;;;;;;;;;
@@ -1401,11 +1396,11 @@ Create a server-side configuration YAML file
 When you start the agent, it creates the checks and alarms.
 
 ..  note::
-	Ensure that your agent has been set up via the `agent Setup
-	program <install-configure.html#setup-agent>`__, or has a valid
+	Ensure that your agent has been set up via the agent setup
+	program, or has a valid
 	monitoring\_token in the ``/etc/rackspace-monitoring-agent.cfg`` file as
-	described in the `Manual Agent Configuration
-	section <install-configure.html#agent-config-manual>`__.
+	described in the :ref:`Manual Agent Configuration
+	section <configure-agent-manually>`.
 
 
 Update a server-side configuration file and its checks and alarms
@@ -1414,8 +1409,7 @@ Update a server-side configuration file and its checks and alarms
 If you change parameters within the configuration files, the agent
 updates the corresponding check and alarms after you start, or restart,
 the agent and it reads the newly saved file. For information about
-starting the agent, see `Section 4.4, “Start the
-agent” <install-configure.html#run-agent>`__.
+starting the agent, see :ref:`Start the agent <start-the-agent>`.
 
 
 Delete a server-side configuration file and its checks and alarms
@@ -1425,8 +1419,9 @@ If a server-side YAML configuration file is removed from a server, the
 agent deletes the check and corresponding alarms configured in the file
 when the server next reads the file. The YAML files are read every time
 you start the agent. For information on starting the agent, see
-`Section 4.4, “Start the agent” <install-configure.html#run-agent>`__.
+:ref:`Start the agent <start-the-agent>`.
 
+.. _troubleshoot-agent-configuration-with-YAML:
 
 Troubleshoot agent configuration with YAML files
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
