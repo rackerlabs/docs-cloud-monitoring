@@ -9,8 +9,8 @@ Evaluate alarm example
 This operation evaluates the template of a
 single alarm example by posting the alarm to an endpoint. The
 operation uses the arbitrary key/value pairs as specified by the fields
-section of the ` "Get alarm example by ID API" operation
-<http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-alarm-examples.html#GET_getAlarmExamples_alarm_examples_service-alarm-examples>`__.
+section of the :ref:`Get alarm example by ID <get-alarm-example-by-id>`
+operation.
 
 The following table shows the possible response codes for this operation:
 
@@ -45,7 +45,7 @@ The following table shows the header parameters for the request:
 +=================+================+===============================================+
 |X-Auth-Token     |String          |A valid authentication token with              |
 |                 |*(Required)*    |administrative access. For details, see        |
-|                 |                |:ref:`Get your credentials <auth-credentials>` |  
+|                 |                |:ref:`Get your credentials <auth-credentials>` |
 +-----------------+----------------+-----------------------------------------------+
 
 **Example: Evaluate alarm example: JSON request**

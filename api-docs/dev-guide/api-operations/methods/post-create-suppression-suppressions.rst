@@ -9,8 +9,8 @@ Create suppression
 Creates a new suppression.
 
 Specify the characteristics for the suppression using a valid set
-of parameters from the `suppressions attributes
-<http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-suppressions.html>`__
+of parameters from the :ref:`suppressions attributes
+<suppressions-operations>`
 table.
 
 The different lists (notification_plans, entities, checks, and alarms)
@@ -67,7 +67,7 @@ The following table shows the header parameters for the request:
 +=================+================+===============================================+
 |X-Auth-Token     |String          |A valid authentication token with              |
 |                 |*(Required)*    |administrative access. For details, see        |
-|                 |                |:ref:`Get your credentials <auth-credentials>` |  
+|                 |                |:ref:`Get your credentials <auth-credentials>` |
 +-----------------+----------------+-----------------------------------------------+
 
 

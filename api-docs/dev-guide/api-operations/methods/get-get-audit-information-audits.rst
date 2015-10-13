@@ -10,16 +10,14 @@ Returns audit information for the specified account.
 
 Rackspace Cloud Monitoring records every write operation in an audit.
 For more information on how audits are recorded, see
-`Audits <http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/general-api-info-audits.html>`__.
+:ref:`Audits <audits>`.
 
 Audits are accessible as a
-`Time Series Collection
-<http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/api-time-series-collections.html>`__.
+:ref:`Time Series Collection <time-series-collections>`.
 By default the API queries the last 7 days of audit information.
 
 This operation can be paginated. For information, see
-`Paginated collections
-<http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/api-paginated-collections.html>`__.
+:ref:`Paginated collections <paginated-collections>`.
 
 The following table shows the possible response codes for this operation:
 
@@ -54,7 +52,7 @@ The following table shows the header parameters for the request:
 +=================+================+===============================================+
 |X-Auth-Token     |String          |A valid authentication token with              |
 |                 |*(Required)*    |administrative access. For details, see        |
-|                 |                |:ref:`Get your credentials <auth-credentials>` |  
+|                 |                |:ref:`Get your credentials <auth-credentials>` |
 +-----------------+----------------+-----------------------------------------------+
 
 

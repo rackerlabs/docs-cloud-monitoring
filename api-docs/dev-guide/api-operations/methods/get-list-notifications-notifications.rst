@@ -11,8 +11,7 @@ Lists the notifications for the account. Use
 the results to only include information on the specified notifications.
 
 This operation can be paginated. For information,
-see `Paginated collections
-<http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/api-paginated-collections.html>`__.
+see :ref:`Paginated collections <paginated-collections>`.
 
 The following table shows the possible response codes for this operation:
 
@@ -47,7 +46,7 @@ The following table shows the header parameters for the request:
 +=================+================+===============================================+
 |X-Auth-Token     |String          |A valid authentication token with              |
 |                 |*(Required)*    |administrative access. For details, see        |
-|                 |                |:ref:`Get your credentials <auth-credentials>` |  
+|                 |                |:ref:`Get your credentials <auth-credentials>` |
 +-----------------+----------------+-----------------------------------------------+
 
 

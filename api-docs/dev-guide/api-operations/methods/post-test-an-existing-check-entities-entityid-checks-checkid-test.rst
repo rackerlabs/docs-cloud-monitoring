@@ -17,7 +17,7 @@ results. This allows you to test the check parameters.
    be run, but rather creates a duplicate check with the same
    parameters as the original, and performs the test using that.
    You can copy the results of a test check response and paste
-   it directly into a `test alarm <http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-alarms.html#POST_alarmsTest_entities__entityId__test-alarm_service-alarms>`__.
+   it directly into a :ref:`test alarm <test-an-alarm>`.
 
 There is no request body, just posting to the URL executes the request.
 
@@ -62,7 +62,7 @@ The following table shows the header parameters for the request:
 +=================+================+===============================================+
 |X-Auth-Token     |String          |A valid authentication token with              |
 |                 |*(Required)*    |administrative access. For details, see        |
-|                 |                |:ref:`Get your credentials <auth-credentials>` |  
+|                 |                |:ref:`Get your credentials <auth-credentials>` |
 +-----------------+----------------+-----------------------------------------------+
 
 .. note:: This operation does not accept a request body.

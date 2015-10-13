@@ -18,8 +18,7 @@ other Rackspace Cloud APIs.
 
 - To get starting using the Cloud Monitoring API, see the `Getting Started Guide`_.
 
-- To learn about installing and configuring monitoring agents, read the
-  `Install and configure the monitoring agent <install_agent>`__ section.
+- To learn about installing and configuring monitoring agents, read the :ref:`Install the agent<install-agent>` section.
 
 - To get information about other Rackspace Cloud services APIs, see the
   `Rackspace API Documentation`_.

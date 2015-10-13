@@ -42,7 +42,7 @@ infrastructure:
 * **Signed Install Binaries**
   Agent Linux binaries and repositories are signed using public key
   cryptography and verified using distribution native methods. See
-  :rax-docs:`Install and configure <cm/api/v1.0/cm-devguide/content/install-configure.html>`
+  :ref:`Install and configure <install-and-configure>`
   for instructions.
 
 * **Secure Endpoint Connections**

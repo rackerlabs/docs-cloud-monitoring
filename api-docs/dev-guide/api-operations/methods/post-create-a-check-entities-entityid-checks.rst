@@ -7,15 +7,14 @@ Create a check
     POST /entities/{entityId}/checks
 
 Create a new check in the monitoring system by using a valid set
-of attributes from the `checks attributes
-<http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-checks.html>`__ table.
+of attributes from the :ref:`checks attributes <check-operations>` table.
 For a tutorial on creating some basic checks,
 see `Create checks
 <http://docs.rackspace.com/cm/api/v1.0/cm-getting-started/content/concepts-tutorial-create-checks.html>`__
 in the Rackspace Cloud Monitoring Getting Started Guide.
 
 A newly-created check does not trigger notifications until you
-`create an alarm <http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-alarms.html>`__
+:ref:`create an alarm <create-an-alarm>`
 to generate notifications. You associate alarms with a single check.
 You can have multiple alarms for a check, for example
 "alert if an HTTPS server is not responding and if it has an invalid certificate,"
@@ -60,7 +59,7 @@ The following table shows the header parameters for the request:
 +=================+================+===============================================+
 |X-Auth-Token     |String          |A valid authentication token with              |
 |                 |*(Required)*    |administrative access. For details, see        |
-|                 |                |:ref:`Get your credentials <auth-credentials>` |  
+|                 |                |:ref:`Get your credentials <auth-credentials>` |
 +-----------------+----------------+-----------------------------------------------+
 
 

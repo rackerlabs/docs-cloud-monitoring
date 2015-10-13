@@ -176,6 +176,7 @@ The webhook notification takes the following parameters:
    }
 
 The following fields are contained within a single payload:
+
 +------------+---------------------------------------------+
 | Field      | Description                                 |
 +============+=============================================+

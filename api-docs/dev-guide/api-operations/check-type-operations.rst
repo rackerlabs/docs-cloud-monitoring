@@ -22,8 +22,8 @@ also use agent check types if the Monitoring Agent is installed on
 the server you are monitoring.
 
 For a list of available check types, see
-:rax-docs:`Available check types and fields
-<cm/api/v1.0/cm-devguide/content/appendix-check-types.html>`.
+:ref:`Available check types and fields
+<available-check-types-and-fields>`.
 
 Checks generate metrics upon which alarms will alert. The metrics
 generated often depend on the parameters for the check, using the
