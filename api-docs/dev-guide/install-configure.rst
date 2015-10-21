@@ -919,6 +919,39 @@ agent:
    file agent configuration lets you create a re-usable YAML file for
    each check you want for the agent.
 
+.. _agent_configuration_file:
+
+Agent configuration file
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The configuration information for a monitoring agent is stored in an agent configu- ration file on the customer's server. The name of the file is rackspace-monitoring-agent.cfg. This file is created automatically when you configure the agent by using the :ref:`agent setup program <configure-agent-with-setup>`. You can manually edit the agent configuration file. To locate the agent configuration file:
+
+- On Linux systems, navigate to the ``/etc directory``.
+
+-  On Windows systems, navigate to ``c:\ProgramData\Rackspace Monitoring\configuration\``.
+
+You can specify the following attributes in the agent configuration file:
+
++----------------------------+---------------------------------------------------------+
+| Attribute                  | Description                                             |
++============================+=========================================================+
+| monitoring_token           | Specifies the authentication token.                     |
++----------------------------+---------------------------------------------------------+
+| monitoring_id              | Specifies the monitoring id of the agent.               |
++----------------------------+---------------------------------------------------------+
+| monitoring_snet_region     | Specifies and enables the ServiceNet endpoints for the  |
+|                            | following regions DFW, ORD, LON, SYD, HKG, IAD.         |
++----------------------------+---------------------------------------------------------+
+| monitoring_endpoints       | Specifies on or more endpoints in the <host IP:port>    |
+|                            | format. These values must be comma delimited.           |
++----------------------------+---------------------------------------------------------+
+| monitoring_proxy_url       | Specifies a HTTP proxy. This configuration must support |
+|                            | CONNECT on port 443. Additionally, HTTP_PROXY           |
+|                            | and HTTPS_PROXY are supported.                          |
++----------------------------+---------------------------------------------------------+
+| monitoring_query_endpoints | Specifies a list of SRV queries, the values             |
+|                            | must be comma separated.                                |
++----------------------------+---------------------------------------------------------+
+
 .. _configure-agent-with-setup:
 
 Configure the agent with the Setup program
