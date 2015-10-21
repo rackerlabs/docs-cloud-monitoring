@@ -923,7 +923,7 @@ agent:
 
 Agent configuration file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-The configuration information for a monitoring agent is stored in an agent configu- ration file on the customer's server. The name of the file is rackspace-monitoring-agent.cfg. This file is created automatically when you configure the agent by using the :ref:`agent setup program <configure-agent-with-setup>`. You can manually edit the agent configuration file. To locate the agent configuration file:
+The configuration information for a monitoring agent is stored in an agent configuration file on the customer's server. The name of the file is **rackspace-monitoring-agent.cfg**. This file is created automatically when you configure the agent by using the :ref:`agent setup program <configure-agent-with-setup>`. You can manually edit the agent configuration file. To locate the agent configuration file:
 
 - On Linux systems, navigate to the ``/etc directory``.
 
@@ -941,12 +941,12 @@ You can specify the following attributes in the agent configuration file:
 | monitoring_snet_region     | Specifies and enables the ServiceNet endpoints for the  |
 |                            | following regions DFW, ORD, LON, SYD, HKG, IAD.         |
 +----------------------------+---------------------------------------------------------+
-| monitoring_endpoints       | Specifies on or more endpoints in the <host IP:port>    |
+| monitoring_endpoints       | Specifies on or more endpoints in the ``<host IP:port>``|
 |                            | format. These values must be comma delimited.           |
 +----------------------------+---------------------------------------------------------+
 | monitoring_proxy_url       | Specifies a HTTP proxy. This configuration must support |
-|                            | CONNECT on port 443. Additionally, HTTP_PROXY           |
-|                            | and HTTPS_PROXY are supported.                          |
+|                            | CONNECT on port 443. Additionally, ``HTTP_PROXY``       |
+|                            | and ``HTTPS_PROXY`` are supported.                      |
 +----------------------------+---------------------------------------------------------+
 | monitoring_query_endpoints | Specifies a list of SRV queries, the values             |
 |                            | must be comma separated.                                |
