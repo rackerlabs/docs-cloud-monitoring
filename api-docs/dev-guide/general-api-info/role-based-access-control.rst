@@ -20,26 +20,21 @@ account users.
 
 Assigning roles to account users
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-The account owner, `identity:user-admin` can create account users,
-`identity:default` on the account and then assign roles to those
-users. The roles grant the account users specific permissions for
-accessing the Cloud services and capabilities. Each account has only one
-account owner, and that role is assigned by default to any Rackspace
-Cloud account when the account is created. Account owners cannot hold
-any additional roles because they already have full access to all
-services and capabilities.
+The account owner (identity:user-admin) can create account users on the
+account and then assign roles to those users. The roles grant the
+account users specific permissions for accessing the capabilities of the
+next gen Cloud Servers service. Each account has only one account owner,
+and that role is assigned by default to any Rackspace Cloud account when
+the account is created.
 
-You can assign roles programmatically through the API or by using the
-Cloud Control panel interface.
+See the :rax-devdocs:`Cloud Identity Client Developer Guide <cloud-identity/v2/developer-guide/#document-overview>` 
+for information about how to perform the following tasks:
 
-Use the following API operations to add account users and manage role
-assignments:
+* :rax-devdocs:`Add account users <cloud-identity/v2/developer-guide/#add-user>`  
 
--  `Add account user`_
+* :rax-devdocs:`Add role to user <cloud-identity/v2/developer-guide/#add-role-to-user>`  
 
--  `Assign role to account users`_
-
--  `Delete role from account user`_
+* :rax-devdocs:`Delete global role from user <cloud-identity/v2/developer-guide/#delete-global-role-from-user>` 
 
 For information about implementing RBAC by using the Cloud Control Panel
 and other RBAC-related topics, see the following Rackspace Knowledge
@@ -52,11 +47,6 @@ Center articles:
 
 .. comments  Reference URLs
 
-.. _Add account user: http://docs.rackspace.com/auth/api/v2.0/auth-client-devguide/content/POST_addUser_v2.0_users_User_Calls.html
-
-.. _Assign role to account users: http://docs.rackspace.com/auth/api/v2.0/auth-client-devguide/content/PUT_addUserRole__v2.0_users__userId__roles_OS-KSADM__roleid__Role_Calls.html
-
-.. _Delete role from account user: http://docs.rackspace.com/auth/api/v2.0/auth-client-devguide/content/DELETE_deleteUserRole__v2.0_users__userId__roles_OS-KSADM__roleid__Role_Calls.html
 
 .. _Managing role-based access control through Cloud Control Panel: http://www.rackspace.com/knowledge_center/article/managing-role-based-access-control-rbac
 
