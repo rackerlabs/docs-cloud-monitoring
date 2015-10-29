@@ -1,6 +1,6 @@
 .. _server-side-yaml-config-examples:
 
-Server-Side agent configuration YAML file examples 
+Appendix D: Server-Side agent configuration YAML file examples 
 ===================================================
 
 Review the server-side agent configuration examples to learn how to apply monitoring

@@ -1,10 +1,13 @@
 .. _additional-reference-info:
 
-.. toctree:: :hidden:
+Cloud Monitoring Technical Reference
+-------------------------------------
+ 
+.. toctree:: hidden	
    :maxdepth: 2
 
-   general-ref-info
-   alert-triggers-and-alarms
+ 
+   alert-triggers-and-alarms-reference
    available-check-types-and-fields
    client-libraries-tools
-   server-side-agent-config-yaml
+   server-side-yaml-config-examples:

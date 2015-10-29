@@ -1,14 +1,14 @@
 .. _hostinfo_checks:
 
 Hostinfo checks types
-============================================================
+-----------------------
 
 Host information checks are a special class of checks that are used to fetch data on demand instead of on a regularly scheduled basis.The remote and agent-type checks are more closely connected to the larger Rackspace monitoring ecosystem. You can schedule alarms or alerts for remote and agent-type checks and run these checks on a regular schedule. Hostinfo checks cannot be scheduled and you cannot set any alarms or alerts for them.You can use Hostinfo checks to fetch data on demand, for example if you want to pipe da- ta about the host to other services or applications. Hostinfo checks are also convenient if you want to occasionally check something or want to narrow down a problem. You can also use Hostinfo checks to periodically fetch data from large clusters of servers but require the granularity of individual computers: for example for information dashboards that are built with Kibana. Hostinfo checks are also useful for service helper software that generates suggestions that are based on the status of a system or piece information that is required by support technicians.
 
 .. _available_hostinfo_checks:
 
 Available Hostinfo checks
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following table provides a list of all the Hostinfo checks that are
 currently available.
