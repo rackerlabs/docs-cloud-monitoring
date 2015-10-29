@@ -1,8 +1,8 @@
 .. _index:
 
-=========================================================
+================================================================================
 Rackspace Cloud Monitoring API 1.0
-=========================================================
+===============================================
 
 *Last updated:* |today|
 
@@ -27,4 +27,4 @@ Learn how to use the Rackspace Cloud Monitoring service by using the REST API.
    install-configure
    api-reference
    api-operations/index
-   appendices/index
+   additional-reference-info/index

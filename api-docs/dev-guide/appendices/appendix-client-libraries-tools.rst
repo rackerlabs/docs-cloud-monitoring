@@ -1,6 +1,6 @@
 .. _client_libraries_and_tools:
 
-Appendix C. Client libraries and tools 
+Client libraries and tools 
 ===============================================================================================
 
 ... contents::

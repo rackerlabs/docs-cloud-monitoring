@@ -1,6 +1,6 @@
 .. _alert-triggers-and-alarms-reference:
 
-Appendix A: Alert Triggering and Alarms
+Alert Triggering and Alarms
 ===================================================
 
 .. contents:: 
