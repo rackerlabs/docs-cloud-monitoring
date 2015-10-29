@@ -1,17 +1,16 @@
 .. _alert-triggers-and-alarms-reference:
 
-===================================================
-Alert Triggering and Alarms
+Appendix A: Alert Triggering and Alarms
 ===================================================
 
-.. contents::
+.. contents:: 
    :local:
    :depth: 2
 
-This section describes alerting including an explanation of the alert flow, the alarm
-language, the policies that you can create using alarms and example best practices.
+This section describes alerting including an explanation of the alert flow, the alarm 
+language, the policies that you can create using alarms and example best practices. 
 In short, Rackspace Cloud Monitoring uses alarms to evaluate the metrics of a check
-and decide if a notification plan should be executed. It is the primary way to describe
+and decide if a notification plan should be executed. It is the primary way to describe 
 exactly what you want to be alerted on.
 
 .. _alert-flow-reference:
@@ -37,7 +36,7 @@ the alerting system works:
       alarm, let's assume you have specified the alarm policy as
       ``QUORUM``. This parameter describes a deterministic way to
       represent mixed results in a "multi-datacenter" monitoring
-      environment. To learn more about this concept, see
+      environment. To learn more about this concept, see 
       :ref:`alert-policies <alert-policies-and-types>`.
       You can also read :ref:`best-practices-alerting` for more pattern
       applications of the alarm language.
@@ -107,29 +106,29 @@ c-style comments ``/* */``.
 
 **String Literals**
 
-String literals are surrounded with either ``'`` or ``''``. String literals
+String literals are surrounded with either ' or ''. String literals
 support the following escape sequences:
 
 +-------------------+-------------------------------------+
 | Sequence          | Value                               |
 +===================+=====================================+
-| ``\"``            | Double quote                        |
+| \"                | Double quote                        |
 +-------------------+-------------------------------------+
-| ``\'``            | Single quote                        |
+| \'                | Single quote                        |
 +-------------------+-------------------------------------+
-| ``\\``            | Backslash                           |
+| \\                | Backslash                           |
 +-------------------+-------------------------------------+
-| ``\b``            | Backspace                           |
+| \b                | Backspace                           |
 +-------------------+-------------------------------------+
-| ``\f``            | Formfeed                            |
+| \f                | Formfeed                            |
 +-------------------+-------------------------------------+
-| ``\n``            | Newline                             |
+| \n                | Newline                             |
 +-------------------+-------------------------------------+
-| ``\r``            | Carriage return                     |
+| \r                | Carriage return                     |
 +-------------------+-------------------------------------+
-| ``\t``            | Tab                                 |
+| \t                | Tab                                 |
 +-------------------+-------------------------------------+
-| ``\uXXXX``        | Unicode character where XXXX is the |
+| \uXXXX            | Unicode character where XXXX is the |
 |                   | hex unicode character code          |
 +-------------------+-------------------------------------+
 
@@ -165,13 +164,6 @@ setting declarations:
 
 .. code::
 
-     :set <name>=<value>
-
-The current version of the product supports two settings. The first setting
-specifies the :ref:`consistency level <alert-policies-and-types>`.
-
-.. code::
-
      :set consistencyLevel=<value>
 
 This is an important setting that is typically left as ``QUORUM``
@@ -189,7 +181,6 @@ maximum allowed is **5**.
      :set consecutiveCount=<value>
 
 **Conditionals**
-
 The second part of the query is the conditional statement. The
 conditional statements determine what criterion constitute
 sending an alert on behalf of the user. This is by far the most
@@ -236,7 +227,6 @@ The operators available are:
      ||    /* Or */
 
 **Return statements**
-
 The third part of the query is the return statements. The return
 statements determine the notification or notifications to
 execute on the notification plan as well as the state of the alarm.
@@ -310,7 +300,7 @@ format to the point in time metric. It looks like this:
 .. code::
 
      return new AlarmStatus(WARNING, 'The check took #{duration}s to execute');
-
+     
 .. note::
    String Interpolation will substitute a #{``metric-name``} for its
    corresponding point in time value.
@@ -342,27 +332,27 @@ policies and their trade-offs are described next.
 
 **One alert policy**
 
-	The alert state is determined by the latest observation that is
+The alert state is determined by the latest observation that is
 	different from the current alert state. For example, if the current
 	alert state is OK and a monitoring zone WARNING or CRITICAL observation
 	is received, a notification is sent and the alert state is changed to
 	indicate the most recent zone observation.
 
-	The ``ONE`` policy optimizes speed of alerting at the expense of correctness
+The ONE policy optimizes speed of alerting at the expense of correctness
 	as any network disruption between Rackspace Cloud Monitoring and the
-	monitored resource could generate an alert. Additionally, the ``ONE``
+	monitored resource could generate an alert. Additionally, the ONE
 	policy can cause many notifications as a change in the state of any
 	one monitoring zone from its previous state results in a notification
-	and alert state change. This is mitigated in the ``QUORUM`` policy.
+	and alert state change. This is mitigated in the QUORUM policy.
 
 **Quorum alert policy**
 
-  The alert state is determined by a change observed in a majority
+   The alert state is determined by a change observed in a majority
 	of the monitoring zones. For example, two of three, or three of five,
 	monitoring zones report OK and the previous alert state was WARNING.
 	The calculation is TOTAL / 2 + 1.
 
-	The ``QUORUM`` policy is the recommended solution. It offers the best
+The QUORUM policy is the recommended solution. It offers the best
 	speed-to-correctness trade-off. A majority of the zones monitoring
 	your resource must have the same state before an alert state change
 	and notification. This is the best approach to maintain speed
@@ -370,11 +360,11 @@ policies and their trade-offs are described next.
 
 **All alert policy**
 
-	The alert state is determined by a resource change observed in all
+The alert state is determined by a resource change observed in all
 	of the monitoring zones. For example, three out of three monitoring
 	zones report resource CRITICAL and the previous alert state was OK.
 
-	The ``ALL`` policy is the most accurate, but is also prone to failure in
+The ALL policy is the most accurate, but is also prone to failure in
 	significant failure scenarios. If a network partition between our
 	internal data centers happens, the alert could be delayed due to the
 	election process. In this case, a machine has to be marked down,
@@ -398,7 +388,7 @@ The format of a modifier is as follows:
 
      ex: <funcname>(metric['response_time'])
 
-Rackspace Cloud Monitoring supports the following modifiers:
+Rackspace Cloud Monitoring supports the following modifiers: 
 
 **Previous function**
 
@@ -426,7 +416,7 @@ such as bytes_in on an network interface, this will give you the
  	 if (rate(metric['rx_bytes']) > 5242880) {
  	        return new AlarmStatus(CRITICAL, 'Received greater than 5 MBps.');
 	     }
-	 if (rate(metric['rx_bytes']) > 1048576) {
+	     if (rate(metric['rx_bytes']) > 1048576) {
 	         return new AlarmStatus(WARNING, 'Received greater than 1 MBps.');
  	    }
 
@@ -436,7 +426,7 @@ The **percent** function is used to calculate a percentage, useful in situations
 like the example below.
 
 .. note::
-
+	
    	Notice the order of the two statements below, since it executes
    	sequentially it is important to be most specific as the first matched
    	condition wins. This is true for all conditions, it is commonly
@@ -447,11 +437,11 @@ like the example below.
 	if (percentage(metric['used'], metric['total']) > 90) {
 		return new AlarmStatus(CRITICAL, 'Less than 10% free space left.');
 		}
-
+		
 	if (percentage(metric['used'], metric['total']) > 80) {
 		return new AlarmStatus(WARNING, 'Less than 20% free space left.');
      	 }
-
+     	 
 
 .. _best-practices-alerting:
 
@@ -462,7 +452,7 @@ This section covers common solution patterns for creating useful alerts.
 It focuses on alarms and how you can use the alarm language to
 best achieve these patterns.
 
-.. contents::
+.. contents:: 
    :local:
    :depth: 2
 
@@ -473,19 +463,19 @@ HTTP/HTTPs checks
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Critical on 404 or Connection Refused**
-
+  
 This example assumes a provisioned Remote HTTP with standard
 settings. It checks that the return code (which is a metric of
 type string) is the string equivalent of a 404. HTTP response
 codes are numeric, but since they hold no numeric value, we
 interpret them as strings.
 
-.. code::
+.. code::  
 
     if (metric['code'] == "404") {
       return new AlarmStatus(CRITICAL, "Page not found!");
     }
-
+    	
 
 **Check for the existence of a body match and error out if present**
 
@@ -498,33 +488,33 @@ Using the ``HTTPS`` prefix automatically defaults the port to the standard
 word "forbidden" in the body match, and if found returns ``CRITICAL`` with
 the error message: "``Forbidden found, returning CRITICAL``."
 
-.. code::
+.. code::  
 
     if (metric['body_match'] regex ".*forbidden.*") {
       return new AlarmStatus(CRITICAL, "Forbidden found, returning CRITICAL.");
     }
+    	
+		 	 
+**Check the cert_end_in metric; critic if less than a week away**
 
-
-**Check the cert_end_in metric; critical if less than a week away**
-
-This example assumes a provisioned Remote HTTP against an HTTPS server
+This example assumes a provisioned Remote HTTP against an HTTPS server 
 and adds a set of metrics that are specific to SSL in the hash of metrics.
-
+	
 This example checks the certificate expiration in seconds, abbreviated as the ``cert_end_in``:
 
-.. code::
+.. code::  
 
     /* 2 days = 172 800 seconds */
     if (metric['cert_end_in'] < 172800)
-    { return new AlarmStatus(CRITICAL, "Cert expiring in less than 2 days.");
+    { return new AlarmStatus(CRITICAL, "Cert expiring in less than 2 days."); 
     }
 
     /* 1 week = 604 800 seconds */
     if (metric['cert_end_in'] < 604800)
-    { return new AlarmStatus(WARNING, "Cert expiring in less than 1 week.");
+    { return new AlarmStatus(WARNING, "Cert expiring in less than 1 week."); 
 	}
-
-
+		
+		
 .. _best-practices-port-banner-checks:
 
 Port/banner checks
@@ -539,7 +529,7 @@ see Remote TCP. However if a banner matches, then a metric is added
 to the result, called ``banner_match``. One common solution is to check
 for the existence of that metric and return ``CRITICAL`` otherwise.
 
-.. code::
+.. code::  
 
     /* Have the check match at the edge */
     if (metric['banner_matched'] != "") {
@@ -559,17 +549,17 @@ for the existence of that metric and return ``CRITICAL`` otherwise.
 .. _best-practices-dns-checks:
 
 DNS checks
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~
 
 **Check for an IP in a DNS query, fail otherwise**
 
-This example assumes a provisioned Remote DNS check against a
-working nameserver. In this example, the alarm matches against
-the answer ``metric``. As with all alarms, if the check is marked
-available=false (which in this case means the nameserver fails
+This example assumes a provisioned Remote DNS check against a 
+working nameserver. In this example, the alarm matches against 
+the answer ``metric``. As with all alarms, if the check is marked 
+available=false (which in this case means the nameserver fails 
 to respond) than the alarm is ``CRITICAL``.
 
-.. code::
+.. code::  
 
     # Match if the 127... address was in the resolution
     # if it wasn't than default to CRITICAL
@@ -578,7 +568,7 @@ to respond) than the alarm is ``CRITICAL``.
     return new AlarmStatus(OK, "Resolved the correct address!");
     }
     return new AlarmStatus(CRITICAL);
-
+        
 
 .. _best-practices-ssh-checks:
 
@@ -609,9 +599,9 @@ nplU9hLUgc. This check connects to an SSH server using port 22 by default:
 
 **Alarm for this check**:
 
-If the monitoring service is unable to connect to the SSH server for the check, any alarms
-using the check will automatically fail. However, we can additionally verify that the
-server returns the expected host key fingerprint, which could reveal an unexpected
+If the monitoring service is unable to connect to the SSH server for the check, any alarms 
+using the check will automatically fail. However, we can additionally verify that the 
+server returns the expected host key fingerprint, which could reveal an unexpected 
 change on the server or a man in the middle attack.
 
 .. code::
@@ -621,3 +611,4 @@ change on the server or a man in the middle attack.
     --notification-plan-id=nplU9hLUgc \
     --check-id=chTFHxHn0p \
     --criteria="if (metric['fingerprint'] != '13dd6c5df600f9a15c67ea5db491ac9a') { return new AlarmStatus(CRITICAL, 'Incorrect SSH Host Fingerprint'); }"
+

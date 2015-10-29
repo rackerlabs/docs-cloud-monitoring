@@ -31,11 +31,11 @@ Monitoring key terms and concepts
     your company's website, you can create one alarm to monitor the
     server itself, and another alarm to monitor the website.
 
-    When an alarm is triggered it alerts the associated notification
+   When an alarm is triggered it alerts the associated notification
     plan to send notifications. This process is called the "alerting
     workflow."
 
-    The alarms language lets you pinpoint the value that will trigger
+   The alarms language lets you pinpoint the value that will trigger
     the alarm. To learn how to use the alarm language to create robust
     monitors, see :ref:`Alert Triggering and Alarms <alert-triggers-and-alarms-reference>`.
 
@@ -49,18 +49,18 @@ Monitoring key terms and concepts
     to collect data from, the collection frequency, how many monitoring
     zones are launching the check, and so on.
 
-    You can associate one or more checks with an entity. In order to
+   You can associate one or more checks with an entity. In order to
     monitor a resource, an entity must have at least one check, but by
     creating multiple checks for an entity, you can monitor several
     different aspects of a single resource.
 
-    For each check you create, you designate a check type. The check
+   For each check you create, you designate a check type. The check
     type specifies what kind of data to collect, PING, HTTP, SMTP, and
     so on. There are are two major check types: remote and agent.
     Rackspace Cloud Monitoring check types are fully described in the
     :ref:`Check types <check-type-operations>` section.
 
-    Note that checks only gather metrics. A check specifies what data
+   Note that checks only gather metrics. A check specifies what data
     are collected and how they are collected; it does not trigger an
     alert, or a notification action. Instead, alerts are triggered by
     alarms based on your notification configuration.
@@ -95,7 +95,7 @@ Monitoring key terms and concepts
     an alarm, causing an alert to be sent. Metrics can also be used to
     create graphs.
 
-    For more information, see the API operations reference information for
+   For more information, see the API operations reference information for
     :ref:`Cumulative and instantaneous metrics <cumulative-metrics>`.
 
 .. _monitoring-agent-concept:
@@ -113,7 +113,7 @@ Monitoring key terms and concepts
     :rax-docs:`Agent check types <cm/api/v1.0/cm-devguide/content/appendix-check-types-agent.html>`
     for a list of agent check types.
 
-    To learn about installing and configuring monitoring agents, read the
+   To learn about installing and configuring monitoring agents, read the
     :ref:`Install and configure <install-and-configure>` section.
 
 .. _zones:
@@ -125,7 +125,7 @@ Monitoring key terms and concepts
     zone is similar to that of a datacenter, however in the monitoring
     system, you can think of it more as a geographical region.
 
-    You can launch checks for a particular entity from multiple monitoring zones. This
+   You can launch checks for a particular entity from multiple monitoring zones. This
     allows you to observe the performance of an entity from different regions of the
     world. It is also a way to prevent noisy alarms. For example, if the check from one
     monitoring zone reports that an entity is down, a second or third monitoring

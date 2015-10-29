@@ -24,7 +24,7 @@ other Rackspace Cloud APIs.
   `Rackspace API Documentation`_.
 
 - To learn about using Cloud Monitoring with Rackspace Cloud SDKs, see
-  `Software Development Kits & Tools`_.
+  :rax-dev:`Software Development Kits & Tools <sdks>`.
 
 - This API uses standard HTTP 1.1 response codes as documented in the `HTTP Status Code Definitions`_
   specification.
