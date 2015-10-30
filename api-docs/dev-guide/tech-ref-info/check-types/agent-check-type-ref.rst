@@ -102,11 +102,11 @@ Metrics
 +----------------------------+--------------------------------------------------------+----------+
 | max_cpu_usage              | Recent percentage utilization of the most-utilized CPU.| Double   |
 |                            | This is useful to detect when some                     |          |
-|                            | CPUs are “pegged” while others are idle.               |          |
+|                            | CPUs are pegged while others are idle.                 |          |
 +----------------------------+--------------------------------------------------------+----------+
 | min_cpu_usage              |Recent percentage utilization of the least-utilized CPU.| Double   |
 |                            |This is useful to detect when some                      |          |
-|                            |CPUs are “pegged” while others are idle.                |          |
+|                            |CPUs are pegged while others are idle.                  |          |
 +----------------------------+--------------------------------------------------------+----------+
 | stolen_percent_average     | Recent percentage of CPU time spent waiting for        | Double   |
 |                            | the CPU to service other virtual CPUs.                 |          |
@@ -174,12 +174,12 @@ space, used space, etc.)
 Attributes
 ~~~~~~~~~~~~
 
-+-----------+-------------------------------------+-------------------------------------+
-| Field     | Description                         | Validation                          |
-+===========+=====================================+=====================================+
-| target    | The mount point to check,           | String between 1 and 512            |
-|           | for example (eg ``/var`` or ``C:\``)| 512 characters long.                |
-+-----------+---------------------------------------------------------------------------+
++-----------+------------------------------+-------------------------------------+
+| Field     | Description                  | Validation                          |
++===========+==============================+=====================================+
+| target    | The mount point to check.    | String between 1 and 512            |
+|           | :code:`/var` or :code:`C:\\` | characters long.                    |
++-----------+------------------------------+-------------------------------------+
 
 
 Metrics
@@ -285,12 +285,12 @@ The **agent.mysql** check will retrieve MySQL server metrics
 
 ..  note::
 
-    Except for the ‘replication.slave\_running' metric, all metrics starting
-    with ‘replication’ will not show up if there is no slave running.
+    Except for the replication.slave\_running' metric, all metrics starting
+    with replication will not show up if there is no slave running.
     
 
 Attributes
--------------
+~~~~~~~~~~~~~
 
 +------------+----------------------------------------------------------+------------------------------------------------------+
 | Field      | Description                                              | Validation                                           |
@@ -312,7 +312,7 @@ Attributes
 
 
 Metrics
-----------
+~~~~~~~~~~~
 
 +--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
 | Metric                                     | Description                                                                                                                                                                                                                                                                                                           | Type            |
