@@ -8,7 +8,7 @@ Get audit information
 
 Returns audit information for the specified account.
 
-Rackspace Cloud Monitoring records every write operation in an audit.
+Rackspace Monitoring records every write operation in an audit.
 For more information on how audits are recorded, see
 :ref:`Audits <audits>`.
 
@@ -18,6 +18,10 @@ By default the API queries the last 7 days of audit information.
 
 This operation can be paginated. For information, see
 :ref:`Paginated collections <paginated-collections>`.
+
+..note::
+
+Rackspace Monitoring currently doesn't have a filtering functionality to filter for specific items. It is recommended that you write a script to shrink the long list of audit content.
 
 The following table shows the possible response codes for this operation:
 
@@ -77,12 +81,13 @@ Response
                    "content-length": 254,
                    "connection": "close"
                },
-               "url": "/v1.0/entities",
+               "url": "/v1.0/entities", //combined with the "POST" operation, this info is used to create an entity
+               "timestamp": 1435174490595,
                "app": "entities",
                "query": null,
                "txnId": ".rh-nzQM.h-ele.r-Kxysr1TO.c-189.ts-1320879585331.v-ae0a53c",
-               "payload": "{\"label\":\"0NwhqrC05xKh22OEYZhcQdwkw\",\"ip_addresses\":{\"default\":\"10.0.0.2\"},\"metadata\":{\"all\":\"kinds\",\"of\":\"stuff\",\"can\":\"go\",\"here\":\"null is not a valid value\"}}",
-               "method": "POST",
+               "payload": "{\"label\":\"0NwhqrC05xKh22OEYZhcQdwkw\",\"ip_addresses\":{\"default\":\"10.0.0.2\"},\"metadata\":{\"all\":\"kinds\",\"of\":\"stuff\",\"can\":\"go\",\"here\":\"null is not a valid value\"}}", // details provided for the operation to create an entity
+               "method": "POST", // create operation
                "account_id": "frank",
                "who": null,
                "why": null,
@@ -99,12 +104,13 @@ Response
                    "content-length": 51,
                    "connection": "close"
                },
-               "url": "/v1.0/entities/enuAc9qZRB",
+               "url": "/v1.0/entities/enuAc9qZRB", //the entity to update is enuAc9qZR
+               "timestamp": 1435174490595, 
                "app": "entities",
                "query": null,
                "txnId": ".rh-nzQM.h-ele.r-lobnFBE4.c-195.ts-1320879585945.v-ae0a53c",
-               "payload": "{\"label\":\"testing.example.com\"}",
-               "method": "PUT",
+               "payload": "{\"label\":\"testing.example.com\"}", // details of the update operation, update the label
+               "method": "PUT", //update operation
                "account_id": "frank",
                "who": null,
                "why": null,
