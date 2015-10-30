@@ -3,6 +3,11 @@
 
 Agent tokens
 ~~~~~~~~~~~~
+
+.. contents::
+   :local:
+   :depth: 1
+   
 Agent tokens are used to authenticate Monitoring Agents to the
 Monitoring Service. Multiple Agents on an account can share a single token.
 

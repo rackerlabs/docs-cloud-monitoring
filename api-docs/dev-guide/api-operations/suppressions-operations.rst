@@ -3,6 +3,12 @@
 ~~~~~~~~~~~~
 Suppressions
 ~~~~~~~~~~~~
+
+.. contents::
+   :local:
+   :depth: 1
+   
+   
 Suppressions allow you to suspend alarm notifications for a set period of time.
 A single suppression can apply to any number of alarms. For example,
 you would use one suppression to suppress all alarm notifications during

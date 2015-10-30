@@ -3,6 +3,11 @@
 ~~~~~
 Views
 ~~~~~
+
+.. contents::
+   :local:
+   :depth: 1
+   
 Views contain a combination of data that usually includes
 multiple, different objects. The primary purpose of a view is
 to save API calls and make data retrieval more efficient. Instead of

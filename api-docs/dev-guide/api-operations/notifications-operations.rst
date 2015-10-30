@@ -3,6 +3,11 @@
 ~~~~~~~~~~~~~
 Notifications
 ~~~~~~~~~~~~~
+
+.. contents::
+   :local:
+   :depth: 1
+   
 A notification is a destination to which an alert is sent. It can
 be a variety of different notification types, which will evolve over time.
 

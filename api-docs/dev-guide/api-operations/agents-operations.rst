@@ -4,6 +4,10 @@
 Agents
 ~~~~~~
 
+.. contents::
+   :local:
+   :depth: 1
+
 The optional Monitoring Agent resides on the host server being
 monitored. The agent allows you to gather on-host metrics
 based on agent checks and push them to Cloud Monitoring where

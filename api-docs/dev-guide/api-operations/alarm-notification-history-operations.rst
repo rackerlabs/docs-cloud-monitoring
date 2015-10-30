@@ -3,6 +3,11 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 Alarm notification history
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. contents::
+   :local:
+   :depth: 1
+   
 The monitoring service keeps a record of notifications sent
 for each alarm. This history is further subdivided by the
 check on which the notification occurred. Every attempt to send a

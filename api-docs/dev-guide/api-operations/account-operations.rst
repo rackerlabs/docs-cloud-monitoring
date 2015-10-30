@@ -2,10 +2,16 @@
 
 Account
 ~~~~~~~
+
+.. contents::
+   :local:
+   :depth: 1
+   
 Manage user accounts including finding out about resource and rate limits
 and getting information on write operations, called audits.
 
-**Attributes**
+Attributes
+^^^^^^^^^^^^
 
 +--------------------+-----------------------+-------------------------------------+
 | Name               | Description           | Validation                          |

@@ -3,6 +3,10 @@
 Alarms
 ~~~~~~
 
+.. contents::
+   :local:
+   :depth: 1
+
 Alarms bind alerting rules, entities, and notification plans into
 a logical unit. Alarms are responsible for determining a state
 (OK, WARNING or CRITICAL) based on the result of a check, and executing
@@ -13,7 +17,8 @@ For information
 about using the DSL, see :ref:`Alert Triggering and Alarms <alert-triggers-and-alarms-reference>`.
 For alarm examples by check, see :ref:`alarm-example-operations`.
 
-**Attributes**
+Attributes
+^^^^^^^^^^^^
 
 +--------------------------+----------------------------+----------------------------------+
 | Name                     | Description                | Validation                       |
