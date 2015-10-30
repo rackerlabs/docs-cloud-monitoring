@@ -2,6 +2,12 @@
 
 Notification plans
 ~~~~~~~~~~~~~~~~~~
+
+.. contents::
+   :local:
+   :depth: 1
+   
+   
 A notification plan contains a set of notification actions
 that Rackspace Cloud Monitoring executes when triggered by an
 alarm. Rackspace Cloud Monitoring currently supports webhook,

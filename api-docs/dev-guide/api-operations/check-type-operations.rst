@@ -2,6 +2,11 @@
 
 Check types
 ~~~~~~~~~~~
+
+.. contents::
+   :local:
+   :depth: 1
+   
 Each check within Rackspace Cloud Monitoring has a designated check
 type. The check type instructs the monitoring system how to
 check the monitored resource.
@@ -23,7 +28,7 @@ the server you are monitoring.
 
 For a list of available check types, see
 :ref:`Available check types and fields
-<available-check-types-and-fields>`.
+<check-types-ref>`.
 
 Checks generate metrics upon which alarms will alert. The metrics
 generated often depend on the parameters for the check, using the

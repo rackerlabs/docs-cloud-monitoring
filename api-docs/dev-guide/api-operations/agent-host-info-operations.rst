@@ -3,6 +3,12 @@
 
 Agent host information
 ~~~~~~~~~~~~~~~~~~~~~~
+
+.. contents::
+   :local:
+   :depth: 1
+   
+   
 Host Info requests can be used to gather information about an
 entity, or to build your own dashboards. This information is
 gathered on demand to make sure you have the most recent data.

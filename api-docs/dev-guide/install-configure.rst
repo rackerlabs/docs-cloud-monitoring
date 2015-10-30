@@ -1306,7 +1306,7 @@ Example server-side configuration YAML files
 
 This section provides two examples of YAML configuration. More examples
 are provided in the
-:ref:`Server-Side agent configuration YAML file examples <server-side-yaml-config-examples>`.
+:ref:`Server-Side agent configuration YAML file examples <agent-config-yaml-files>`.
 
 .. _file-sytem-check:
 

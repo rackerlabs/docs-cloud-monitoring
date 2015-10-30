@@ -1,16 +1,26 @@
-.. _agent_check_types:
+.. _agent-check-type-ref:
 
+===================
 Agent check types
-------------------
+===================
+
+Rackspace Cloud Monitoring supports the following agent check types.
+
+.. contents::
+   :local:
+   :depth: 1
+   
 
 .. _agent_apache_check:
 
 agent.apache check
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------
 
 The **agent.apache** check will retrieve Apache HTTP server metrics
 
-**Attributes**
+Attributes
+~~~~~~~~~~~~
+
 +-----------+------------------------------------------------------------------+----------------------+
 | Field     | Description                                                      | Validation           |
 +===========+==================================================================+======================+
@@ -19,7 +29,9 @@ The **agent.apache** check will retrieve Apache HTTP server metrics
 | url       | Specifies the URL. Defaults to http://127.0.0.1/server-status.   | Optional. URL.       |
 +-----------+------------------------------------------------------------------+----------------------+
 
-**Metrics**
+Metrics
+~~~~~~~~~~~~
+
 +-----------------------+----------------------------------------------------------------------------------------+---------+
 | Metric                | Description                                                                            | Type    |
 +=======================+========================================================================================+=========+
@@ -67,48 +79,61 @@ The **agent.apache** check will retrieve Apache HTTP server metrics
 .. _agent_cpu:
 
 agent.cpu
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------
 
 The agent.cpu check will attempt to measure the usage of the CPU on a
 host.
 
-**Attributes**
+Attributes
+~~~~~~~~~~~~~
 
 No fields are present for this particular check type.
 
-**Metrics**
+Metrics
+~~~~~~~~~~
 
-+----------------------------+----------------------------------------------------------------------------------------------------------------------------------------+----------+
-| Metric                     | Description                                                                                                                            | Type     |
-+============================+========================================================================================================================================+==========+
-| idle_percent_average       | Recent percentage of CPU time spent idle.                                                                                              | Double   |
-+----------------------------+----------------------------------------------------------------------------------------------------------------------------------------+----------+
-| irq_percent_average        | Recent percentage of CPU time spent handling hardware interrupts.                                                                      | Double   |
-+----------------------------+----------------------------------------------------------------------------------------------------------------------------------------+----------+
-| max_cpu_usage              | Recent percentage utilization of the most-utilized CPU. This is useful to detect when some CPUs are “pegged” while others are idle.    | Double   |
-+----------------------------+----------------------------------------------------------------------------------------------------------------------------------------+----------+
-| min_cpu_usage              | Recent percentage utilization of the least-utilized CPU. This is useful to detect when some CPUs are “pegged” while others are idle.   | Double   |
-+----------------------------+----------------------------------------------------------------------------------------------------------------------------------------+----------+
-| stolen_percent_average     | Recent percentage of CPU time spent waiting for the CPU to service other virtual CPUs.                                                 | Double   |
-+----------------------------+----------------------------------------------------------------------------------------------------------------------------------------+----------+
-| sys_percent_average        | Recent percentage of CPU time utilized by kernel mode processes.                                                                       | Double   |
-+----------------------------+----------------------------------------------------------------------------------------------------------------------------------------+----------+
-| usage_average              | Recent percentage of CPU time utilized by all processes.                                                                               | Double   |
-+----------------------------+----------------------------------------------------------------------------------------------------------------------------------------+----------+
-| user_percent_average       | Recent percentage of CPU time utilized by user mode processes.                                                                         | Double   |
-+----------------------------+----------------------------------------------------------------------------------------------------------------------------------------+----------+
-| wait_percent_average       | Recent percentage of CPU time utilized by processes in a “wait” state.                                                                 | Double   |
-+----------------------------+----------------------------------------------------------------------------------------------------------------------------------------+----------+
++----------------------------+--------------------------------------------------------+----------+
+| Metric                     | Description                                            | Type     |
++============================+========================================================+==========+
+| idle_percent_average       | Recent percentage of CPU time spent idle.              | Double   |
++----------------------------+--------------------------------------------------------+----------+
+| irq_percent_average        | Recent percentage of CPU time spent handling hardware  | Double   |
+|                            | interrupts.                                            |          |
++----------------------------+--------------------------------------------------------+----------+
+| max_cpu_usage              | Recent percentage utilization of the most-utilized CPU.| Double   |
+|                            | This is useful to detect when some                     |          |
+|                            | CPUs are “pegged” while others are idle.               |          |
++----------------------------+--------------------------------------------------------+----------+
+| min_cpu_usage              |Recent percentage utilization of the least-utilized CPU.| Double   |
+|                            |This is useful to detect when some                      |          |
+|                            |CPUs are “pegged” while others are idle.                |          |
++----------------------------+--------------------------------------------------------+----------+
+| stolen_percent_average     | Recent percentage of CPU time spent waiting for        | Double   |
+|                            | the CPU to service other virtual CPUs.                 |          |
++----------------------------+--------------------------------------------------------+----------+
+| sys_percent_average        |Recent percentage of CPU time utilized by kernel mode   | Double   |
+|                            |processes.                                              |          |
++----------------------------+--------------------------------------------------------+----------+
+| usage_average              |Recent percentage of CPU time utilized by all processes.| Double   |
+|                            |processes.                                              |          |
++----------------------------+--------------------------------------------------------+----------+
+| user_percent_average       |Recent percentage of CPU time utilized by user mode     | Double   |
+|                            |processes in a "wait" state.                            |          |
++----------------------------+--------------------------------------------------------+----------+
+| wait_percent_average       | Recent percentage of CPU time utilized by processes    | Double   |
+|                            | in a "wait" state.                                     |          |
++----------------------------+--------------------------------------------------------+----------+
 
 .. _agent_disk:
 
 agent.disk
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------
 
 The **agent.disk** check exposes disk related metrics (service time, wait
 time, etc.).
 
-**Attributes**
+Attributes
+~~~~~~~~~~~~~
 
 +-----------+--------------------------------------------------------------------------------------+
 | Field     | Description                               | Validation                               |
@@ -117,7 +142,8 @@ time, etc.).
 +-----------+--------------------------------------------------------------------------------------+
 
 
-**Metrics**
+Metrics
+~~~~~~~~~~~~
 
 +-----------------+----------------------------------------------------------------------------------------------------------------------+----------+
 | Metric          | Description                                                                                                          | Type     |
@@ -140,52 +166,66 @@ time, etc.).
 .. _agent_filesystem:
 
 agent.filesystem
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------
 
 The **agent.filesystem** check exposes file system related metrics (free
 space, used space, etc.)
 
-**Attributes**
+Attributes
+~~~~~~~~~~~~
 
-+-----------+-----------------------------------------------------------------------------------------+
-| Field     | Description                                  | Validation                               |
-+===========+==============================================+==========================================+
-| target    | The mount point to check (eg '/var' or 'C:') | String between 1 and 512 characters long |
-+-----------+-----------------------------------------------------------------------------------------+
++-----------+-------------------------------------+-------------------------------------+
+| Field     | Description                         | Validation                          |
++===========+=====================================+=====================================+
+| target    | The mount point to check,           | String between 1 and 512            |
+|           | for example (eg ``/var`` or ``C:\``)| 512 characters long.                |
++-----------+---------------------------------------------------------------------------+
 
 
-**Metrics**
+Metrics
+~~~~~~~~~~~~
 
-+-----------------+-----------------------------------------------------------------------------------------------------------------------------------+----------+
-| Metric          | Description                                                                                                                       | Type     |
-+=================+===================================================================================================================================+==========+
-| avail           | Available space on the filesystem in kilobytes, not including reserved space.                                                     | Int64    |
-+-----------------+-----------------------------------------------------------------------------------------------------------------------------------+----------+
-| free            | Free space available on the filesystem in kilobytes, including reserved space.                                                    | Int64    |
-+-----------------+-----------------------------------------------------------------------------------------------------------------------------------+----------+
-| options         | The option used to mount the device to the filesystem. Includes the **rw** flag, which indicates the device is in read/write mode.| Int64    |
-+-----------------+-----------------------------------------------------------------------------------------------------------------------------------+----------+
-| total           | Total space on the filesystem, in kilobytes.                                                                                      | Int64    |
-+-----------------+-----------------------------------------------------------------------------------------------------------------------------------+----------+
-| used            | Used space on the filesystem, in kilobytes.                                                                                       | Int64    |
-+-----------------+-----------------------------------------------------------------------------------------------------------------------------------+----------+
-| files           | Number of inodes on the filesystem. Note: this metric is not available on Windows.                                                | Int64    |
-+-----------------+-----------------------------------------------------------------------------------------------------------------------------------+----------+
-| free_files      | Number of free inodes on the filesystem. Note: this metric is not available on Windows.                                           | Int64    |
-+-----------------+-----------------------------------------------------------------------------------------------------------------------------------+----------+
++-----------------+--------------------------------------------------+----------+
+| Metric          | Description                                      | Type     |
++=================+==================================================+==========+
+| avail           | Available space on the filesystem in kilobytes,  | Int64    |
+|                 | including reserved space.                        |          |
++-----------------+--------------------------------------------------+----------+
+| free            | Free space available on the filesystem in        | Int64    |
+|                 | kilobytes including reserved space.              |          |
++-----------------+--------------------------------------------------+----------+
+| options         | The option used to mount the device to the       | Int64    |
+|                 | filesystem. Includes the **rw** f                |          |
+|                 | which indicates the device is in read/write mode.|          |
++-----------------+--------------------------------------------------+----------+
+| total           | Total space on the filesystem, in kilobytes.     | Int64    |
++-----------------+--------------------------------------------------+----------+
+| used            | Used space on the filesystem, in kilobytes.      | Int64    |
++-----------------+--------------------------------------------------+----------+
+| files           | Number of inodes on the filesystem.              | Int64    |
++-----------------+--------------------------------------------------+----------+
+| free_files      | Number of free inodes on the filesystem.         | Int64    |
++-----------------+--------------------------------------------------+----------+
+
+.. note:: 
+
+   The `files` and `free_files` metrics are not available on Windows.
+
 
 .. _agent_load_average:
 
 agent.load_average
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------
 
 The **agent.load_average** check will attempt to measure the Unix-style Load Average on a host.
 
-**Attributes**
+Attributes
+~~~~~~~~~~~~
 
 No fields are present for this particular check type.
 
-**Metrics**
+Metrics
+~~~~~~~~~~~~
 
 +----------+--------------------------------+---------+
 | Metric   | Description                    | Type    |
@@ -200,13 +240,15 @@ No fields are present for this particular check type.
 .. _agent_memory:
 
 agent.memory
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------
 
-**Attributes**
+Attributes
+~~~~~~~~~~~~
 
 No fields are present for this particular check type.
 
-**Metrics**
+Metrics
+~~~~~~~~~~~~
 
 +-------------------+----------------------------------------------------------------------------------+---------+
 | Metric            | Description                                                                      | Type    |
@@ -237,16 +279,18 @@ No fields are present for this particular check type.
 .. _agent_mysql:
 
 agent.mysql
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------
 
 The **agent.mysql** check will retrieve MySQL server metrics
 
 ..  note::
 
-Except for the ‘replication.slave\_running' metric, all metrics starting
-with ‘replication’ will not show up if there is no slave running.
+    Except for the ‘replication.slave\_running' metric, all metrics starting
+    with ‘replication’ will not show up if there is no slave running.
+    
 
-**Attributes**
+Attributes
+-------------
 
 +------------+----------------------------------------------------------+------------------------------------------------------+
 | Field      | Description                                              | Validation                                           |
@@ -267,7 +311,8 @@ with ‘replication’ will not show up if there is no slave running.
 +------------+----------------------------------------------------------+------------------------------------------------------+
 
 
-**Metrics**
+Metrics
+----------
 
 +--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
 | Metric                                     | Description                                                                                                                                                                                                                                                                                                           | Type            |
@@ -412,12 +457,13 @@ with ‘replication’ will not show up if there is no slave running.
 .. _agent_network:
 
 agent.network
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------
 
 The **agent.network** check will attempt to measure the usage of network
 devices on a host.
 
-**Attributes**
+Attributes
+~~~~~~~~~~~~
 
 +-----------+-----------------------------------------------------------------------------------------+
 | Field     | Description                                  | Validation                               |
@@ -425,7 +471,8 @@ devices on a host.
 | target    | The network device to check (eg 'eth0)       | String between 1 and 512 characters long |
 +-----------+-----------------------------------------------------------------------------------------+
 
-*8Metrics**
+Metrics
+~~~~~~~~~~
 
 +---------------+---------------------------------------------------------------------------------------------+---------+
 | Metric        | Description                                                                                 | Type    |
@@ -452,11 +499,12 @@ devices on a host.
 .. _agent_mssql_database:
 
 agent.mssql_database
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
-The **agent.mssql_database** check will return metrics for a Microsoft SQL Server database.
+The **agent.mssql_database** check returns metrics for a Microsoft SQL Server database.
 
-**Attributes**
+Attributes
+~~~~~~~~~~~~
 
 +------------------+-----------------------------------+------------------------------------------------------+
 | Field            | Description                       | Validation                                           |
@@ -475,12 +523,13 @@ The **agent.mssql_database** check will return metrics for a Microsoft SQL Serve
 .. _agent_mssql_buffer_manager:
 
 agent.mssql_buffer_manager
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
-The **agent.mssql_buffer_manager** check will return metrics for the
+The **agent.mssql_buffer_manager** check returns metrics for the
 Microsoft SQL Server buffer manager.
 
-**Attributes**
+Attributes
+~~~~~~~~~~~~
 
 +------------------+-----------------------------------+------------------------------------------------------+
 | Field            | Description                       | Validation                                           |
@@ -493,12 +542,13 @@ Microsoft SQL Server buffer manager.
 .. _agent_mssql_sql_statistics:
 
 agent.mssql_sql_statistics
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
-The **agent.mssql_sql_statistics** check will return metrics for the
+The **agent.mssql_sql_statistics** check returns metrics for the
 Microsoft SQL Server SQL statistics.
 
-**Attributes**
+Attributes
+~~~~~~~~~~~~
 
 +------------------+-----------------------------------+------------------------------------------------------+
 | Field            | Description                       | Validation                                           |
@@ -511,11 +561,12 @@ Microsoft SQL Server SQL statistics.
 .. _agent_mssql_plan_cache:
 
 agent.mssql_plan_cache
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
-The agent.mssql_plan_cache check will return metrics for the Microsoft SQL Server plan cache.
+The agent.mssql_plan_cache check returns metrics for the Microsoft SQL Server plan cache.
 
-**Attributes**
+Attributes
+~~~~~~~~~~~~
 
 +------------------+-----------------------------------+------------------------------------------------------+
 | Field            | Description                       | Validation                                           |
@@ -528,11 +579,12 @@ The agent.mssql_plan_cache check will return metrics for the Microsoft SQL Serve
 .. _agent_mssql_memory_manager:
 
 agent.mssql_memory_manager
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
-The **agent.mssql_memory_manager** check will return metrics for the Microsoft SQL Server memory manager.
+The **agent.mssql_memory_manager** check returns metrics for the Microsoft SQL Server memory manager.
 
-**Attributes**
+Attributes
+~~~~~~~~~~~~
 
 +------------------+-----------------------------------+------------------------------------------------------+
 | Field            | Description                       | Validation                                           |
@@ -545,12 +597,13 @@ The **agent.mssql_memory_manager** check will return metrics for the Microsoft S
 .. _agent_mssql_version:
 
 agent.mssql_version
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
-The **agent.mssql_version** check will return version information for
+The **agent.mssql_version** check returns version information for
 Microsoft SQL Server.
 
-**Attributes**
+Attributes
+~~~~~~~~~~~~
 
 +------------------+-----------------------------------+------------------------------------------------------+
 | Field            | Description                       | Validation                                           |
@@ -567,7 +620,7 @@ Microsoft SQL Server.
 .. _agent_plugin:
 
 agent.plugin
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
 The **agent.plugin** check will attempt to run a custom plugin on a host.
 
@@ -592,7 +645,8 @@ and the plugin will begin reporting metrics to the monitoring system,
 just like any other check. If the plugin requires any command line
 arguments, these may be specified using the optional ``args`` array.
 
-**Attributes**
+Attributes
+~~~~~~~~~~~~
 
 +-----------+---------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | Field     | Description                                             | Validation                                                                                    |
@@ -604,7 +658,8 @@ arguments, these may be specified using the optional ``args`` array.
 | timeout   | Plugin execution timeout in milliseconds                | Optional. Integer                                                                             |
 +-----------+---------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 
-**Metrics**
+Metrics
+~~~~~~~~~~~~
 
 Available metrics are determined by the plugin.
 
@@ -617,11 +672,12 @@ Contributions are welcome!
 
 ..  note::
 
-The Cloud Monitoring Agent is also capable of executing Cloudkick
-plugins, so if you are a Cloudkick user you can just drop in any
-existing plugin and it should just work.
+    The Cloud Monitoring Agent is also capable of executing Cloudkick
+    plugins, so if you are a Cloudkick user you can just drop in any
+    existing plugin and it should just work.
+    
 
-*8Creating Custom Plugins**
+**Creating Custom Plugins**
 
 Creating custom plugins is as simple as writing a script that prints a
 status and up to 10 metrics to standard out. The format of the status
@@ -645,14 +701,14 @@ a metric line is:
 
     metric <name> <type> <value>
 
-where:
+The following descriptions provide information about parameter values.
 
-*``name``*
+*name*
     is the name of the metric. No spaces are allowed. The format is
     alpha numeric with colon (:), underscore (\_) and dot (.) allowed.
     Example: ``memory_free``.
 
-*``type``*
+*type*
     is the type of the metric. This must be one of:
 
     ``int32``
@@ -678,7 +734,7 @@ where:
         operation). You should not store arbitrary, frequently changing
         values in a string metric.*
 
-*``value``*
+*value*
     is the value of the metric.
 
 Putting it all together, the output of a plugin that has successfully
@@ -700,11 +756,12 @@ non-zero:
 .. _agent_redis:
 
 agent.redis
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
 The **agent.redis** check will retrieve Redis server metrics
 
-**Attributes**
+Attributes
+~~~~~~~~~~~~
 
 +------------------+-----------------------------------+------------------------------------------------------+
 | Field            | Description                       | Validation                                           |
@@ -719,7 +776,8 @@ The **agent.redis** check will retrieve Redis server metrics
 +------------------+-----------------------------------+------------------------------------------------------+
 
 
-**Metrics**
+Metrics
+~~~~~~~~~~~~
 
 +--------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+----------+
 | Metric                         | Description                                                                                                                                   | Type     |
@@ -752,16 +810,18 @@ The **agent.redis** check will retrieve Redis server metrics
 .. _agent_windows_perfos:
 
 agent.windows_perfos
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
-The **agent.windows_perfos** check will return metrics regarding windows
+The **agent.windows_perfos** check returns metrics regarding windows
 performance data. This check is only available on Windows platforms.
 
-**Attributes*8
+Attributes
+~~~~~~~~~~~~
 
 No fields are present for this particular check type.
 
-**Metrics**
+Metrics
+~~~~~~~~~~~~
 +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------+
 | Metric                        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Type     |
 +===============================+============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================+==========+

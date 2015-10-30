@@ -3,6 +3,12 @@
 ~~~~~~~
 Metrics
 ~~~~~~~
+
+.. contents::
+   :local:
+   :depth: 1
+   
+   
 When Monitoring checks run, they generate metrics. These metrics
 are stored as full resolution data points in the Cloud Monitoring
 system. Full resolution data points are periodically rolled up

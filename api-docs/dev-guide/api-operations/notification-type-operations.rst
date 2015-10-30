@@ -3,6 +3,13 @@
 ~~~~~~~~~~~~~~~~~~
 Notification types
 ~~~~~~~~~~~~~~~~~~
+
+
+.. contents::
+   :local:
+   :depth: 1
+
+
 The notification type represents the type of notification
 you can configure. When you create a notification in Rackspace
 Cloud Monitoring, you must specify the notification type.
@@ -31,17 +38,12 @@ notification types:
 |               | Monitoring.                       |
 +---------------+-----------------------------------+
 
-* :ref:`email-notification`
-* :ref:`webhook-notification`
-* :ref:`pagerduty-notification`
-* :ref:`sms-notification`
-* :ref:`victorops-notification`
-* :ref:`notification-types-api`
 
 .. _email-notification:
 
 Email notification type
 ~~~~~~~~~~~~~~~~~~~~~~~
+
 The email notification takes the following parameters:
 
 +------------+---------------------------------+---------------------------+

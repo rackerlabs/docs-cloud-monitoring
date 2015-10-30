@@ -1,19 +1,28 @@
-.. _remote_check_types:
+.. _remote-check-type-ref:
 
+=====================
 Remote check types
--------------------
+=====================
+
+Rackspace Cloud Monitoring supports the following remote check types.
+
+.. contents::
+   :local:
+   :depth: 1
+   
 
 .. _remote_dns:
 
 remote.dns
-~~~~~~~~~~~~~~~~~~~~
+--------------
 
 The **remote.dns** check will run a DNS check against a given target. This
 check should assist in verifying functionality of a DNS server, for
 example ensuring that it is publishing the domains you think that it
 should be publishing.
 
-**Attributes**
+Attributes
+~~~~~~~~~~~~~~
 
 +----------------+-------------------------------------------------+---------------------------------------------------------------------------------------------+
 | Field          | Description                                     | Validation                                                                                  |
@@ -26,7 +35,8 @@ should be publishing.
 +----------------+-------------------------------------------------+---------------------------------------------------------------------------------------------+
 
 
-**Metrics**
+Metrics
+~~~~~~~~~~~~~~
 
 +----------+-------------------------------------------------------------------------------+----------+
 | Metric   | Description                                                                   | Type     |
@@ -41,11 +51,12 @@ should be publishing.
 .. _remote_ftp_banner:
 
 remote.ftp-banner
-~~~~~~~~~~~~~~~~~~~~
+-----------------------
 
 The **remote.ftp-banner** check will attempt to connect to a FTP server and verify that it re- sponds to the connection.
 
-**Attributes**
+Attributes
+~~~~~~~~~~~~~~
 
 +---------+-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
 | Field   | Description                                     | Validation                                                                                                                     |
@@ -53,7 +64,8 @@ The **remote.ftp-banner** check will attempt to connect to a FTP server and veri
 | port    | Specifies the port number. The default is 21.   | This field is optional. Must be a whole number (may be zero padded). This value must be an integer between 1-65535 inclusive   |
 +---------+-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
 
-**Metrics**
+Metrics
+~~~~~~~~~~~~~~
 
 +-----------------+----------------------------------------------------------------------------------------------------+----------+
 | Metric          | Description                                                                                        | Type     |
@@ -76,7 +88,7 @@ The **remote.ftp-banner** check will attempt to connect to a FTP server and veri
 .. _remote_http:
 
 remote.http
-~~~~~~~~~~~~~~~~~~~~
+--------------
 
 The **remote.http** check will try to connect to the server and retrieve the
 specified URL using the specified method, optionally with the password
@@ -87,11 +99,13 @@ if the SSL certificate is valid.
 
 ..  note::
 
-The maximum size of the content returned in a remote.http check is 32k,
-with overhead and compression taken into account. This limitation helps
-monitoring remain responsive.
+    The maximum size of the content returned in a remote.http check is 32k,
+    with overhead and compression taken into account. This limitation helps
+    monitoring remain responsive.
+    
 
-**Attributes**
+Attributes
+~~~~~~~~~~~~~~
 
 +------------------+--------------------------------------------------------------------------------------------------------+------------------------------------------------------+
 | Field            | Description                                                                                            | Validation                                           |
@@ -118,10 +132,11 @@ monitoring remain responsive.
 +------------------+--------------------------------------------------------------------------------------------------------+------------------------------------------------------+
 | body             | Body match regular expression (body is limited to 100k)                                                | Optional. String between 1 and 255 characters long   |
 +------------------+--------------------------------------------------------------------------------------------------------+------------------------------------------------------+
-| body_matches     | Body match regular expressions (body is limit- ed to 100k, matches are truncated to 80 char- acters)   |
+| body_matches     | Body match regular expressions (body is limit- ed to 100k, matches are truncated to 80 char- acters)   |                                                      |
 +------------------+--------------------------------------------------------------------------------------------------------+------------------------------------------------------+
 
-**Metrics**
+Metrics
+~~~~~~~~~~~~~~
 
 +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
 | Metric                            | Description                                                                                                                                                                                                                               | Type      |
@@ -162,12 +177,13 @@ monitoring remain responsive.
 .. _remote_imap_banner:
 
 remote.imap-banner
-~~~~~~~~~~~~~~~~~~~~
+-----------------------
 
 The **remote.imap-banner** check will attempt to connect to an IMAP server
 and verify that it response to the connection
 
-**Attributes**
+Attributes
+~~~~~~~~~~~~~~
 
 +---------+------------------------------+-----------------------------------------------------------------------------------+
 | Field   | Description                  | Validation                                                                        |
@@ -180,12 +196,13 @@ and verify that it response to the connection
 .. _remote_mssql_banner:
 
 remote.mssql-banner
-~~~~~~~~~~~~~~~~~~~~
+-----------------------
 
 The **remote.mssql-banner** check will attempt to connect to a Microsoft SQL
 database server and verify that it is accepting connections.
 
-**Attributes**
+Attributes
+~~~~~~~~~~~~~~
 
 +---------+------------------------------+-----------------------------------------------------------------------------------+
 | Field   | Description                  | Validation                                                                        |
@@ -198,12 +215,13 @@ database server and verify that it is accepting connections.
 .. _remote_mysql_banner:
 
 remote.mysql-banner
-~~~~~~~~~~~~~~~~~~~~
+------------------------
 
 The **remote.mysql-banner** check will attempt to connect to a MySQL
 database server and verify that it is accepting connections.
 
-**Attributes**
+Attributes
+~~~~~~~~~~~~~~
 
 +---------+------------------------------+-----------------------------------------------------------------------------------+
 | Field   | Description                  | Validation                                                                        |
@@ -216,11 +234,12 @@ database server and verify that it is accepting connections.
 .. _remote_ping:
 
 remote.ping
-~~~~~~~~~~~~~~~~~~~~
+---------------
 
 The **remote.ping** check will attempt to ping a server.
 
-**Attributes**
+Attributes
+~~~~~~~~~~~~~~
 
 +---------+-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
 | Field   | Description                                     | Validation                                                                                                                     |
@@ -229,7 +248,8 @@ The **remote.ping** check will attempt to ping a server.
 +---------+-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
 
 
-**Metrics**
+Metrics
+~~~~~~~~~~~~~~
 
 +-------------+--------------------------------------------------------------------------------------------------+----------+
 | Metric      | Description                                                                                      | Type     |
@@ -248,12 +268,13 @@ The **remote.ping** check will attempt to ping a server.
 .. _remote_pop3_banner:
 
 remote.pop3-banner
-~~~~~~~~~~~~~~~~~~~~
+---------------------
 
 The **remote.pop3-banner** check will attempt to connect to a POP3 mailbox
 server and verify that it responds to the connection.
 
-**Attributes**
+Attributes
+~~~~~~~~~~~~~~
 
 +---------+------------------------------+-----------------------------------------------------------------------------------+
 | Field   | Description                  | Validation                                                                        |
@@ -266,12 +287,13 @@ server and verify that it responds to the connection.
 .. _remote_postgresql_banner:
 
 remote.postgresql-banner
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------
 
 The **remote.postgresql-banner** check will attempt to connect to a
 PostgreSQL database server and verify that it is accepting connections.
 
-**Attributes**
+Attributes
+~~~~~~~~~~~~~~
 
 +---------+------------------------------+-----------------------------------------------------------------------------------+
 | Field   | Description                  | Validation                                                                        |
@@ -284,12 +306,13 @@ PostgreSQL database server and verify that it is accepting connections.
 .. _remote_smtp_banner:
 
 remote.smtp-banner
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------
 
 The **remote.smtp-banner** check will attempt to connect to a SMTP mail
 server and verify that a HELO/EHLO is received.
 
-**Attributes**
+Attributes
+~~~~~~~~~~~~~~
 
 +---------+------------------------------+-----------------------------------------------------------------------------------+
 | Field   | Description                  | Validation                                                                        |
@@ -299,7 +322,8 @@ server and verify that a HELO/EHLO is received.
 | ssl     | Enable SSL                   | Optional. Boolean.                                                                |
 +---------+------------------------------+-----------------------------------------------------------------------------------+
 
-**Metrics**
+Metrics
+~~~~~~~~~~~~~~
 
 +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
 | Metric                            | Description                                                                                                                                                                   | Type      |
@@ -324,7 +348,7 @@ server and verify that a HELO/EHLO is received.
 +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
 | cert_subject_alternative_name     | The alternative name for the subject of the certificate. This is only available when performing a check on an HTTPS server.                                                   |  String   |
 +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| duration                          | The time it took to finish executing the check in milliseconds.                                                                                                               |  Uint32   |                                                                                                                  |  Uint32   |
+| duration                          | The time it took to finish executing the check in milliseconds.                                                                                                               |  Uint32   |
 +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
 | tt_connect                        | The time to connect measured in milliseconds.                                                                                                                                 |  Uint32   |
 +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
@@ -334,14 +358,15 @@ server and verify that a HELO/EHLO is received.
 .. _remote_smtp:
 
 remote.smtp
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------
 
 The **remote.smtp** check will attempt to connect to a SMTP mail server,
 send an email from the 'from' parameter, to the 'to' parameter, with a
 payload specified by the 'payload' parameter setting the EHLO from host
 to the value in 'ehlo'.
 
-**Attributes**
+Attributes
+~~~~~~~~~~~~~~
 
 +------------+----------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
 | Field      | Description                                                                                                                            | Validation                                                                        |
@@ -356,17 +381,18 @@ to the value in 'ehlo'.
 +------------+----------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
 | starttls   | Specifies whether the connection should be upgraded to TLS/ SSL.                                                                       | Optional. Boolean.                                                                |
 +------------+----------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
-| to         | Specifies the To parameter. If this field is blank, a “quit” is issued before sending a to line, and the connection is terminated.     | Optional. String between 1 and 255 characters long.                          |
+| to         | Specifies the To parameter. If this field is blank, a “quit” is issued before sending a to line, and the connection is terminated.     | Optional. String between 1 and 255 characters long.                               |
 +------------+----------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
 
 .. _remote_ssh:
 
 remote.ssh
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------
 
 The **remote.ssh** check will attempt to SSH to a target.
 
-**Attributes**
+Attributes
+~~~~~~~~~~~~~~
 
 +---------+-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
 | Field   | Description                                     | Validation                                                                                                                     |
@@ -374,7 +400,8 @@ The **remote.ssh** check will attempt to SSH to a target.
 | port    | Specifies the port number. The default is 22.   | This field is optional. Must be a whole number (may be zero padded). This value must be an integer between 1-65535 inclusive   |
 +---------+-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
 
-**Metrics**
+Metrics
+~~~~~~~~~~~~~~
 
 +---------------+-----------------------------------------------------------------------------+----------+
 | Metric        | Description                                                                 | Type     |
@@ -387,7 +414,7 @@ The **remote.ssh** check will attempt to SSH to a target.
 .. _remote_tcp:
 
 remote.tcp
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------
 
 
 The **remote.tcp** check will attempt to connect to a host and port, and
@@ -395,7 +422,8 @@ optionally issue a banner match to ensure that the service is responding
 as specified. This can be used to test services that are not covered by
 the existing HTTP, SMTP, SSH, MySQL, etc. checks.
 
-**Attributes**
+Attributes
+~~~~~~~~~~~~~~
 
 +-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------+
 | Field           | Description                                                                                                                                   | Validation                                                              |
@@ -412,7 +440,8 @@ the existing HTTP, SMTP, SSH, MySQL, etc. checks.
 +-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------+
 
 
-**Metrics**
+Metrics
+~~~~~~~~~~~~~~
 
 +-----------------+-----------------------------------------------------------------------------------------------------------+----------+
 | Metric          | Description                                                                                               | Type     |
@@ -431,16 +460,17 @@ the existing HTTP, SMTP, SSH, MySQL, etc. checks.
 .. _remote_telnet_banner:
 
 remote.telnet-banner
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------
 
 The **remote.telnet-banner** check will attempt to connect to a Telnet (or
 similar protocol) server and verify that an appropriate banner is
 received.
 
-**Attributes**
+Attributes
+~~~~~~~~~~~~~~
 +-----------------+----------------------------------------------------------------------------------------------------------------------------------------+
 | Field           | Description                                        | Validation                                                                        |
-+== ==============+======================================================================================+=================================================+
++=================+====================================================+===================================================================================+
 | port            | Specifies the port number. (Default: 23)           | Optional. Whole number (may be zero padded). Integer between 1-65535 inclusive.   |
 +-----------------+------------------------------------------------------------------------------------------+---------------------------------------------+
 | banner_match    | Specifies the banner match check.                  | Optional. String between 1 and 255 characters long.                               |

@@ -2,6 +2,11 @@
 
 Changelogs
 ~~~~~~~~~~
+
+.. contents::
+   :local:
+   :depth: 1
+   
 The monitoring service records changelogs for alarm statuses.
 Changelogs are accessible as a time series collection. When accessing a
 time series collection, two parameters beyond the base paginated

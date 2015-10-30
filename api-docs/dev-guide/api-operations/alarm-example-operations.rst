@@ -3,6 +3,11 @@
 ~~~~~~~~~~~~~~
 Alarm examples
 ~~~~~~~~~~~~~~
+
+.. contents::
+   :local:
+   :depth: 1
+   
 Use the alarm examples API operations to view example alarms
 for the various checks in the system. The examples are presented
 as a template with parameters. Each of the parameters is

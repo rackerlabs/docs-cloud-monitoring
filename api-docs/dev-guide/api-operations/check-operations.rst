@@ -3,6 +3,12 @@
 ~~~~~~
 Checks
 ~~~~~~
+
+.. contents::
+   :local:
+   :depth: 1
+   
+
 A check is one of the foundational building blocks of the
 monitoring system. The check determines the parts or
 pieces of the entity that you want to monitor, the monitoring

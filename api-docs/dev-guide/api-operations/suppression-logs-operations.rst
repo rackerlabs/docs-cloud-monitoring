@@ -3,6 +3,11 @@
 ~~~~~~~~~~~~~~~~
 Suppression logs
 ~~~~~~~~~~~~~~~~
+
+.. contents::
+   :local:
+   :depth: 1
+   
 The monitoring service maintains a record of alarms that are suppressed
 during the time that a suppression is active. Suppression logs are
 accessible as a
