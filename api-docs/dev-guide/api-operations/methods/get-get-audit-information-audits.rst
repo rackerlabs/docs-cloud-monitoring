@@ -81,12 +81,12 @@ Response
                    "content-length": 254,
                    "connection": "close"
                },
-               "url": "/v1.0/entities", //combined with the "POST" operation, this info is used to create an entity
+               "url": "/v1.0/entities", // used to create an entity
                "timestamp": 1435174490595,
                "app": "entities",
                "query": null,
                "txnId": ".rh-nzQM.h-ele.r-Kxysr1TO.c-189.ts-1320879585331.v-ae0a53c",
-               "payload": "{\"label\":\"0NwhqrC05xKh22OEYZhcQdwkw\",\"ip_addresses\":{\"default\":\"10.0.0.2\"},\"metadata\":{\"all\":\"kinds\",\"of\":\"stuff\",\"can\":\"go\",\"here\":\"null is not a valid value\"}}", // details provided for the operation to create an entity
+               "payload": "{\"label\":\"0NwhqrC05xKh22OEYZhcQdwkw\",\"ip_addresses\":{\"default\":\"10.0.0.2\"},\"metadata\":{\"all\":\"kinds\",\"of\":\"stuff\",\"can\":\"go\",\"here\":\"null is not a valid value\"}}", // additional details for create operation
                "method": "POST", // create operation
                "account_id": "frank",
                "who": null,
