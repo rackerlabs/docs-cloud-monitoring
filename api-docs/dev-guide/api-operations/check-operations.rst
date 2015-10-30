@@ -22,7 +22,7 @@ for a single check (e.g. ensure both that a HTTPS server is responding and that
 it has a valid certificate).
 
 .. note::
-   For more information see, :rax-docs:`Available check types and fields
+   For more information see, :rax-devdocs:`Available check types and fields
    <cm/api/v1.0/cm-devguide/content/appendix-check-types.html>`.
 
 Checks are associated with a parent entity, therefore the REST URLs for

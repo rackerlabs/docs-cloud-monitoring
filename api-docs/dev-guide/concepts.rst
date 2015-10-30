@@ -110,7 +110,7 @@ Monitoring key terms and concepts
     alerted on, and archived. These metrics are gathered via checks
     using specified agent check types, and can be used with the other
     Cloud Monitoring features such as alarms. See
-    :rax-docs:`Agent check types <cm/api/v1.0/cm-devguide/content/appendix-check-types-agent.html>`
+    :rax-devdocs:`Agent check types <cm/api/v1.0/cm-devguide/content/appendix-check-types-agent.html>`
     for a list of agent check types.
 
    To learn about installing and configuring monitoring agents, read the

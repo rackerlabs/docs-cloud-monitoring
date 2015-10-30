@@ -26,6 +26,5 @@ of the monitoring service.
    install-configure
    api-reference
    api-operations/index
-   additional-reference-info/index
    tech-ref
    tech-ref-info/index
