@@ -92,7 +92,8 @@ Response
                "fields": [
                    {
                        "name": "phone_number",
-                       "description": "Phone number to send the notification to, with leading + and country code (E.164 format)",
+                       "description": "Phone number to send the notification to, with \
+                                       leading + and country code (E.164 format)",
                        "optional": false
                    }
                ]
@@ -110,8 +111,11 @@ Response
                "fields": [
                    {
                        "name": "category",
-                       "description": "A category by which to identify this notification. Categories will be prefixed by 'monitoring.alerts.', so they will end up looking like: 'monitoring.alerts.USER_DEFINED_CATEGORY'",
-                       "optional": false
+                       "description": "A category by which to identify this notification.  \
+                                       Categories will be prefixed by 'monitoring.alerts.',\ 
+                                       so they will end up looking like: \
+                                       'monitoring.alerts.USER_DEFINED_CATEGORY'", \
+                                       "optional": false \
                    }
                ]
            },
