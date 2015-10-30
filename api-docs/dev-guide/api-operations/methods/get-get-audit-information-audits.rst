@@ -86,7 +86,7 @@ Response
                "app": "entities",
                "query": null,
                "txnId": ".rh-nzQM.h-ele.r-Kxysr1TO.c-189.ts-1320879585331.v-ae0a53c",
-               "payload": "{\"label\":\"0NwhqrC05xKh22OEYZhcQdwkw\",\"ip_addresses\":{\"default\":\"10.0.0.2\"},\"metadata\":{\"all\":\"kinds\",\"of\":\"stuff\",\"can\":\"go\",\"here\":\"null is not a valid value\"}}", // additional details for create operation
+               "payload": "{\"label\":\"0NwhqrC05xKh22OEYZhcQdwkw\",\"ip_addresses\":{\"default\":\"10.0.0.2\"},\"metadata\":{\"all\":\"kinds\",\"of\":\"stuff\",\"can\":\"go\",\"here\":\"null is not a valid value\"}}", // details for create operation
                "method": "POST", // create operation
                "account_id": "frank",
                "who": null,
@@ -109,7 +109,7 @@ Response
                "app": "entities",
                "query": null,
                "txnId": ".rh-nzQM.h-ele.r-lobnFBE4.c-195.ts-1320879585945.v-ae0a53c",
-               "payload": "{\"label\":\"testing.example.com\"}", // details of the update operation, update the label
+               "payload": "{\"label\":\"testing.example.com\"}", // details of the update operation
                "method": "PUT", //update operation
                "account_id": "frank",
                "who": null,
