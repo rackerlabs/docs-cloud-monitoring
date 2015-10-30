@@ -10,11 +10,11 @@ Use the following links to learn about using the Rackspace Cloud Monitoring serv
 REST API and to find additional resources and tools for advanced configuration and use 
 of the monitoring service. 
 
-- :ref:`Developer Guide <developer-guide>`.
+- :ref:`Developer Guide <developer-guide>`
 
-- :ref:`API reference <api-reference>`.
+- :ref:`API reference <api-reference>`
   
-- :ref:`Technical reference <technical-reference-info-intro>`.
+- :ref:`Technical reference <technical-reference-info-intro>`
 
 .. toctree:: :hidden:
    :maxdepth: 2
