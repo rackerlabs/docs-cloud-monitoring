@@ -1,11 +1,11 @@
-===============================================================
-Cloud Monitoring release notes v1.2, May 10, 2012
-===============================================================
+v1.2, May 10, 2012
+--------------------
 
 These release notes correspond to the post-EAP release of Cloud
 Monitoring.
 
-**New Features**
+What's New
+~~~~~~~~~~~~
 
 -  **Test an Existing Check**
 
@@ -37,7 +37,8 @@ Monitoring.
    all the metrics you are checking are present, if they are not
    present, it automatically changes the alarm state to CRITICAL.
 
-**Enhancements**
+Enhancements
+^^^^^^^^^^^^^^
 
 -  Fixed a defect in the networking partitioning logic that leads to
    more consistent operation.
@@ -46,7 +47,8 @@ Monitoring.
 
 -  Added a meta-data field on the check type.
 
-**Resolved Issues**
+Resolved Issues
+~~~~~~~~~~~~~~~~
 
 -  Alarm states have a race condition. During replay it's possible to
    unintentionally store duplicates.
@@ -57,36 +59,3 @@ Monitoring.
    didn't match.
 
 -  Removed the ability to use duplicate monitoring zones.
-
-**Documentation**
-
--  Try some simple monitoring exercises in the Rackspace Cloud
-   Monitoring Getting Started Guide at:
-
-   http://docs.rackspace.com/cm/api/v1.0/cm-getting-started/content/Introduction.html.
-
--  Get reference information and examples for all endpoints in the
-   Rackspace Cloud Monitoring Developers Guide at:
-
-   https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-developer-guide.
-
-**Talk to Us**
-
-Do you have questions about Rackspace Cloud Monitoring? Would you like
-to give us feedback on how we're doing?
-
--  Join us in our chat room at: Freenode IRC at #cloudmonitoring
-
-   Or just click the following link:
-
-   `Webchat <http://webchat.freenode.net?channels=cloudmonitoring&uio=d4>`__
-
--  You can also provide feedback using our feedback form:
-
-   `Product Feedback
-   Forum <http://feedback.rackspacecloud.com/forums/71021-product-feedback/category/41927-cloud-monitoring>`__
-
--  Get support here:
-
-   `File a ticket
-   here <https://manage.rackspacecloud.com/Tickets/YourTickets.do>`__

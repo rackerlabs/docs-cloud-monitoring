@@ -1,12 +1,13 @@
-===========================================================================
-Cloud Monitoring release notes v1.4, August 22, 2012 
-==================================================================
+
+v1.4, August 22, 2012 
+-----------------------------------------------------
 
 
 These release notes correspond to the "Unlimited Availability" release
 of Cloud Monitoring.
 
-**New Features**
+What's new
+~~~~~~~~~~~
 
 -  *More HTTP Options:* Pass in custom headers for a ``remote.http``
    check. Depending on the site you're testing, this can be crucial in
@@ -20,7 +21,7 @@ of Cloud Monitoring.
    for detecting changes. For example, to detect an SSH fingerprint
    change, you'd construct an Alarm snippet like this:
 
-   .. code::  
+   .. code::
 
        if (metrics['fingerprint'] != previous(metrics['fingerprint'])) {
          return new AlarmStatus(CRITICAL, 'SSH fingerprint changed to #{fingerprint}');
@@ -37,13 +38,13 @@ of Cloud Monitoring.
 
    Subject:
 
-   .. code::  
+   .. code::
 
        ** CRITICAL: host server check on web1.domain.com **
 
    Body:
 
-   .. code::  
+   .. code::
 
        ================== Rackspace Cloud Monitoring Notification ===================
        Entity: web1.domain.com (50.56.179.42)
@@ -67,7 +68,7 @@ of Cloud Monitoring.
 
        This is an automated Cloud Monitoring notification. You received this email
        because you are listed as a notification recipient.
-                       
+
 
 -  *Retrieve overview by entityId or uri:* Include query strings
    *``uri``* or *``entityId``* to retrieve specific mapped Rackspace
@@ -77,13 +78,13 @@ of Cloud Monitoring.
    have up to 100 of them in a single request. See also `Views <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-api-operations/views-operations>`__.
 
 
-**Enhancements**
-
+Enhancements
+^^^^^^^^^^^^^
 -  Added friendly names for the
    `Alarm examples <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-api-operations/alarm-example-operations>`__.
 
 -  Add a "``metadata``\ " attribute to the
-   `alarm https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#attributes>`__
+   `alarm <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#attributes>`__
    API.
 
 -  Allow including no conditionals in the `alarm
@@ -91,7 +92,8 @@ of Cloud Monitoring.
    allowing you to set global filters, and rely on the check
    availability to determine the returned state.
 
-**Resolved Issues**
+Resolved Issues
+~~~~~~~~~~~~~~~~
 
 -  Fix un-setting optional attributes on an update (PUT).
 

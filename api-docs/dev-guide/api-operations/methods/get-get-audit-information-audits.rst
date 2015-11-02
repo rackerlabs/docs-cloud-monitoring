@@ -20,8 +20,7 @@ This operation can be paginated. For information, see
 :ref:`Paginated collections <paginated-collections>`.
 
 ..note::
-
-Rackspace Monitoring currently doesn't have a filtering functionality to filter for specific items. It is recommended that you write a script to shrink the long list of audit content.
+  Rackspace Monitoring currently doesn't have a filtering functionality to filter for specific items. It is recommended that you write a script to shrink the long list of audit content.
 
 The following table shows the possible response codes for this operation:
 
@@ -105,7 +104,7 @@ Response
                    "connection": "close"
                },
                "url": "/v1.0/entities/enuAc9qZRB", //the entity to update is enuAc9qZR
-               "timestamp": 1435174490595, 
+               "timestamp": 1435174490595,
                "app": "entities",
                "query": null,
                "txnId": ".rh-nzQM.h-ele.r-lobnFBE4.c-195.ts-1320879585945.v-ae0a53c",

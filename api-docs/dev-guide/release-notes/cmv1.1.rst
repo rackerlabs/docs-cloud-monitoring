@@ -1,12 +1,13 @@
-=================================================================
-Cloud Monitoring release notes v1.1, March 28, 2012 
-=================================================================
-
+v1.1, March 28, 2012 
+-----------------------
 
 These release notes correspond to the EAP for Rackspace Cloud
 Monitoring.
 
-**New Features**
+What's new
+~~~~~~~~~~~~
+
+This release includes the following updates:
 
 -  **Test Notifications**
 
@@ -30,7 +31,8 @@ Monitoring.
    We added email as a notification type so you can receive email on
    your alerts.
 
-**Enhancements**
+Enhancements
+^^^^^^^^^^^^^
 
 -  Renamed "Alarm History" to "Alarm Notification History."
 
@@ -51,7 +53,9 @@ Monitoring.
 -  Added detection for missing metrics and automatically output a failed
    state when detected.
 
-**Resolved Issues**
+
+Resolved issues
+~~~~~~~~~~~~~~~~~
 
 -  Fixed hashing method to prevent a collector affinity.
 
@@ -63,36 +67,3 @@ Monitoring.
 -  Added a label to the alarm object.
 
 -  Unified the language around the different states in the system.
-
-**Documentation**
-
--  Try some simple monitoring exercises in the Rackspace Cloud
-   Monitoring Getting Started Guide at:
-
-   http://docs.rackspace.com/cm/api/v1.0/cm-getting-started/content/Introduction.html.
-
--  Get reference information and examples for all endpoints in the
-   Rackspace Cloud Monitoring Developers Guide at:
-
-   https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/
-
-**Talk to Us**
-
-Do you have questions about Rackspace Cloud Monitoring? Would you like
-to give us feedback on how we're doing?
-
--  Join us in our chat room at: Freenode IRC at #cloudmonitoring
-
-   Or just click the following link:
-
-   `Webchat <http://webchat.freenode.net?channels=cloudmonitoring&uio=d4>`__
-
--  You can also provide feedback using our feedback form:
-
-   `Product Feedback
-   Forum <http://feedback.rackspacecloud.com/forums/71021-product-feedback/category/41927-cloud-monitoring>`__
-
--  Get support here:
-
-   `File a ticket
-   here <https://manage.rackspacecloud.com/Tickets/YourTickets.do>`__

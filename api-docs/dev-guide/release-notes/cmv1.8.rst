@@ -1,11 +1,11 @@
-==================================================================
-Cloud Monitoring release notes v1.8, August 13, 2014 
-==================================================================
+v1.8, August 13, 2014
+-------------------------
 
 These release notes correspond to a New Feature release of Cloud
 Monitoring.
 
-**New Features**
+What's new
+~~~~~~~~~~~~~
 
 -  SMS notification type is now available. For details, see the `SMS
    notification type
@@ -35,7 +35,8 @@ Monitoring.
    The service level name for Managed Cloud Service Level has been
    changed to Managed Operations Service Level.
 
-**Resolved Issues**
+Resolved Issues
+~~~~~~~~~~~~~~~~~~
 
 -  August 7, 2014. Agent: Stable package bump to 1.0.2-5. This releases
    a new version of the Rackspace Monitoring Agent, version 1.0.2-5.
@@ -96,47 +97,3 @@ Monitoring.
       URL:http://stable.packages.cloudmonitoring.rackspace.com/VERSION.
 
 -  Several minor bug fixes and reliability improvements.
-
-**Documentation**
-
--  Try some simple monitoring exercises in the Rackspace Cloud
-   Monitoring Getting Started Guide at:
-
-   http://docs.rackspace.com/cm/api/v1.0/cm-getting-started/content/Introduction.html.
-
--  Get reference information and examples for all endpoints in the
-   Rackspace Cloud Monitoring Developers Guide at:
-
-	https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#developer-guide
-
--  To see all the Rackspace API operations in one place, go
-   to\ `api.rackspace.com <http://api.rackspace.com/>`__. Use the links
-   on the left to see the different product API references.
-
--  To see the Cloud Monitoring API operations per language, view
-   the\ `Quick Start for Cloud
-   Monitoring <https://developer.rackspace.com/docs/cloud-monitoring/getting-started/>`__.
-   Use the tabs at the top to see the different supported languages.
-
-**Talk to Us**
-
-Do you have questions about Rackspace Cloud Monitoring? Would you like
-to give us feedback on how we're doing?
-
--  Join us in our chat room at: Freenode IRC at #cloudmonitoring
-
-   Or just click the following link:
-
-   `Webchat <https://webchat.freenode.net?channels=cloudmonitoring&uio=d4>`__
-
--  You can also provide feedback using our feedback form:
-
-   `Product Feedback
-   Forum <https://rackspace.uservoice.com/forums/71021-product-feedback>`__
-
--  Get support:
-
-   `File a ticket here (managed customers
-   only) <https://manage.rackspacecloud.com/Tickets/YourTickets.do>`__
-
-   `Rackspace Support site <http://support.rackspace.com/>`__
