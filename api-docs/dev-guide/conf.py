@@ -87,7 +87,7 @@ today_fmt = '%B %d, %Y'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = ['_build', 'samples', 'api-operations/methods', 
+exclude_patterns = ['_build', 'samples', 'api-operations/methods',
                     'tech-ref-info/check-types/*']
 
 # The reST default role (used for this markup: `text`) to use for all
@@ -112,7 +112,7 @@ pygments_style = 'sphinx'
 #rst_epilog = """.. |product name| replace:: 'Rackspace Monitoring'"""
 
 # External link library
-# For information about using the external link definitions, see 
+# For information about using the external link definitions, see
 # https://github.com/rackerlabs/docs-migration/tree/master/docs.
 
 extlinks = {
@@ -138,6 +138,19 @@ extlinks = {
     'rackerlabs': ('https://github.com/rackerlabs/%s', ''),
     'rocket': ('https://objectrocket.com/%s', '')
 }
+
+# Global variables that are replaced by the specified value during the build process.
++
++rst_epilog = """
++.. |apiservice| replace:: Rackspace Cloud Monitoring API
++.. |no changes| replace:: None for this release.
++.. |contract version| replace:: v1
++"""
++
++
++#Software release.version currently deployed in production.
++release='v1.'
++
 
 # A list of ignored prefixes for module index sorting.
 # modindex_common_prefix = []
