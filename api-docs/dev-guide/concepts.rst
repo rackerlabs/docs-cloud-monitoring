@@ -37,7 +37,7 @@ Monitoring key terms and concepts
     plan to send notifications. This process is called the "alerting
     workflow."
 
-    The alarms language lets you pinpoint the value that will trigger
+    The alarm language lets you pinpoint the value that will trigger
     the alarm. To learn how to use the alarm language to create robust
     monitors, see :ref:`Alert Triggering and Alarms <alert-triggers-and-alarms-reference>`.
 

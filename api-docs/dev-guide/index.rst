@@ -1,7 +1,7 @@
 .. _index:
 
 ===============================================
-Rackspace Cloud Monitoring API 1.0
+Rackspace Cloud Monitoring |contract
 ===============================================
 
 *Last updated:* |today|
@@ -16,6 +16,8 @@ of the monitoring service.
   
 - :ref:`Technical reference <technical-reference-info-intro>`
 
+-:ref: `Release notes <release-notes>`
+
 .. toctree:: :hidden:
    :maxdepth: 2
  
@@ -28,3 +30,4 @@ of the monitoring service.
    api-operations/index
    tech-ref
    tech-ref-info/index
+   release-notes/index
