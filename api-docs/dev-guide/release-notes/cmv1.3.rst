@@ -1,11 +1,11 @@
-================================================================
-Cloud Monitoring release notes v1.3, June 14, 2012 
-================================================================
+v1.3, June 14, 2012 
+--------------------------------
 
 These release notes correspond to the pre "Unlimited Availability"
 release of Cloud Monitoring.
 
-**New Features**
+What's new
+~~~~~~~~~~~~
 
 -  *Traceroute API:* This API lets you run a Traceroute from a
    Monitoring Zone to a Hostname or IP address. Like all Cloud
@@ -22,7 +22,7 @@ release of Cloud Monitoring.
    Alarm. For example, to include the HTTP status code from a
    ``remote.http`` Check, your Alarm could look like this:
 
-   .. code::  
+   .. code::
 
                        if (metrics['code'] != "200") {
                            return new AlarmStatus(CRITICAL, 'Bad HTTP Status: #{code}');
@@ -32,12 +32,13 @@ release of Cloud Monitoring.
    Docs <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#alarm-language>`__
 
 -  *Add payload to the remote.http check:* This allows you send a
-   request body during a HTTP/HTTPS request.
+   request body during a HTTP/HTTPS request. See also `remote.http
+   attributes <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#remote-check-types>`__.
 
-   `remote.http
-   attributes <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#remote-check-types>`__
 
-**Enhancements**
+Enhancements
+^^^^^^^^^^^^^^^^^
+
 
 -  Allow a user to specify the number of ICMP packets to send out on the
    ``remote.ping`` check.
@@ -51,7 +52,8 @@ release of Cloud Monitoring.
 -  Add the remote IP address of the collector that alerted you to the
    Webhook notification payload.
 
-**Resolved Issues**
+Resolved Issues
+~~~~~~~~~~~~~~~~~~~~~
 
 -  Fixed writable date and time fields that were supposed to be
    immutable.
@@ -59,7 +61,7 @@ release of Cloud Monitoring.
 -  Fixed the DSL string escaping to allow you to specify special
    characters, example below:
 
-   .. code::  
+   .. code::
 
                    if (metric['code'] nregex '2\\d\\d') {
                      return new AlarmStatus(CRITICAL, 'Invalid status code #{code}');
