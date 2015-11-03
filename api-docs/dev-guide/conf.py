@@ -144,7 +144,8 @@ extlinks = {
 rst_epilog = """
 .. |apiservice| replace:: Rackspace Cloud Monitoring API
 .. |no changes| replace:: None for this release.
-.. |contract version| replace:: v1
+.. |contract version| replace:: 1.0
+.. |product name| replace:: 'Rackspace Monitoring'
 """
 
 # Software release.version currently deployed in production.
