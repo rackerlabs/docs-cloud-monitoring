@@ -9,7 +9,7 @@ Rackspace Cloud Monitoring supports the following agent check types.
 .. contents::
    :local:
    :depth: 1
-   
+
 
 .. _agent_apache_check:
 
@@ -178,7 +178,7 @@ Attributes
 | Field     | Description                  | Validation                          |
 +===========+==============================+=====================================+
 | target    | The mount point to check.    | String between 1 and 512            |
-|           | :code:`/var` or :code:`C:\\` | characters long.                    |
+|           | :code:`/var` or :code:`C:\`  | characters long.                    |
 +-----------+------------------------------+-------------------------------------+
 
 
@@ -207,7 +207,7 @@ Metrics
 | free_files      | Number of free inodes on the filesystem.         | Int64    |
 +-----------------+--------------------------------------------------+----------+
 
-.. note:: 
+.. note::
 
    The `files` and `free_files` metrics are not available on Windows.
 
@@ -287,7 +287,7 @@ The **agent.mysql** check will retrieve MySQL server metrics
 
     Except for the replication.slave\_running' metric, all metrics starting
     with replication will not show up if there is no slave running.
-    
+
 
 Attributes
 ~~~~~~~~~~~~~
@@ -675,7 +675,7 @@ Contributions are welcome!
     The Cloud Monitoring Agent is also capable of executing Cloudkick
     plugins, so if you are a Cloudkick user you can just drop in any
     existing plugin and it should just work.
-    
+
 
 **Creating Custom Plugins**
 
