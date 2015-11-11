@@ -1,26 +1,14 @@
 v1.3, June 14, 2012 
 --------------------------------
 
-These release notes correspond to the pre "Unlimited Availability"
-release of Cloud Monitoring.
+These release notes correspond to the Limited Availability release of Cloud Monitoring.
 
 What's new
 ~~~~~~~~~~~~
 
--  *Traceroute API:* This API lets you run a Traceroute from a
-   Monitoring Zone to a Hostname or IP address. Like all Cloud
-   Monitoring features, the Traceroute API is fully dual stack,
-   supporting both IPv4 and IPv6. The Traceroute API can be used to
-   debug networking issues between the Cloud Monitoring collectors and
-   your infrastructure.
+•	The new Traceroute API lets you run a traceroute from a monitoring zone to a hostname or IP address. Like all Cloud Monitoring features, the Traceroute API is fully dual stack, supporting both IPv4 and IPv6. The Traceroute API can be used to debug networking issues between the Cloud Monitoring collectors and your infrastructure. See the `Traceroute section <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#perform-a-traceroute-from-a-monitoring-zone>`__.
 
-   `Traceroute
-   Docs <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#perform-a-traceroute-from-a-monitoring-zone>`__
-
--  *Metric interpolation on the Alarm status string:* This allows you to
-   include metrics from a Check in the status string returned by an
-   Alarm. For example, to include the HTTP status code from a
-   ``remote.http`` Check, your Alarm could look like this:
+•	Metric interpolation on the alarm status string enables you to include metrics from a check in the status string returned by an alarm. For example, to include the HTTP status code from a remote.http check, your alarm could look as follows:
 
    .. code::
 
@@ -28,41 +16,34 @@ What's new
                            return new AlarmStatus(CRITICAL, 'Bad HTTP Status: #{code}');
                        }
 
-   `Alarm DSL
-   Docs <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#alarm-language>`__
+   For more information, see `Alarm language <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#alarm-language>`__
 
--  *Add payload to the remote.http check:* This allows you send a
-   request body during a HTTP/HTTPS request. See also `remote.http
-   attributes <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#remote-check-types>`__.
+•	Payload was added to the remote.http check, which enables you send a request body during a HTTP/HTTPS request. See also `remote.http attributes <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#remote-check-types>`__.
+
+•	You can specify the number of ICMP packets to send out on the ``remote.ping check``.
+
+•	The Certificate Authority chain used to validate SSL certificates has been updated, which will result in fewer false positives.
+
+•	The ``remote.tcp`` check now features the ``body_match_metric`` when you specify the ``send_body`` command.
+
+•	You can now add the remote IP address of the collector that alerted you to the webhook notification payload.
 
 
-Enhancements
-^^^^^^^^^^^^^^^^^
-
-
--  Allow a user to specify the number of ICMP packets to send out on the
-   ``remote.ping`` check.
-
--  Updated Certificate Authority chain used to validate SSL
-   certificates, resulting in less false positives.
-
--  ``remote.tcp`` check now features the ``body_match_metric`` when
-   specifying the send\_body command.
-
--  Add the remote IP address of the collector that alerted you to the
-   Webhook notification payload.
-
-Resolved Issues
+Resolved issues
 ~~~~~~~~~~~~~~~~~~~~~
 
--  Fixed writable date and time fields that were supposed to be
-   immutable.
+•	Fixed writable date and time fields that were supposed to be immutable.
 
--  Fixed the DSL string escaping to allow you to specify special
-   characters, example below:
+•	Fixed the DSL string escaping to allow you to specify special characters. See the following example:
 
    .. code::
 
                    if (metric['code'] nregex '2\\d\\d') {
                      return new AlarmStatus(CRITICAL, 'Invalid status code #{code}');
                    }
+
+
+Known issues
+~~~~~~~~~~~~~~~~~~~
+
+|no changes|

@@ -3,23 +3,14 @@ v1.4, August 22, 2012 
 -----------------------------------------------------
 
 
-These release notes correspond to the "Unlimited Availability" release
-of Cloud Monitoring.
+These release notes correspond to the Unlimited Availability release of Cloud Monitoring.
 
 What's new
 ~~~~~~~~~~~
 
--  *More HTTP Options:* Pass in custom headers for a ``remote.http``
-   check. Depending on the site you're testing, this can be crucial in
-   determining if your site is up.
+•	You can pass in custom headers for a remote.http check. Depending on the site that you’re testing, this can be crucial in determining if your site is up. See `remote.http <https:/developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#remote-http>`__.
 
-   `remote.http
-   Docs <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#remote-http>`__
-
--  *Add a previous operator to the Alarm Language:* This allows you to
-   look at a metric value in the previous time period. It is very useful
-   for detecting changes. For example, to detect an SSH fingerprint
-   change, you'd construct an Alarm snippet like this:
+•	You can add a previous operator to the Alarm Language, which enables you to look at a metric value in the previous time period. It is useful for detecting changes. For example, to detect an SSH fingerprint change, you’d construct an Alarm snippet like the following one:
 
    .. code::
 
@@ -27,14 +18,9 @@ What's new
          return new AlarmStatus(CRITICAL, 'SSH fingerprint changed to #{fingerprint}');
        }
 
-   `Alarm DSL
-   Docs <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#alarm-language>`__
+   For more information, see `Alarm language <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#alarm-language>`__.
 
--  *Improved email alerts:* Included in emails are the observations of
-   the particular check from each monitoring zone. This allows you to
-   get visibility on the status from any of the included monitoring
-   zones of a check. We've also reformatted the message to look more
-   user friendly.
+•	Email alerts have been improved by including in them observations of the particular check from each monitoring zone. This enables you to get visibility on the status from any of the included monitoring zones of a check. Additionally, the message has been reformatted to look more user friendly.
 
    Subject:
 
@@ -70,40 +56,29 @@ What's new
        because you are listed as a notification recipient.
 
 
--  *Retrieve overview by entityId or uri:* Include query strings
-   *``uri``* or *``entityId``* to retrieve specific mapped Rackspace
-   Cloud Servers (for now). You can also pull down a set of entities by
-   referencing their id's. Keep in mind you cannot combine pulling both
-   *``uri``*'s and *``entityId``*'s in the same request, but you can
-   have up to 100 of them in a single request. See also `Views <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-api-operations/views-operations>`__.
+•	You can include the query strings ``uri`` or ``entityId`` to retrieve specific mapped Rackspace Cloud Servers. You can also retrieve a set of entities by referencing their IDs. You cannot combine retrieving both URIs and entity IDs in the same request, but you can have up to 100 of them in a single request.  See also `Views <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-api-operations/views-operations>`__.
+
+• Friendly names were added for the `alarm examples <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-api-operations/alarm-example-operations>`__.
+
+•	A metadata attribute was added to the `alarm <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#attributes>`__ API.
+
+•	You can now include no conditionals in the `alarm language <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#alarm-language>`__, which enables you to set global filters and rely on the check availability to determine the returned state.
 
 
-Enhancements
-^^^^^^^^^^^^^
--  Added friendly names for the
-   `Alarm examples <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-api-operations/alarm-example-operations>`__.
-
--  Add a "``metadata``\ " attribute to the
-   `alarm <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#attributes>`__
-   API.
-
--  Allow including no conditionals in the `alarm
-   language <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#alarm-language>`__,
-   allowing you to set global filters, and rely on the check
-   availability to determine the returned state.
-
-Resolved Issues
+Resolved issues
 ~~~~~~~~~~~~~~~~
 
--  Fix un-setting optional attributes on an update (PUT).
+•	Fixed unsetting optional attributes on an update (PUT)
 
--  Fix the ``check_type`` -> ``alarm`` mapping for delivering
-   inconsistent and non-deterministic updates.
+•	Fixed the ``check_type`` to ``alarm`` mapping for delivering inconsistent and non-deterministic updates
 
--  Fixed how we handle zlib streams when inflating a gzip http stream.
+•	Fixed how zlib streams are handled when a gzip HTTP stream is inflated
 
--  When we combined two services we had briefly did not insert the
-   initial ``OK`` state for the ``alarm change log``, this is fixed now.
+•	Inserted the initial ``OK`` state for the ``alarm change log``
 
--  Fixed updating the ``target_alias`` after setting the
-   ``target_hostname`` on the initial creation, and vice-versa.
+•	Fixed updating the ``target_alias`` after setting the ``target_hostname`` on the initial creation, and vice versa.
+
+Known issues
+~~~~~~~~~~~~~~~~~~~
+
+|no changes|
