@@ -1,69 +1,52 @@
 v1.1, March 28, 2012 
 -----------------------
 
-These release notes correspond to the EAP for Rackspace Cloud
-Monitoring.
+These release notes correspond to the Early Access release of Cloud Monitoring.
 
 What's new
 ~~~~~~~~~~~~
 
-This release includes the following updates:
+•	You can test execute a notification. This makes it easy to execute test checks and verify that you’ll receive the payload. You can also test existing notifications.
 
--  **Test Notifications**
+•	Support has been added for JSONP for retrieval in the API. This gives you the tools to access the API from the browser directly.
 
-   Test execute a notification. This makes it easy to execute test
-   checks and verify that you'll receive the payload. We also added the
-   ability to test existing notifications as well.
+•	Rate limiting and the time window of the rate limiting are now exposed to you through headers. This helps us with transparency and lets you know when you’re getting close to reaching your account rate limits.
 
--  **JSONP Support**
+•	An email notification type has been added so that you can receive email on your alerts.
 
-   Support for JSONP for retrieval in the API. This gives you the tools
-   to access the API from the browser directly.
+•	Alarm History has been renamed to Alarm Notification History.
 
--  **Rate Limiting Exposed**
+•	A key-value hash to facilitate multiple body matches is supported.
 
-   We now expose rate limiting and the time window of the rate limiting
-   to you through headers. This helps us with transparency and lets you
-   know when you're getting close to reaching your account rate limits.
+•	Previous state has been added to the webhook payload.
 
--  **Email Notifications**
+•	Audits now expose the tenant ID.
 
-   We added email as a notification type so you can receive email on
-   your alerts.
+•	HTTP CORS headers have been added so that you can now do cross-domain requests.
 
-Enhancements
-^^^^^^^^^^^^^
+•	The notification history log and the alarm change log have been unified.
 
--  Renamed "Alarm History" to "Alarm Notification History."
+•	Support dealing with time ordered mixed results has been improved.
 
--  Now support a key-value hash to facilitate multiple body matches.
+•	Type checking for the alarm subsystem has been improved.
 
--  Added previous state to webhook payload.
-
--  Audits now expose the tenantId.
-
--  Added HTTP CORS headers so you can now do cross domain requests.
-
--  Unified the notification history log and the alarm change log.
-
--  Improved support dealing with time ordered mixed results.
-
--  Improved type checking for the alarm subsystem.
-
--  Added detection for missing metrics and automatically output a failed
-   state when detected.
+•	Detection for missing metrics has been added, as well as automatically outputting a failed state when detected.
 
 
 Resolved issues
 ~~~~~~~~~~~~~~~~~
 
--  Fixed hashing method to prevent a collector affinity.
+•	Fixed hashing method to prevent a collector affinity
 
--  Improved the location header returned so it works in non-standard
-   port setups.
+•	Improved the location header returned so it works in nonstandard port setups
 
--  Added previous state to the webhook field.
+•	Added previous state to the webhook field
 
--  Added a label to the alarm object.
+•	Added a label to the alarm object
 
--  Unified the language around the different states in the system.
+•	Unified the language around the different states in the system
+
+Known issues
+~~~~~~~~~~~~~~~~~~~
+
+|no changes|

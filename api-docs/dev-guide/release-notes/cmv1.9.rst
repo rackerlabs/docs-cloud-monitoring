@@ -1,76 +1,54 @@
 v1.9, December 1, 2014 
 ----------------------------
 
-These release notes correspond to a New Feature release of Cloud
-Monitoring.
+These release notes correspond to a new-feature release of Cloud Monitoring.
 
 What's new
 ~~~~~~~~~~~~~~
 
--  Email notifications were improved to indicate when an observation was
-   too old to be included in a consistency calculation.
+•	Email notifications were improved to indicate when an observation was too old to be included in a consistency calculation.
 
--  In place automatic agent upgrades was released and documented.
-   Starting with agent version 1.1.0-15, all installed agents will
-   automatically upgrade when a new version is released. You can opt out
-   of automatic upgrades. See the *Rackspace Cloud Monitoring
-   Developer's Guide* for details.
+•	In-place automatic agent upgrades was released and documented. Starting with agent version 1.1.0-15, all installed agents will automatically upgrade when a new version is released. You can opt out of automatic upgrades. For details, see the `Developer Guide <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/`>__
 
--  The MySQL agent check type was released and documented. See the
-   *Rackspace Cloud Monitoring Developer's Guide* for details.
+•	The MySQL agent check type was released and documented. For details, see the `Developer Guide <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/>`__.
+
 
 Resolved issues
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Agent-specific
-^^^^^^^^^^^^^^^^
+The following agent-specific changes were made:
 
--  November 13, 2014. Stable package bump to 1.1.0-15. A minor version
-   bump to fix a memory issue in an upstream package.
+•	Fixed a memory issue in an upstream package
 
--  November 4, 2014. Agent: Stable package bump to 1.1.0-14, includes
-   the following fixes:
+•	Corrected behavior for configuring properties with ServiceNet
 
-   -  Correct behavior for configuring properties with service net.
+•	Fixed log rotation permissions for Red Hat based systems
 
-   -  Fix log rotation permissions for Redhat based systems.
+•	Added endpoint to return targets for agent plug-ins
 
--  October 27, 2014. Agent: Stable package bump to 1.1.0-5, includes the
-   following fixes and enhancements:
+•	Added endpoint to return the list of plug-ins
 
-   -  Targets for agent plugins.
+•	Fixed memory leak in FS_CALL
 
-   -  Returns the list of plugins.
+•	Implemented fix for custom endpoints
 
-   -  Memory leak fix in FS\_CALL.
+•	Implemented fix for PowerShell parameter expansion
 
-   -  Config: Fix is custom endpoints.
+•	Fixed issue with the MySQL check type
 
-   -  Windows: Fix for powershell parameter expansion.
+•	Fixed issue with capturing a socket error on connect
 
-   -  Initial in place agent upgrades support.
+•	Added Windows MSI installation for all users by default. This fixes some issues with the Rackspace Monitoring Agent not appearing on Windows in Add/Remove programs when installed by one user and viewed by another.
 
--  September 18, 2014. Agent: Stable package bump to 1.0.3-4. Fixes
-   issue with MySQL check type.
+•	Implemented change to not close a MySQL connection on query errors
 
--  September 18, 2014. Agent: Stable package bump to 1.0.3-3. Fixes fix
-   capturing a socket error on connect.
+•	Added support for HTTP proxy CONNECT
 
--  September 14, 2014. Agent: Stable package bump to 1.0.3-0. Changes
-   include:
+•	Upgraded MySQL check with new metrics
 
-   -  Windows MSI to install for all users by default. This fixes some
-      issues with the Rackspace Monitoring Agent not showing up on
-      Windows in Add/Remove programs when installed by one user and
-      viewed by another.
+•	Added several minor bug fixes and reliability improvements
 
-   -  Do not close MySQL connection on query errors.
+Known issues
+~~~~~~~~~~~~~~~~~~~
 
--  August 18, 2014. Agent: Stable package bump to 1.0.2-13. Changes
-   include:
-
-   -  HTTP proxy CONNECT support.
-
-   -  Upgraded MySQL check with new metrics.
-
--  Several minor bug fixes and reliability improvements.
+|no changes|
