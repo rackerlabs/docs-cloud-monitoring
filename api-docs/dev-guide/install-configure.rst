@@ -1101,7 +1101,7 @@ Configure the agent manually
  
 **To manually set up the agent**
 
-#. If you have not installed ``raxmon`` yet, install it on your local
+1. If you have not installed ``raxmon`` yet, install it on your local
    workstation. See :ref:`Install and configure raxmon <install-configure-raxmon>`.
 
    If you prefer to use the API, instead of the raxmon CLI, see the
@@ -1110,7 +1110,7 @@ Configure the agent manually
    and `Create an agent
    token <http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-agent-tokens.html>`__.
 
-#. **Create an entity in the monitoring service, as follows:**
+2. **Create an entity in the monitoring service, as follows:**
 
    .. code::
 
@@ -1125,7 +1125,7 @@ Configure the agent manually
    ``ent12345``. You need to supply this entity ID for ``<entityId>`` in
    the next several steps.
 
-#. Assign an ID to your agent and associate it with the server entity
+3. Assign an ID to your agent and associate it with the server entity
    that you just created. Cloud Monitoring uses this ID for two-way
    communication between the agent and the Cloud Monitoring endpoint.
 
@@ -1145,7 +1145,7 @@ Configure the agent manually
        the server hostname, although the ID does not need to match or
        contain any part of the entity label or the entity ID.
 
-#. **Create an agent token.**
+4. **Create an agent token.**
 
    The agent uses an agent token to authenticate with the Cloud
    Monitoring endpoint. The token ensures that no one masquerades as
@@ -1158,7 +1158,7 @@ Configure the agent manually
    ``<agent-token-label>`` is the name for your agent token. You can use
    any name.
 
-#. Enter the following command to see a list of tokens, including the
+5. Enter the following command to see a list of tokens, including the
    one you just created.
 
    .. code::
@@ -1167,9 +1167,9 @@ Configure the agent manually
 
    Note of the agent token value to use in the next few steps.
 
-#. Log in as the root user on the server where you installed the agent.
+6. Log in as the root user on the server where you installed the agent.
 
-#. Use ``vi`` or your favorite text editor to edit the
+7. Use ``vi`` or your favorite text editor to edit the
    rackspace-monitoring-agent.cfg file, or create it if it does not
    exist.
 
@@ -1177,7 +1177,7 @@ Configure the agent manually
 
        $ sudo vi /etc/rackspace-monitoring-agent.cfg
 
-#. Add the following content to the ``rackspace-monitoring-agent.cfg``
+8. Add the following content to the ``rackspace-monitoring-agent.cfg``
    file:
 
    .. code::
@@ -1194,29 +1194,45 @@ Configure the agent manually
        The token value returned for your agent token by the
        **raxmon-agent-tokens-list** command.
 
-#. To set the HTTP proxy variable, add this:
+9. To set the HTTP proxy variable, add the following entry to the configuration file, where ``ip_address:port`` stands for IP address for the resource on which you're installing the agent:
 
    .. code::
 
        $ HTTP_PROXY=<ip_address:port> rackspace-monitoring-agent --setup
 
-   You can also use an FQDN:
+
+  You can optionally configure the agent to use a reverse proxy to look up custom SRV records by having it proxy to LON, DFW, and ORD as shown in the following example:
+
+
+    .. code::
+
+        monitoring_query_endpoints
+        _monitoringagent._tcp.dfw1.prod.monitoring.api.rackspacecloud.com
+        _monitoringagent._tcp.ord1.prod.monitoring.api.rackspacecloud.com
+        _monitoringagent._tcp.lon3.prod.monitoring.api.rackspacecloud.com
+
+  To optionally force a connection to a particular IP address and port, add the following to your agent configuration file:
+
+  .. code::
+
+      monitoring_endpoints 192.168.95.178:50051, 192.168.95.178:50052, 192.168.95.178:50053
+
+10. To use an FQDN, add the following entry to the configuration file where ``FQDN`` stands for the fully-qualified domain name for the resource on which you're installing the agent:
 
    .. code::
 
        $ HTTP_PROXY=<FQDN> rackspace-monitoring-agent --setup
 
-   The placeholders in the command are defined as follows:
+11. To disable automatic updates for your monitoring agent, add the following :
 
-   ``<ip_address:port> or                   <FQDN>``
-       The IP address and port, or fully qualified domain name, for the
-       resource on which you are installing the agent.
-
-#. .. code::
+  .. code::
 
        monitoring_update disabled
 
 You're now ready to start the agent. See :ref:`Start the agent <start-the-agent>`.
+
+For more information about the agent configuration file, see :ref:`Agent configuration file <agent-configuration-file>`.
+
 
 
 .. _configure-agent-with-YAML:
@@ -1594,44 +1610,3 @@ some agent checks.
 
 .. _entity: http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-entities.html
 .. _checks: http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-checks.html
-
-.. _configure_agent_behind_proxy:
-
-Optional: Manually configure the Cloud Monitoring agent to function behind an HTTPS proxy
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Optionally, you can configure the Cloud monitoring agent to function behind an HTTPs proxy by adding the following attribute to the agent configuration file (rackspace-monitoring-agent.cfg).
-
-``monitoring_proxy_url``
-
-You can also configure a reverse proxy by completing the following steps:
-
-1. Log into your Cloud server and navigate to the agent configuration file (rackspace-monitoring-agent.cfg).
-
-
-2. Specify the monitoring token by setting the following variable: ``monitoring_token [token]``.
-
-  If the agent cannot determine the ID, you can set up token and a monitoring ID for the agent by adding the following lines to the config file and replacing ``<token`` and ``<theAgentIDInMaaS>`` with the actual values:
-
-     .. code::
-
-        monitoring_token <token>
-        monitoring_id <theAgentIDInMaaS>
-
-3. Configure the agent to use a reverse proxy to look up custom SRV records and to proxy to LON, DFW, and ORD as shown in the following example:
-
-   .. code::
-
-      monitoring_query_endpoints
-      _monitoringagent._tcp.dfw1.prod.monitoring.api.rackspacecloud.com
-      _monitoringagent._tcp.ord1.prod.monitoring.api.rackspacecloud.com
-      _monitoringagent._tcp.lon3.prod.monitoring.api.rackspacecloud.com
-
-  Alternatively, to force a connection to a particular IP address and port, you can try the following configuration option:
-
-  .. code::
-
-      monitoring_endpoints 192.168.95.178:50051, 192.168.95.178:50052, 192.168.95.178:50053
-
-
-For more information, see :ref:`Agent configuration file <agent-configuration-file>`. 
