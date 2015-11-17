@@ -919,7 +919,8 @@ agent:
    file agent configuration lets you create a re-usable YAML file for
    each check you want for the agent.
 
-.. _agent_configuration_file:
+
+.. _agent-configuration-file:
 
 Agent configuration file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -931,26 +932,21 @@ The configuration information for a monitoring agent is stored in an agent confi
 
 You can specify the following attributes in the agent configuration file:
 
-+----------------------------+---------------------------------------------------------+
-| Attribute                  | Description                                             |
-+============================+=========================================================+
-| monitoring_token           | Specifies the authentication token.                     |
-+----------------------------+---------------------------------------------------------+
-| monitoring_id              | Specifies the monitoring id of the agent.               |
-+----------------------------+---------------------------------------------------------+
-| monitoring_snet_region     | Specifies and enables the ServiceNet endpoints for the  |
-|                            | following regions DFW, ORD, LON, SYD, HKG, IAD.         |
-+----------------------------+---------------------------------------------------------+
-| monitoring_endpoints       | Specifies on or more endpoints in the ``<host IP:port>``|
-|                            | format. These values must be comma delimited.           |
-+----------------------------+---------------------------------------------------------+
-| monitoring_proxy_url       | Specifies a HTTP proxy. This configuration must support |
-|                            | CONNECT on port 443. Additionally, ``HTTP_PROXY``       |
-|                            | and ``HTTPS_PROXY`` are supported.                      |
-+----------------------------+---------------------------------------------------------+
-| monitoring_query_endpoints | Specifies a list of SRV queries, the values             |
-|                            | must be comma separated.                                |
-+----------------------------+---------------------------------------------------------+
++--------------------------------+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Option                         | Type                                         | Description                                                                                                                                                                                                                                                                                         |
++================================+==============================================+=====================================================================================================================================================================================================================================================================================================+
+| monitoring\_token              | string                                       | Required. This token is a string that is either provided by the API or created during the --setup process. This token gives the agent access to the monitoring services for an account.                                                                                                             |
++--------------------------------+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| monitoring\_id                 | string                                       | Optional. Specifies a user-provided id string that identifies this agent to the monitoring services.                                                                                                                                                                                                |
++--------------------------------+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| monitoring\_snet\_region       | string                                       | Optional. This option tells the agent to connect to the agent endpoints over the Rackspace ServiceNet (instead of over the public Internet). Valid regions are DFW, ORD, LON, SYD, HKG, and IAD. If option is set, the value must match the region of the agent and the service it is running on.   |
++--------------------------------+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| monitoring\_endpoints          | comma-delimited sets of ``ip:port`` values   | Optional. Provides a series of endpoint IP addresses for the agent to connect to instead of the default endpoint addresses.                                                                                                                                                                         |
++--------------------------------+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| monitoring\_query\_endpoints   | comma-delimited sets of ``ip:port`` values   | Optional. Provides a series of API IP addresses for the agent to connect to instead of the default API addresses.                                                                                                                                                                                   |
++--------------------------------+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| monitoring\_proxy\_url         | string                                       | Optional. Provides a URL string to a HTTP Proxy service that supports the CONNECT command. This configuration must support CONNECT on port 443. Additionally, ``HTTP_PROXY`` and ``HTTPS_PROXY`` are supported.                                                                                     |
++--------------------------------+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. _configure-agent-with-setup:
 
@@ -1598,3 +1594,44 @@ some agent checks.
 
 .. _entity: http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-entities.html
 .. _checks: http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-checks.html
+
+.. _configure_agent_behind_proxy:
+
+Optional: Manually configure the Cloud Monitoring agent to function behind an HTTPS proxy
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Optionally, you can configure the Cloud monitoring agent to function behind an HTTPs proxy by adding the following attribute to the agent configuration file (rackspace-monitoring-agent.cfg).
+
+``monitoring_proxy_url``
+
+You can also configure a reverse proxy by completing the following steps:
+
+1. Log into your Cloud server and navigate to the agent configuration file (rackspace-monitoring-agent.cfg).
+
+
+2. Specify the monitoring token by setting the following variable: ``monitoring_token [token]``.
+
+  If the agent cannot determine the ID, you can set up token and a monitoring ID for the agent by adding the following lines to the config file and replacing ``<token`` and ``<theAgentIDInMaaS>`` with the actual values:
+
+     .. code::
+
+        monitoring_token <token>
+        monitoring_id <theAgentIDInMaaS>
+
+3. Configure the agent to use a reverse proxy to look up custom SRV records and to proxy to LON, DFW, and ORD as shown in the following example:
+
+   .. code::
+
+      monitoring_query_endpoints
+      _monitoringagent._tcp.dfw1.prod.monitoring.api.rackspacecloud.com
+      _monitoringagent._tcp.ord1.prod.monitoring.api.rackspacecloud.com
+      _monitoringagent._tcp.lon3.prod.monitoring.api.rackspacecloud.com
+
+  Alternatively, to force a connection to a particular IP address and port, you can try the following configuration option:
+
+  .. code::
+
+      monitoring_endpoints 192.168.95.178:50051, 192.168.95.178:50052, 192.168.95.178:50053
+
+
+For more information, see :ref:`Agent configuration file <agent-configuration-file>`. 
