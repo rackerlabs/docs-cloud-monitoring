@@ -1208,9 +1208,9 @@ Configure the agent manually
       monitoring_query_endpoints _monitoringagent._tcp.dfw1.prod.monitoring.api.rackspacecloud.com, _monitoringagent._tcp.ord1.prod.monitoring.api.rackspacecloud.com, _monitoringagent._tcp.lon3.prod.monitoring.api.rackspacecloud.com
 
 
-  To optionally force a connection to a particular IP address and port, add the following to your agent configuration file:
+   To optionally force a connection to a particular IP address and port, add the following to your agent configuration file:
 
-  .. code::
+   .. code::
 
       monitoring_endpoints 192.168.95.178:50051, 192.168.95.178:50052, 192.168.95.178:50053
 
@@ -1224,7 +1224,7 @@ Configure the agent manually
 
   .. code::
 
-      monitoring_update disabled
+        monitoring_update disabled
 
 You're now ready to start the agent. See :ref:`Start the agent <start-the-agent>`.
 
