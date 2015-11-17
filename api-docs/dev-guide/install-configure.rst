@@ -1222,9 +1222,9 @@ Configure the agent manually
 
 11. To disable automatic updates for your monitoring agent, add the following :
 
-  .. code::
+   .. code::
 
-        monitoring_update disabled
+      monitoring_update disabled
 
 You're now ready to start the agent. See :ref:`Start the agent <start-the-agent>`.
 
