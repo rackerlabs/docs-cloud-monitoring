@@ -1198,7 +1198,7 @@ Configure the agent manually
 
    .. code::
 
-       $ HTTP_PROXY=<ip_address:port> rackspace-monitoring-agent --setup
+      $ HTTP_PROXY=<ip_address:port> rackspace-monitoring-agent --setup
 
 
   You can optionally configure the agent to use a reverse proxy to look up custom SRV records by having it proxy to LON, DFW, and ORD as shown in the following example:
@@ -1206,10 +1206,7 @@ Configure the agent manually
 
     .. code::
 
-        monitoring_query_endpoints
-        _monitoringagent._tcp.dfw1.prod.monitoring.api.rackspacecloud.com
-        _monitoringagent._tcp.ord1.prod.monitoring.api.rackspacecloud.com
-        _monitoringagent._tcp.lon3.prod.monitoring.api.rackspacecloud.com
+      monitoring_query_endpoints _monitoringagent._tcp.dfw1.prod.monitoring.api.rackspacecloud.com, _monitoringagent._tcp.ord1.prod.monitoring.api.rackspacecloud.com, _monitoringagent._tcp.lon3.prod.monitoring.api.rackspacecloud.com
 
   To optionally force a connection to a particular IP address and port, add the following to your agent configuration file:
 
@@ -1217,11 +1214,11 @@ Configure the agent manually
 
       monitoring_endpoints 192.168.95.178:50051, 192.168.95.178:50052, 192.168.95.178:50053
 
-10. To use an FQDN, add the following entry to the configuration file where ``FQDN`` stands for the fully-qualified domain name for the resource on which you're installing the agent:
+10. You can also set the HTTP proxy variable to use an FQDN. To do so, add the following entry to the configuration file where ``FQDN`` stands for the fully-qualified domain name for the resource on which you're installing the agent:
 
    .. code::
 
-       $ HTTP_PROXY=<FQDN> rackspace-monitoring-agent --setup
+      $ HTTP_PROXY=<FQDN> rackspace-monitoring-agent --setup
 
 11. To disable automatic updates for your monitoring agent, add the following :
 
