@@ -15,7 +15,7 @@ Learn how to use the Rackspace Cloud Monitoring service by using the REST API.
 
 - For details about monitoring resources, such as alarms and checks, see the :ref:`Technical reference <technical-reference-info-intro>`.
 
-- For service release notes, see the :ref:`Release notes <release-notes>`
+- For service release notes, see the :ref:`Release notes <release-notes>`.
 
 
 .. toctree:: :hidden:
