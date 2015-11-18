@@ -9,11 +9,11 @@ Rackspace Cloud Monitoring |contract version|
 
 Learn how to use the Rackspace Cloud Monitoring service by using the REST API.
 
-- For details about using the API, see the:ref:`Developer Guide <developer-guide>`.
+- For details about using the API, see the :ref:`Developer Guide <developer-guide>`.
 
 - For details about API resources, operations, requests and responses, see the :ref:`API reference <api-reference>`.
 
-- For details about monitoring resources, such as alarms and checks, see the `Technical reference <technical-reference-info-intro>`.
+- For details about monitoring resources, such as alarms and checks, see the :ref:`Technical reference <technical-reference-info-intro>`.
 
 - For service release notes, see the :ref:`Release notes <release-notes>`
 
