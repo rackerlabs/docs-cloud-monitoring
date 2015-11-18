@@ -14,13 +14,16 @@ of the monitoring service.
 
 - :ref:`API reference <api-reference>`
 
+- :ref:`Release notes <release-notes>`
+
 - :ref:`Technical reference <technical-reference-info-intro>`
 
-- :ref:`Release notes <release-notes>`
 
 .. toctree:: :hidden:
    :maxdepth: 2
 
+   Cloud Monitoring 1.0 <self>
+   API Status <http://www.rackspacestatus.com/>
    overview/index
    developer-guide
    concepts
@@ -28,6 +31,7 @@ of the monitoring service.
    install-configure
    api-reference
    api-operations/index
+   release-notes
    tech-ref
    tech-ref-info/index
    release-notes
