@@ -177,8 +177,10 @@ Attributes
 +-----------+------------------------------+-------------------------------------+
 | Field     | Description                  | Validation                          |
 +===========+==============================+=====================================+
-| target    | The mount point to check.    | String between 1 and 512            |
-|           | :code:`/var` or :code:`C:\\` | characters long.                    |
+| target    |The mount point to check,     | String between 1 and 512            |
+|           |either :code:`/var` or        | characters long.                    |
+|           |``C:\``                       |                                     |
+|           |                              |                                     |
 +-----------+------------------------------+-------------------------------------+
 
 
