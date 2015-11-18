@@ -9,7 +9,7 @@ Rackspace Cloud Monitoring supports the following remote check types.
 .. contents::
    :local:
    :depth: 1
-   
+
 
 .. _remote_dns:
 
@@ -102,7 +102,7 @@ if the SSL certificate is valid.
     The maximum size of the content returned in a remote.http check is 32k,
     with overhead and compression taken into account. This limitation helps
     monitoring remain responsive.
-    
+
 
 Attributes
 ~~~~~~~~~~~~~~
@@ -120,19 +120,24 @@ Attributes
 +------------------+--------------------------------------------------------------------------------------------------------+------------------------------------------------------+
 | body_matches     | Body match regular expressions (body is limited to 100k, matches are truncated to 80 characters)       | Optional. Hash [String,String between 1 and 50       |
 |                  |                                                                                                        | characters long, String matching the                 |
-|                  |                                                                                                        | regex /^[-_ a-z0-9]+$/i:String,String between        |
+|                  |                                                                                                        | regex /^[-_ a-z0-9]+$/i: String,String between       |
 |                  |                                                                                                        | 1 and 255 characters long]. Array or object          |
-|                  |                                                                                                        | with number of items be- tween 0 and 4.              |
+|                  |                                                                                                        | with number of items between 0 and 4.                |
 +------------------+--------------------------------------------------------------------------------------------------------+------------------------------------------------------+
 | follow_redirects | Follow redirects (default:true)                                                                        | Optional. Boolean.                                   |
 +------------------+--------------------------------------------------------------------------------------------------------+------------------------------------------------------+
-| headers          | Optional auth password                                                                                 | Optional. String between 1 and 255 characters long   |
+| headers          | Arbitrary headers which are sent with the request.                                                     | Optional. Hash [String,String between 1 and 50       |
+|                  |                                                                                                        | characters long: String,String between 1 and 50      |
+|                  |                                                                                                        | characters long]. Array or object with number        |
+|                  |                                                                                                        | of items between 0 and 10. A value which is          |
+|                  |                                                                                                        | not one of: content-length, user-agent, host,        |
+|                  |                                                                                                        | connection, keep-alive, transfer-encoding, upgrade.  |
 +------------------+--------------------------------------------------------------------------------------------------------+------------------------------------------------------+
-| auth_user        | Optional auth user                                                                                     | Optional. String between 1 and 255 characters long   |
+| method           | HTTP method. The default is GET.                                                                       | Optional. String. One of (HEAD, GET, POST, PUT,      |
+|                  |                                                                                                        | DELETE, INFO)                                        |
 +------------------+--------------------------------------------------------------------------------------------------------+------------------------------------------------------+
-| body             | Body match regular expression (body is limited to 100k)                                                | Optional. String between 1 and 255 characters long   |
-+------------------+--------------------------------------------------------------------------------------------------------+------------------------------------------------------+
-| body_matches     | Body match regular expressions (body is limit- ed to 100k, matches are truncated to 80 char- acters)   |                                                      |
+| payload          | Specify a request body (limited to 1024 characters). If a redirect is set, the payload is only         | Optional. String between 1 and 1024 characters long  |
+|                  | sent to the first location.                                                                            |                                                      |
 +------------------+--------------------------------------------------------------------------------------------------------+------------------------------------------------------+
 
 Metrics
@@ -262,7 +267,7 @@ Metrics
 +-------------+--------------------------------------------------------------------------------------------------+----------+
 | maximum     | The maximum roundtrip time in milliseconds of an ICMP packet.                                    | Double   |
 +-------------+--------------------------------------------------------------------------------------------------+----------+
-| minimum     | The minimum roundtrip time in milliseconds of an ICMP packet.                                    |          |
+| minimum     | The minimum roundtrip time in milliseconds of an ICMP packet.                                    | Double   |
 +-------------+--------------------------------------------------------------------------------------------------+----------+
 
 .. _remote_pop3_banner:
