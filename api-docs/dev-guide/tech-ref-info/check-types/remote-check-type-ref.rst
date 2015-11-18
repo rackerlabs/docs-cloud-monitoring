@@ -267,7 +267,7 @@ Metrics
 +-------------+--------------------------------------------------------------------------------------------------+----------+
 | maximum     | The maximum roundtrip time in milliseconds of an ICMP packet.                                    | Double   |
 +-------------+--------------------------------------------------------------------------------------------------+----------+
-| minimum     | The minimum roundtrip time in milliseconds of an ICMP packet.                                    |          |
+| minimum     | The minimum roundtrip time in milliseconds of an ICMP packet.                                    | Double   |
 +-------------+--------------------------------------------------------------------------------------------------+----------+
 
 .. _remote_pop3_banner:
