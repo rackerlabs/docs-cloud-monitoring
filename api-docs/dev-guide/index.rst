@@ -6,17 +6,16 @@ Rackspace Cloud Monitoring |contract version|
 
 *Last updated:* |today|
 
-Use the following links to learn about using the Rackspace Cloud Monitoring service
-REST API and to find additional resources and tools for advanced configuration and use
-of the monitoring service.
 
-- :ref:`Developer Guide <developer-guide>`
+Learn how to use the Rackspace Cloud Monitoring service by using the REST API.
 
-- :ref:`API reference <api-reference>`
+- For details about using the API, see the:ref:`Developer Guide <developer-guide>`.
 
-- :ref:`Release notes <release-notes>`
+- For details about API resources, operations, requests and responses, see the :ref:`API reference <api-reference>`.
 
-- :ref:`Technical reference <technical-reference-info-intro>`
+- For details about monitoring resources, such as alarms and checks, see the `Technical reference <technical-reference-info-intro>`.
+
+- For service release notes, see the :ref:`Release notes <release-notes>`
 
 
 .. toctree:: :hidden:
@@ -31,7 +30,6 @@ of the monitoring service.
    install-configure
    api-reference
    api-operations/index
-   release-notes
    tech-ref
    tech-ref-info/index
    release-notes
