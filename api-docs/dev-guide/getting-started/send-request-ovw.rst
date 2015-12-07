@@ -12,7 +12,7 @@ This Getting Started Guide shows how to send requests by using cURL.
 
 
 .. include:: ../common-gs/how-to-use-curl.rst
-.. include:: ../getting-started/install-configure-raxmon.rst
+.. include:: ../common-gs/install-configure-raxmon.rst
 
 .. _cURL command line tool: http://curl.haxx.se/
 .. _Rackspace SDKs: https://developer.rackspace.com/sdks/
