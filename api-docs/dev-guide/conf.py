@@ -88,7 +88,7 @@ today_fmt = '%B %d, %Y'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 exclude_patterns = ['_build', 'samples', 'api-operations/methods',
-                    'tech-ref-info/check-types/*']
+                    'tech-ref-info/check-types/*', 'common-gs','getting-started/examples']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
@@ -142,7 +142,7 @@ extlinks = {
 # Global variables that are replaced by the specified value during the build process.
 
 rst_epilog = """
-.. |apiservice| replace:: Rackspace Cloud Monitoring API
+.. |apiservice| replace:: Rackspace Monitoring API
 .. |no changes| replace:: None for this release.
 .. |contract version| replace:: 1.0
 .. |product name| replace:: 'Rackspace Monitoring'
@@ -172,12 +172,14 @@ release='v1.'
 # Add any paths that contain custom themes here, relative to this directory.
 # html_theme_path = []
 
+
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-# html_title = None
+html_title = 'Rackspace Monitoring Version 1.0 API Developer Guide'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-# html_short_title = None
+html_short_title = 'Rackspace Monitoring'
+
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
@@ -307,8 +309,8 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     ('index', 'RackspaceMonitoringDeveloperDoc',
-     'Rackspace Cloud Monitoring API Developer Guide', 'Rackspace',
-     'RackspaceCloudMonitoringDeveloperDoc',
+     'Rackspace Monitoring API Developer Guide', 'Rackspace',
+     'RackspaceMonitoringDeveloperDoc',
      'Learn about using the REST API for the Rackspace Cloud Monitoring',
      'Miscellaneous'),
 ]
