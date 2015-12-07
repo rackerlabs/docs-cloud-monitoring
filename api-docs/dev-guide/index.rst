@@ -24,6 +24,8 @@ Learn how to use the Rackspace Cloud Monitoring service by using the REST API.
    Cloud Monitoring 1.0 <self>
    API Status <http://www.rackspacestatus.com/>
    overview/index
+   getting-started
+   getting-started/index   
    developer-guide
    concepts
    general-api-info/index

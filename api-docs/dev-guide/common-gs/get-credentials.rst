@@ -1,4 +1,4 @@
-.. _get-credentials:
+.. _auth-credentials:
 
 Get your credentials
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

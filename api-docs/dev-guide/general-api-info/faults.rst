@@ -1,3 +1,5 @@
+.. _monitoring-faults:
+
 Faults
 ~~~~~~~~~~
 
@@ -11,7 +13,7 @@ notFoundError:
  
 **Example: XML Not Found Fault**
 
-.. code::  
+.. code::
 
     <?xml version="1.0" encoding="UTF-8"?>
     <fault><type>notFoundError</type><code>404</code><message>Item not found.<message><details>Error Details...</details>
@@ -20,7 +22,7 @@ notFoundError:
  
 **Example: JSON Not Found Fault**
 
-.. code::  
+.. code::
 
     {
         "type": "notFoundError",
@@ -29,7 +31,7 @@ notFoundError:
         "details": "Error Details..."
     }
 
-The following table contains the possible fault types along with their associated error 
+The following table contains the possible fault types along with their associated error
 code and description.
 
 **Table: Fault and Error Code Descriptions**
@@ -123,4 +125,3 @@ code and description.
 |                                     |             | experiencing heavy load         |
 |                                     |             | or another system failure.      |
 +-------------------------------------+-------------+---------------------------------+
-

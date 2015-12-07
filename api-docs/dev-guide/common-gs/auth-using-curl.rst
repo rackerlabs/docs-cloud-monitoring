@@ -1,5 +1,8 @@
 .. _authenticate-using-curl:
 
+Authenticate by using cURL
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Follow these steps to authenticate to the Rackspace Cloud by
 :ref:`using cURL<how-curl-commands-work>`.
 
@@ -14,7 +17,7 @@ Send an authentication request
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 From a command prompt, send a **POST tokens** request to the Rackspace Cloud Identity
-service.  Include your username and :ref:`API key<get-credentials>`
+service.  Include your username and :ref:`API key<auth-credentials>`
 as shown in the following example.
 
 .. include:: ../common-gs/samples/auth-req-curl.rst
@@ -36,8 +39,8 @@ In the following example, the ellipsis (...)  represents other service endpoints
 are not shown. The values shown in this and other examples vary because the information
 returned is specific to your account.
 
-.. note:: 
-     For detailed information about the authentication response, see 
+.. note::
+     For detailed information about the authentication response, see
      :rax-devdocs:`Annotated authentication request and response<cloud-identity/v2/developer-guide/#document-authentication-info/sample-auth-req-response>`.
 
 **Example: Authentication response**
@@ -147,7 +150,7 @@ To reference the value in an API request, prefix the variable name with a $, for
 
 
    Replace *publicURL* with the publicURL value listed in the service catalog.
-   
-   .. note:: 
-        The ``publicURL`` value for |apiservice| consists of the service access endpoint 
-        URL with the tenant ID for your account appended after the ``/``. 
+
+   .. note::
+        The ``publicURL`` value for |apiservice| consists of the service access endpoint
+        URL with the tenant ID for your account appended after the ``/``.
