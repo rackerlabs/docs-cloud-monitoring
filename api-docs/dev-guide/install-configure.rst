@@ -1,169 +1,10 @@
 .. _install-and-configure:
 
-Install and configure
---------------------------
+Install and configure the agent
+---------------------------------
 
 This section provides instructions for installing and configuring the
-following components:
-
--  The Cloud Monitoring command-line interface
-   (CLI), which is called ``raxmon``.
-
--  The Cloud Monitoring Agent
-
-.. _install-and-configure-raxmon:
-
-Install and configure raxmon
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-You need to use the Cloud Monitoring command-line interface (CLI),
-``raxmon``, for some preliminary agent configuration. ``raxmon`` is also
-helpful if you use the `Rackspace Cloud Monitoring Getting Started Guide`_.
-The ``raxmon`` CLI runs on your local workstation (not the servers you
-plan to monitor).
-
-..  note::
-    The **$** symbol represents a command line prompt, do not type it.
-
-.. _Rackspace Cloud Monitoring Getting Started Guide: http://docs.rackspace.com/cm/api/v1.0/cm-getting-started/content/tutorials.html
-
-
-.. _install-requirements-raxmon:
-
-Requirements
-^^^^^^^^^^^^^^
-
-Before you install ``raxmon``, meet these requirements on your local
-workstation:
-
--  Install Python 2.5, 2.6, or 2.7 on your local workstation.
-
--  Make sure you install ``raxmon`` on your local workstation (not the
-   server you plan to monitor). This allows you to install ``raxmon``
-   once to monitor many remote servers.
-
-
-.. _install-raxmon:
-
-Install raxmon
-^^^^^^^^^^^^^^^^
-
-Follow these steps to install ``raxmon`` on your local workstation if
-you don't already have a version installed.
-
-Version 0.4.6 or higher is required. If you have an earlier version installed,
-:ref:`upgrade raxmon <install-upgrade-raxmon>`.
-
- 
-**To install raxmon:**
-
-#. **Log into a bash shell on your local workstation.**
-
-   If you don't use a virtual environment, log into a shell as the user
-   who has write permissions to ``/usr/local/bin`` on your local
-   machine.
-
-#. **Install pip.**
-
-   To install the ``rackspace-monitoring-cli`` package, you need the
-   python ``pip`` command.  If you need access to that tool, enter these
-   commands:
-
-   .. code::
-
-       $ sudo yum install -y python-setuptools
-
-   .. code::
-
-       $ sudo easy_install pip
-
-#. **Install raxmon.**
-
-   Enter this command to install ``raxmon`` :
-
-   .. code::
-
-       $ sudo pip install rackspace-monitoring-cli
-
-
-.. _install-upgrade-raxmon:
-
-Upgrade raxmon
-^^^^^^^^^^^^^^^^
-
-Upgrade ``raxmon`` on your local workstation if you have an earlier
-version installed. Version 0.4.6 or higher is required.
-
- 
-**To upgrade to a new version of raxmon:**
-
-#. **Remove raxmon.**
-
-   Remove the previous version of ``raxmon`` before running the upgrade:
-
-   .. code::
-
-       $ sudo pip uninstall rackspace-monitoring-cli
-
-#. **Upgrade to the latest version.**
-
-   Enter this command:
-
-   .. code::
-
-       $ sudo pip install --upgrade rackspace-monitoring-cli
-
-
-.. _install-configure-raxmon:
-
-Configure raxmon
-^^^^^^^^^^^^^^^^^
-Configure ``raxmon`` with your credentials and URLs for Cloud Monitoring
-and the Rackspace Cloud Identity Service.
-
- 
-**To configure raxmon:**
-
-Although you can specify your Rackspace credentials and URLs as
-command-line options, it saves time to add them to the ``raxmon``
-configuration file.
-
-#. **Locate your API key.**
-
-   Follow these instructions to find your API key if you do not already
-   have it: `Obtaining an API
-   key <http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/general-api-info-authentication.html>`__.
-
-#. **Edit the .raxrc file.**
-
-   Use ``vi`` or your favorite text editor to edit the ``.raxrc`` file
-   in your home directory. You need to supply both your Rackspace
-   username and API key.
-
-   .. code::
-
-       $  vi ~/.raxrc
-
-   Be sure to specify the correct identity endpoint for your account
-   location. For details, see `Rackspace Cloud Identity Service
-   endpoints <http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/general-api-info-authentication.html#auth_endpoints>`__.
-   Here is an example of the ``.raxrc`` file with the Rackspace
-   credentials and URLs:
-
-   .. code::
-
-       [credentials]
-       username=MyRackspaceAcct
-       api_key=0000000000000000000
-
-       [api]
-       url=https://monitoring.api.rackspacecloud.com/v1.0
-
-       [auth_api]
-       url=https://identity.api.rackspacecloud.com/v2.0/tokens
-
-       [ssl]
-       verify=true
+The Cloud Monitoring Agent
 
 
 .. _install-agent:
@@ -1102,7 +943,7 @@ Configure the agent manually
 **To manually set up the agent**
 
 1. If you have not installed ``raxmon`` yet, install it on your local
-   workstation. See :ref:`Install and configure raxmon <install-configure-raxmon>`.
+   workstation. See :ref:`Install and configure raxmon <gsg-install-raxmon>`.
 
    If you prefer to use the API, instead of the raxmon CLI, see the
    `entities
@@ -1165,7 +1006,7 @@ Configure the agent manually
 
        $ raxmon-agent-tokens-list
 
-   Note of the agent token value to use in the next few steps.
+   Note the agent token value to use in the next few steps.
 
 6. Log in as the root user on the server where you installed the agent.
 
@@ -1581,7 +1422,7 @@ some agent checks.
 **To create an entity and agent checks**
 
 #. If you have not installed ``raxmon`` yet, do that now. See
-   :ref:`Install and configure raxmon <install-configure-raxmon>`.
+   :ref:`Install and configure raxmon <gsg-install-raxmon>`.
    If you prefer to use the API instead of the ``raxmon`` CLI, see the API operations
    reference for the `entity`_ and `checks`_ resources.
 
