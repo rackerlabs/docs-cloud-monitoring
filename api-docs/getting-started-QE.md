@@ -15,47 +15,54 @@
 
 **Use cases and examples**
 
-- [ ] Compare use case (topics) in migrated content to original content on docs.rackspace.com to identify any missing content
+- [x] Compare use case (topics) in migrated content to original content on docs.rackspace.com to identify any missing content
+      
+      *Notes:* Moved setup notifications above create a notification.  
+               Removed the Additional resources topic -- another one already in the About API section.
 
 - [ ] Use case H1 topics use imperative, H2 topics use gerund
 
       ![Use case titles](https://github.com/rackerlabs/docs-common/blob/master/rst/getting-started-content-architecture/QE-images/GS-use-case-titles.png) 
+      
+      *Notes:* Get Kelly's input. 
 
 
 **Getting Started common content**
 
-- [ ]  Prerequisites include config environment variables (late change)
+- [x ]  Prerequisites include config environment variables (late change)
        
        ![Gen API authl](https://github.com/rackerlabs/docs-common/blob/master/rst/getting-started-content-architecture/QE-images/GS-prereqs.png) 
        
 
-- [ ]  GS intro topic that follows boiler plate, might have extra content depending on product.
+- [x]  GS intro topic that follows boiler plate, might have extra content depending on product.
 
        ![Gen API authl](https://github.com/rackerlabs/docs-common/blob/master/rst/getting-started-content-architecture/QE-images/GS-intro.png) 
        
 
-- [ ]  Uses common Get Credentials topic ==> Save your API Key, Save your Account number are heading levels.
+- [x]  Uses common Get Credentials topic ==> Save your API Key, Save your Account number are heading levels.
 
        ![Get Credsl](https://github.com/rackerlabs/docs-common/blob/master/rst/getting-started-content-architecture/QE-images/GS-getcreds.png) 
 
 
-- [ ]  Send API requests content follows template (some docs have only cURL, some have cURL and CLI)
+- [x]  Send API requests content follows template (some docs have only cURL, some have cURL and CLI)
       
+       *Note:*  Title in Monitoring is "Send a request to the API`` -- that is more technically accurate. Should become standard. 
+                Not sure if it should be Send a request or Send requests to the API  -- Ask Kelly. 
 
-- [ ]  Authenticate uses [common content](https://developer.rackspace.com/docs/cloud-big-data/v2/developer-guide/#document-getting-started/authenticate) 
+- [x]  Authenticate uses [common content](https://developer.rackspace.com/docs/cloud-big-data/v2/developer-guide/#document-getting-started/authenticate) 
 
 
 
 **General API section**
 
-- [ ] Authentication section contains short section referencing GS auth example and Identity doc. 
+- [x] Authentication section contains short section referencing GS auth example and Identity doc. 
       See [example](https://developer.rackspace.com/docs/cloud-big-data/v2/developer-guide/#document-general-api-info/authentication-gen-api)
 
-- [ ] Service access endpoints topic follows authentication
+- [x] Service access endpoints topic comes immediately after the authentication topic in General API info. 
 
-- [ ] Service access endpoints topic has link to authentication response in the Review Auth response section of this Getting Started Guide.  (Link should not point to General API auth topic or Identity documentation).
+- [x] Service access endpoints topic has link to authentication response in the Review Auth response section of this Getting Started Guide.  (Link should not point to General API auth topic or Identity documentation).
 
-- [ ] How to use cURL topic not included in the General API section (info provided in common auth section)
+- [x] How to use cURL topic not included in the General API section (info provided in common auth section)
 
 
 ##Copy check
