@@ -1,6 +1,6 @@
 .. _authenticate-using-curl:
 
-Authenticate by using cURL
+Authenticating using cURL
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Follow these steps to authenticate to the Rackspace Cloud by
