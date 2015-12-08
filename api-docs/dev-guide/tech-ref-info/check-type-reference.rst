@@ -4,8 +4,8 @@
 Check types reference
 =================================
 
-The Check type and fields reference provides details about the following agent check types 
-supported by the Rackspace Cloud Monitoring service. 
+The Check type and fields reference provides details about the following agent check types
+supported by the Rackspace Cloud Monitoring service.
 
 - :ref:`Remote check types<remote-check-type-ref>`
 
@@ -22,5 +22,5 @@ supported by the Rackspace Cloud Monitoring service.
 .. include:: check-types/remote-check-type-ref.rst
 .. include:: check-types/agent-check-type-ref.rst
 .. include:: check-types/host-info-check-type-ref.rst
+.. include:: check-types/check-return-codes.rst
  
-   

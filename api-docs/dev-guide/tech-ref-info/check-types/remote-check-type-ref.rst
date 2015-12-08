@@ -140,6 +140,17 @@ Attributes
 |                  | sent to the first location.                                                                            |                                                      |
 +------------------+--------------------------------------------------------------------------------------------------------+------------------------------------------------------+
 
+.. _note:
+
+      When you set up a website, and the check always returns 'unknown content-encoding:'.
+
+      This is because of the HTTP body check limit of 100. This limit is the amount of space that the Monitoring Pollers (where the site is checked from).  If the amount of space required to do the HTTP(S) check is greater than 100k, then only the first 100k can be checked.
+
+      If the customer uses Compression on the pages, such as 'compress' or 'gzip' Content-Encoding, then the full compressed page must be less than or equal to 100k.  This is because the full page must be downloaded and uncompressed before it can verify the check.
+
+      This is also the reason why you can only check against strings within the first 100k of the web page.
+
+
 Metrics
 ~~~~~~~~~~~~~~
 
@@ -178,6 +189,7 @@ Metrics
 +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
 | tt_firstbyte                      | The time to first byte measured in milliseconds.                                                                                                                                                                                          |  Uint32   |
 +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+
 
 .. _remote_imap_banner:
 
