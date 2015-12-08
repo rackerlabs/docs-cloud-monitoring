@@ -2,7 +2,7 @@
 
 **Getting Started navigation**
 
-- [ ] Link at top of doc
+- [x] Link at top of doc
   
       ![Part links](https://github.com/rackerlabs/docs-common/blob/master/rst/getting-started-content-architecture/QE-images/GS-part-links.png)
   
