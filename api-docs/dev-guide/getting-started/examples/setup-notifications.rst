@@ -1,7 +1,7 @@
 .. _gsg-setup-notifications:
 
 
-Set up notifications 
+Setting up notifications 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In most cases, you and perhaps several people on your team will be

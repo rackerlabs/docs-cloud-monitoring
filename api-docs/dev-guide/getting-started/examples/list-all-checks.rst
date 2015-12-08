@@ -1,7 +1,7 @@
 
 .. _gsg-list-all-checks:
 
-List all checks for the entity
+Listing all checks for the entity
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 

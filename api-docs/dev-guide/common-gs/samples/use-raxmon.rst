@@ -2,7 +2,7 @@
 .. _gsg-using-raxmon:
 
 
-Use raxmon
+Using raxmon
 ^^^^^^^^^^^^^^
 
 

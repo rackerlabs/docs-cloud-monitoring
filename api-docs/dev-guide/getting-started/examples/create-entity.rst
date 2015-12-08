@@ -2,7 +2,7 @@
 .. _gsg-create-an-entity:
 
 
-Create an entity
+Creating an entity
 ~~~~~~~~~~~~~~~~~~~~~
 
 The first thing you do to begin monitoring a resource is to create an
@@ -23,7 +23,7 @@ ip\_address
 ..  note::
 
       Remember to insert your authorization token and account number as
-      previously described in 
+      previously described in
       :ref:`Authenticate to the Rackspace Cloud<authenticate-to-cloud>` .
 
  

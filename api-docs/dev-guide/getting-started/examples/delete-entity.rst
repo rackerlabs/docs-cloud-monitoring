@@ -1,6 +1,6 @@
 .. _gsg-delete-an-entity:
 
-Delete an entity 
+Deleting an entity 
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 

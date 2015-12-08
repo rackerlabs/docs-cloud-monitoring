@@ -1,6 +1,6 @@
 .. _gsg-make-notification-plan:
 
-Create a notification plan 
+Creating a notification plan 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A notification represents a single action, such as sending an email to a

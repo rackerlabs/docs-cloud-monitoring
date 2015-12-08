@@ -1,11 +1,11 @@
 
 .. _gsg-create-a-check:
 
-Create a check
+Creating a check
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Any entity that you create can have many checks, each monitoring a different aspect 
-of the entity. In this exercise, you create and test a PING check to verify that the web 
+Any entity that you create can have many checks, each monitoring a different aspect
+of the entity. In this exercise, you create and test a PING check to verify that the web
 server is responding. Use the following attributes:
 
 label
