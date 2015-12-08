@@ -6,7 +6,7 @@
   
       ![Part links](https://github.com/rackerlabs/docs-common/blob/master/rst/getting-started-content-architecture/QE-images/GS-part-links.png)
   
-- [ ] Content hierarchy for top-sections looks like one of these two models, with GS title in nav
+- [x] Content hierarchy for top-sections looks like one of these two models, with GS title in nav
   
       ![Nav with curl](https://github.com/rackerlabs/docs-common/blob/master/rst/getting-started-content-architecture/QE-images/GS-nav-curl-only.png) 
       ![Nav with curl](https://github.com/rackerlabs/docs-common/blob/master/rst/getting-started-content-architecture/QE-images/GS-nav-with-client.png) 
@@ -29,7 +29,7 @@
 
 **Getting Started common content**
 
-- [x ]  Prerequisites include config environment variables (late change)
+- [x]  Prerequisites include config environment variables (late change)
        
        ![Gen API authl](https://github.com/rackerlabs/docs-common/blob/master/rst/getting-started-content-architecture/QE-images/GS-prereqs.png) 
        
