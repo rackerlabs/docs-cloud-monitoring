@@ -2,7 +2,7 @@
 .. _gsg-list-monitoring-zones:
 
 
-List monitoring zones
+Listing monitoring zones
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Before creating a check for the new entity, choose the `monitoring

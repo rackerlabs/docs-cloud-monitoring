@@ -1,6 +1,6 @@
 .. _gsg-create-an-alarm:
 
-Create an alarm
+Creating an alarm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In this exercise, you set an `alarm <#>`__ for the entity. This example

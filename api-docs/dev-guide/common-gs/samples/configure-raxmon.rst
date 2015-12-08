@@ -1,6 +1,6 @@
 .. _gsg-configure-raxmon:
 
-Configure raxmon 
+Configuring raxmon 
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 Configure raxmon with your credentials and the URLs for Cloud Monitoring

@@ -1,6 +1,6 @@
 .. _gsg-test-check:
 
-Test the check
+Testing the check
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 Testing the check runs the check once and lists the check's metrics.

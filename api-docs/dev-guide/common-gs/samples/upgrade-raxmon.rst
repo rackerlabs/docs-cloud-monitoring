@@ -1,7 +1,7 @@
 
 .. _gsg-upgrade-raxmon:
 
-Upgrade raxmon
+Upgrading raxmon
 ^^^^^^^^^^^^^^^^^^^^
 
 

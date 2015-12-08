@@ -2,7 +2,7 @@
 .. _gsg-install-raxmon:
 
 
-Install raxmon
+Installing raxmon
 ^^^^^^^^^^^^^^^^^
 
 Follow these steps to install raxmon on your local workstation if you
