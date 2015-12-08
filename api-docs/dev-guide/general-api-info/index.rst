@@ -14,9 +14,9 @@ Rackspace products and services.
    :maxdepth: 2
 
    authentication-ovw
-   role-based-access-control
    service-access-endpoint
    request-response-types
+   role-based-access-control
    versions
    faults
    rate-limits

@@ -21,9 +21,10 @@ ip\_address
     examples, the IP address is named "default."
 
 ..  note::
-      Note
+
       Remember to insert your authorization token and account number as
-      previously described in `Authenticate to the Rackspace Cloud<authenticate-to-cloud>`__.
+      previously described in 
+      :ref:`Authenticate to the Rackspace Cloud<authenticate-to-cloud>` .
 
  
 **Example: Create an entity, request: cURL**
@@ -75,18 +76,16 @@ ID, so yours will be different.
     Resource created. ID: enMlJzlHDo
 
 If an error message is returned, the endpoint was unable to create the
-entity. See the `Faults section<monitoring-faults>` section in the *Rackspace Cloud
+entity. See the :ref:`Faults section<monitoring-faults>` section in the *Rackspace Cloud
 Monitoring Developer's guide*.
 
 ..  note::
-      Note
-      For the remaining steps of this tutorial, substitute the ID of the
-      entity that you created for "enn14Ch5mc".
 
-..  tip::
-      Tip
-      You can request a list of all entities for your account at any time. You
-      can also list checks, alarms, notifications, and so on.
+      - For the remaining steps of this tutorial, substitute the ID of the
+        entity that you created for "enn14Ch5mc".
+
+     -  You can request a list of all entities for your account at any time. You
+        can also list checks, alarms, notifications, and so on.
 
  
 **Example: List all entities, request: cURL**

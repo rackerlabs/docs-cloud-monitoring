@@ -4,8 +4,9 @@
 Create a check
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-In this example, you will create a PING check to verify that the web server is responding. Use the
-following attributes:
+Any entity that you create can have many checks, each monitoring a different aspect 
+of the entity. In this exercise, you create and test a PING check to verify that the web 
+server is responding. Use the following attributes:
 
 label
     Assigns a meaningful name to the check. In the following examples,
@@ -34,7 +35,7 @@ target\_alias
     the IP address when the entity was created. See the following
     example for an illustration.
 
- 
+
 **Example: Create a PING check, request: cURL**
 
 .. code::
@@ -80,7 +81,7 @@ If an error message is returned, see the `Faults section<monitoring-faults>` sec
 Monitoring Developer's guide*.
 
 ..  note::
-      Note
+
       Checks are *always* associated with an entity. Therefore all check URLs
       contain the entity URL. For example, the ID of the entity created
       earlier in this tutorial is enn14Ch5mc, so the check URLs would begin

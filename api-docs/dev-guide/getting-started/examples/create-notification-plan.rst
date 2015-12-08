@@ -1,5 +1,4 @@
-
-.. _gsg-make-a-notification-plan:
+.. _gsg-make-notification-plan:
 
 Create a notification plan 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
