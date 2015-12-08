@@ -1,6 +1,6 @@
 .. _send-api-requests:
 
-Send requests to the API
+Send API requests
 ------------------------------------------
 
 This Getting Started Guide shows how to send requests by using cURL.
