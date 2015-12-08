@@ -11,4 +11,3 @@
    send-request-ovw
    Authenticate<authenticate>
    Create your first monitor<create-first-monitor>
-   Additional resources<additional-resources>
