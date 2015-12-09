@@ -3,6 +3,11 @@ v1.15, August 15, 2015 
 
 These release notes correspond to a new-feature release of Rackspace Monitoring.
 
+What's new
+~~~~~~~~~~~~
+
+|no changes|
+
 
 Resolved issues
 ~~~~~~~~~~~~~~~~~~~
@@ -23,7 +28,7 @@ The following agent-specific changes were made:
 
 • Fixed an issue with Ubuntu 15.04 and systemd registration across reboots.
 
-• Included a bump in an underlying library (libuv) the agent uses for asynchronous I/O operations. There was a regression in this library that could potentially cause performance issues with file system operations.
+• Upgraded an underlying library (libuv) that the agent uses for asynchronous I/O operations. There was a regression in this library that could potentially cause performance issues with file system operations.
 
 
 Known issues

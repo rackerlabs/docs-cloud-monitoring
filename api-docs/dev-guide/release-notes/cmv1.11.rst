@@ -3,7 +3,7 @@ v1.11, March 28, 2015 
 
 These release notes correspond to a new-feature release of Rackspace Monitoring.
 
-What's New
+What's new
 ~~~~~~~~~~~~~
 
 • List `checks <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#list-checks-for-an-entity>`__ for an entity

@@ -1,7 +1,7 @@
 .. _index:
 
 ================================================
-Rackspace Cloud Monitoring |contract version|
+Rackspace Monitoring |contract version|
 ================================================
 
 *Last updated:* |today|
