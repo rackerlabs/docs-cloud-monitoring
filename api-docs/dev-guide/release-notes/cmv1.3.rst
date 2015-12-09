@@ -1,7 +1,7 @@
 v1.3, June 14, 2012 
 --------------------------------
 
-These release notes correspond to the Limited Availability release of Cloud Monitoring.
+These release notes correspond to the Limited Availability release of Rackspace Monitoring.
 
 What's new
 ~~~~~~~~~~~~

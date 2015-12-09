@@ -1,7 +1,7 @@
 v1.8, August 13, 2014
 -------------------------
 
-These release notes correspond to a new-feature release of Cloud Monitoring.
+These release notes correspond to a new-feature release of Rackspace Monitoring.
 
 What's new
 ~~~~~~~~~~~~~
