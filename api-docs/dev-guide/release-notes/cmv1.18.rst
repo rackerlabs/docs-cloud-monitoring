@@ -3,23 +3,23 @@ v1.18, November 30, 2015 
 
 These release notes correspond to a new-feature release of Rackspace Monitoring.
 
-What's New
+What's new
 ~~~~~~~~~~~~~
 
-•	Upgrade Luvi to 2.3.5.
+Luvi was upgraded to 2.3.5.
 
 Resolved issues
 ~~~~~~~~~~~~~~~~~~~
 
 The following agent-specific changes were made:
 
-•	Windows: Properly close stdin when gathering the machine id.
+•	On Windows, made a change to properly close stdin when gathering the machine ID
 
-•	Made various hostinfo improvements.
+•	Made various hostinfo improvements
 
-• Added fix on Ubuntu 15.10 for a pathing issue when detecting the machine identity.
+•	Made various hostinfo improvements
 
-• Added a fix for an issue with gathering all available metrics within custom plugins.
+•	Added a fix for an issue with gathering all available metrics within custom plug-ins
 
 
 

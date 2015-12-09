@@ -3,10 +3,10 @@ v1.17, October 22, 2015 
 
 These release notes correspond to a new-feature release of Rackspace Monitoring.
 
-What's New
+What's new
 ~~~~~~~~~~~~~
 
-•	Released agent for Ubuntu 15.10.
+The agent for Ubuntu 15.10 was released.
 
 
 
@@ -15,13 +15,13 @@ Resolved issues
 
 The following agent-specific changes were made:
 
-•	Windows_perfos: added CPU count to Windows Perfos check.
+•	Added CPU count to Windows PerfOS check
 
-•	Plugin: close stdin before running check (fixes hang on certain flavors of windows with custom plugins).
+•	Made a change to close `stdin`  before running a check, which fixes a hang on certain flavors of Windows with custom plug-ins
 
-• Rhel7: fixed the post install script for detecting chkconfig.
+•	For Red Hat Enterprise Linux 7, fixed the post install script for detecting chkconfig
 
-• Hostinfo: Made update to only propogate hostinfo's for the current running operating system
+•	Made an update to propagate hostinfo only for the current running operating system
 
 
 

@@ -3,14 +3,14 @@ v1.14, July 29, 2015 
 
 These release notes correspond to a new-feature release of Rackspace Monitoring.
 
-What's New
+What's new
 ~~~~~~~~~~~~~
 
-•	Automatic Upgrades on Linux and Windows
+•	Automatic upgrades on Linux and Windows were performed.
 
-•	New Luvi and Luvit infrastructure
+•	New Luvi and Luvit infrastructure was added.
 
-• Added new hostinfo modules: s numerous modules: pam,fstab,cron,login,fileperms,kernel_modules,services
+•	A number of new hostinfo modules were added:  pam, fstab, cron, login, fileperms, kernel_modules, and services. For more information, see Hostinfo checks.
 
 
 
@@ -19,25 +19,25 @@ Resolved issues
 
 The following agent-specific changes were made:
 
-•	Fixed OpenSSL memory leaks.
+•	Fixed OpenSSL memory leaks
 
-•	Significantly improved process for creating agents and made it easier for users.
+•	Significantly improved the process for creating agents
 
-• Still 8 MB on Linux and 6 MB RSS on Windows.
+•	Made a change to use a built-in libsigar library (when /tmp is mounted noexec)
 
 • Use a built-in libsigar library (when /tmp is mounted noexec).
 
-• Bumped OpenSSL to 1.0.2d.
+• Upgraded OpenSSL to 1.0.2d
 
-• Added gethostname fix for Windows.
+•	Added a gethostname fix for Windows
 
-• Added a fix for the startup sequence for Windows.
+• Added a fix for the startup sequence for Windows
 
-• Added a bug fix for zombie processes with agent plugins on unix platforms.
+•	Added a bug fix for zombie processes with agent plug-ins on UNIX platforms
 
-• Fixed a minor issue with enumerating all the new hostinfo modules via raxmon-agent-host-info-types.
+•	Fixed a minor issue with enumerating all the new hostinfo modules via raxmon-agent-host-info-types
 
-• Fixed a bug found in our unit tests with a garbage collect in the uv_spawn wrapper.
+•	Fixed a bug found in unit tests with a garbage collect in the uv_spawn wrapper
 
 
 

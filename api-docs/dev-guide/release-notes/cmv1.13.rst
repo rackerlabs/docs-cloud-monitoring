@@ -3,18 +3,18 @@ v1.13, May 27, 2015 
 
 These release notes correspond to a new-feature release of Rackspace Monitoring.
 
-What's New
+What's new
 ~~~~~~~~~~~~~
 
-•	Added support for Fedora 22.
+Support was added for Fedora 22.
 
 
 Resolved issues
 ~~~~~~~~~~~~~~~~~~~
 
-The following agent-specific changes were made:
+The following agent-specific change was made:
 
-•	Added a fix for systemd networking dependency (notably on RHEL7 and Centos7 flavors)
+Added a fix for systemd networking dependency (notably on Red Hat Enterprise Linux 7 and  CentOS 7 flavors)
 
 
 Known issues
