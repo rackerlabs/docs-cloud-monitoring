@@ -7,7 +7,7 @@ Rackspace Cloud Monitoring |contract version|
 *Last updated:* |today|
 
 
-Use the following links to jump directly to user and reference information for using the Rackspace Cloud Images API.
+Use the following links to jump directly to user and reference information for using the Rackspace Monitoring API.
 
 - :ref:`Getting Started Guide <getting-started>`
 
@@ -23,11 +23,11 @@ Use the following links to jump directly to user and reference information for u
 .. toctree:: :hidden:
    :maxdepth: 2
 
-   Cloud Monitoring 1.0 <self>
-   API Status <http://www.rackspacestatus.com/>
+   Rackspace Monitoring 1.0 <self>
+   API Status <https://status.rackspace.com/>
    overview/index
    getting-started
-   getting-started/index   
+   getting-started/index
    developer-guide
    concepts
    general-api-info/index
