@@ -6,7 +6,7 @@ These release notes correspond to a new-feature release of Rackspace Monitoring.
 What's New
 ~~~~~~~~~~~~~
 
-•	Added several new hostinfo additions/tweaks. For more information, see :ref:'Hostinfochecks <hostinfo-check-type-ref>'.
+•	Added several new hostinfo additions/tweaks. For more information, see :ref:`Hostinfochecks <hostinfo-check-type-ref>`.
 
 
 
