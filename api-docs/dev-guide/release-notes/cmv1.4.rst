@@ -3,7 +3,7 @@ v1.4, August 22, 2012 
 -----------------------------------------------------
 
 
-These release notes correspond to the Unlimited Availability release of Cloud Monitoring.
+These release notes correspond to the Unlimited Availability release of Rackspace Monitoring.
 
 What's new
 ~~~~~~~~~~~

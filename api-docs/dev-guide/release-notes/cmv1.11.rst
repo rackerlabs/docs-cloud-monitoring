@@ -1,7 +1,7 @@
 v1.11, March 28, 2015 
 -------------------------
 
-These release notes correspond to a new-feature release of Cloud Monitoring.
+These release notes correspond to a new-feature release of Rackspace Monitoring.
 
 What's New
 ~~~~~~~~~~~~~

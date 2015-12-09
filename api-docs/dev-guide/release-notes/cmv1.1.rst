@@ -1,7 +1,7 @@
 v1.1, March 28, 2012 
 -----------------------
 
-These release notes correspond to the Early Access release of Cloud Monitoring.
+These release notes correspond to the Early Access release of Rackspace Monitoring.
 
 What's new
 ~~~~~~~~~~~~
