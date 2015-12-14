@@ -5,13 +5,15 @@ Check types reference
 =================================
 
 The Check type and fields reference provides details about the following agent check types
-supported by the Rackspace Cloud Monitoring service.
+supported by the Rackspace Monitoring service.
 
 - :ref:`Remote check types<remote-check-type-ref>`
 
 - :ref:`Agent check types<agent-check-type-ref>`
 
 - :ref:`Hostinfo checks<hostinfo-check-type-ref>`
+
+- :ref:`Check status codes<check-status-codes>`
 
 
 .. note::
@@ -23,4 +25,3 @@ supported by the Rackspace Cloud Monitoring service.
 .. include:: check-types/agent-check-type-ref.rst
 .. include:: check-types/host-info-check-type-ref.rst
 .. include:: check-types/check-return-codes.rst
- 
