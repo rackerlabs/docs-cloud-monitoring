@@ -7,10 +7,10 @@ Metrics
 .. contents::
    :local:
    :depth: 1
-   
-   
+
+
 When Monitoring checks run, they generate metrics. These metrics
-are stored as full resolution data points in the Cloud Monitoring
+are stored as full resolution data points in the Rackspace Monitoring
 system. Full resolution data points are periodically rolled up
 (condensed) into coarser data points.
 
@@ -55,7 +55,7 @@ cumulative values or instantaneous (snapshot) values.
 
 Data granularity
 ~~~~~~~~~~~~~~~~
-Cloud Monitoring supports several granularities of data:
+Rackspace Monitoring supports several granularities of data:
 full resolution data and rollups computed at 5, 20, 60, 240
 and 1440 minute intervals.
 
@@ -122,7 +122,7 @@ API calculates depending upon the number of points you request:
 
 Data point expiration
 ~~~~~~~~~~~~~~~~~~~~~
-Cloud Monitoring expires data points according to the following schedule:
+Rackspace Monitoring expires data points according to the following schedule:
 
 +------------+------------+
 | Resolution | Expiration |

@@ -32,7 +32,7 @@ What's new
 
    .. code::
 
-       ================== Rackspace Cloud Monitoring Notification ===================
+       ================== Rackspace Monitoring Notification ===================
        Entity: web1.domain.com (50.56.179.42)
        Check: host server check (remote.ping)
        Alarm: Ping packet loss
@@ -52,7 +52,7 @@ What's new
 
        ------------------------------------------------------------------------------
 
-       This is an automated Cloud Monitoring notification. You received this email
+       This is an automated Rackspace Monitoring notification. You received this email
        because you are listed as a notification recipient.
 
 

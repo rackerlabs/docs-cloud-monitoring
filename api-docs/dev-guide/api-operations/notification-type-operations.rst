@@ -11,9 +11,8 @@ Notification types
 
 
 The notification type represents the type of notification
-you can configure. When you create a notification in Rackspace
-Cloud Monitoring, you must specify the notification type.
-Rackspace Cloud Monitoring currently supports the following
+you can configure. When you create a notification in Rackspace Monitoring, you must specify the notification type.
+Rackspace Monitoring currently supports the following
 notification types:
 
 +---------------+-----------------------------------+
@@ -27,14 +26,14 @@ notification types:
 |               | configurable URL.                 |
 +---------------+-----------------------------------+
 | **PagerDuty** | An incident management system     |
-|               | integrated with Rackspace Cloud   |
+|               | integrated with Rackspace         |
 |               | Monitoring.                       |
 +---------------+-----------------------------------+
 | **SMS**       | Text alerts where the message is  |
 |               | delivered to any phone number.    |
 +---------------+-----------------------------------+
 | **VictorOps** | An incident management system     |
-|               | integrated with Rackspace Cloud   |
+|               | integrated with Rackspace         |
 |               | Monitoring.                       |
 +---------------+-----------------------------------+
 
@@ -209,12 +208,12 @@ webhook is called:
 
 PagerDuty notification type
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-To use PagerDuty with Cloud Monitoring, go to the
+To use PagerDuty with Rackspace Monitoring, go to the
 `PagerDuty website <https://www.pagerduty.com/>`_ and sign up for an account.
 You will get an API Key in PagerDuty to be used when setting up the
 PagerDuty notification. To learn how to use this notification type,
 read the PagerDuty blog
-`Rackspace Cloud Monitoring Now Integrates with PagerDuty
+`Rackspace Monitoring Now Integrates with PagerDuty
 <https://www.pagerduty.com/blog/rackspace-cloud-monitoring-integration/>`_.
 
 +----------------+---------------------------------+---------------------------+
@@ -247,7 +246,7 @@ VictorOps notification type
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 A notification sent as a webhook to your VictorOps account.
 
-To use VictorOps with Cloud Monitoring, go to the
+To use VictorOps with Rackspace Monitoring, go to the
 `VictorOps website <https://victorops.com/>`_ and sign up for an account.
 You will get an API key and configure routing keys for the teams in
 VictorOps. The API key and routing key will be used when setting up the
@@ -256,19 +255,19 @@ VictorOps blog
 `Internet Age of Unix Philosophy <https://victorops.com/blog/internet-age-unix-philosophy/>`_
 and visit the `VictorOps Knowledge Base <http://victorops.force.com/knowledgebase/>`_.
 
-+-----------------+------------------------------------+------------------------+
-| Name            | Description                        | Validation             |
-+=================+====================================+========================+
-| **routing key** | The optional VictorOps routing_key | (/^[a-zA-Z0-9-_\.]+$/) |
-|                 | to use with Cloud Monitoring. You  |                        |
-|                 | create a routing_key in VictorOps  |                        |
-|                 | for team on-call configuration.    |                        |
-+-----------------+------------------------------------+------------------------+
-| **api key**     | The VictorOps api_key to use with  | UUID v4 format         |
-|                 | Cloud Monitoring. You get this     |                        |
-|                 | when you sign up for a VictorOps   |                        |
-|                 | account.                           |                        |
-+-----------------+------------------------------------+------------------------+
++-----------------+--------------------------------------+----------------------+
+| Name            | Description                          | Validation           |
++=================+======================================+======================+
+| **routing key** | The optional VictorOps routing_key   |(/^[a-zA-Z0-9-_\.]+$/)|
+|                 | to use with Rackspace Monitoring.    |                      |
+|                 | You create a routing_key in VictorOps|                      |
+|                 | for team on-call configuration.      |                      |
++-----------------+--------------------------------------+----------------------+
+| **api key**     | The VictorOps api_key to use with    | UUID v4 format       |
+|                 | Rackspace Monitoring. You get this   |                      |
+|                 | when you sign up for a VictorOps     |                      |
+|                 | account.                             |                      |
++-----------------+--------------------------------------+----------------------+
 
 .. _notification-types-api:
 

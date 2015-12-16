@@ -5,7 +5,7 @@ Setting up notifications 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In most cases, you and perhaps several people on your team will be
-interested in multiple alarms. Cloud Monitoring lets you set up
+interested in multiple alarms. Rackspace Monitoring lets you set up
 notification plans that can be shared among multiple alarms. In this
 exercise, you create the `notification <#>`__ first, then the
 `notification plan <#>`__, and then finally the alarms.

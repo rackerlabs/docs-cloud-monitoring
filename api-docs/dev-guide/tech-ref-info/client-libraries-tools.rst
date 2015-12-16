@@ -4,7 +4,7 @@
 Client libraries and tools
 ==========================
 
-Rackspace Cloud Monitoring provides the following additional libraries and tools that
+Rackspace Monitoring provides the following additional libraries and tools that
 you can use to interact with the API.
 
 **Python: rackspace-monitoring Library**
@@ -47,15 +47,15 @@ You can use the Raxmon CLI utility to interact with the API.
      $ pip install --upgrade rackspace-monitoring-cli
 
 
-**Integration resource: Cloud Monitoring Cookbook**
+**Integration resource: Rackspace Monitoring Cookbook**
 
-Rackspace Cloud Monitoring provides a cookbook for integrating with `Opscode Chef`_.
+Rackspace Monitoring provides a cookbook for integrating with `Opscode Chef`_.
 Use the following resources to learn how to do the integration:
 
-- Download the cookbook from the `cookbook cloud monitoring GitHub repository`_.
+- Download the cookbook from the `cookbook rackspace monitoring GitHub repository`_.
 
 - For information about installing the Chef integration, see the
-  `Cloud Monitoring Automation - Integrate Monitoring with Chef`_ article in the
+  `Rackspace Monitoring Automation - Integrate Monitoring with Chef`_ article in the
   Rackspace Knowledge Center.
 
 
@@ -65,5 +65,5 @@ Use the following resources to learn how to do the integration:
 .. _Fog library: http://fog.io/
 .. _rackspace-monitoring-cli GitHub repository: https://github.com/racker/rackspace-monitoring-cli
 .. _Opscode Chef: http://www.opscode.com/chef/
-.. _cookbook cloud monitoring GitHub repository: https://github.com/racker/cookbook-cloudmonitoring
-.. _Cloud Monitoring Automation - Integrate Monitoring with Chef: http://www.rackspace.com/knowledge_center/article/cloud-monitoring-automation-integrate-monitoring-with-chef
+.. _cookbook rackspace monitoring GitHub repository: https://github.com/racker/cookbook-cloudmonitoring
+.. _Rackspace Monitoring Automation - Integrate Monitoring with Chef: http://www.rackspace.com/knowledge_center/article/cloud-monitoring-automation-integrate-monitoring-with-chef

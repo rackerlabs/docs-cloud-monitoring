@@ -10,8 +10,8 @@ Agents
 
 The optional Monitoring Agent resides on the host server being
 monitored. The agent allows you to gather on-host metrics
-based on agent checks and push them to Cloud Monitoring where
-you can analyze them, use them with the Cloud Monitoring
+based on agent checks and push them to Rackspace Monitoring where
+you can analyze them, use them with the Rackspace Monitoring
 infrastructure, and archive them.
 
 The agent adheres to a few core design principals to ensure it fits easily
@@ -28,7 +28,7 @@ and securely into your infrastructure:
   x509 certificates, and TLS throughout the agent infrastructure.
 
 * **Simple Protocol**
-  The agent communicates with Cloud Monitoring via a documented
+  The agent communicates with Rackspace Monitoring via a documented
   JSON protocol.
 
 * **Open Source**

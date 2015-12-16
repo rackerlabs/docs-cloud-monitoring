@@ -7,9 +7,9 @@ Monitoring zones
 .. contents::
    :local:
    :depth: 1
-   
-   
-A monitoring zone is a location that Rackspace Cloud Monitoring
+
+
+A monitoring zone is a location that Rackspace Monitoring
 collects data from. Examples of monitoring zones are "US West",
 "DFW1" or "ORD1". It is an abstraction for a general location
 from which data is collected.

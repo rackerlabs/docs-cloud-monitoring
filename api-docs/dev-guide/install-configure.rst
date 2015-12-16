@@ -4,7 +4,7 @@ Install and configure the agent
 ---------------------------------
 
 This section provides instructions for installing and configuring the
-The Cloud Monitoring Agent
+The Rackspace Monitoring Agent
 
 
 .. _install-agent:
@@ -17,7 +17,7 @@ Install the agent
 * :ref:`Install the agent step-by-step <install-agent-step-by-step>`
 * :ref:`Install the agent on Windows <install-agent-windows>`
 
-Use of the Cloud Monitoring Agent is optional. If you choose to use the
+Use of the Rackspace Monitoring Agent is optional. If you choose to use the
 agent, you must install it on each server that you want to monitor.
 
 Package Manager installation is supported for the following OSs:
@@ -33,7 +33,7 @@ works <http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/Concepts.html#h
 For information about the agent endpoints, including attributes and code
 samples, see the :ref:`Agent
 API operations <agents-operations>`
-section. The Cloud Monitoring agent is distributed under the `Apache
+section. The Rackspace Monitoring agent is distributed under the `Apache
 license <http://www.apache.org/licenses/LICENSE-2.0.html>`__.
 
 For information about installing the agent from source, see
@@ -64,7 +64,7 @@ monitoring agent:
     Another option for agent installation is to use the `The Cloud
     Intelligence control panel <http://intelligence.rackspace.com>`__. The Cloud
     Intelligence control panel provides easy monitoring configuration and
-    set up as well as graphs for visualizing Cloud Monitoring. You log in
+    set up as well as graphs for visualizing Rackspace Monitoring. You log in
     with your MyCloud Control Panel log in, but the Cloud Intelligence
     control panel has many more monitoring configuration options, including
     two methods for installing the monitoring agent.
@@ -86,7 +86,7 @@ package.
 
 #. Log into the server that you want to monitor.
 
-#. Open a browser to the `Rackspace Cloud Monitoring Meta
+#. Open a browser to the `Rackspace onitoring Meta
    Packages <http://meta.packages.cloudmonitoring.rackspace.com/>`__.
 
 #. Find your operating system and enter the commands provided.
@@ -797,8 +797,7 @@ Configure the agent with the Setup program
 The agent Setup program provides the easiest way to get started with the
 agent. Setup completes the following configuration tasks for you:
 
--  Configures an agent token that the agent uses to authenticate with
-   Cloud Monitoring.
+-  Configures an agent token that the agent uses to authenticate with Rackspace Monitoring.
 
 -  Creates an agent configuration file,
    ``rackspace-monitoring-agent.cfg``.
@@ -893,17 +892,17 @@ Run the agent setup program
    recommended. Neither value is stored in clear text, it is used only
    for this initial authentication.
 
-   The Cloud Monitoring service creates an agent token and syncs it with
+   The Rackspace Monitoring service creates an agent token and syncs it with
    the entity representing the resource that you are monitoring.
 
    You should see the message ``Agent successfully connected!``
 
    The agent should automatically start.
 
-   The next prompt displays a list of Cloud Monitoring entities.
+   The next prompt displays a list of Rackspace Monitoring entities.
 
 ..  note::
-    A Cloud Monitoring entity is created automatically for every Rackspace
+    A Rackspace Monitoring entity is created automatically for every Rackspace
     cloud server on your account. But if you install the agent on a
     dedicated server, or on a server not hosted with Rackspace, including a
     server in a Rackspace private cloud, entities are not automatically
@@ -967,8 +966,8 @@ Configure the agent manually
    the next several steps.
 
 3. Assign an ID to your agent and associate it with the server entity
-   that you just created. Cloud Monitoring uses this ID for two-way
-   communication between the agent and the Cloud Monitoring endpoint.
+   that you just created. Rackspace Monitoring uses this ID for two-way
+   communication between the agent and the Rackspace Monitoring endpoint.
 
    .. code::
 
@@ -1083,7 +1082,7 @@ Configure the agent with YAML files
 * :ref:`Troubleshoot agent configuration with YAML files <troubleshoot-agent-configuration-with-YAML>`
 
 The server-side monitoring configuration is a new method that enables
-you to easily configure Cloud Monitoring on the server that you want to
+you to easily configure Rackspace Monitoring on the server that you want to
 monitor. It is especially useful in conjunction with automation tools or
 when dealing with duplicate servers. Automation tools like Chef, Puppet,
 and Ansible can maintain a repository of configuration files to

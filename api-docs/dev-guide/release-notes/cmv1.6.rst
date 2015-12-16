@@ -8,9 +8,9 @@ These release notes correspond to a new-feature release of Rackspace Monitoring.
 What's new
 ~~~~~~~~~~~~~
 
-•	The new `PagerDuty notification type <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#pagerduty-notification-type>`__ is now fully documented. This notification type allows you to use PagerDuty to receive notifications via a page. For additional details, see the `Cloud Monitoring Adds PagerDuty Integration <http://developer.rackspace.com/blog/cloud-monitoring-adds-pagerduty-integration.html>`__ blog post.
+•	The new `PagerDuty notification type <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#pagerduty-notification-type>`__ is now fully documented. This notification type allows you to use PagerDuty to receive notifications via a page. For additional details, see the `Rackspace Monitoring Adds PagerDuty Integration <http://developer.rackspace.com/blog/cloud-monitoring-adds-pagerduty-integration.html>`__ blog post.
 
-•	Cloud Monitoring now sends a welcome email to the configured technical contacts with references on frequently used monitoring features.
+•	Rackspace Monitoring now sends a welcome email to the configured technical contacts with references on frequently used monitoring features.
 
 Resolved issues
 ~~~~~~~~~~~~~~~~~~~
