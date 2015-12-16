@@ -2,8 +2,8 @@
 
 Concepts
 --------
-The concepts section describes Cloud Monitoring key terms, and then
-provides a high-level overview of how cloud monitoring and the
+The concepts section describes Rackspace Monitoring key terms, and then
+provides a high-level overview of how monitoring and the
 monitoring agent work.
 
 .. _key-terms-and-concepts:
@@ -60,7 +60,7 @@ Monitoring key terms and concepts
     For each check you create, you designate a check type. The check
     type specifies what kind of data to collect, PING, HTTP, SMTP, and
     so on. There are are two major check types: remote and agent.
-    Rackspace Cloud Monitoring check types are fully described in the
+    Rackspace Monitoring check types are fully described in the
     :ref:`Check types <check-type-operations>` section.
 
     Note that checks only gather metrics. A check specifies what data
@@ -72,9 +72,9 @@ Monitoring key terms and concepts
  
 **Entity**
 
-    In Rackspace Cloud Monitoring, an entity is the object or resource
+    In Rackspace Monitoring, an entity is the object or resource
     that you want to monitor. Entities are automatically created for for
-    the Rackspace products that have Cloud Monitoring integration, like
+    the Rackspace products that have monitoring integration, like
     Cloud Servers and Cloud Databases. You can also create entities
     yourself. For more information, see the API operations reference for the
     :ref:`entity <entities-operations>`
@@ -113,10 +113,10 @@ Monitoring key terms and concepts
     network usage. It complements the availability data you can gather
     with the remote checks types. The agent operates as a single small
     service that runs checks that you configure and pushes metrics to
-    the rest of Cloud Monitoring so that the metrics can be analyzed,
+    the rest of Rackspace Monitoring so that the metrics can be analyzed,
     alerted on, and archived. These metrics are gathered via checks
     using specified agent check types, and can be used with the other
-    Cloud Monitoring features such as alarms. See
+    Rackspace Monitoring features such as alarms. See
     :rax-devdocs:`Agent check types <cm/api/v1.0/cm-devguide/content/appendix-check-types-agent.html>`
     for a list of agent check types.
 
@@ -147,7 +147,7 @@ Monitoring key terms and concepts
     A notification is a rule specifying how and to whom an informational
     message should be sent when an alarm is triggered. You can set up
     of the notification rules are determined by the specified
-    notification type. Rackspace Cloud Monitoring currently supports
+    notification type. Rackspace Monitoring currently supports
     webhooks, email, PagerDuty, SMS, and VictorOps notification types
     for sending notifications.
 
@@ -179,17 +179,17 @@ Monitoring key terms and concepts
 
 .. _how-cloud-monitoring-works:
 
-How cloud monitoring works
+How Rackspace Monitoring works
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Rackspace Cloud Monitoring helps you track all your resources; from
+Rackspace Monitoring helps you track all your resources; from
 websites to web servers, routers, load balancers, and more. The
-following image illustrates a basic cloud monitoring workflow.
+following image illustrates a basic monitoring workflow.
  
-**Figure: Rackspace Cloud Monitoring workflow**
+**Figure: Rackspace Monitoring workflow**
 
 .. image::  _images/Rackspace_monitor_svc_image6.png
-    :alt: Rackspace Cloud Monitoring workflow
+    :alt: Rackspace Monitoring workflow
 
 #. You create an entity to represent the item that you want to monitor.
    For example, the entity might represent a website or web server.
@@ -220,8 +220,8 @@ following image illustrates a basic cloud monitoring workflow.
 How the monitoring agent works
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Cloud Monitoring also provides the optional Monitoring Agent which you
-install on the servers you want to monitor. While Cloud Monitoring can
+Rackspace Monitoring also provides the optional Monitoring Agent which you
+install on the servers you want to monitor. While Rackspace Monitoring can
 poll your servers from multiple data centers, the agent gathers
 information locally on the server. The agent gathers:
 

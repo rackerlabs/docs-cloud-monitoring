@@ -10,7 +10,7 @@ Alert Triggering and Alarms
 
 This section describes alerting including an explanation of the alert flow, the alarm
 language, the policies that you can create using alarms and example best practices.
-In short, Rackspace Cloud Monitoring uses alarms to evaluate the metrics of a check
+In short, Rackspace Monitoring uses alarms to evaluate the metrics of a check
 and decide if a notification plan should be executed. It is the primary way to describe
 exactly what you want to be alerted on.
 
@@ -64,7 +64,7 @@ Alarm language
 -----------------
 
 The alarm language is one of the most powerful parts of
-Rackspace Cloud Monitoring. It describes the mechanism to trigger
+Rackspace Monitoring. It describes the mechanism to trigger
 an event. Upon triggering an event a notification plan is
 executed that describes how to send different notifications.
 
@@ -349,7 +349,7 @@ policies and their trade-offs are described next.
 	indicate the most recent zone observation.
 
 	The ``ONE`` policy optimizes speed of alerting at the expense of correctness
-	as any network disruption between Rackspace Cloud Monitoring and the
+	as any network disruption between Rackspace Monitoring and the
 	monitored resource could generate an alert. Additionally, the ``ONE``
 	policy can cause many notifications as a change in the state of any
 	one monitoring zone from its previous state results in a notification
@@ -398,7 +398,7 @@ The format of a modifier is as follows:
 
      ex: <funcname>(metric['response_time'])
 
-Rackspace Cloud Monitoring supports the following modifiers:
+Rackspace Monitoring supports the following modifiers:
 
 **Previous function**
 
@@ -585,7 +585,7 @@ to respond) than the alarm is ``CRITICAL``.
 SSH checks
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The following example uses the Rackspace Cloud Monitoring command
+The following example uses the Rackspace Monitoring command
 line interface (CLI). For information on downloading and installing the
 CLI, see `Rackspace Monitoring CLI <https://github.com/racker/rackspace-monitoring-cli>`_.
 

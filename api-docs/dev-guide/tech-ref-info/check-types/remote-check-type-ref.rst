@@ -4,7 +4,7 @@
 Remote check types
 =====================
 
-Rackspace Cloud Monitoring supports the following remote check types.
+Rackspace Monitoring supports the following remote check types.
 
 .. contents::
    :local:

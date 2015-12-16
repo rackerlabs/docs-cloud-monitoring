@@ -20,7 +20,7 @@ returned in the response body, specify the required request URI
 parameters described below.
 
 .. note::
-   Cloud Monitoring is currently limited to 1440 data points returned
+   Rackspace Monitoring is currently limited to 1440 data points returned
    per request. If all your data is not returned, break your
    request into multiple requests across smaller time ranges.
 

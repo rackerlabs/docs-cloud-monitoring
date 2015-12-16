@@ -3,7 +3,7 @@
 Configuring raxmon 
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Configure raxmon with your credentials and the URLs for Cloud Monitoring
+Configure raxmon with your credentials and the URLs for Rackspace Monitoring
 and the Rackspace Cloud Identity Service.
 
  

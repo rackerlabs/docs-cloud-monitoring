@@ -6,7 +6,7 @@ These release notes correspond to a new-feature release of Rackspace Monitoring.
 What's new
 ~~~~~~~~~~~~~
 
-•	An `SMS notification type <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#sms-notification-type>`__ is now available. This notification type allows Cloud Monitoring users to receive notifications on an SMS-enabled mobile phone.
+•	An `SMS notification type <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#sms-notification-type>`__ is now available. This notification type allows Rackspace Monitoring users to receive notifications on an SMS-enabled mobile phone.
 
 This API-only feature is available globally without regard to region.
 

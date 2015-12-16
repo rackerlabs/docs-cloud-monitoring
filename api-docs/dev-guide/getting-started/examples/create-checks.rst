@@ -21,12 +21,12 @@ monitoring\_zones\_poll
     examples use ``mzdfw``.
 
 timeout
-    Specifies the maximum time Cloud Monitoring waits for the check to
+    Specifies the maximum time Rackspace Monitoring waits for the check to
     run before considering it to have failed. This value must be less
     than the value for ``period``.
 
 period
-    Specifies how often Cloud Monitoring `collectors <#>`__ run the
+    Specifies how often Rackspace Monitoring `collectors <#>`__ run the
     check. This value cannot be less than the value for ``timeout``
 
 target\_alias

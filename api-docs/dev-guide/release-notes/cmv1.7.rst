@@ -6,7 +6,7 @@ These release notes correspond to a new-feature release of Rackspace Monitoring.
 What's new
 ~~~~~~~~~~~~~
 
-Server-side configuration is now available. For details, see `Install and Configure section of the Cloud Monitoring Getting Started Guide </cm/api/v1.0/cm-getting-started/content/install-configure.html#agent-config-file>`__.
+Server-side configuration is now available. For details, see `Install and Configure section of the Rackspace Monitoring Getting Started Guide </cm/api/v1.0/cm-getting-started/content/install-configure.html#agent-config-file>`__.
 
 Server-side configuration allows checks and alarms to be configured using a YAML file. Users must update their monitoring agent to take advantage of this new feature.
 

@@ -3,7 +3,7 @@
 Time series collections
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Rackspace Cloud Monitoring tracks various time-indexed data sets, such
+Rackspace Monitoring tracks various time-indexed data sets, such
 as audits and alarm histories. When accessing a time series collection,
 two parameters beyond the base paginated collection API are available:
 ``from`` and ``to``. These parameters take integer values, which are

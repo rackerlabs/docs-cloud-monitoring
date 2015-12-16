@@ -4,7 +4,7 @@
 Agent check types
 ===================
 
-Rackspace Cloud Monitoring supports the following agent check types.
+Rackspace Monitoring supports the following agent check types.
 
 .. contents::
    :local:
@@ -667,14 +667,14 @@ Available metrics are determined by the plugin.
 
 **Community Plugin Repository**
 
-A curated repository of plugins created by Cloud Monitoring users is
+A curated repository of plugins created by Rackspace Monitoring users is
 avaliable on
 `GitHub <https://github.com/racker/rackspace-monitoring-agent-plugins-contrib>`__.
 Contributions are welcome!
 
 ..  note::
 
-    The Cloud Monitoring Agent is also capable of executing Cloudkick
+    The Rackspace Monitoring Agent is also capable of executing Cloudkick
     plugins, so if you are a Cloudkick user you can just drop in any
     existing plugin and it should just work.
 

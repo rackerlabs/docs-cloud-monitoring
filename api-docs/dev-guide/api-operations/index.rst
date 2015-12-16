@@ -1,7 +1,7 @@
 .. meta::
 
-   :description: Rackspace Cloud Monitoring API Reference
-   :keywords: Rackspace, Cloud Monitoring ReST API, API resources, API methods
+   :description: Rackspace Monitoring API Reference
+   :keywords: Rackspace, Rackspace Monitoring ReST API, API resources, API methods
 
 .. toctree::
    :maxdepth: 2

@@ -13,15 +13,14 @@ information:
 
 -  Prerequisites for monitoring your cloud resources
 
--  How cloud monitoring works
+-  How Rackspace monitoring works
 
 -  How to install and configure raxmon, the Rackspace Monitoring command
    line interface (CLI)
 
 -  How to create a monitor
 
-The main purpose of this guide is to get you started with Rackspace
-Cloud Monitoring. To help you accomplish this goal, the guide includes a
+The main purpose of this guide is to get you started with Rackspace Monitoring. To help you accomplish this goal, the guide includes a
 tutorial that lets you try out the basic operations for creating a
 monitor.
 

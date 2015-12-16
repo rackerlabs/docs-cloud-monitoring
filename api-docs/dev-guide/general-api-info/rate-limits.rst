@@ -6,7 +6,7 @@ Rate limits
 The following table specifies the default rate limits for different API
 operations.
 
-**Table: Cloud Monitoring default rate limits**
+**Table: Rackspace Monitoring default rate limits**
 
 +-----------------------------------------------+------------------------------+
 | URI                                           | Limit                        |
@@ -22,7 +22,7 @@ operations.
 
 Each API response also contains the following headers:
 
-**Table: Cloud Monitoring API response headers**
+**Table: Rackspace Monitoring API response headers**
 
 +--------------------+------------------------------------------+
 | Header name        | Description                              |
@@ -44,5 +44,5 @@ receive a 400, Limit has been reached response. HTTP responses are
 returned with a ``Reply-After`` header (number of seconds) to notify the
 client when it can attempt to try again.
 
-To view the limits that apply to your account, see the Account API operations in the 
+To view the limits that apply to your account, see the Account API operations in the
 :ref:`API Reference <api-reference>`.

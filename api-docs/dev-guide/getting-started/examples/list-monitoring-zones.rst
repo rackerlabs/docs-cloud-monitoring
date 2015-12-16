@@ -6,7 +6,7 @@ Listing monitoring zones
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Before creating a check for the new entity, choose the `monitoring
-zones <#>`__ from which you want to run the check. Cloud Monitoring is
+zones <#>`__ from which you want to run the check. Rackspace Monitoring is
 server monitored from several monitoring zones to reduce the risk of
 noisy alarms and check the response time from different locations around
 the world.
@@ -125,5 +125,3 @@ the zone or zones from which you want to launch your first check.
      'id': u'mzord',
      'label': u'ord',
      'source_ips': [u'2001:4801:7902:0001::/64', u'50.57.61.0/26']}
-
-**Next step:** Create several checks for the new entity.

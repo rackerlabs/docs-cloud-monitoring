@@ -6,11 +6,11 @@ Notification plans
 .. contents::
    :local:
    :depth: 1
-   
-   
+
+
 A notification plan contains a set of notification actions
-that Rackspace Cloud Monitoring executes when triggered by an
-alarm. Rackspace Cloud Monitoring currently supports webhook,
+that Rackspace Monitoring executes when triggered by an
+alarm. Rackspace Monitoring currently supports webhook,
 email, PagerDuty, and SMS notifications.
 
 Each notification state can contain multiple notification actions.

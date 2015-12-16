@@ -7,12 +7,11 @@ Notifications
 .. contents::
    :local:
    :depth: 1
-   
+
 A notification is a destination to which an alert is sent. It can
 be a variety of different notification types, which will evolve over time.
 
-For instance, with a webhook type notification Rackspace Cloud
-Monitoring posts JSON formatted data to a user-specified URL on an
+For instance, with a webhook type notification Rackspace Monitoring posts JSON formatted data to a user-specified URL on an
 alert condition (Check goes from OK -> CRITICAL and so on).
 
 A notification, ntTechnicalContactsEmail, is provided by default

@@ -3,7 +3,7 @@
 Request/Response types
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The Rackspace Cloud Monitoring API supports both the JSON and XML data
+The Rackspace Monitoring API supports both the JSON and XML data
 serialization formats. The request format is specified using the
 ``Content-Type`` header and is required for operations that have a
 request body. The response format can be specified in requests using the
@@ -37,7 +37,7 @@ header:
  
 **Example: JSON Request with Headers**
 
-.. code::  
+.. code::
 
     POST https://monitoring.api.rackspacecloud.com/v1.0/<your_account_number>/entities/enHBMKJpe6/test-check/
     X-Auth-Token: <your_auth_token>
@@ -50,14 +50,14 @@ header:
       "target_alias" : "default",
       "timeout" : 30,
       "type" : "remote.ping"
-    }' 
+    }'
 
 Therefore an XML response format is returned:
 
  
 **Example: XML Response with Headers**
 
-.. code::  
+.. code::
 
     <checks_data>
         <check_data>

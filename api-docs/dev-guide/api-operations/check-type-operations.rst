@@ -6,8 +6,8 @@ Check types
 .. contents::
    :local:
    :depth: 1
-   
-Each check within Rackspace Cloud Monitoring has a designated check
+
+Each check within Rackspace Monitoring has a designated check
 type. The check type instructs the monitoring system how to
 check the monitored resource.
 
@@ -22,7 +22,7 @@ at the beginning of a connection. Gathering metrics from server
 software to create alerts against can be accomplished using the
 remote.http check type and the 'extract' attribute to define the format.
 
-In addition to the standard Cloud Monitoring check types, you can
+In addition to the standard Rackspace Monitoring check types, you can
 also use agent check types if the Monitoring Agent is installed on
 the server you are monitoring.
 
