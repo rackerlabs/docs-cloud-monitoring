@@ -4,7 +4,7 @@ Install and configure the agent
 ---------------------------------
 
 This section provides instructions for installing and configuring the
-The Rackspace Monitoring Agent
+The Rackspace Monitoring Agent.
 
 
 .. _install-agent:
@@ -20,7 +20,7 @@ Install the agent
 Use of the Rackspace Monitoring Agent is optional. If you choose to use the
 agent, you must install it on each server that you want to monitor.
 
-Package Manager installation is supported for the following OSs:
+Package Manager installation is supported for the following operating systems:
 
 -  Ubuntu and Debian
 
