@@ -311,7 +311,7 @@ texinfo_documents = [
     ('index', 'RackspaceMonitoringDeveloperDoc',
      'Rackspace Monitoring API Developer Guide', 'Rackspace',
      'RackspaceMonitoringDeveloperDoc',
-     'Learn about using the REST API for the Rackspace Cloud Monitoring',
+     'Learn about using the REST API for the Rackspace Monitoring',
      'Miscellaneous'),
 ]
 
