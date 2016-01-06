@@ -8,12 +8,6 @@ List entities for an account
 
 Lists the entities associated with this account.
 
-Use ``/entities?agent_id=AnAgentID`` to filter information on
-the specified agent.
-
-Use ``/entities?id=entityOneId & id=entityTwoId`` to filter
-information on the specified entities.
-
 This operation can be paginated. For information,
 see :ref:`Paginated collections <paginated-collections>`.
 
