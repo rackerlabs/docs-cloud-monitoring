@@ -15,6 +15,7 @@ for each check and alarm pair. If the latest state for a check and
 alarm pair is not available, the alarm hasn't been evaluated yet and
 the current state for pair is 'UNKNOWN'.
 
+
 .. note::
    In a request, you can filter for returned entities by ``uri``
    or ``entityId``, but you cannot use both filter types in the same
@@ -23,6 +24,9 @@ the current state for pair is 'UNKNOWN'.
    When filtering requests by entity ``uri``, unknown URIs are
    ignored, and entities are returned for any correct URIs. An
    HTTP 404 error is returned only if no known URIs are supplied.
+
+   .. note::
+      In a request, you can also filter the overview and latest_alarm_states views by one agentId or multiple agentIds.
 
 The following table shows the possible response codes for this operation:
 
@@ -65,7 +69,7 @@ The following table shows the header parameters for the request:
 +=================+================+===============================================+
 |X-Auth-Token     |String          |A valid authentication token with              |
 |                 |*(Required)*    |administrative access. For details, see        |
-|                 |                |:ref:`Get your credentials <auth-credentials>` |  
+|                 |                |:ref:`Get your credentials <auth-credentials>` |
 +-----------------+----------------+-----------------------------------------------+
 
 
