@@ -25,8 +25,9 @@ the current state for pair is 'UNKNOWN'.
    ignored, and entities are returned for any correct URIs. An
    HTTP 404 error is returned only if no known URIs are supplied.
 
-   .. note::
-      In a request, you can also filter the overview and latest_alarm_states views by one agentId or multiple agentIds.
+
+.. note::
+   In a request, you can also filter the overview and latest_alarm_states views by one agentId or multiple agentIds.
 
 The following table shows the possible response codes for this operation:
 
