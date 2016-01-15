@@ -1,4 +1,4 @@
-v1.19, December 31, 2015 
+v1.18, December 30, 2015 
 -------------------------
 
 These release notes correspond to a new-feature release of Rackspace Monitoring.
