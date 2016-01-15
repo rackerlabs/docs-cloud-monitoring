@@ -9,6 +9,7 @@ Learn about new features, enhancements, known issues, resolved issues, and other
 .. toctree::
    :maxdepth: 2
 
+   release-notes/cmv1.19
    release-notes/cmv1.18
    release-notes/cmv1.17
    release-notes/cmv1.16
