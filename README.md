@@ -10,6 +10,8 @@ This GitHub repository contains the source files for the following Rackspace Mon
 * [Developer Guide](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/)
 * [API Reference](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#api-reference)
 * [Technical Reference for alarms, alerts, and checks](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#technical-reference-info-intro)
+* [Release Notes](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#release-notes)
+
 
 ## Contributing
 
