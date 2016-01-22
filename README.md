@@ -6,10 +6,10 @@
 
 This GitHub repository contains the source files for the following Rackspace Monitoring API documentation:
 
-* [Rackspace Monitoring Getting Started Guide](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#getting-started)
-* [Rackspace Monitoring Developer Guide](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/)
-* [Rackspace Monitoring API Reference](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#api-reference)
-
+* [Getting Started Guide](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#getting-started)
+* [Developer Guide](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/)
+* [API Reference](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#api-reference)
+* [Technical Reference for alarms, alerts, and checks](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#technical-reference-info-intro)
 
 ## Contributing
 
