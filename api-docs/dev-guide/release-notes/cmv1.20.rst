@@ -1,4 +1,4 @@
-v1.18, December 30, 2015 
+v1.20, January 31, 2016 
 -------------------------
 
 These release notes correspond to a new-feature release of Rackspace Monitoring.
@@ -13,11 +13,16 @@ Resolved issues
 
 The following agent-specific changes were made:
 
-•	Made a fix for the Apache status page check to work correctly with virtual host based systems
 
-•	Made a fix for Windows where an underlying library was returning a NULL
+* Plugins: Executables within directories of the whitelisted folder were not being ran correctly
 
-•	Fixed a crash and adds more logging to invalid responses from the server endpoint
+* '-N' command line argument: Skips entity creation on setup
+
+* Set the default locale
+
+* Write the configuration file slightly different to see if extraneous characters on some machines gets fixed
+
+* Fixed an issue in an underlying library performing resolv.conf parsing. If there was more than one whitespace character in-between the `nameserver` and `ip` then the application would not discover the DNS servers correctly. This release allows for these extra characters.
 
 
 
