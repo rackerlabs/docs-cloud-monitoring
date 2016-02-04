@@ -37,3 +37,4 @@ Use the following links to jump directly to user and reference information for u
    tech-ref
    tech-ref-info/index
    release-notes
+   copyright
