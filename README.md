@@ -68,6 +68,6 @@ Content | File
 
 ### Support and feedback
 
-If you find a problem, open a GitHub [issue](https://github.com/rackerlabs/docs-cloud-monitoring/issues).
+If you find a problem, open a GitHub [issue](https://github.com/meker12/docs-cloud-monitoring/issues).
 
 If you need additional assistance, contact us at [devdoc@rackspace.com](mailto:devdoc@rackspace.com).
