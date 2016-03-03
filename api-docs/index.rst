@@ -11,13 +11,13 @@ Use the following links to jump directly to user and reference information for u
 
 - :ref:`Getting Started Guide <getting-started>`
 
-- :ref:`Developer Guide <developer-guide>`.
+- :ref:`Developer Guide <developer-guide>`
 
-- :ref:`API reference <api-reference>`.
+- :ref:`API reference <api-reference>`
 
 - :ref:`Technical reference <technical-reference-info-intro>`. (Details about monitoring resources like alarms and check)
 
-- :ref:`Release notes <release-notes>`.
+- :ref:`Release notes <release-notes>`
 
 
 .. toctree:: :hidden:
