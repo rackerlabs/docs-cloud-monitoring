@@ -1,6 +1,6 @@
 # Rackspace Monitoring API documentation
 
-**Build:** [Strider](http://ci.deconst.horse/) (http://ci.deconst.horse/rackerlabs/docs-cloud-monitoring/)
+[![build badge](https://build.developer.rackspace.com/rackerlabs/docs-cloud-monitoring/badge?branch=master)](https://build.developer.rackspace.com/rackerlabs/docs-cloud-monitoring/)
 
 ## Purpose
 
