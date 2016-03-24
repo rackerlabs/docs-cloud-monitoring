@@ -150,8 +150,8 @@ RBAC permissions cross-reference to Rackspace Monitoring operations
 
 API operations for Rackspace Monitoring may or may not be available to all
 roles. To see which operations are permitted to invoke which calls,
-review the Knowledge Center
-article `Detailed permissions matrix for Rackspace Monitoring`_.
+review the 
+:how-to:`Detailed permissions matrix for Rackspace Monitoring <detailed-permissions-matrix-for-rackspace-monitoring>` 
+article.
 
 
-.. _Detailed permissions matrix for Rackspace Monitoring: http://www.rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-cloud-monitoring

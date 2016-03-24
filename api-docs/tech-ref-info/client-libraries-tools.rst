@@ -55,8 +55,8 @@ Use the following resources to learn how to do the integration:
 - Download the cookbook from the `cookbook rackspace monitoring GitHub repository`_.
 
 - For information about installing the Chef integration, see the
-  `Rackspace Monitoring Automation - Integrate Monitoring with Chef`_ article in the
-  Rackspace Knowledge Center.
+  :how-to:`Rackspace Monitoring Automation - Integrate Monitoring with Chef <rackspace-monitoring-automation-integrate-monitoring-with-chef>` 
+  article in the Rackspace Support How To collection.
 
 
 .. _Apache Libcloud: http://libcloud.apache.org
@@ -66,4 +66,3 @@ Use the following resources to learn how to do the integration:
 .. _rackspace-monitoring-cli GitHub repository: https://github.com/racker/rackspace-monitoring-cli
 .. _Opscode Chef: http://www.opscode.com/chef/
 .. _cookbook rackspace monitoring GitHub repository: https://github.com/racker/cookbook-cloudmonitoring
-.. _Rackspace Monitoring Automation - Integrate Monitoring with Chef: http://www.rackspace.com/knowledge_center/article/cloud-monitoring-automation-integrate-monitoring-with-chef

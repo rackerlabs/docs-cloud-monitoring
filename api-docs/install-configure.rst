@@ -923,9 +923,9 @@ Run the agent setup program
     :ref:`First steps with the
     agent <first-steps>`.
 
-To learn more, see the article `Monitoring: Differences Between
+To learn more, see the article :how-to:`Monitoring: Differences Between
 Rackspace Server Users and Non-Rackspace Server
-Users <http://www.rackspace.com/knowledge_center/article/monitoring-differences-between-rackspace-server-users-and-non-rackspace-server-users>`__.
+Users <monitoring-differences-between-rackspace-server-users-and-non-rackspace-server-users>`.
 
 .. _configure-agent-manually:
 
