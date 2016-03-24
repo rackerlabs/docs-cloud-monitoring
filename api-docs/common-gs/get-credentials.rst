@@ -18,7 +18,7 @@ Then, select **Account Settings** to open the page.
 
 
 Saving your API key
-^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - On the Account Settings page, find the API Key in the **Login Details** section.
 - Click  **Show** to see the value and copy it to a text editor of your choice.

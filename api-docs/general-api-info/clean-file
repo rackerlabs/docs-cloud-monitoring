@@ -12,7 +12,7 @@ Rackspace Monitoring API service capabilities, based on roles
 defined by Rackspace.
 (See :ref:`Rackspace Monitoring product roles and capabilities <monitoring-rbac>`.)
 The permissions to perform certain operations in the Rackspace Cloud
-Monitoring API – create, read, update, delete – are assigned to specific
+Monitoring API  create, read, update, delete  are assigned to specific
 roles. The account owner assigns these roles, either multiproduct
 (global) or product-specific (for example, Rackspace Monitoring only) to
 account users.
@@ -56,7 +56,7 @@ Center articles:
 .. _monitoring-rbac:
 
 Roles available for Rackspace Monitoring
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Three roles (admin, creator, and observer) can be used to access the Rackspace Monitoring API
 specifically. The following table describes these
@@ -146,7 +146,7 @@ the Control Panel are resolved.
 .. _rbac-permissions-cross-reference:
 
 RBAC permissions cross-reference to Rackspace Monitoring operations
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 API operations for Rackspace Monitoring may or may not be available to all
 roles. To see which operations are permitted to invoke which calls,
