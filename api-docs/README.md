@@ -6,13 +6,13 @@
 
 This GitHub repository contains the source files for the following Rackspace Metrics API documentation:
 
-* [Rackspace Monitoring Getting Started Guide](https://developer.rackspace.com/docs/monitoring/v1/developer-guide/#getting-started)
-* [Rackspace Monitoring Developer Guide](https://developer.rackspace.com/docs/metrics/v1/developer-guide/)
-* [Rackspace Monitoring API Reference](https://developer.rackspace.com/docs/metrics/v1/developer-guide/#api-reference)
+* [Rackspace Monitoring Getting Started Guide](https://developer.rackspace.com/docs/rackspace-monitoring/v1/developer-guide/#getting-started)
+* [Rackspace Monitoring Developer Guide](https://developer.rackspace.com/docs/rackspace-monitoring/v1/developer-guide/)
+* [Rackspace Monitoring API Reference](https://developer.rackspace.com/docs/rackspace-monitoring/v1/developer-guide/#api-reference)
 
 
 When you commit changes to the master branch of this repository, the 
-[Strider CI/CD build job](https://build.developer.rackspace.com/rackerlabs/docs-cloud-identity/) 
+[Strider CI/CD build job](https://build.developer.rackspace.com/rackerlabs/docs-cloud-monitoring/) 
 builds the documentation. Successful builds are deployed to production.
 
 ### Support and feedback
