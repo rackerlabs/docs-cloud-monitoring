@@ -9,7 +9,8 @@ using the REST application programming interface (API) for the Rackspace Monitor
 service.
 
 To use the information provided here, you should have a general understanding of the
-`Rackspace Monitoring service`_ and have a `Rackspace Cloud account`_ with access to Rackpace Monitoring service. You
+:how-to:`Rackspace Monitoring service <rackspace-monitoring>` and have a 
+`Rackspace Cloud account`_ with access to Rackpace Monitoring service. You
 should also be familiar with the following technologies:
 
 -  *RESTful* web services
@@ -18,5 +19,4 @@ should also be familiar with the following technologies:
 
 -  JSON data serialization format
 
-.. _Rackspace Monitoring service: http://www.rackspace.com/knowledge_center/product-faq/cloud-monitoring
 .. _Rackspace Cloud Account: https://cart.rackspace.com/cloud
