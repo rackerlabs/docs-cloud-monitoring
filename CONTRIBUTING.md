@@ -30,21 +30,21 @@ the Sphinx project and content architecture for the documentation:
 
 Content | File
 --- | ---
-|Sphinx documentation configuration file| [conf.py](https://github.com/rackerlabs/docs-cloud-monitoring/blob/master/api-docs/dev-guide/conf.py) (Typically, this file does not require changes.)
-|Index page for the main content structure| [index.rst](https://github.com/rackerlabs/docs-cloud-monitoring/blob/master/api-docs/dev-guide/index.rst)
-|About the API index| [overview/index.rst](https://github.com/rackerlabs/docs-cloud-monitoring/blob/master/api-docs/dev-guide/overview/index.rst)
-|Getting Started introduction| [getting-started.rst](https://github.com/rackerlabs/docs-cloud-monitoring/blob/master/api-docs/dev-guide/getting-started.rst)
-|Getting Started index|[getting-started/index.rst](https://github.com/rackerlabs/docs-cloud-monitoring/blob/master/api-docs/dev-guide/getting-started/index.rst)
-|Developer Guide introduction|[developer-guide.rst](https://github.com/rackerlabs/docs-cloud-monitoring/blob/master/api-docs/dev-guide/developer-guide.rst)
-|Concepts section| [concepts.rst](https://github.com/rackerlabs/docs-cloud-monitoring/blob/master/api-docs/dev-guide/concepts.rst)
-|General API information index|[general-api-info/index.rst](https://github.com/rackerlabs/docs-cloud-monitoring/blob/master/api-docs/dev-guide/general-api-info/index.rst)
-|API Reference introduction|[api-reference.rst](https://github.com/rackerlabs/docs-cloud-monitoring/blob/master/api-docs/dev-guide/api-reference.rst)
-|API Reference index|[api-operations/index.rst](https://github.com/rackerlabs/docs-cloud-monitoring/blob/master/api-docs/dev-guide/api-operations/index.rst)
-|API operations methods, including code samples|[api-operations/methods](https://github.com/rackerlabs/docs-cloud-monitoring/tree/master/api-docs/dev-guide/api-operations/methods) 
-|Technical reference intro|[tech-ref.rst](https://github.com/rackerlabs/docs-cloud-monitoring/blob/master/api-docs/dev-guide/tech-ref.rst)
-|Technical reference index|[tech-ref-info/index.rst](https://github.com/rackerlabs/docs-cloud-monitoring/blob/master/api-docs/dev-guide/tech-ref-info/index.rst)
-|Release Notes introduction|[release-notes.rst](https://github.com/rackerlabs/docs-cloud-monitoring/blob/master/api-docs/dev-guide/release-notes.rst)
-|Release Notes by version|[release-notes](https://github.com/rackerlabs/docs-cloud-monitoring/tree/master/api-docs/dev-guide/release-notes)
+|Sphinx documentation configuration file| [conf.py](https://github.com/rackerlabs/docs-cloud-monitoring/blob/master/api-docs/conf.py) (Typically, this file does not require changes.)
+|Index page for the main content structure| [index.rst](https://github.com/rackerlabs/docs-cloud-monitoring/blob/master/api-docs/index.rst)
+|About the API index| [overview/index.rst](https://github.com/rackerlabs/docs-cloud-monitoring/blob/master/api-docs/overview/index.rst)
+|Getting Started introduction| [getting-started.rst](https://github.com/rackerlabs/docs-cloud-monitoring/blob/master/api-docs/getting-started.rst)
+|Getting Started index|[getting-started/index.rst](https://github.com/rackerlabs/docs-cloud-monitoring/blob/master/api-docs/getting-started/index.rst)
+|Developer Guide introduction|[developer-guide.rst](https://github.com/rackerlabs/docs-cloud-monitoring/blob/master/api-docs/developer-guide.rst)
+|Concepts section| [concepts.rst](https://github.com/rackerlabs/docs-cloud-monitoring/blob/master/api-docs/concepts.rst)
+|General API information index|[general-api-info/index.rst](https://github.com/rackerlabs/docs-cloud-monitoring/blob/master/api-docs/general-api-info/index.rst)
+|API Reference introduction|[api-reference.rst](https://github.com/rackerlabs/docs-cloud-monitoring/blob/master/api-docs/api-reference.rst)
+|API Reference index|[api-operations/index.rst](https://github.com/rackerlabs/docs-cloud-monitoring/blob/master/api-docs/api-operations/index.rst)
+|API operations methods, including code samples|[api-operations/methods](https://github.com/rackerlabs/docs-cloud-monitoring/tree/master/api-docs/api-operations/methods) 
+|Technical reference intro|[tech-ref.rst](https://github.com/rackerlabs/docs-cloud-monitoring/blob/master/api-docs/tech-ref.rst)
+|Technical reference index|[tech-ref-info/index.rst](https://github.com/rackerlabs/docs-cloud-monitoring/blob/master/api-docs/tech-ref-info/index.rst)
+|Release Notes introduction|[release-notes.rst](https://github.com/rackerlabs/docs-cloud-monitoring/blob/master/api-docs/release-notes.rst)
+|Release Notes by version|[release-notes](https://github.com/rackerlabs/docs-cloud-monitoring/tree/master/api-docs/release-notes)
 |**make.bat**|Windows build script
 |**Makefile**| Linux and OS X build
 ## Updating and adding content
