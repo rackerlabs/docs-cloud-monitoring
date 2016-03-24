@@ -56,7 +56,7 @@ Center articles:
 .. _monitoring-rbac:
 
 Roles available for Rackspace Monitoring
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Three roles (admin, creator, and observer) can be used to access the Rackspace Monitoring API
 specifically. The following table describes these
@@ -146,7 +146,7 @@ the Control Panel are resolved.
 .. _rbac-permissions-cross-reference:
 
 RBAC permissions cross-reference to Rackspace Monitoring operations
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 API operations for Rackspace Monitoring may or may not be available to all
 roles. To see which operations are permitted to invoke which calls,

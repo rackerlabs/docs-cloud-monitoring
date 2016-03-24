@@ -180,7 +180,7 @@ Monitoring key terms and concepts
 .. _how-cloud-monitoring-works:
 
 How Rackspace Monitoring works
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Rackspace Monitoring helps you track all your resources; from
 websites to web servers, routers, load balancers, and more. The
