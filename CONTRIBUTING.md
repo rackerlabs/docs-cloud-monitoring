@@ -9,11 +9,9 @@ Rackspace Cloud Monitoring developer documentation.
 - [Submitting your content](#submitting-changes)
 - [Previewing changes](#previewing-changes)
 
-##Project description
+## Project description
 <!-- Provide as little or as much information about architecture as needed to help 
 contributors figure out which file to update.-->
-
-T## Source format
 
 The Rackspace developer documentation is developed and built using the [Python Sphinx documentation generator](http://sphinx-doc.org/). Content is 
 written in [reStructuredText](http://sphinx-doc.org/rest.html), the markup syntax and parser component of 
