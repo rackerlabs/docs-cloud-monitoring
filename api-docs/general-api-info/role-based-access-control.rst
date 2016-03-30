@@ -37,20 +37,13 @@ for information about how to perform the following tasks:
 * :rax-devdocs:`Delete global role from user <cloud-identity/v2/developer-guide/#delete-global-role-from-user>`
 
 For information about implementing RBAC by using the Cloud Control Panel
-and other RBAC-related topics, see the following Rackspace Knowledge
-Center articles:
+and other RBAC-related topics, see the following articles in the Rackspace Support 
+how-to collection:
 
-- `Getting Started with role-based access control (RBAC)`_
+- :how-to:`Getting Started with role-based access control (RBAC) <getting-started-with-role-based-access-control-rbac>`
 
-- `Managing role-based access control through Cloud Control Panel`_
+- :how-to:`Managing role-based access control through Cloud Control Panel <managing-role-based-access-control-rbac>`
 
-
-.. comments  Reference URLs
-
-
-.. _Managing role-based access control through Cloud Control Panel: http://www.rackspace.com/knowledge_center/article/managing-role-based-access-control-rbac
-
-.. _Getting Started with role-based access control (RBAC): http://www.rackspace.com/knowledge_center/article/getting-started-with-role-based-access-control-rbac-0
 
 
 .. _monitoring-rbac:
@@ -150,8 +143,8 @@ RBAC permissions cross-reference to Rackspace Monitoring operations
 
 API operations for Rackspace Monitoring may or may not be available to all
 roles. To see which operations are permitted to invoke which calls,
-review the Knowledge Center
-article `Detailed permissions matrix for Rackspace Monitoring`_.
+review the 
+:how-to:`Detailed permissions matrix for Rackspace Monitoring <detailed-permissions-matrix-for-rackspace-monitoring>` 
+article.
 
 
-.. _Detailed permissions matrix for Rackspace Monitoring: http://www.rackspace.com/knowledge_center/article/detailed-permissions-matrix-for-cloud-monitoring
