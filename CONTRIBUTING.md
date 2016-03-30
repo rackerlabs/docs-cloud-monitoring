@@ -25,7 +25,7 @@ extensions and build tools.
 
 ## Structure
 
-Source files for the Sphinx documentation project are in the ``api-docs/dev-guide`` directory. Here are the key files that define 
+Source files for the Sphinx documentation project are in the ``api-docs`` directory. Here are the key files that define 
 the Sphinx project and content architecture for the documentation: 
 
 Content | File
