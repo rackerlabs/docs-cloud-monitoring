@@ -15,8 +15,8 @@ gathered on demand to make sure you have the most recent data.
 Some of the data that can be enumerated includes: operating
 system info, process lists, network configuration, and memory usage.
 
-Use the agent host info API operations to get information about
-the host environment, resources, and logged in users.
+The following are the common agent host info API operations to get information about
+the host environment, resources, and logged in users. For the full list of supported agent host info, see :ref:`Hostinfo checks<hostinfo-check-type-ref>`
 
 .. include:: methods/get-get-agent-host-info-types-agents-agentid-host-info-types.rst
 .. include:: methods/get-get-cpu-information-agents-agentid-host-info-cpus.rst
