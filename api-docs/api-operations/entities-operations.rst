@@ -35,7 +35,7 @@ the following information:
 +------------------+------------------------+-----------------------------------+
 | **agent_id**     | Agent to which this    | * Optional                        |
 |                  | entity is bound.       | * String matching the regex       |
-|                  |                        |   /^[-\.\w]{1,255}$/              |
+|                  |                        |   ``/^[-.\w]{1,255}$/``           |
 +------------------+------------------------+-----------------------------------+
 | **ip_addresses** | Hash of IP addresses   | * Optional                        |
 |                  | that can be referenced | * Hash [String,String between 1   |
