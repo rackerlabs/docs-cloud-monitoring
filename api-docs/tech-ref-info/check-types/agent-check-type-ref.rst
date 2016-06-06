@@ -663,7 +663,7 @@ Attributes
 Metrics
 ~~~~~~~~~~~~
 
-Available metrics are determined by the plugin.
+Available metrics are determined by the plugin.  Up to 50 unique metrics can be sent by the plugin at a time.
 
 **Community Plugin Repository**
 
@@ -696,7 +696,7 @@ that prevents metrics from being gathered, plugins should print a status
 that describes the error, then should exit non-zero without printing any
 metric lines.*
 
-The status line may be followed by up to 10 metric lines. The format of
+The status line may be followed by up to 50 metric lines. The format of
 a metric line is:
 
 .. code::
