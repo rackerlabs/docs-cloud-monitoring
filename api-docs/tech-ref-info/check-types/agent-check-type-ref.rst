@@ -697,8 +697,8 @@ that prevents metrics from being gathered, plugins should print a status
 that describes the error, then should exit non-zero without printing any
 metric lines.*
 
-The status line may be followed by up to 50 metric lines. The format of
-a metric line is:
+The status line can be followed by up to fifty metric lines. Each
+line is output in the following format:
 
 .. code::
 
