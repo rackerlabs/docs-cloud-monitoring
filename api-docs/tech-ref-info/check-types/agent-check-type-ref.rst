@@ -663,8 +663,7 @@ Attributes
 Metrics
 ~~~~~~~~~~~~
 
-Available metrics are determined by the plugin.  The plugin can send up to fifty
-unique metrics at a time.
+The metrics returned are defined in the plugin script. A plugin can send up to fifty unique metrics at a time.
 
 **Community Plugin Repository**
 
