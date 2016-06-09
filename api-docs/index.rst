@@ -15,7 +15,7 @@ Use the following links to jump directly to user and reference information for u
 
 - :ref:`API reference <api-reference>`
 
-- :ref:`Technical reference <technical-reference-info-intro>`. (Details about monitoring resources like alarms and check)
+- :ref:`Technical reference <technical-reference-info-intro>` (Details about monitoring resources like alarms and checks)
 
 - :ref:`Release notes <release-notes>`
 
