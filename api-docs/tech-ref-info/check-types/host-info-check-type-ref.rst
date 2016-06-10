@@ -206,6 +206,8 @@ see the Agent host information.
 
 .. _filesystem: https://github.com/virgo-agent-toolkit/rackspace-monitoring-agent/blob/master/hostinfo/debug/FILESYSTEM.json
 
+.. _filesystem_ro: https://github.com/virgo-agent-toolkit/rackspace-monitoring-agent/blob/master/hostinfo/debug/FILESYSTEM_RO.json
+
 .. _login: https://github.com/virgo-agent-toolkit/rackspace-monitoring-agent/blob/master/hostinfo/debug/LOGIN.json
 
 .. _memory: https://github.com/virgo-agent-toolkit/rackspace-monitoring-agent/blob/master/hostinfo/debug/MEMORY.json
