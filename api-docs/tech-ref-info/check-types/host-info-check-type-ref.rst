@@ -70,6 +70,9 @@ service.
 +------------------------+-----------------------------------------------------------+
 | `filesystem`_          | Retrieves information about the host's filesystem.        |
 +------------------------+-----------------------------------------------------------+
+| `filesystem_ro`_       | Retrieves information about the read-only/read-write      |
+|                        | filesystems.                                              |
++------------------------+-----------------------------------------------------------+
 | `login`_               | Reads /etc/login.defs and retrieves data about the        |
 |                        | login shell. This check does not retrieve any             |
 |                        | password information or any other sensitive data.         |
