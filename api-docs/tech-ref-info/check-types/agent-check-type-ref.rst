@@ -218,7 +218,7 @@ Metrics
 .. _agent_filesystem_state:
 
 agent.filesystem_state
--------------------
+-------------------------
 
 The **agent.filesystem_state** check exposes filesystem metrics for
 read-write/read-only system mounts.
