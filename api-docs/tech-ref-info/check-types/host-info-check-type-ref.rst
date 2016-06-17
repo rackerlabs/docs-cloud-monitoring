@@ -70,6 +70,9 @@ service.
 +------------------------+-----------------------------------------------------------+
 | `filesystem`_          | Retrieves information about the host's filesystem.        |
 +------------------------+-----------------------------------------------------------+
+| `filesystem_state`_    | Retrieves information about the read-only/read-write      |
+|                        | filesystems.                                              |
++------------------------+-----------------------------------------------------------+
 | `login`_               | Reads /etc/login.defs and retrieves data about the        |
 |                        | login shell. This check does not retrieve any             |
 |                        | password information or any other sensitive data.         |
@@ -202,6 +205,8 @@ see the Agent host information.
 .. _disk: https://github.com/virgo-agent-toolkit/rackspace-monitoring-agent/blob/master/hostinfo/debug/DISK.json
 
 .. _filesystem: https://github.com/virgo-agent-toolkit/rackspace-monitoring-agent/blob/master/hostinfo/debug/FILESYSTEM.json
+
+.. _filesystem_state: https://github.com/virgo-agent-toolkit/rackspace-monitoring-agent/blob/master/hostinfo/debug/FILESYSTEM_STATE.json
 
 .. _login: https://github.com/virgo-agent-toolkit/rackspace-monitoring-agent/blob/master/hostinfo/debug/LOGIN.json
 

@@ -214,6 +214,37 @@ Metrics
    The `files` and `free_files` metrics are not available on Windows.
 
 
+
+.. _agent_filesystem_state:
+
+agent.filesystem_state
+-------------------------
+
+The **agent.filesystem_state** check exposes filesystem metrics for
+read-write/read-only system mounts.
+
+Attributes
+~~~~~~~~~~~~
+
+No fields are present for this particular check type.
+
+Metrics
+~~~~~~~~~~~~
+
++-----------------+--------------------------------------------------+----------+
+| Metric          | Description                                      | Type     |
++=================+==================================================+==========+
+| total_ro        | Total number of filesystems mounted read-only.   | Int64    |
++-----------------+--------------------------------------------------+----------+
+| total_rw        | Total number of filesystems mounted read-write   | Int64    |
++-----------------+--------------------------------------------------+----------+
+| devices_ro      | Comma delimited list of devices mounted          | String   |
+|                 | read-only.                                       |          |
++-----------------+--------------------------------------------------+----------+
+| devices_rw      | Comma delimited list of devices mounted          | String   |
+|                 | read-write.                                      |          |
++-----------------+--------------------------------------------------+----------+
+
 .. _agent_load_average:
 
 agent.load_average
