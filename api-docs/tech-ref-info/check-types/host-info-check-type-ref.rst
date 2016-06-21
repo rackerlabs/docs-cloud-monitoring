@@ -175,8 +175,9 @@ service.
 .. code::
 
      curl -H 'X-Auth-Token: <auth_token>' \
-     -H 'X-Tenant-Id: \
-     <tenant_id>'https://monitoring.api.rackspacecloud.com/v1.0/agents/<agent_id>/host_info/<hostinfo_type>
+          -H 'X-Tenant-Id: \
+          <tenant_id>'https://monitoring.api.rackspacecloud.com/v1.0/agents/ \
+          <agent_id>/host_info/ <hostinfo_type>
 
 
 For more information on how to work with checks using the Rackspace Monitoring API, see the
