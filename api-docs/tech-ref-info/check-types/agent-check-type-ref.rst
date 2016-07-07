@@ -254,9 +254,9 @@ Metrics
 
 The memory available to the system is used in three different ways:
 
- - Used by the processese running in the system, this value is under "actual_used" metric.
- - Used by the kernel, this value is not returned from the check but can be deduced.
- - Not used by either the running processes or kernel, this value is under "free" metric.
+- Used by the processese running in the system, this value is under "actual_used" metric.
+- Used by the kernel, this value is not returned from the check but can be deduced.
+- Not used by either the running processes or kernel, this value is under "free" metric.
  
 For convenience, the system returns the value of used/free memory for the case of including kernel and excluding kernel so that you don't have to do the calculation in your head.
 
