@@ -283,14 +283,22 @@ No fields are present for this particular check type.
 Metrics
 ~~~~~~~~~~~~
 
+The memory available to the system is used in three different ways:
+
+- Used by the processese running in the system, this value is under "actual_used" metric.
+- Used by the kernel, this value is not returned from the check but can be deduced.
+- Not used by either the running processes or kernel, this value is under "free" metric.
+ 
+For convenience, the system returns the value of used/free memory for the case of including kernel and excluding kernel so that you don't have to do the calculation in your head.
+
 +-------------------+----------------------------------------------------------------------------------+---------+
 | Metric            | Description                                                                      | Type    |
 +===================+==================================================================================+=========+
-| actual_free       | The actual amount of free memory.                                                | Int64   |
+| actual_free       | The amount of free memory, 'free' plus kernel memory.                            | Int64   |
 +-------------------+----------------------------------------------------------------------------------+---------+
-| actual_used       | The actual amount of used memory.                                                | Int64   |
+| actual_used       | The actual amount of used memory excluding kernel memory.                        | Int64   |
 +-------------------+----------------------------------------------------------------------------------+---------+
-| free              | Free space available on the filesystem in kilobytes, including reserved space.   | Int64   |
+| free              | The amount of free memory not including kernel memory.                           | Int64   |
 +-------------------+----------------------------------------------------------------------------------+---------+
 | ram               | The amount of RAM.                                                               | Int64   |
 +-------------------+----------------------------------------------------------------------------------+---------+
@@ -304,9 +312,9 @@ Metrics
 +-------------------+----------------------------------------------------------------------------------+---------+
 | swap_used         | The amount of used SWAP memory.                                                  | Int64   |
 +-------------------+----------------------------------------------------------------------------------+---------+
-| total             | Total space on the filesystem, in kilobytes.                                     | Int64   |
+| total             | The total amount of memory.                                                      | Int64   |
 +-------------------+----------------------------------------------------------------------------------+---------+
-| used              | Used space on the filesystem, in kilobytes.                                      | Int64   |
+| used              | The total amount of used memory, 'actual_used' plus kernel memory                | Int64   |
 +-------------------+----------------------------------------------------------------------------------+---------+
 
 .. _agent_mysql:
