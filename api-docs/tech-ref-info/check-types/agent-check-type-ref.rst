@@ -251,15 +251,19 @@ No fields are present for this particular check type.
 
 Metrics
 ~~~~~~~~~~~~
+The memory available to the system is used in three different ways:
+* Used by process running in the system, this value is under "actual_used" metric.
+* Used by kernel momery, this value is not returned from the check but can be deduced.
+* Not used by either the running process or kernel, this value is under "free" metric.
 
 +-------------------+----------------------------------------------------------------------------------+---------+
 | Metric            | Description                                                                      | Type    |
 +===================+==================================================================================+=========+
-| actual_free       | The amount of free memory excluding kernel memory.                               | Int64   |
+| actual_free       | The amount of free memory, 'free' plus kernel memory.                            | Int64   |
 +-------------------+----------------------------------------------------------------------------------+---------+
 | actual_used       | The actual amount of used memory excluding kernel memory.                        | Int64   |
 +-------------------+----------------------------------------------------------------------------------+---------+
-| free              | The amount of free memory.                                                       | Int64   |
+| free              | The amount of free memory not including kernel memory.                           | Int64   |
 +-------------------+----------------------------------------------------------------------------------+---------+
 | ram               | The amount of RAM.                                                               | Int64   |
 +-------------------+----------------------------------------------------------------------------------+---------+
@@ -275,7 +279,7 @@ Metrics
 +-------------------+----------------------------------------------------------------------------------+---------+
 | total             | The total amount of memory.                                                      | Int64   |
 +-------------------+----------------------------------------------------------------------------------+---------+
-| used              | The total amount of used memory.                                                 | Int64   |
+| used              | The total amount of used memory, 'actual_used' plus kernel memory                | Int64   |
 +-------------------+----------------------------------------------------------------------------------+---------+
 
 .. _agent_mysql:
