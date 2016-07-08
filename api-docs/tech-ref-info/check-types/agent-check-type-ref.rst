@@ -721,7 +721,7 @@ Contributions are welcome!
 **Creating Custom Plugins**
 
 Creating custom plugins is as simple as writing a script that prints a
-status and up to 10 metrics to standard out. The format of the status
+status and up to fifty metrics to standard out. The format of the status
 line is:
 
 .. code::
