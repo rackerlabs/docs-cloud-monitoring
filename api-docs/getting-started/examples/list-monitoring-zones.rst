@@ -3,7 +3,7 @@
 
 
 Listing monitoring zones
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 Before creating a check for the new entity, choose the `monitoring
 zones <#>`__ from which you want to run the check. Rackspace Monitoring is

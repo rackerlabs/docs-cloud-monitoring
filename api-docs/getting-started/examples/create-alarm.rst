@@ -1,7 +1,7 @@
 .. _gsg-create-an-alarm:
 
 Creating an alarm
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
 
 In this exercise, you set an `alarm <#>`__ for the entity. This example
 alarm sends you a warning alert if the average PING response time is
