@@ -1,7 +1,7 @@
 .. _gsg-test-check:
 
 Testing the check
-~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
 
 Testing the check runs the check once and lists the check's metrics.
 This is an easy way to verify and view your metrics. Later, you can use

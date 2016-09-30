@@ -1,8 +1,7 @@
 .. _remote-check-type-ref:
 
-=====================
 Remote check types
-=====================
+~~~~~~~~~~~~~~~~~~
 
 Rackspace Monitoring supports the following remote check types.
 
@@ -14,15 +13,15 @@ Rackspace Monitoring supports the following remote check types.
 .. _remote_dns:
 
 remote.dns
---------------
+----------
 
-The **remote.dns** check will run a DNS check against a given target. This
+The **remote.dns** check run a DNS check against a given target. This
 check should assist in verifying functionality of a DNS server, for
 example ensuring that it is publishing the domains you think that it
 should be publishing.
 
 Attributes
-~~~~~~~~~~~~~~
+^^^^^^^^^^
 
 +----------------+-------------------------------------------------+---------------------------------------------------------------------------------------------+
 | Field          | Description                                     | Validation                                                                                  |
@@ -36,7 +35,7 @@ Attributes
 
 
 Metrics
-~~~~~~~~~~~~~~
+^^^^^^^^
 
 +----------+-------------------------------------------------------------------------------+----------+
 | Metric   | Description                                                                   | Type     |
@@ -51,12 +50,13 @@ Metrics
 .. _remote_ftp_banner:
 
 remote.ftp-banner
------------------------
+-----------------
 
-The **remote.ftp-banner** check will attempt to connect to a FTP server and verify that it re- sponds to the connection.
+The **remote.ftp-banner** check will attempt to connect to a FTP server and
+verify that it re- sponds to the connection.
 
 Attributes
-~~~~~~~~~~~~~~
+^^^^^^^^^^
 
 +---------+-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
 | Field   | Description                                     | Validation                                                                                                                     |
@@ -65,7 +65,7 @@ Attributes
 +---------+-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
 
 Metrics
-~~~~~~~~~~~~~~
+^^^^^^^
 
 +-----------------+----------------------------------------------------------------------------------------------------+----------+
 | Metric          | Description                                                                                        | Type     |
@@ -88,7 +88,7 @@ Metrics
 .. _remote_http:
 
 remote.http
---------------
+-----------
 
 The **remote.http** check will try to connect to the server and retrieve the
 specified URL using the specified method, optionally with the password
@@ -105,7 +105,7 @@ if the SSL certificate is valid.
 
 
 Attributes
-~~~~~~~~~~~~~~
+^^^^^^^^^^
 
 +------------------+--------------------------------------------------------------------------------------------------------+------------------------------------------------------+
 | Field            | Description                                                                                            | Validation                                           |
@@ -142,68 +142,106 @@ Attributes
 |                  | sent to the first location.                                                                            |                                                      |
 +------------------+--------------------------------------------------------------------------------------------------------+------------------------------------------------------+
 
-.. _note:
 
-      When you set up a website, and the check always returns 'unknown content-encoding:'.
+.. note::
 
-      This is because of the HTTP body check limit of 100. This limit is the amount of space that the Monitoring Pollers (where the site is checked from).  If the amount of space required to do the HTTP(S) check is greater than 100k, then only the first 100k can be checked.
+   When you set up a website and the check always returns
+   ``unknown content-encoding:`` it is because of the HTTP body check limit
+   of 100. This limit is the amount of space for the Monitoring Pollers
+   (where the site is checked from).  If the amount of space required to do
+   the HTTP(S) check is greater than 100k, then only the first 100k can be
+   checked.
 
-      If the customer uses Compression on the pages, such as 'compress' or 'gzip' Content-Encoding, then the full compressed page must be less than or equal to 100k.  This is because the full page must be downloaded and uncompressed before it can verify the check.
+   If the customer uses Compression on the pages, such as ``compress`` or
+   ``gzip`` Content-Encoding, then the full compressed page must be less than
+   or equal to 100k.  This is because the full page must be downloaded and
+   uncompressed before it can verify the check.
 
-      This is also the reason why you can only check against strings within the first 100k of the web page.
+   This is also the reason why you can only check against strings within the
+   first 100k of the web page.
 
 
 Metrics
-~~~~~~~~~~~~~~
+^^^^^^^
 
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| Metric                            | Description                                                                                                                                                                                                                               | Type      |
-+===================================+===========================================================================================================================================================================================================================================+===========+
-| body_match                        | The string representing the any matched string from HTTP response content using the regular expression specified in ``body`` attribute in check.                                                                                          | String    |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| body_match_<key>                  | The metric is generated for each key specified in ``body_matches`` check attribute. For example, a ``body_matches`` value of {"register":"Register Now!", "contact":"Contact Us"} will generate two metrics: ``body_match_register`` and  | String    |
-|                                   | ``body_match_contact``.                                                                                                                                                                                                                   |           |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| bytes                             | The number of bytes returned from a response payload.                                                                                                                                                                                     | Int32     |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| bytes                             | The number of bytes returned from a response payload.                                                                                                                                                                                     | Int32     |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| cert_end                          | The absolute timestamp in seconds for the certificate expiration. This is only available when performing a check on an HTTPS server.                                                                                                      | Uint32    |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| cert_end_in                       | The relative timestamp in seconds until certification expiration. This is only available when performing a check on an HTTPS server.                                                                                                      | Int32     |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| cert_error                        | A string describing a certificate error in our validation. This is only available when performing a check on an HTTPS server.                                                                                                             | String    |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| cert_issuer                       | The issue string for the certificate. This is only available when performing a check on an HTTPS server.                                                                                                                                  | String    |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| cert_start                        | The absolute timestamp of the issue of the certificate. This is only available when performing a check on an HTTPS server.                                                                                                                | Uint32    |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| cert_subject                      | The subject of the certificate. This is only available when performing a check on an HTTPS server.                                                                                                                                        | String    |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| cert_subject_alternative_name     | The alternative name for the subject of the certificate. This is only available when performing a check on an HTTPS server.                                                                                                               |  String   |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| code                              | The status code returned.                                                                                                                                                                                                                 |  String   |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| duration                          | The time it took to finish executing the check in milliseconds.                                                                                                                                                                           |  Uint32   |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| truncated                         | The number of bytes that the result was truncated by.                                                                                                                                                                                     |  Uint32   |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| tt_connect                        | The time to connect measured in milliseconds.                                                                                                                                                                                             |  Uint32   |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| tt_firstbyte                      | The time to first byte measured in milliseconds.                                                                                                                                                                                          |  Uint32   |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+.. list-table::
+   :widths: 33 33 33
+   :header-rows: 1
 
-
+   * - Metric
+     - Description
+     - Type
+   * - body_match
+     - The string representing the any matched string from HTTP response
+       content using the regular expression specified in ``body`` attribute
+       in check.
+     - String
+   * - body_match_<key>
+     - The metric is generated for each key specified in ``body_matches``
+       check attribute. For example, a ``body_matches``
+       value of {"register":"Register Now!", "contact":"Contact Us"}
+       will generate two metrics: ``body_match_register`` and
+       ``body_match_contact``.
+     - String
+   * - bytes
+     - The number of bytes returned from a response payload.
+     - Int32
+   * - bytes
+     - The number of bytes returned from a response payload.
+     - Int32
+   * - cert_end
+     - The absolute timestamp in seconds for the certificate expiration.
+       This is only available when performing a check on an HTTPS server.
+     - Uint32
+   * - cert_end_in
+     - The relative timestamp in seconds until certification expiration.
+       This is only available when performing a check on an HTTPS server.
+     - Int32
+   * - cert_error
+     - A string describing a certificate error in our validation. This is
+       only available when performing a check on an HTTPS server.
+     - String
+   * - cert_issuer
+     - The issue string for the certificate. This is only available when
+       performing a check on an HTTPS server.
+     - String
+   * - cert_start
+     - The absolute timestamp of the issue of the certificate. This is only
+       available when performing a check on an HTTPS server.
+     - Uint32
+   * - cert_subject
+     - The subject of the certificate. This is only available when performing
+       a check on an HTTPS server.
+     - String
+   * - cert_subject_alternative_name
+     - The alternative name for the subject of the certificate. This is only
+       available when performing a check on an HTTPS server.
+     - String
+   * - code
+     - The status code returned.
+     - String
+   * - duration
+     - The time it took to finish executing the check in milliseconds.
+     - Uint32
+   * - truncated
+     - The number of bytes that the result was truncated by.
+     - Uint32
+   * - tt_connect
+     - The time to connect measured in milliseconds.
+     - Uint32
+   * - tt_firstbyte
+     - The time to first byte measured in milliseconds.
+     - Uint32
 .. _remote_imap_banner:
 
 remote.imap-banner
------------------------
+------------------
 
 The **remote.imap-banner** check will attempt to connect to an IMAP server
 and verify that it response to the connection
 
 Attributes
-~~~~~~~~~~~~~~
+^^^^^^^^^^
 
 +---------+------------------------------+-----------------------------------------------------------------------------------+
 | Field   | Description                  | Validation                                                                        |
@@ -216,13 +254,13 @@ Attributes
 .. _remote_mssql_banner:
 
 remote.mssql-banner
------------------------
+-------------------
 
 The **remote.mssql-banner** check will attempt to connect to a Microsoft SQL
 database server and verify that it is accepting connections.
 
 Attributes
-~~~~~~~~~~~~~~
+^^^^^^^^^^
 
 +---------+------------------------------+-----------------------------------------------------------------------------------+
 | Field   | Description                  | Validation                                                                        |
@@ -235,13 +273,13 @@ Attributes
 .. _remote_mysql_banner:
 
 remote.mysql-banner
-------------------------
+-------------------
 
 The **remote.mysql-banner** check will attempt to connect to a MySQL
 database server and verify that it is accepting connections.
 
 Attributes
-~~~~~~~~~~~~~~
+^^^^^^^^^^
 
 +---------+------------------------------+-----------------------------------------------------------------------------------+
 | Field   | Description                  | Validation                                                                        |
@@ -254,12 +292,12 @@ Attributes
 .. _remote_ping:
 
 remote.ping
----------------
+-----------
 
 The **remote.ping** check will attempt to ping a server.
 
 Attributes
-~~~~~~~~~~~~~~
+^^^^^^^^^^
 
 +---------+-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
 | Field   | Description                                     | Validation                                                                                                                     |
@@ -269,7 +307,7 @@ Attributes
 
 
 Metrics
-~~~~~~~~~~~~~~
+^^^^^^^
 
 +-------------+--------------------------------------------------------------------------------------------------+----------+
 | Metric      | Description                                                                                      | Type     |
@@ -288,13 +326,13 @@ Metrics
 .. _remote_pop3_banner:
 
 remote.pop3-banner
----------------------
+__________________
 
 The **remote.pop3-banner** check will attempt to connect to a POP3 mailbox
 server and verify that it responds to the connection.
 
 Attributes
-~~~~~~~~~~~~~~
+^^^^^^^^^^
 
 +---------+------------------------------+-----------------------------------------------------------------------------------+
 | Field   | Description                  | Validation                                                                        |
@@ -307,13 +345,13 @@ Attributes
 .. _remote_postgresql_banner:
 
 remote.postgresql-banner
---------------------------
+------------------------
 
 The **remote.postgresql-banner** check will attempt to connect to a
 PostgreSQL database server and verify that it is accepting connections.
 
 Attributes
-~~~~~~~~~~~~~~
+^^^^^^^^^^
 
 +---------+------------------------------+-----------------------------------------------------------------------------------+
 | Field   | Description                  | Validation                                                                        |
@@ -326,13 +364,13 @@ Attributes
 .. _remote_smtp_banner:
 
 remote.smtp-banner
---------------------------
+------------------
 
 The **remote.smtp-banner** check will attempt to connect to a SMTP mail
 server and verify that a HELO/EHLO is received.
 
 Attributes
-~~~~~~~~~~~~~~
+^^^^^^^^^^
 
 +---------+------------------------------+-----------------------------------------------------------------------------------+
 | Field   | Description                  | Validation                                                                        |
@@ -343,7 +381,7 @@ Attributes
 +---------+------------------------------+-----------------------------------------------------------------------------------+
 
 Metrics
-~~~~~~~~~~~~~~
+^^^^^^^
 
 +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
 | Metric                            | Description                                                                                                                                                                   | Type      |
@@ -378,7 +416,7 @@ Metrics
 .. _remote_smtp:
 
 remote.smtp
---------------------------
+-----------
 
 The **remote.smtp** check will attempt to connect to a SMTP mail server,
 send an email from the 'from' parameter, to the 'to' parameter, with a
@@ -386,7 +424,7 @@ payload specified by the 'payload' parameter setting the EHLO from host
 to the value in 'ehlo'.
 
 Attributes
-~~~~~~~~~~~~~~
+^^^^^^^^^^
 
 +------------+----------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
 | Field      | Description                                                                                                                            | Validation                                                                        |
@@ -407,12 +445,12 @@ Attributes
 .. _remote_ssh:
 
 remote.ssh
---------------------------
+----------
 
 The **remote.ssh** check will attempt to SSH to a target.
 
 Attributes
-~~~~~~~~~~~~~~
+^^^^^^^^^^
 
 +---------+-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
 | Field   | Description                                     | Validation                                                                                                                     |
@@ -421,7 +459,7 @@ Attributes
 +---------+-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
 
 Metrics
-~~~~~~~~~~~~~~
+^^^^^^^
 
 +---------------+-----------------------------------------------------------------------------+----------+
 | Metric        | Description                                                                 | Type     |
@@ -434,7 +472,7 @@ Metrics
 .. _remote_tcp:
 
 remote.tcp
---------------------------
+----------
 
 
 The **remote.tcp** check will attempt to connect to a host and port, and
@@ -443,7 +481,7 @@ as specified. This can be used to test services that are not covered by
 the existing HTTP, SMTP, SSH, MySQL, etc. checks.
 
 Attributes
-~~~~~~~~~~~~~~
+^^^^^^^^^^
 
 +-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------+
 | Field           | Description                                                                                                                                   | Validation                                                              |
@@ -461,7 +499,7 @@ Attributes
 
 
 Metrics
-~~~~~~~~~~~~~~
+^^^^^^^
 
 +-----------------+-----------------------------------------------------------------------------------------------------------+----------+
 | Metric          | Description                                                                                               | Type     |
@@ -480,14 +518,14 @@ Metrics
 .. _remote_telnet_banner:
 
 remote.telnet-banner
------------------------
+--------------------
 
 The **remote.telnet-banner** check will attempt to connect to a Telnet (or
 similar protocol) server and verify that an appropriate banner is
 received.
 
 Attributes
-~~~~~~~~~~~~~~
+^^^^^^^^^^
 +-----------------+----------------------------------------------------------------------------------------------------------------------------------------+
 | Field           | Description                                        | Validation                                                                        |
 +=================+====================================================+===================================================================================+
