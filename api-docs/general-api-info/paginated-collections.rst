@@ -1,7 +1,8 @@
 .. _paginated-collections:
 
+=====================
 Paginated collections
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+=====================
 
 To reduce load on the service, list operations will return a maximum
 number of items at a time. To navigate the collection, the parameters

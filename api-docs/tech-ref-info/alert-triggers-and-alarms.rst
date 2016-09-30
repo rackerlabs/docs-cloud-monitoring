@@ -1,36 +1,36 @@
 .. _alert-triggers-and-alarms-reference:
 
-===================================================
+===========================
 Alert Triggering and Alarms
-===================================================
+===========================
 
 .. contents::
    :local:
    :depth: 2
 
-This section describes alerting including an explanation of the alert flow, the alarm
-language, the policies that you can create using alarms and example best practices.
-In short, Rackspace Monitoring uses alarms to evaluate the metrics of a check
-and decide if a notification plan should be executed. It is the primary way to describe
-exactly what you want to be alerted on.
+This section describes alerting including an explanation of the alert flow,
+the alarm language, the policies that you can create using alarms and example
+best practices. In short, Rackspace Monitoring uses alarms to evaluate the
+metrics of a check and decide if a notification plan should be executed. It is
+the primary way to describe exactly what you want to be alerted on.
 
 .. _alert-flow-reference:
 
 Alert work flow
----------------------------------------
+~~~~~~~~~~~~~~~
 
 Let's take an example user work flow of creating a monitor for a particular
 resource and follow it through the system to understand how
 the alerting system works:
 
-1. Using :ref:`Checks operations <check-operations>`, create a check with one or more
-   monitoring zones (per the ``monitoring_zone_poll`` attribute). When you
-   apply the check via the API, the check is provisioned on the collectors.
-   If the check is successfully applied (as indicated by the HTTP response
-   code), the monitor starts executing the check.
+1. Using :ref:`Checks operations <check-operations>`, create a check with one
+   or more monitoring zones (per the ``monitoring_zone_poll`` attribute).
+   When you apply the check via the API, the check is provisioned on the
+   collectors. If the check is successfully applied (as indicated by the HTTP
+   response code), the monitor starts executing the check.
 
-2. Using :ref:`Alarms operations <alarms-operations>`, create a new alarm on the entity that
-   matches this particular check.
+2. Using :ref:`Alarms operations <alarms-operations>`, create a new alarm on
+   the entity that matches this particular check.
 
    .. note::
       Alarms are created to match when a specific condition occurs. On this
@@ -61,7 +61,7 @@ the alerting system works:
 .. _alarm-language-ref:
 
 Alarm language
------------------
+~~~~~~~~~~~~~~
 
 The alarm language is one of the most powerful parts of
 Rackspace Monitoring. It describes the mechanism to trigger
@@ -72,7 +72,7 @@ executed that describes how to send different notifications.
 .. _alarm-language-check-availability:
 
 Check availability
-~~~~~~~~~~~~~~~~~~~~
+------------------
 
 As mentioned above the default evaluation of a check depends upon
 whether the check is able to run successfully. We can illustrate this
@@ -90,7 +90,7 @@ availability of the check is determined by the ability to run the check.
 .. _alarm-language-anatomy-query:
 
 Anatomy of a query
-~~~~~~~~~~~~~~~~~~~
+------------------
 
 An alarm query is broken down into the following main parts:
 
@@ -258,7 +258,7 @@ Returning the status and message:
 .. _alarm-language-limits-defaults:
 
 Limits and defaults
-~~~~~~~~~~~~~~~~~~~~
+-------------------
 
 Alarms have limits in their constructs. For instance, there are a
 limited set of conditionals you can use in a single alarm query.
@@ -290,7 +290,7 @@ The following list describes the limits and defaults for alarms:
 .. _alarm-language-status-messages:
 
 Status messages
-~~~~~~~~~~~~~~~~~~
+---------------
 
 Checks and Alarms have status strings and there is a resolution
 policy for final message that get displayed to a user in an email
@@ -318,7 +318,7 @@ format to the point in time metric. It looks like this:
 .. _alert-policies-and-types:
 
 Alert policies
------------------------------------
+~~~~~~~~~~~~~~
 
 Alert policies (set with the ``consistencyLevel`` alarm attribute)
 define a system for interpreting mixed results from a check.
@@ -389,7 +389,7 @@ policies and their trade-offs are described next.
 .. _constructs-and-functions:
 
 Constructs with function modifiers
--------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Function modifiers serve to alter the interpretation of a metric.
 The format of a modifier is as follows:
@@ -456,7 +456,7 @@ like the example below.
 .. _best-practices-alerting:
 
 Best practices for creating alerts
-----------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This section covers common solution patterns for creating useful alerts.
 It focuses on alarms and how you can use the alarm language to
@@ -470,7 +470,7 @@ best achieve these patterns.
 .. _best-practices-http-checks:
 
 HTTP/HTTPs checks
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------
 
 **Critical on 404 or Connection Refused**
 
@@ -528,7 +528,7 @@ This example checks the certificate expiration in seconds, abbreviated as the ``
 .. _best-practices-port-banner-checks:
 
 Port/banner checks
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------
 
 **Failure on banner match**
 
@@ -559,7 +559,7 @@ for the existence of that metric and return ``CRITICAL`` otherwise.
 .. _best-practices-dns-checks:
 
 DNS checks
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------
 
 **Check for an IP in a DNS query, fail otherwise**
 
@@ -583,7 +583,7 @@ to respond) than the alarm is ``CRITICAL``.
 .. _best-practices-ssh-checks:
 
 SSH checks
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------
 
 The following example uses the Rackspace Monitoring command
 line interface (CLI). For information on downloading and installing the

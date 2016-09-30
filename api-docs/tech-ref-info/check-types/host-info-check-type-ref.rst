@@ -1,8 +1,8 @@
 .. _hostinfo-check-type-ref:
 
-==================
+
 Hostinfo checks
-==================
+~~~~~~~~~~~~~~~
 
 .. contents::
    :local:
@@ -10,24 +10,25 @@ Hostinfo checks
 
 Hostinfo checks are a special class of checks that run on demand.
 
-In contrast to the remote and agent check types which allow you to schedule alarms or
-alerts for remote and agent-type checks and run them on a regular schedule, you
-cannot schedule Hostinfo checks or create alarms or alerts for them.
+In contrast to the remote and agent check types which allow you to schedule
+alarms or alerts for remote and agent-type checks and run them on a regular
+schedule, you cannot schedule Hostinfo checks or create alarms or alerts for
+them.
 
 Create Hostinfo checks to perform tasks like the following:
 
-- Fetch data on demand. For example, you can use a Hostinfo check to pipe data about
-  the host to other services or applications.
+- Fetch data on demand. For example, you can use a Hostinfo check to pipe data
+  about the host to other services or applications.
 
 - Run occasional checks to troubleshoot an issue.
 
-- Periodically fetch data from large clusters of servers with the granularity of
-  fetching from an individual computer. For example, use a Hostinfo check to retrieve
-  information from a dashboard built on Kibana.
+- Periodically fetch data from large clusters of servers with the granularity
+  of fetching from an individual computer. For example, use a Hostinfo check
+  to retrieve information from a dashboard built on Kibana.
 
-- Use in conjunction with service helper software to generate suggestions that are based
-  based on the status of a system or piece information that is required by support
-  technicians.
+- Use in conjunction with service helper software to generate suggestions that
+  are based on the status of a system or piece information that is required by
+  support technicians.
 
 
 The following table provides a list of the Hostinfo checks supported by the monitoring
@@ -167,7 +168,8 @@ service.
 | `postfix`_             | Checks the status of the postfix mail server.             |
 +------------------------+-----------------------------------------------------------+
 
-You can use the Rackspace Monitoring API to run Hostinfo checks. To run a hostinfo check, issue the following cURL request:
+You can use the Rackspace Monitoring API to run Hostinfo checks. To run a
+hostinfo check, issue the following cURL request:
 
 Use the following cURL request to run Hostinfo checks by using the monitoring
 service.
@@ -179,7 +181,7 @@ service.
           <tenandID>/agents/<agent_id>/host_info/<hostinfo_type>
           
 For more information on how to work with checks using the Rackspace Monitoring API, see the
-Checks section in the Rackspace Monitoring Developer Guide. For more information working with Hostinfo checks, 
+Checks section in the Rackspace Monitoring Developer Guide. For more information working with Hostinfo checks,
 see the Agent host information.
 
 
