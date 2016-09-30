@@ -49,7 +49,6 @@ you receive from using the Rackspace Monitoring API include the following:
   measuring critical data. For more information, see
   :ref:`Metrics <metrics-operations>`.
 
-
 This guide is intended to assist software developers who want to develop
 applications by using the REST application programming interface (API) for
 the |product name| service.

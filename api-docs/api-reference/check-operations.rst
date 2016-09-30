@@ -21,8 +21,8 @@ example, you might set up a check with two alarms to ensure that an HTTPS
 server is responding and that it has a valid certificatej.
 
 .. note::
-   For more information see, :rax-devdocs:`Available check types and fields
-   <cm/api/v1.0/cm-devguide/content/appendix-check-types.html>`.
+   For more information, see the :rax-devdocs:`Check types reference
+   <check-types-ref>`.
 
 Checks are associated with a parent entity, therefore the REST URLs for
 checks are underneath the entity with which they are associated.
