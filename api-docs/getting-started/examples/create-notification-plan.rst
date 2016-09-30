@@ -1,7 +1,7 @@
 .. _gsg-make-notification-plan:
 
 Creating a notification plan 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A notification represents a single action, such as sending an email to a
 specific address, whereas a notification plan represents a set of

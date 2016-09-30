@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-#
-# Rackspace Developer Documentation documentation build configuration file,
-# created by sphinx-quickstart on Thu Mar 6 14:14:55 2014.
+
+# Rackspace Developer documentation build configuration file, created by
+# sphinx-quickstart on Fri Jun 12 14:04:59 2015.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -12,22 +12,20 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
-import os
-import sys
+try:
+    import sphinx_rtd_theme
+except ImportError:
+    sphinx_rtd_theme = None
 
-# -- Custom options for PHP output ----------------------------------------
-
-from pygments.lexers.web import PhpLexer
-
-from sphinx.highlighting import lexers
-
-lexers['php'] = PhpLexer(startinline=True)
-
+try:
+    from sphinxcontrib import spelling
+except:
+    spelling = None
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-sys.path.insert(0, os.path.abspath('.'))
+# sys.path.insert(0, os.path.abspath('.'))
 
 # -- General configuration ------------------------------------------------
 
@@ -45,6 +43,10 @@ extensions = [
     'sphinx.ext.extlinks'
 ]
 
+
+if spelling is not None:
+    extensions.append('sphinxcontrib.spelling')
+
 # Add any paths that contain templates here, relative to this directory.
 # templates_path = ['_templates']
 
@@ -58,8 +60,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # The builder to use when running via the deconst preparer
-# builder = 'deconst-serial'
-builder = 'deconst-single'
+builder = 'deconst-serial'
+# builder = 'deconst-single'
 
 
 # General information about the project.
@@ -81,14 +83,15 @@ release = '1'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
-#today = 'October 30, 2015'
+# today = 'October 30, 2015'
 # Else, today_fmt is used as the format for a strftime call.
-#today_fmt = '%B %d, %Y'
+# today_fmt = '%B %d, %Y'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = ['_build', 'samples', 'api-operations/methods',
-                    'tech-ref-info/check-types/*', 'common-gs','getting-started/examples']
+exclude_patterns = ['_build', 'samples', 'api-reference/methods',
+                    'tech-ref-info/check-types/*', 'common-gs',
+                    'getting-started/examples', 'release-notes/releases/*']
 
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
@@ -109,20 +112,25 @@ exclude_patterns = ['_build', 'samples', 'api-operations/methods',
 pygments_style = 'sphinx'
 
 # Adding substitution values
-#rst_epilog = """.. |product name| replace:: 'Rackspace Monitoring'"""
+# rst_epilog = """.. |product name| replace:: 'Rackspace Monitoring'"""
 
 # External link library
 # For information about using the external link definitions, see
 # https://github.com/rackerlabs/docs-migration/tree/master/docs.
 
+# External link library
+
 extlinks = {
     'rax': ('http://www.rackspace.com/%s', ''),
+    'rax-cart': ('http://cart.rackspace.com/%s', ''),
+    'rax-special': ('http://%s.rackspace.com/', ''),
     'rax-cloud': ('http://www.rackspace.com/cloud/%s', ''),
     'rax-dev': ('https://developer.rackspace.com/%s', ''),
     'rax-devdocs': ('http://developer.rackspace.com/docs/%s', ''),
-    'rax-devguide':('http:/developer.rackspace.com/docs/%s/developer-guide/',''),
-    'rax-api': ('http:/developer.rackspace.com/docs/%s/developer-guide/#api-reference',''),
+    'rax-api':
+    ('http:/developer.rackspace.com/docs/%s/api-reference', ''),
     'rax-git': ('https://github.com/rackspace/%s', ''),
+    'mycloud': ('https://mycloud.rackspace.com/%s', ''),
     'rax-glossary': ('https://developer.rackspace.com/docs/glossary/%s', ''),
     'mycloud': ('https://mycloud.rackspace.com/%s', ''),
     'how-to': ('http://support.rackspace.com/how-to/%s', ''),
@@ -135,17 +143,19 @@ extlinks = {
     'rocket': ('https://objectrocket.com/%s', '')
 }
 
-# Global variables that are replaced by the specified value during the build process.
+# Global variables that are replaced by the specified value during the build
+# process.
 
 rst_epilog = """
+.. |service| replace:: Rackspace Monitoring
 .. |apiservice| replace:: Rackspace Monitoring API
 .. |no changes| replace:: None for this release.
 .. |contract version| replace:: 1.0
-.. |product name| replace:: 'Rackspace Monitoring'
+.. |product name| replace:: Rackspace Monitoring
 """
 
 # Software release.version currently deployed in production.
-release='v1.'
+release = 'v1.0'
 
 # A list of ignored prefixes for module index sorting.
 # modindex_common_prefix = []
@@ -158,7 +168,11 @@ release='v1.'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-# html_theme = 'classic'
+
+if sphinx_rtd_theme:
+    html_theme = 'sphinx_rtd_theme'
+else:
+    html_theme = 'default'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -198,7 +212,7 @@ html_short_title = 'Rackspace Monitoring'
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
-html_last_updated_fmt = '%b %d, %Y'
+# html_last_updated_fmt = '%b %d, %Y'
 
 # If true, SmartyPants will be used to convert quotes and dashes to
 # typographically correct entities.
@@ -238,7 +252,7 @@ html_last_updated_fmt = '%b %d, %Y'
 # html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'RackspaceMonitoringApiDeveloperDoc'
+htmlhelp_basename = 'docs-monitoring'
 
 # this will change the 'paragraph' character to '#'
 html_add_permalinks = '#'
@@ -260,9 +274,11 @@ html_add_permalinks = '#'
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    ('index', 'RackspaceMonitoringApiDeveloperDoc.tex',
-     'Rackspace Monitoring API 2.0 Developer Guide', 'Rackspace', 'manual')
+  (master_doc, 'docs-monitoring.tex',
+   'Rackspace Monitoring API Guide',
+   'Rackspace', 'manual'),
 ]
+
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
 # latex_logo = None
@@ -283,15 +299,15 @@ latex_documents = [
 # If false, no module index is generated.
 # latex_domain_indices = True
 
-
 # -- Options for manual page output ---------------------------------------
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 
 man_pages = [
-    ('index', 'RackspaceMonitoringApiDeveloperDoc',
-     'Rackspace Monitoring API 2.0 Developer Guide', ['Rackspace'], 1)
+    (master_doc, 'Rackspace Cloud Keep API documentation',
+     'Rackspace developer documentation',
+     'Rackspace', 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -303,12 +319,12 @@ man_pages = [
 # Grouping the document tree into Texinfo files. List of tuples
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
+
 texinfo_documents = [
-    ('index', 'RackspaceMonitoringDeveloperDoc',
-     'Rackspace Monitoring API Developer Guide', 'Rackspace',
-     'RackspaceMonitoringDeveloperDoc',
-     'Learn about using the REST API for the Rackspace Monitoring',
-     'Miscellaneous'),
+  (master_doc, 'reponame', 'Rackspace Monitoring API Documentation',
+   'Rackspace', 'reponame', 'Learn about using the REST API for\
+    Rackspace Monitoring API',
+   'Miscellaneous'),
 ]
 
 # Documents to append as an appendix to all manuals.

@@ -1,11 +1,11 @@
 .. _check-types-ref:
 
-=================================
+=====================
 Check types reference
-=================================
+=====================
 
-The Check type and fields reference provides details about the following agent check types
-supported by the Rackspace Monitoring service.
+The Check type and fields reference provides details about the following
+agent check types supported by the Rackspace Monitoring service.
 
 - :ref:`Remote check types<remote-check-type-ref>`
 

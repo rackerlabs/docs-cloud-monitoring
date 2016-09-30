@@ -2,7 +2,7 @@
 .. _gsg-list-all-checks:
 
 Listing all checks for the entity
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 You can list the checks for a specific entity at any time by running a

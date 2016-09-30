@@ -1,8 +1,7 @@
 .. _gsg-delete-an-entity:
 
 Deleting an entity 
-~~~~~~~~~~~~~~~~~~~~~~~~
-
+~~~~~~~~~~~~~~~~~~
 
 Now that you have completed the exercises in this tutorial, you can
 remove the entity that you created. Removing an entity also removes all

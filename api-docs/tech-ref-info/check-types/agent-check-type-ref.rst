@@ -1,8 +1,7 @@
 .. _agent-check-type-ref:
 
-===================
 Agent check types
-===================
+~~~~~~~~~~~~~~~~~
 
 Rackspace Monitoring supports the following agent check types.
 
@@ -14,12 +13,12 @@ Rackspace Monitoring supports the following agent check types.
 .. _agent_apache_check:
 
 agent.apache check
---------------------
+------------------
 
 The **agent.apache** check will retrieve Apache HTTP server metrics
 
 Attributes
-~~~~~~~~~~~~
+^^^^^^^^^^
 
 +-----------+------------------------------------------------------------------+----------------------+
 | Field     | Description                                                      | Validation           |
@@ -30,7 +29,7 @@ Attributes
 +-----------+------------------------------------------------------------------+----------------------+
 
 Metrics
-~~~~~~~~~~~~
+^^^^^^^
 
 +-----------------------+----------------------------------------------------------------------------------------+---------+
 | Metric                | Description                                                                            | Type    |
@@ -79,18 +78,17 @@ Metrics
 .. _agent_cpu:
 
 agent.cpu
---------------
+---------
 
 The agent.cpu check will attempt to measure the usage of the CPU on a
 host.
 
 Attributes
-~~~~~~~~~~~~~
 
 No fields are present for this particular check type.
 
 Metrics
-~~~~~~~~~~
+^^^^^^^
 
 +----------------------------+--------------------------------------------------------+----------+
 | Metric                     | Description                                            | Type     |
@@ -127,13 +125,13 @@ Metrics
 .. _agent_disk:
 
 agent.disk
----------------
+----------
 
 The **agent.disk** check exposes disk related metrics (service time, wait
 time, etc.).
 
 Attributes
-~~~~~~~~~~~~~
+^^^^^^^^^^
 
 +-----------+--------------------------------------------------------------------------------------+
 | Field     | Description                               | Validation                               |
@@ -143,7 +141,7 @@ Attributes
 
 
 Metrics
-~~~~~~~~~~~~
+^^^^^^^
 
 +-----------------+----------------------------------------------------------------------------------------------------------------------+----------+
 | Metric          | Description                                                                                                          | Type     |
@@ -166,13 +164,13 @@ Metrics
 .. _agent_filesystem:
 
 agent.filesystem
--------------------
+----------------
 
 The **agent.filesystem** check exposes file system related metrics (free
 space, used space, etc.)
 
 Attributes
-~~~~~~~~~~~~
+^^^^^^^^^^
 
 +-----------+------------------------------+-------------------------------------+
 | Field     | Description                  | Validation                          |
@@ -185,7 +183,7 @@ Attributes
 
 
 Metrics
-~~~~~~~~~~~~
+^^^^^^^
 
 +-----------------+--------------------------------------------------+----------+
 | Metric          | Description                                      | Type     |
@@ -217,17 +215,17 @@ Metrics
 .. _agent_load_average:
 
 agent.load_average
---------------------
+------------------
 
 The **agent.load_average** check will attempt to measure the Unix-style Load Average on a host.
 
 Attributes
-~~~~~~~~~~~~
+^^^^^^^^^^
 
 No fields are present for this particular check type.
 
 Metrics
-~~~~~~~~~~~~
+^^^^^^^
 
 +----------+--------------------------------+---------+
 | Metric   | Description                    | Type    |
@@ -242,15 +240,15 @@ Metrics
 .. _agent_memory:
 
 agent.memory
-----------------
+------------
 
 Attributes
-~~~~~~~~~~~~
+^^^^^^^^^^
 
 No fields are present for this particular check type.
 
 Metrics
-~~~~~~~~~~~~
+^^^^^^^
 
 +-------------------+----------------------------------------------------------------------------------+---------+
 | Metric            | Description                                                                      | Type    |
@@ -281,7 +279,7 @@ Metrics
 .. _agent_mysql:
 
 agent.mysql
---------------
+-----------
 
 The **agent.mysql** check will retrieve MySQL server metrics
 
@@ -292,7 +290,7 @@ The **agent.mysql** check will retrieve MySQL server metrics
 
 
 Attributes
-~~~~~~~~~~~~~
+^^^^^^^^^^
 
 +------------+----------------------------------------------------------+------------------------------------------------------+
 | Field      | Description                                              | Validation                                           |
@@ -314,7 +312,7 @@ Attributes
 
 
 Metrics
-~~~~~~~~~~~
+^^^^^^^
 
 +--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
 | Metric                                     | Description                                                                                                                                                                                                                                                                                                           | Type            |
@@ -459,13 +457,13 @@ Metrics
 .. _agent_network:
 
 agent.network
-------------------
+-------------
 
 The **agent.network** check will attempt to measure the usage of network
 devices on a host.
 
 Attributes
-~~~~~~~~~~~~
+^^^^^^^^^^
 
 +-----------+-----------------------------------------------------------------------------------------+
 | Field     | Description                                  | Validation                               |
@@ -474,7 +472,7 @@ Attributes
 +-----------+-----------------------------------------------------------------------------------------+
 
 Metrics
-~~~~~~~~~~
+^^^^^^^
 
 +---------------+---------------------------------------------------------------------------------------------+---------+
 | Metric        | Description                                                                                 | Type    |
@@ -501,12 +499,12 @@ Metrics
 .. _agent_mssql_database:
 
 agent.mssql_database
----------------------------
+--------------------
 
 The **agent.mssql_database** check returns metrics for a Microsoft SQL Server database.
 
 Attributes
-~~~~~~~~~~~~
+^^^^^^^^^^
 
 +------------------+-----------------------------------+------------------------------------------------------+
 | Field            | Description                       | Validation                                           |
@@ -525,13 +523,13 @@ Attributes
 .. _agent_mssql_buffer_manager:
 
 agent.mssql_buffer_manager
----------------------------
+--------------------------
 
 The **agent.mssql_buffer_manager** check returns metrics for the
 Microsoft SQL Server buffer manager.
 
 Attributes
-~~~~~~~~~~~~
+^^^^^^^^^^
 
 +------------------+-----------------------------------+------------------------------------------------------+
 | Field            | Description                       | Validation                                           |
@@ -544,13 +542,13 @@ Attributes
 .. _agent_mssql_sql_statistics:
 
 agent.mssql_sql_statistics
----------------------------
+--------------------------
 
 The **agent.mssql_sql_statistics** check returns metrics for the
 Microsoft SQL Server SQL statistics.
 
 Attributes
-~~~~~~~~~~~~
+^^^^^^^^^^
 
 +------------------+-----------------------------------+------------------------------------------------------+
 | Field            | Description                       | Validation                                           |
@@ -568,7 +566,7 @@ agent.mssql_plan_cache
 The agent.mssql_plan_cache check returns metrics for the Microsoft SQL Server plan cache.
 
 Attributes
-~~~~~~~~~~~~
+^^^^^^^^^^
 
 +------------------+-----------------------------------+------------------------------------------------------+
 | Field            | Description                       | Validation                                           |
@@ -581,12 +579,12 @@ Attributes
 .. _agent_mssql_memory_manager:
 
 agent.mssql_memory_manager
----------------------------
+--------------------------
 
 The **agent.mssql_memory_manager** check returns metrics for the Microsoft SQL Server memory manager.
 
 Attributes
-~~~~~~~~~~~~
+^^^^^^^^^^
 
 +------------------+-----------------------------------+------------------------------------------------------+
 | Field            | Description                       | Validation                                           |
@@ -599,13 +597,13 @@ Attributes
 .. _agent_mssql_version:
 
 agent.mssql_version
----------------------------
+-------------------
 
 The **agent.mssql_version** check returns version information for
 Microsoft SQL Server.
 
 Attributes
-~~~~~~~~~~~~
+^^^^^^^^^^
 
 +------------------+-----------------------------------+------------------------------------------------------+
 | Field            | Description                       | Validation                                           |
@@ -622,7 +620,7 @@ Attributes
 .. _agent_plugin:
 
 agent.plugin
----------------------------
+------------
 
 The **agent.plugin** check will attempt to run a custom plugin on a host.
 
@@ -641,14 +639,14 @@ installation path that depends on the operating system:
 | Windows (64-bit agent installed on a 64-bit system or 32-bit agent installed on a 32-bit system)   | C:\\Program Files\\Rackspace Monitoring\\plugins         |
 +----------------------------------------------------------------------------------------------------+----------------------------------------------------------+
 
-Once the plugin has been installed to the server, create an
-``agent.plugin`` check that specifies the name of the executable file,
-and the plugin will begin reporting metrics to the monitoring system,
-just like any other check. If the plugin requires any command line
-arguments, these may be specified using the optional ``args`` array.
+After the plugin has been installed on the server, create an ``agent.plugin``
+check that specifies the name of the executable file so that the plugin can
+begin reporting metrics to the monitoring system, like any other check.
+If the plugin requires any command line arguments, you can specify them using
+the optional ``args`` array.
 
 Attributes
-~~~~~~~~~~~~
+^^^^^^^^^^
 
 +-----------+---------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 | Field     | Description                                             | Validation                                                                                    |
@@ -661,7 +659,7 @@ Attributes
 +-----------+---------------------------------------------------------+-----------------------------------------------------------------------------------------------+
 
 Metrics
-~~~~~~~~~~~~
+^^^^^^^
 
 Available metrics are determined by the plugin.
 
@@ -696,8 +694,8 @@ that prevents metrics from being gathered, plugins should print a status
 that describes the error, then should exit non-zero without printing any
 metric lines.*
 
-The status line may be followed by up to 10 metric lines. The format of
-a metric line is:
+The status line can be followed by up to 10 metric lines. Each line must use
+the following format:
 
 .. code::
 
@@ -705,39 +703,40 @@ a metric line is:
 
 The following descriptions provide information about parameter values.
 
-*name*
-    is the name of the metric. No spaces are allowed. The format is
-    alpha numeric with colon (:), underscore (\_) and dot (.) allowed.
-    Example: ``memory_free``.
+.. list-table:: **Capacity management**
+   :widths: 30 70
+   :header-rows: 1
 
-*type*
-    is the type of the metric. This must be one of:
+   * - Parameter
+     - Description
+   * - name
+     - The name of the metric. No spaces are allowed. The format is
+       alpha numeric with colon (:), underscore (\_) and dot (.) allowed.
+       Example: ``memory_free``.
+   * - type
+     - The metric can be any of the following types:
 
-    ``int32``
-        Signed 32 bit integer value.
+       ``int32`` Signed 32 bit integer value.
 
-    ``uint32``
-        Unsigned 32 bit integer value.
+       ``uint32`` Unsigned 32 bit integer value.
 
-    ``int64``
-        Signed 64 bit integer value.
+       ``int64`` Signed 64 bit integer value.
 
-    ``uint64``
-        Unsigned 64 bit integer value.
+       ``uint64`` Unsigned 64 bit integer value.
 
-    ``double``
-        Floating point values.
+       ``double`` Floating point values.
 
-    ``string``
-        A string value. *Note: the monitoring system records string
-        metrics every time they change. String metrics are designed for
-        recording an enumerated state which infrequently changes (for
-        example an HTTP response code which is always 200 during normal
-        operation). You should not store arbitrary, frequently changing
-        values in a string metric.*
+       ``string``
+           A string value.
 
-*value*
-    is the value of the metric.
+           **Note:** the monitoring system records string
+           metrics every time they change. String metrics are designed for
+           recording an enumerated state which infrequently changes (for
+           example an HTTP response code which is always 200 during normal
+           operation). You should not store arbitrary, frequently changing
+           values in a string metric.
+   * - value
+     - The value assigned to the metric.
 
 Putting it all together, the output of a plugin that has successfully
 executed might look something like:
@@ -758,12 +757,12 @@ non-zero:
 .. _agent_redis:
 
 agent.redis
----------------------------
+-----------
 
 The **agent.redis** check will retrieve Redis server metrics
 
 Attributes
-~~~~~~~~~~~~
+^^^^^^^^^^
 
 +------------------+-----------------------------------+------------------------------------------------------+
 | Field            | Description                       | Validation                                           |
@@ -779,7 +778,7 @@ Attributes
 
 
 Metrics
-~~~~~~~~~~~~
+^^^^^^^
 
 +--------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+----------+
 | Metric                         | Description                                                                                                                                   | Type     |
@@ -818,12 +817,12 @@ The **agent.windows_perfos** check returns metrics regarding windows
 performance data. This check is only available on Windows platforms.
 
 Attributes
-~~~~~~~~~~~~
+^^^^^^^^^^
 
 No fields are present for this particular check type.
 
 Metrics
-~~~~~~~~~~~~
+^^^^^^^
 +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------+
 | Metric                        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | Type     |
 +===============================+============================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================+==========+
