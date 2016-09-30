@@ -1,7 +1,8 @@
 .. _concepts:
 
-Concepts
---------
+=======================
+|product name| Concepts
+=======================
 
 To understand the Cloud Images service and API, review the following key terms
 and concepts. To use the |apiservice| effectively, you should understand the
