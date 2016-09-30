@@ -77,7 +77,7 @@ the |product name| REST API:
 - :ref:`Release notes <release-notes-collection>`
 
 .. toctree:: :hidden:
-   :maxdepth: 2
+   :maxdepth: 3
 
    Rackspace Monitoring 1.0 <self>
    getting-started/index

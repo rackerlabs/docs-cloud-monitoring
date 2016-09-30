@@ -62,13 +62,12 @@ monitoring agent:
    many servers.
 
 ..  note::
+
     Another option for agent installation is to use the `The Cloud
-    Intelligence control panel <http://intelligence.rackspace.com>`__. The Cloud
-    Intelligence control panel provides easy monitoring configuration and
-    set up as well as graphs for visualizing Rackspace Monitoring. You log in
-    with your MyCloud Control Panel log in, but the Cloud Intelligence
-    control panel has many more monitoring configuration options, including
-    two methods for installing the monitoring agent.
+    Intelligence control panel This control panel  provides easy monitoring
+    configuration andset up as well as graphs for visualizing Rackspace Monitoring.
+    For details, see
+    :how-to:`Logging in to the Rackspace Intelligence dashboard <logging-in-to-the-rackspace-intelligence-dashboard>`.
 
 
 .. _install-agent-meta-packages:
@@ -929,19 +928,14 @@ To run the program, complete the following steps:
     created. Instead, you will have to manually create an entity and agent
     token.
 
-    The agent Setup program lists the agent tokens that have been created
-    under your account. You can use the same agent token for multiple
-    agents, or select the option to create a new one for use on this server.
-    Once you have an agent token, associate it with the resource entity by
+    After you have an agent token, associate it with the resource entity by
     choosing the entity ID created for your resource, or select the option
     to create a new entity. If you create a new monitoring entity on your
-    server, it won't be visible in the Cloud Control Panel, but you will be
-    able to see and configure it using the `Cloud Intelligence
-    interface <https://intelligence.rackspace.com/>`__, and you can
-    configure it as described in this guide. You'll use the entity ID when
-    you create checks to monitor the health of your server; see
-    :ref:`First steps with the
-    agent <first-steps>`.
+    server, it won't be visible in the Cloud Control Panel, but you can see
+    see and configure it using the 
+    :how-to:`Cloud Intelligence dashboard <logging-in-to-the-rackspace-intelligence-dashboard>`
+    You need the entity ID when you create checks to monitor the health of your server; see
+    :ref:`First steps with the agent <first-steps>`
 
 To learn more, see the article :how-to:`Monitoring: Differences Between
 Rackspace Server Users and Non-Rackspace Server

@@ -1,7 +1,8 @@
 .. _notification-plans-operations:
 
+==================
 Notification plans
-~~~~~~~~~~~~~~~~~~
+==================
 
 A notification plan contains a set of notification actions that Rackspace
 Monitoring executes when triggered by an alarm. Rackspace Monitoring currently
@@ -22,7 +23,8 @@ The notification plan supports the following states:
 The default ``npTechnicalContracsEmail`` notification plan emails all
 technical contacts on file for an account whenever the state changes.
 
-**Attributes**
+The following table describes the attributes for the notification plan
+resource.
 
 +--------------------+-------------------------+-----------------------------------+
 | Name               | Description             | Validation                        |

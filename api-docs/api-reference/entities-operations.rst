@@ -1,8 +1,8 @@
 .. _entities-operations:
 
-
+========
 Entities
-~~~~~~~~
+========
 
 An entity represents the object or resource that you want to monitor.
 You can create an entity to monitor your website, a particular web service,
