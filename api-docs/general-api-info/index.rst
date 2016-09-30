@@ -1,26 +1,32 @@
-General API Information
---------------------------
+.. _general-api-index:
+
+=======================
+General API information
+=======================
 
 The Rackspace Monitoring API is implemented by using a RESTful web service
-interface. Cloud Big Data shares a common token-based authentication system with other
-products in the Rackspace Cloud suite. This system enables seamless access between
-Rackspace products and services.
+interface. Cloud Big Data shares a common token-based authentication system
+with other products in the Rackspace Cloud suite. This system enables seamless
+access between Rackspace products and services.
 
 .. note::
-   All requests to authenticate and operate against the Rackspace Monitoring API
-   are performed using SSL over HTTPS on TCP port 443.
 
-.. toctree:: :hidden:
-   :maxdepth: 2
+   All requests to authenticate and operate the service are performed using
+   HTTPS on TCP port 443. For authentication instructions, see
+   :ref:`Authenticate to the Rackspace Cloud <authenticate-to-cloud>`.
 
-   authentication-ovw
-   service-access-endpoint
+.. COMMENT: The topics in the toctree vary based on the API being documented.
+   Update topics and adapt information in topics based on your product.
+
+.. toctree::
+   :maxdepth: 1
+
+   service-access
+   contract-version
    request-response-types
-   role-based-access-control
-   versions
-   faults
-   rate-limits
-   resource-limits
    paginated-collections
    time-series-collections
+   limits
+   faults
    info-audits
+   role-based-access-control

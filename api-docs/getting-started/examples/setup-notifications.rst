@@ -2,7 +2,7 @@
 
 
 Setting up notifications 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 In most cases, you and perhaps several people on your team will be
 interested in multiple alarms. Rackspace Monitoring lets you set up
@@ -38,8 +38,6 @@ notification plan.
     -H 'Content-Type: application/json' \
     'https://monitoring.api.rackspacecloud.com/v1.0/010101/notifications'
 
-|
-
  
 **Example: Create a notification, response: cURL**
 
@@ -57,8 +55,6 @@ notification plan.
     X-Ratelimit-Window: 24 hours
     Content-Type: text/plain
 
-|
-
  
 **Example: Create a notification, request: raxmon**
 
@@ -66,16 +62,13 @@ notification plan.
 
     raxmon-notifications-create --label="Alert email 1" --type=email --details=address=joe@example.org
 
-|
 
- 
 **Example: Create a notification, response: raxmon**
 
 .. code::
 
     Resource created. ID: nt2T8WtWte
 
-|
 
 If the notification is successfully created, the endpoint returns a
 response code of ``201 Created`` and a ``Location`` header that contains

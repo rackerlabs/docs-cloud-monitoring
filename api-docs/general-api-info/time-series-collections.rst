@@ -1,7 +1,8 @@
 .. _time-series-collections:
 
+=======================
 Time series collections
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=======================
 
 Rackspace Monitoring tracks various time-indexed data sets, such
 as audits and alarm histories. When accessing a time series collection,

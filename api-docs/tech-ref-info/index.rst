@@ -1,6 +1,14 @@
-.. _tech-ref-info:
+.. _technical-reference-info-intro:
 
-.. toctree:: :hidden:
+===================
+Technical reference
+===================
+
+Learn more about alarms and alerts and check types flows and resources, and
+find other resources that you can use to configure and interact with the
+Rackspace Monitoring API.
+
+.. toctree::
    :maxdepth: 2
 
    alert-triggers-and-alarms

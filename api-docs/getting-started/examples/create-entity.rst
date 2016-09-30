@@ -3,7 +3,7 @@
 
 
 Creating an entity
-~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~
 
 The first thing you do to begin monitoring a resource is to create an
 `entity <#>`__ that represents the resource in the monitoring system.
@@ -76,16 +76,15 @@ ID, so yours will be different.
     Resource created. ID: enMlJzlHDo
 
 If an error message is returned, the endpoint was unable to create the
-entity. See the :ref:`Faults section<monitoring-faults>` section in the *Rackspace Cloud
-Monitoring Developer's guide*.
+entity. See the :ref:`Faults section<monitoring-faults>` section.
 
 ..  note::
 
       - For the remaining steps of this tutorial, substitute the ID of the
         entity that you created for "enn14Ch5mc".
 
-     -  You can request a list of all entities for your account at any time. You
-        can also list checks, alarms, notifications, and so on.
+     -  You can request a list of all entities for your account at any time.
+        You can also list checks, alarms, notifications, and so on.
 
  
 **Example: List all entities, request: cURL**
