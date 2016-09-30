@@ -64,9 +64,9 @@ monitoring agent:
 ..  note::
 
     Another option for agent installation is to use the `The Cloud
-    Intelligence control panel This control panel  provides easy monitoring
-    configuration andset up as well as graphs for visualizing Rackspace Monitoring.
-    For details, see
+    Intelligence control panel This control panel provides easy monitoring
+    configuration and set up as well as graphs for visualizing Rackspace
+    Monitoring. For details, see
     :how-to:`Logging in to the Rackspace Intelligence dashboard <logging-in-to-the-rackspace-intelligence-dashboard>`.
 
 
@@ -86,7 +86,7 @@ package.
 
 #. Log into the server that you want to monitor.
 
-#. Open a browser to the `Rackspace onitoring Meta
+#. Open a browser to the `Rackspace Monitoring Meta
    Packages <http://meta.packages.cloudmonitoring.rackspace.com/>`__.
 
 #. Find your operating system and enter the commands provided.
@@ -116,7 +116,6 @@ Find your operating system and follow those instructions.
 
 Ubuntu
 ^^^^^^
-
  
 **To install the agent on Ubuntu with copy and paste:**
 
@@ -235,7 +234,6 @@ Next, :ref:`run the agent setup program <run-agent-setup-program>`
 Red Hat
 ^^^^^^^
 
- 
 **To install the agent on Red Hat with copy and paste:**
 
 #. Run the listed command to install the package signing key. Please run
@@ -266,7 +264,7 @@ Red Hat
    /etc/yum.repos.d/rackspace-cloud-monitoring.repo with your favorite
    text editor (like nano or vi). Find your Linux distribution and
    version in the table below, then add the listed configuration block
-   to the rackspace-cloud-monitoring.repo file to add the agent
+   to the ``rackspace-cloud-monitoring.repo`` file to add the agent
    repository to yum (Please add the WHOLE BLOCK):
 
    -  **Red Hat 5**:
@@ -932,7 +930,7 @@ To run the program, complete the following steps:
     choosing the entity ID created for your resource, or select the option
     to create a new entity. If you create a new monitoring entity on your
     server, it won't be visible in the Cloud Control Panel, but you can see
-    see and configure it using the 
+    see and configure it using the
     :how-to:`Cloud Intelligence dashboard <logging-in-to-the-rackspace-intelligence-dashboard>`
     You need the entity ID when you create checks to monitor the health of your server; see
     :ref:`First steps with the agent <first-steps>`

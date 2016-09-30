@@ -67,7 +67,8 @@ configuration.
 
 .. _entity-concept:
 
-Entity ~~~~~~
+Entity
+~~~~~~
 
 In Rackspace Monitoring, an entity is the object or resource that you want to
 monitor. Entities are automatically created for for the Rackspace products that
@@ -112,7 +113,7 @@ configure and pushes metrics to the rest of Rackspace Monitoring so that the
 metrics can be analyzed, alerted on, and archived. These metrics are gathered
 via checks using specified agent check types, and can be used with the other
 Rackspace Monitoring features such as alarms. See the
-:ref:`Agent check types reference <agent-check-type-ref>` for anlist of
+:ref:`Agent check types reference <agent-check-type-ref>` for a list of
 agent check types.
 
 To learn about installing and configuring monitoring agents, read the
