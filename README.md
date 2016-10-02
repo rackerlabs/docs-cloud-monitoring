@@ -6,9 +6,9 @@
 
 This GitHub repository contains the source files for the following Rackspace Metrics API documentation:
 
-* [Rackspace Monitoring Getting Started Guide](https://developer.rackspace.com/docs/rackspace-monitoring/v1/developer-guide/#getting-started)
-* [Rackspace Monitoring Developer Guide](https://developer.rackspace.com/docs/rackspace-monitoring/v1/developer-guide/)
-* [Rackspace Monitoring API Reference](https://developer.rackspace.com/docs/rackspace-monitoring/v1/developer-guide/#api-reference)
+* [Rackspace Monitoring Getting Started Guide](https://developer.rackspace.com/docs/rackspace-monitoring/v1/getting-started)
+* [Rackspace Monitoring API Reference](https://developer.rackspace.com/docs/rackspace-monitoring/v1/api-reference)
+*  [Rackspace Monitoring Release Notes](https://developer.rackspace.com/docs/rackspace-monitoring/v1/release-notes)
 
 
 When you commit changes to the master branch of this repository, the 
