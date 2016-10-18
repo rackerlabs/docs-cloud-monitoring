@@ -375,7 +375,7 @@ policies and their trade-offs are described next.
 	zones report resource CRITICAL and the previous alert state was OK.
 
 	The ``ALL`` policy is the most accurate, but is also prone to failure in
-	significant failure scenarios. If a network partition hapens between our
+	significant failure scenarios. If a network partition happens between our
 	internal data centers, the alert might be delayed due to the
 	election process. In this case, a computer has to be marked down,
 	then the checks are re-evaluated as a group. If they come to a
@@ -439,7 +439,7 @@ like the one shown in the following example.
 
    	Notice the order of the following two statements.  Because the function runs
    	sequentially, you must specify the most specific match condition first.
-   	This is true for all conditions, it is commonly exposed in statements like this.
+   	This is true for all conditions and is commonly exposed in statements like this.
 
 .. code::
 
