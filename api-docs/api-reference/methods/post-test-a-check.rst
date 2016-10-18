@@ -9,7 +9,7 @@ Test a check
 
 This operation causes Rackspace Cloud Monitoring to attempt to
 run the check on the specified monitoring zones and return the results.
-This operation allows you to test the check parameters in a single
+This operation enables you to test the check parameters in a single
 step before the check is actually created in the system.
 
 .. note::

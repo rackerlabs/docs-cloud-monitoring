@@ -9,7 +9,7 @@ List notifications
 
 Lists the notifications for the account. Use
 ``/notifications?id=notificationOneId & id=notificationTwoId`` to filter
-the results to only include information on the specified notifications.
+the results to only include information about the specified notifications.
 
 This operation can be paginated. For information,
 see :ref:`Paginated collections <paginated-collections>`.

@@ -12,7 +12,7 @@ information, if available.
 
 This operation causes Rackspace Cloud Monitoring to attempt to run
 the check on the specified monitoring zones and return the results.
-This allows you to test the check parameters in a single step
+This enables you to test the check parameters in a single step
 before the check is actually created in the system. This call also includes
 debug information. Currently debug information is only available for the
 remote.http check and includes the response body.

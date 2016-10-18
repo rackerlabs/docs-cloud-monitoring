@@ -131,7 +131,7 @@ datacenter, however in the monitoring system, you can think of it more as a
 geographical region.
 
 You can launch checks for a particular entity from multiple monitoring zones.
-This allows you to observe the performance of an entity from different regions
+This enables you to observe the performance of an entity from different regions
 of the world. It is also a way to prevent noisy alarms. For example, if the
 check from one monitoring zone reports that an entity is down, a second or
 third monitoring zone might report that the entity is up and running. This

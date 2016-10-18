@@ -25,7 +25,7 @@ you receive from using the Rackspace Monitoring API include the following:
 
 - **Monitoring from Multiple Datacenters**
 
-  Rackspace Monitoring allows you to simultaneously monitor the performance of
+  Rackspace Monitoring enables you to simultaneously monitor the performance of
   different resources from multiple datacenters and provides a clear picture
   of overall system health. It includes tunable parameters to interpret mixed
   results which help you to create deliberate and accurate alerting policies.
@@ -44,7 +44,7 @@ you receive from using the Rackspace Monitoring API include the following:
 
 - **Collection of Data**
 
-  Rackspace Monitoring allows you to collect a variety of data
+  Rackspace Monitoring enables you to collect a variety of data
   that you can use for other tasks, such as researching trends or
   measuring critical data. For more information, see
   :ref:`Metrics <metrics-operations>`.

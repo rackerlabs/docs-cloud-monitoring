@@ -10,7 +10,7 @@ List checks for an entity
 Lists the checks associated with a given ``entityId``.
 
 Use ``/checks?id=checkOneId & id=checkTwoId`` to filter the
-results to only include information on the specified checks.
+results to only include information about the specified checks.
 
 This operation can be paginated. For information,
 see :ref:`Paginated collections <paginated-collections>`.

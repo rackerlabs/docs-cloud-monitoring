@@ -5,7 +5,7 @@ Agents
 ======
 
 The optional Monitoring Agent resides on the host server being
-monitored. The agent allows you to gather on-host metrics
+monitored. You can use the agent to gather on-host metrics
 based on agent checks and push them to Rackspace Monitoring where
 you can analyze them, use them with the Rackspace Monitoring
 infrastructure, and archive them.
@@ -64,7 +64,7 @@ infrastructure:
   Agent updates are verified against a cryptographic digest which is signed
   by the agent root certificate authority. This signing certificate is
   separate from the endpoint TLS certificate and the signing is done on
-  a single machine, off-line. This means that the security of updates
+  a single computer, off-line. This means that the security of updates
   is separated from that of the endpoint.
 
 Agent IDs

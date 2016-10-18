@@ -9,7 +9,7 @@ List alarms
 
 List the alarms on the specified ``entityId``. Use
 ``/alarms?id=alarmOneId & id=alarmTwoId`` to filter the results to only
-include information on the specified alarms.
+include information about the specified alarms.
 
 This operation can be paginated. For information, see
 :ref: `Paginated collections <paginated-collections>`.

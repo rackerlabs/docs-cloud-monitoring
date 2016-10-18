@@ -19,7 +19,7 @@ provides a resolution for the issue.
    * - ``prevented by ACL 'global'``
      - The HTTP remote check is attempting to access an IP Address that is a
        private address (127.x.x.x, 192.168.x.x, etc).
-     - Private IP addresses are not allowed. Specify a public IP address
+     - Private IP addresses are not supported. Specify a public IP address
        instead.
    * - unknown content encoding
      - The content could not be copied fully to the monitoring zone endpoint.

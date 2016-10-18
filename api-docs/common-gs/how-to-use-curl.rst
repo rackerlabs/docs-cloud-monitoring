@@ -41,7 +41,7 @@ about creating environment variables, see :ref:`Configure environment variables
 ..  note::
 
     The cURL request examples use a backslash (``\``) as a line-continuation
-    symbol, which allows the command to continue across multiple lines.
+    symbol, which indicates that the command continues across multiple lines.
 
 The cURL examples in this guide use the following command-line options.
 

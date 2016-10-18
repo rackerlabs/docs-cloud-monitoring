@@ -18,7 +18,7 @@ This operation does not require a request body.
 This operation returns a response body that lists all data points
 between two points in time for ``metricName``. To control the data points
 returned in the response body, specify the required request URI
-parameters described below.
+parameters described in the following table.
 
 .. note::
    Rackspace Monitoring is currently limited to 1440 data points returned
@@ -46,7 +46,7 @@ The following table shows the possible response codes for this operation:
 +--------------------------+-------------------------+-------------------------+
 |405                       |Method Not Allowed       |The method specified in  |
 |                          |                         |the request is not       |
-|                          |                         |allowed for the          |
+|                          |                         |enabled for the          |
 |                          |                         |resource. A list of      |
 |                          |                         |valid methods for the    |
 |                          |                         |requested resource is    |

@@ -74,7 +74,7 @@ in the :ref:`API Reference <api-reference>`.
 Resource limits
 ~~~~~~~~~~~~~~~
 
-The following table below lists the default limits for different resources.
+The following table lists the default limits for different resources.
 When you exceed the threshold for checks or alarms, API requests to create
 a check or alarm return the
 following error:  ``400 Limit has been reached``.

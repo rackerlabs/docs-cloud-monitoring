@@ -48,7 +48,7 @@ Resolved issues
 
 - Fixed writable date and time fields that were supposed to be immutable.
 
-- Fixed the DSL string escaping to allow you to specify special characters.
+- Fixed the DSL string escaping to enable you to specify special characters.
   See the following example:
 
    .. code::

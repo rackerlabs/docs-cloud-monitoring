@@ -5,7 +5,7 @@ Account
 =======
 
 Use the following Account operations to manage user accounts including finding
-out about resource and rate limits and getting information on write operations,
+out about resource and rate limits and getting information about write operations,
 called audits.
 
 .. contents::

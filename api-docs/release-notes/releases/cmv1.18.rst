@@ -14,7 +14,7 @@ Resolved issues
 
 The following agent-specific changes were made:
 
-- On Windows, made a change to properly close stdin when gathering the machine
+- On Windows, made a change to properly close stdin when gathering the computer
   ID.
 
 - Made various hostinfo improvements.

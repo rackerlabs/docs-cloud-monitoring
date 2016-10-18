@@ -10,7 +10,7 @@ Get audit information
 Returns audit information for the specified account.
 
 Rackspace Monitoring records every write operation in an audit.
-For more information on how audits are recorded, see
+For more information about how audits are recorded, see
 :ref:`Audits <audits>`.
 
 Audits are accessible as a
