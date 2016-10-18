@@ -10,7 +10,7 @@ What's new
 Server-side configuration is now available. For details, see
 `Install and configure the agent </cm/api/v1.0/cm-getting-started/content/install-configure.html#agent-config-file>`__.
 
-Server-side configuration allows checks and alarms to be configured using a
+Server-side configuration enables you to configure checks and alarms by using a
 YAML file. Users must update their monitoring agent to take advantage of this
 new feature.
 

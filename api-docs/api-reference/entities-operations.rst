@@ -12,8 +12,8 @@ monitor each server in a cluster, you would create an entity for each
 of the servers. You would not create a single entity to represent the
 entire cluster.
 
-An entity can have multiple checks associated with it. This allows you
-to check multiple services on the same host by creating multiple
+An entity can have multiple checks associated with it. Multiple checks enable
+you to check multiple services on the same host by creating multiple
 checks on the same entity, instead of multiple entities each with a
 single check.
 

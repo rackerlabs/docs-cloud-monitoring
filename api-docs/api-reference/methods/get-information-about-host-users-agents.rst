@@ -7,7 +7,7 @@ Get information about host users
 
     GET /agents/{agentId}/host_info/who
 
-Get information on users who are logged into the host.
+Get information about users who are logged into the host.
 
 The following table shows the possible response codes for this operation:
 

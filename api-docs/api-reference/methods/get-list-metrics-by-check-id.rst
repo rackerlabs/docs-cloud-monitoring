@@ -61,7 +61,7 @@ The following table shows the possible response codes for this operation:
 +--------------------------+-------------------------+-------------------------+
 |405                       |Method Not Allowed       |The method specified in  |
 |                          |                         |the request is not       |
-|                          |                         |allowed for the          |
+|                          |                         |supported for the        |
 |                          |                         |resource. A list of      |
 |                          |                         |valid methods for the    |
 |                          |                         |requested resource is    |

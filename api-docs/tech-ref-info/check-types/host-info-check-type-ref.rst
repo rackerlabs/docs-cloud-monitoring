@@ -10,7 +10,7 @@ Hostinfo checks
 
 Hostinfo checks are a special class of checks that run on demand.
 
-In contrast to the remote and agent check types which allow you to schedule
+In contrast to the remote and agent check types which enable you to schedule
 alarms or alerts for remote and agent-type checks and run them on a regular
 schedule, you cannot schedule Hostinfo checks or create alarms or alerts for
 them.
@@ -180,7 +180,7 @@ service.
           https://monitoring.api.rackspacecloud.com/v1.0/ \
           <tenandID>/agents/<agent_id>/host_info/<hostinfo_type>
           
-For more information on how to work with checks using the Rackspace Monitoring API, see the
+For more information about how to work with checks using the Rackspace Monitoring API, see the
 Checks section in the Rackspace Monitoring Developer Guide. For more information working with Hostinfo checks,
 see the Agent host information.
 

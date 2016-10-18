@@ -11,7 +11,7 @@ Test an existing check inline.
 
 This operation causes Rackspace Cloud Monitoring to attempt to run a
 duplicate check on the specified monitoring zones and return the
-results. This allows you to test the check parameters.
+results. This enables you to test the check parameters.
 
 .. note::
    This operation does NOT cause the already-created check to

@@ -8,7 +8,7 @@ What's new
 ----------
 
 - The new `PagerDuty notification type <https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#pagerduty-notification-type>`__
-  is now fully documented. This notification type allows you to use PagerDuty
+  is now fully documented. This notification type enables you to use PagerDuty
   to receive notifications via a page. For details, see
   `Rackspace Monitoring Adds PagerDuty Integration <http://developer.rackspace.com/blog/cloud-monitoring-adds-pagerduty-integration.html>`__
   blog post.

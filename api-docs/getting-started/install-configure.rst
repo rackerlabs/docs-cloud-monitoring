@@ -263,7 +263,7 @@ Red Hat
 #. Create and edit a text file at
    /etc/yum.repos.d/rackspace-cloud-monitoring.repo with your favorite
    text editor (like nano or vi). Find your Linux distribution and
-   version in the table below, then add the listed configuration block
+   version in the following table, then add the listed configuration block
    to the ``rackspace-cloud-monitoring.repo`` file to add the agent
    repository to yum (Please add the WHOLE BLOCK):
 
@@ -359,7 +359,7 @@ Fedora
 #. Create and edit a text file at
    /etc/yum.repos.d/rackspace-cloud-monitoring.repo with your favorite
    text editor (like nano or vi). Find your Linux distribution and
-   version in the table below, then add the listed configuration block
+   version in the following table, then add the listed configuration block
    to the rackspace-cloud-monitoring.repo file to add the agent
    repository to yum (Please add the WHOLE BLOCK).
 
@@ -461,7 +461,7 @@ CentOS
 #. Create and edit a text file at
    /etc/yum.repos.d/rackspace-cloud-monitoring.repo with your favorite
    text editor (like nano or vi). Find your Linux distribution and
-   version in the table below, then add the listed configuration block
+   version in the following table, then add the listed configuration block
    to the rackspace-cloud-monitoring.repo file to add the agent
    repository to yum (Please add the WHOLE BLOCK).
 
@@ -1321,7 +1321,7 @@ Delete a server-side configuration file and its checks and alarms
 If a server-side YAML configuration file is removed from a server, the
 agent deletes the check and corresponding alarms configured in the file
 when the server next reads the file. The YAML files are read every time
-you start the agent. For information on starting the agent, see
+you start the agent. For information about starting the agent, see
 :ref:`Start the agent <start-the-agent>`.
 
 .. _troubleshoot-agent-configuration-with-YAML:

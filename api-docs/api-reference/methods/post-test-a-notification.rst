@@ -7,9 +7,9 @@ Test a notification
 
     POST /test-notification
 
-This operation allows you to test a notification before creating it.
+This operation enables you to test a notification before creating it.
 The actual notification comes from the same server where the
-actual alert messages come from. This allow you to, among other things,
+actual alert messages come from. This enables you to, among other things,
 verify that your firewall is configured properly.
 
 The following table shows the possible response codes for this operation:

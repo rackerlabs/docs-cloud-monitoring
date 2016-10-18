@@ -9,7 +9,7 @@ List suppressions
 
 Lists the suppressions. Use
 ``/supressions?id=supressionOneId & id=supressionTwoId`` to filter the results
-to only include information on the specified suppressions.
+to only include information about the specified suppressions.
 
 This operation can be paginated. For information,
 see :ref: `Paginated collections <paginated-collections>`.

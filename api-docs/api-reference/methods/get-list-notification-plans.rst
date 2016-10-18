@@ -8,7 +8,7 @@ List notification plans
 
 Lists the notification plans for the Rackspace Cloud Monitoring account.
 Use ``/notification_plans?id=notification_planOneId & id=notification_planTwoId``
-to filter the results to only include information on the specified
+to filter the results to only include information about the specified
 notification plans.
 
 This operation can be paginated. For information,

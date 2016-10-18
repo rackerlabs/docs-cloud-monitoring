@@ -28,7 +28,7 @@ The following agent-specific changes were made:
 * Fixed an issue in an underlying library performing resolv.conf parsing. If
   there was more than one whitespace character in-between the ``nameserver``
   and ``ip`` then the application would not discover the DNS servers
-  correctly. This release allows for these extra characters.
+  correctly. This release supports the use of these extra characters.
 
 
 Known issues

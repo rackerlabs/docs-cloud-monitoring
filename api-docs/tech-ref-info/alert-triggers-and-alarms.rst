@@ -52,8 +52,8 @@ the alerting system works:
       If a check fails to execute, by default alarm associated with
       check returns a ``CRITICAL`` state.
 
-      This may change in future versions of the product, however this
-      is currently the only behavior allowed. This represents a
+      This might change in future versions of the product, however this
+      is currently the only behavior supported. This represents a
       subclass of failures similar to *Connection Timeout* or other
       errors where the result wasn't simply a failure result, but a
       result where the user was unable to run the check at all.
@@ -375,9 +375,9 @@ policies and their trade-offs are described next.
 	zones report resource CRITICAL and the previous alert state was OK.
 
 	The ``ALL`` policy is the most accurate, but is also prone to failure in
-	significant failure scenarios. If a network partition between our
-	internal data centers happens, the alert could be delayed due to the
-	election process. In this case, a machine has to be marked down,
+	significant failure scenarios. If a network partition happens between our
+	internal data centers, the alert might be delayed due to the
+	election process. In this case, a computer has to be marked down,
 	then the checks are re-evaluated as a group. If they come to a
 	consensus (with the downed collector) then an alert is generated.
 
@@ -433,14 +433,13 @@ such as bytes_in on an network interface, this will give you the
 **Percent function**
 
 The **percent** function is used to calculate a percentage, useful in situations
-like the example below.
+like the one shown in the following example.
 
 .. note::
 
-   	Notice the order of the two statements below, since it executes
-   	sequentially it is important to be most specific as the first matched
-   	condition wins. This is true for all conditions, it is commonly
-   	exposed in statements like this.
+   	Notice the order of the following two statements.  Because the function runs
+   	sequentially, you must specify the most specific match condition first.
+   	This is true for all conditions and is commonly exposed in statements like this.
 
 .. code::
 
@@ -586,7 +585,7 @@ SSH checks
 ----------
 
 The following example uses the Rackspace Monitoring command
-line interface (CLI). For information on downloading and installing the
+line interface (CLI). For information about downloading and installing the
 CLI, see `Rackspace Monitoring CLI <https://github.com/racker/rackspace-monitoring-cli>`_.
 
 One of the most widely used remote checks is the SSH check. This check not

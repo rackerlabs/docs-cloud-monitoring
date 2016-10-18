@@ -752,7 +752,7 @@ The following descriptions provide information about parameter values.
    * - Parameter
      - Description
    * - name
-     - The name of the metric. No spaces are allowed. The format is
+     - The name of the metric. Spaces are not supported. The format is
        alpha numeric with colon (:), underscore (\_) and dot (.) allowed.
        Example: ``memory_free``.
    * - type

@@ -10,7 +10,7 @@ collects data from. Examples of monitoring zones are "US West",
 from which data is collected.
 
 An *endpoint*, also known as a *collector*, collects data from the monitoring
-zone. The endpoint is mapped directly to an individual machine or a virtual
+zone. The endpoint is mapped directly to an individual computer or a virtual
 machine. A monitoring zone contains many endpoints, all of which will be within
 the IP address range listed in the response. The opposite is not true, however,
 as there may be unallocated IP addresses or unrelated machines within that IP

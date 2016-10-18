@@ -4,7 +4,7 @@
 Suppressions
 ============
 
-Suppressions allow you to suspend alarm notifications for a set period of time.
+Suppressions enable you to suspend alarm notifications for a set period of time.
 A single suppression can apply to any number of alarms. For example,
 you would use one suppression to suppress all alarm notifications during
 a scheduled maintenance period this week and another suppression

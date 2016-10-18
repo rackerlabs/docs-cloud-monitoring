@@ -7,7 +7,7 @@ Test an existing notification
 
     POST /notifications/{notificationId}/test
 
-This operation allows you to test an existing notification. The
+This operation enables you to test an existing notification. The
 notification comes from the same server that the alert messages
 come from. One use for this test is to verify that your firewall
 is configured properly.
