@@ -31,13 +31,13 @@ you specify the following:
 |                        | "enFooBar:alAbc123") for  | * Array [String,Non-empty     |
 |                        | determining notification  |   string]                     |
 |                        | suppression.              | * Array or object with number |
-|                        |                           |   of items between 0 and 256  |
+|                        |                           |   of items between 0 and 512  |
 +------------------------+---------------------------+-------------------------------+
 | **checks**             | A list of check IDs (e.g. | * Optional                    |
 |                        | "enFooBar:chAbc123") for  | * Array [String,Non-empty     |
 |                        | determining notification  |   string]                     |
 |                        | suppression.              | * Array or object with number |
-|                        |                           |   of items between 0 and 256  |
+|                        |                           |   of items between 0 and 512  |
 +------------------------+---------------------------+-------------------------------+
 | **end_time**           | The Unix timestamp in     | * Optional                    |
 |                        | milliseconds that the     | * Integer                     |
@@ -49,7 +49,7 @@ you specify the following:
 |                        | determining notification  | * Array [String,Non-empty     |
 |                        | suppression.              |   string]                     |
 |                        |                           | * Array or object with number |
-|                        |                           |   between 0 and 256           |
+|                        |                           |   between 0 and 512           |
 +------------------------+---------------------------+-------------------------------+
 | **label**              | A friendly label for a    | * Optional                    |
 |                        | suppression.              | * String between 1 and 255    |
@@ -59,7 +59,7 @@ you specify the following:
 |                        | plan IDs for determining  | * Array [String,Non-empty     |
 |                        | notification suppression. |   string]                     |
 |                        |                           | * Array or object with number |
-|                        |                           |   of items between 0 and 256  |
+|                        |                           |   of items between 0 and 512  |
 +------------------------+---------------------------+-------------------------------+
 | **start_time**         | The Unix timestamp in     | * Optional                    |
 |                        | milliseconds that the     | * Integer                     |
