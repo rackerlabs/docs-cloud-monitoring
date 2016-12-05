@@ -188,8 +188,8 @@ Metrics
 +-----------------+--------------------------------------------------+----------+
 | Metric          | Description                                      | Type     |
 +=================+==================================================+==========+
-| avail           | Available space on the filesystem in kilobytes,  | Int64    |
-|                 | including reserved space.                        |          |
+| avail           | Available space on the filesystem in kilobytes   | Int64    |
+|                 | for normal users.                                |          |
 +-----------------+--------------------------------------------------+----------+
 | free            | Free space available on the filesystem in        | Int64    |
 |                 | kilobytes including reserved space.              |          |
