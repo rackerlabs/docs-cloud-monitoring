@@ -13,7 +13,7 @@
 - [ ] Product bug 
 - [ ] Product feedback
 
-**Note:** For product-related issues, you can also submit an issue from the [Rackspace Product Feedback](https://feedback.rackspace.com/) website. 
+**Note:** For product-related issues, you can also submit an issue from the [Rackspace Community Forum](https://community.rackspace.com/) website. 
 
 **Tell us more about your issue**
 
