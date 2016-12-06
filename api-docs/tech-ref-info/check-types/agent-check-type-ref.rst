@@ -21,7 +21,7 @@ Attributes
 ^^^^^^^^^^
 
 .. list-table::
-   widths: 30 60 30
+   :widths: 30 60 30
    :header-rows: 1
 
    * - Field
