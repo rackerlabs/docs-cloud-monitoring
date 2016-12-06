@@ -20,6 +20,20 @@ The **agent.apache** check will retrieve Apache HTTP server metrics
 Attributes
 ^^^^^^^^^^
 
+.. list-table::
+   widths: 30 60 30
+   :header-rows: 1
+
+   * - Field
+     - Description
+     - Validation
+   * - timeout
+     - Specifies the plugin execution timeout in milliseconds.
+     - Optional. Integer.
+   * - url
+     - Specifies the URL. Defaults to http://127.0.0.1/server-status.
+     - Optional. URL.
+
 +-----------+------------------------------------------------------------------+----------------------+
 | Field     | Description                                                      | Validation           |
 +===========+==================================================================+======================+
