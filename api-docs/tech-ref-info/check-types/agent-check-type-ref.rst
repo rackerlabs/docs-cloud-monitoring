@@ -34,14 +34,6 @@ Attributes
      - Specifies the URL. Defaults to http://127.0.0.1/server-status.
      - Optional. URL.
 
-+-----------+------------------------------------------------------------------+----------------------+
-| Field     | Description                                                      | Validation           |
-+===========+==================================================================+======================+
-| timeout   | Specifies the plugin execution timeout in milliseconds.          | Optional. Integer.   |
-+-----------+------------------------------------------------------------------+----------------------+
-| url       | Specifies the URL. Defaults to http://127.0.0.1/server-status.   | Optional. URL.       |
-+-----------+------------------------------------------------------------------+----------------------+
-
 Metrics
 ^^^^^^^
 
