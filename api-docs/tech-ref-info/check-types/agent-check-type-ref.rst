@@ -27,10 +27,10 @@ Attributes
    * - Field
      - Description
      - Validation
-   * - `timeout`
+   * - timeout
      - Specifies the plugin execution timeout in milliseconds
      - Optional. Integer.
-   * - `url`
+   * - url
      - Specifies the URL. Defaults to http://127.0.0.1/server-status
      - Optional. URL.
 
@@ -44,66 +44,66 @@ Metrics
    * - Metric
      - Description
      - Type
-   * - `busy_workers`
+   * - busy_workers
      - Specifies the number of workers serving requests
      - Int64
-   * - `bytes_per_request`
+   * - bytes_per_request
      - Averages giving the number of request per second, the number of bytes
        served second
      - Int64
-   * - `bytes_per_second`
+   * - bytes_per_second
      - Averages giving the number of requests per second, the number of bytes
        per request
      - Int64
-   * - `closing`
+   * - closing
      - The number of workers closing the connection
      - Int64
-   * - `cpu_load`
+   * - cpu_load
      - Total percentage of CPU used by workers
      - Double
-   * - `dns`
+   * - dns
      - The number of workers performing DNS lookup
      - Int64
-   * - `gracefully_fishing`
+   * - gracefully_fishing
      - The number of workers gracefully fishing
      - Int64
-   * - `idle`
+   * - idle
      - The number of idle cleanup workers
      - Int64
-   * - `idle_workers`
+   * - idle_workers
      - The number of idle workers
      - Int64
-   * - `keepalive`
+   * - keepalive
      - The number of workers kept alive (reading)
      - Int64
-   * - `logging`
+   * - logging
      - The number of workers logging
      - Int64
-   * - `open`
+   * - open
      - The number of workers with no current process
      - Int64
-   * - `reading`
+   * - reading
      - The number of workers reading the request
      - Int64
-   * - `requests_per_second`
+   * - requests_per_second
      - The number of requests per second
      - Int64
-   * - `sending`
+   * - sending
      - The number of workers sending a reply
      - Int64
-   * - `starting`
+   * - starting
      - The number of workers starting up
      - Int64
-   * - `total_access`
+   * - total_access
      - Total number of accesses served
      - Int64
-   * - `total_kbytes`
+   * - total_kbytes
      - Total kilobytes served
      - Int64
-   * - `uptime`
+   * - uptime
      - Time since the last start/restart in milliseconds
      - Int64
-   * - `waiting`
+   * - waiting
      - The number of workers waiting for connection
      - Int64
 
