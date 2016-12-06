@@ -20,60 +20,93 @@ The **agent.apache** check will retrieve Apache HTTP server metrics
 Attributes
 ^^^^^^^^^^
 
-+-----------+------------------------------------------------------------------+----------------------+
-| Field     | Description                                                      | Validation           |
-+===========+==================================================================+======================+
-| timeout   | Specifies the plugin execution timeout in milliseconds.          | Optional. Integer.   |
-+-----------+------------------------------------------------------------------+----------------------+
-| url       | Specifies the URL. Defaults to http://127.0.0.1/server-status.   | Optional. URL.       |
-+-----------+------------------------------------------------------------------+----------------------+
+.. list-table::
+   :widths: 30 60 30
+   :header-rows: 1
+
+   * - Field
+     - Description
+     - Validation
+   * - `timeout`
+     - Specifies the plugin execution timeout in milliseconds
+     - Optional. Integer.
+   * - `url`
+     - Specifies the URL. Defaults to http://127.0.0.1/server-status
+     - Optional. URL.
 
 Metrics
 ^^^^^^^
 
-+-----------------------+----------------------------------------------------------------------------------------+---------+
-| Metric                | Description                                                                            | Type    |
-+=======================+========================================================================================+=========+
-| busy_workers          | Specifies the number of workers serving requests                                       | Int64   |
-+-----------------------+----------------------------------------------------------------------------------------+---------+
-| bytes_per_request     | Averages giving the number of request per second, the number of bytes served second.   | Int64   |
-+-----------------------+----------------------------------------------------------------------------------------+---------+
-| bytes_per_second      | Averages giving the number of requests per second, the number of bytes per request.    | Int64   |
-+-----------------------+----------------------------------------------------------------------------------------+---------+
-| closing               | The number of workers closing the connection.                                          | Int64   |
-+-----------------------+----------------------------------------------------------------------------------------+---------+
-| cpu_load              | Total percentage of CPU used by workers                                                | Double  |
-+-----------------------+----------------------------------------------------------------------------------------+---------+
-| dns                   | The number of workers performing DNS lookup.                                           | Int64   |
-+-----------------------+----------------------------------------------------------------------------------------+---------+
-| gracefully_fishing    | The number of workers gracefully fishing                                               | Int64   |
-+-----------------------+----------------------------------------------------------------------------------------+---------+
-| idle                  | The number of idle cleanup workers.                                                    | Int64   |
-+-----------------------+----------------------------------------------------------------------------------------+---------+
-| idle_workers          | The number of idle workers.                                                            | Int64   |
-+-----------------------+----------------------------------------------------------------------------------------+---------+
-| keepalive             | The number of workers kept alive (reading).                                            | Int64   |
-+-----------------------+----------------------------------------------------------------------------------------+---------+
-| logging               | The number of workers logging.                                                         | Int64   |
-+-----------------------+----------------------------------------------------------------------------------------+---------+
-| open                  | The number of workers with no current process.                                         | Int64   |
-+-----------------------+----------------------------------------------------------------------------------------+---------+
-| reading               | The number of workers reading the request                                              | Int64   |
-+-----------------------+----------------------------------------------------------------------------------------+---------+
-| requests_per_second   | The number of requests per second.                                                     | Int64   |
-+-----------------------+----------------------------------------------------------------------------------------+---------+
-| sending               | The number of workers sending a reply.                                                 | Int64   |
-+-----------------------+----------------------------------------------------------------------------------------+---------+
-| starting              | The number of workers starting up.                                                     | Int64   |
-+-----------------------+----------------------------------------------------------------------------------------+---------+
-| total_access          | Total number of accesses served.                                                       | Int64   |
-+-----------------------+----------------------------------------------------------------------------------------+---------+
-| total_kbytes          | Total kilobytes served.                                                                | Int64   |
-+-----------------------+----------------------------------------------------------------------------------------+---------+
-| uptime                | Time since the last start/restart in milliseconds.                                     | Int64   |
-+-----------------------+----------------------------------------------------------------------------------------+---------+
-| waiting               | The number of workers waiting for connection.                                          | Int64   |
-+-----------------------+----------------------------------------------------------------------------------------+---------+
+.. list-table::
+   :widths: 40 60 30
+   :header-rows: 1
+
+   * - Metric
+     - Description
+     - Type
+   * - `busy_workers`
+     - Specifies the number of workers serving requests
+     - Int64
+   * - `bytes_per_request`
+     - Averages giving the number of request per second, the number of bytes
+       served second
+     - Int64
+   * - `bytes_per_second`
+     - Averages giving the number of requests per second, the number of bytes
+       per request
+     - Int64
+   * - `closing`
+     - The number of workers closing the connection
+     - Int64
+   * - `cpu_load`
+     - Total percentage of CPU used by workers
+     - Double
+   * - `dns`
+     - The number of workers performing DNS lookup
+     - Int64
+   * - `gracefully_fishing`
+     - The number of workers gracefully fishing
+     - Int64
+   * - `idle`
+     - The number of idle cleanup workers
+     - Int64
+   * - `idle_workers`
+     - The number of idle workers
+     - Int64
+   * - `keepalive`
+     - The number of workers kept alive (reading)
+     - Int64
+   * - `logging`
+     - The number of workers logging
+     - Int64
+   * - `open`
+     - The number of workers with no current process
+     - Int64
+   * - `reading`
+     - The number of workers reading the request
+     - Int64
+   * - `requests_per_second`
+     - The number of requests per second
+     - Int64
+   * - `sending`
+     - The number of workers sending a reply
+     - Int64
+   * - `starting`
+     - The number of workers starting up
+     - Int64
+   * - `total_access`
+     - Total number of accesses served
+     - Int64
+   * - `total_kbytes`
+     - Total kilobytes served
+     - Int64
+   * - `uptime`
+     - Time since the last start/restart in milliseconds
+     - Int64
+   * - `waiting`
+     - The number of workers waiting for connection
+     - Int64
+
 
 .. _agent_cpu:
 
@@ -188,8 +221,8 @@ Metrics
 +-----------------+--------------------------------------------------+----------+
 | Metric          | Description                                      | Type     |
 +=================+==================================================+==========+
-| avail           | Available space on the filesystem in kilobytes,  | Int64    |
-|                 | including reserved space.                        |          |
+| avail           | Available space on the filesystem in kilobytes   | Int64    |
+|                 | for normal users.                                |          |
 +-----------------+--------------------------------------------------+----------+
 | free            | Free space available on the filesystem in        | Int64    |
 |                 | kilobytes including reserved space.              |          |
