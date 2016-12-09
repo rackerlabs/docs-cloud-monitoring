@@ -1052,4 +1052,111 @@ Metrics
    * - version
      - Version of the server
      - String
-   
+
+
+
+.. _agent_windows_perfos:
+
+agent.windows_perfos
+---------------------------
+
+The **agent.windows_perfos** check returns metrics regarding windows
+performance data. This check is only available on Windows platforms.
+
+Attributes
+^^^^^^^^^^
+
+No fields are present for this particular check type.
+
+Metrics
+^^^^^^^
+.. list-table::
+   :widths: 40 60 30
+   :header-rows: 1
+
+   * - Metric
+     - Description
+     - Type
+   * - AlignmentFixupsPersec
+     - Shows the rate, in incidents per second, at which alignment faults,
+       were fixed by the system.
+     - Uint32
+   * - ContextSwitchesPersec
+     - Shows the combined rate, in incidents per second, at which all
+       processors on the computer were switched from one thread to another.
+       It is the sum of the values of Thread Context Switches/sec for each
+       thread running on all processors on the computer, and is measured in
+       numbers of switches. Context switches occur when a running thread
+       voluntarily relinquishes the processor, or is preempted by a higher
+       priority, ready thread.
+     - Uint32
+   * - ExceptionDispatchesPersec
+     - Shows the rate, in incidents per second,
+       at which exceptions were dispatched by the system.
+     - Uint64
+   * - FileControlBytesPersec
+     - Shows the overall rate, in incidents per second, at which bytes were
+       transferred for all file system operations that were neither read nor
+       write operations, such as file system control requests and requests for
+       information about device characteristics or status.
+     - Uint32
+   * - FileControlOperationsPersec
+     - Shows the combined rate, in incidents per second, of file system
+       operations that were neither read nor write operations, such as file
+       system control requests and requests for information about device
+       characteristics or status. This is the inverse
+       of FileDataOperationsPersec.
+     - Int32
+   * - FileReadBytesPersec
+     - Shows the overall rate, in incidents per second, at which bytes were
+       read to satisfy file system read requests to all devices on the
+       computer, including read operations from the file system cache.
+     - Uint64
+   * - FileReadOperationsPersec
+     - The number of errors while transmitting over the interface.
+     - Uint32
+   * - FileWriteBytesPersec
+     - Shows the overall rate, in incidents per second, at which bytes were
+       written to satisfy file system write requests to all devices on the
+       computer, including write operations to the file system cache.
+     - Uint64
+   * - FloatingEmulationsPersec
+     - Shows the rate, in incidents per second, of floating emulations
+       performed by the system.
+     - Uint32
+   * - PercentRegistryQuotaInUse
+     - Percentage of the total registry quota allowed that is currently being
+       used by the system. This property displays the current percentage value
+       only; it is not an average.
+     - Uint32
+   * - Processes
+     - Shows the number of processes in the computer at the time of data
+       collection. This is an instantaneous count, not an average over the
+       time interval. Each process represents a program that is running.
+     - Uint32
+   * - ProcessorQueueLength
+     - Shows the number of threads in the processor queue. Unlike the disk
+       counters, this counter shows ready threads only, not threads that are
+       running. There is a single queue for processor time, even on computers
+       with multiple processors.Therefore, if a computer has multiple
+       processors, you need to divide this value by the number of processors
+       servicing the workload. A sustained processor queue of greater than
+       two threads generally indicates processor congestion.
+     - Uint32
+   * - SystemCallsPersec
+     - Shows the combined rate, in incidents per second, of calls to operating
+       system service routines by all processes running on the computer. These
+       routines perform all of the basic scheduling and synchronization of
+       activities on the computer, and provide access to non-graphic devices,
+       memory management, and name space management.
+     - Uint32
+   * - SystemUpTime
+     - Shows the total time, in seconds, that the computer has been
+       operational since it was last started.
+     - Uint64
+   * - Threads
+     - Shows the number of threads in the computer at the time of data
+       collection. This is an instantaneous count, not an average over the
+       time interval. A thread is the basic executable entity that can execute
+       instructions in a processor.
+     - Uint32
