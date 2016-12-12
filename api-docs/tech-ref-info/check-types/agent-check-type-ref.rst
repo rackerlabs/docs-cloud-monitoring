@@ -215,19 +215,26 @@ Metrics
 +-----------------+--------------------------------------------------+----------+
 | Metric          | Description                                      | Type     |
 +=================+==================================================+==========+
-| avail           | Available space on the filesystem in kilobytes,  | Int64    |
-|                 | including reserved space.                        |          |
+| avail           | Available space on the filesystem in kilobytes   | Int64    |
+|                 | for the current user, which is root, that is     |          |
+|                 | running the agent.                               |          |
 +-----------------+--------------------------------------------------+----------+
 | free            | Free space available on the filesystem in        | Int64    |
-|                 | kilobytes including reserved space.              |          |
+|                 | kilobytes including reserved space. This is      |          |
+|                 | calculated as                                    |          |
+|                 | **number of free file blocks x block size**      |          |
 +-----------------+--------------------------------------------------+----------+
 | options         | The option used to mount the device to the       | Int64    |
 |                 | filesystem. Includes the **rw** f                |          |
 |                 | which indicates the device is in read/write mode.|          |
 +-----------------+--------------------------------------------------+----------+
-| total           | Total space on the filesystem, in kilobytes.     | Int64    |
+| total           | Total space on the filesystem, in kilobytes,     | Int64    |
+|                 | including reserved space. This is calculated as  |          |
+|                 | **number of total file blocks x block size**     |          |
 +-----------------+--------------------------------------------------+----------+
-| used            | Used space on the filesystem, in kilobytes.      | Int64    |
+| used            | Used space on the filesystem, in kilobytes. This | Int64    |
+|                 | number does not include the reserved space. This |          |
+|                 | is calculated as **total - free**                |          |
 +-----------------+--------------------------------------------------+----------+
 | files           | Number of inodes on the filesystem.              | Int64    |
 +-----------------+--------------------------------------------------+----------+
@@ -235,9 +242,10 @@ Metrics
 +-----------------+--------------------------------------------------+----------+
 
 .. note::
+   
+   The `reselved space` only applies to Linux system. It is the space saved for important root processes (and possible rescue actions). For example, in some system the reserved space can be used for fragmentation allocation. Here is another explanation for Ext3 and Ext4: https://www.redhat.com/archives/ext3-users/2009-January/msg00026.html.
 
-   The `files` and `free_files` metrics are not available on Windows.
-
+   The `files` and `free_files` metrics only apply to Linux system also.
 
 
 .. _agent_filesystem_state:
