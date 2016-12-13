@@ -243,9 +243,9 @@ Metrics
 
 .. note::
    
-   The `reselved space` only applies to Linux system. It is the space saved for important root processes (and possible rescue actions). For example, in some system the reserved space can be used for fragmentation allocation. Here is another explanation for Ext3 and Ext4: https://www.redhat.com/archives/ext3-users/2009-January/msg00026.html.
+   The ```reserved space``` only applies to Linux systems. It is the space saved for important root processes and possible rescue actions. In some systems the reserved space can be used for fragmentation allocation. For more information about Ext3 and Ext4: https://www.redhat.com/archives/ext3-users/2009-January/msg00026.html.
 
-   The `files` and `free_files` metrics only apply to Linux system also.
+   The `files` and `free_files` metrics only apply to Linux systems.
 
 
 .. _agent_filesystem_state:
