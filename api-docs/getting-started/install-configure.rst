@@ -152,6 +152,12 @@ Ubuntu
       .. code::
 
           sudo sh -c 'echo "deb http://stable.packages.cloudmonitoring.rackspace.com/ubuntu-15.04-x86_64 cloudmonitoring main" > /etc/apt/sources.list.d/rackspace-monitoring-agent.list'
+	  
+   -  **Ubuntu 16.04**:
+
+      .. code::
+
+          sudo sh -c 'echo "deb http://stable.packages.cloudmonitoring.rackspace.com/ubuntu-16.04-x86_64 cloudmonitoring main" > /etc/apt/sources.list.d/rackspace-monitoring-agent.list'
 
 #. Download the signing key for the agent repository and add it to APT:
 
