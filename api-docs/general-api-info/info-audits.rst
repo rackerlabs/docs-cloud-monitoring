@@ -19,4 +19,4 @@ will be included in the transaction object.
 Audits can be retrieved using the `list audits endpoint`_ endpoint.
 
 
-.. _list audits endpoint: http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-account.html
+.. _list audits endpoint: ../api-reference/account-operations/#get-audit-information
