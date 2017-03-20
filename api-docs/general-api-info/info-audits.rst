@@ -19,4 +19,4 @@ will be included in the transaction object.
 Audits can be retrieved using the `list audits endpoint`_ endpoint.
 
 
-.. _list audits endpoint: ../api-reference/account-operations/#get-audit-information
+.. _list audits endpoint: ../api-reference/methods/get-audit-information.rst
