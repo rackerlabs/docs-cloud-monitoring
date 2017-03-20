@@ -242,7 +242,7 @@ Metrics
 +-----------------+--------------------------------------------------+----------+
 
 .. note::
-   
+
    The ``reserved space`` only applies to Linux systems. It is the space saved for important root processes and possible rescue actions. In some systems the reserved space can be used for fragmentation allocation. For more information about Ext3 and Ext4: https://www.redhat.com/archives/ext3-users/2009-January/msg00026.html.
 
    The `files` and `free_files` metrics only apply to Linux systems.
@@ -506,7 +506,7 @@ Metrics
      - Instantaneous
    * - innodb.buffer_pool_read_requests
      - The number of logical read requests.
-      (statvar_Innodb_buffer_pool_read_requests)
+       (statvar_Innodb_buffer_pool_read_requests)
      - Cumulative
    * - innodb.buffer_pool_reads
      - The number of logical reads that InnoDB could not satisfy from the
@@ -547,11 +547,11 @@ Metrics
      - Instantaneous
    * - innodb.row_lock_time_max
      - The maximum time to acquire a row lock, in milliseconds.
-      (statvar_Innodb_row_lock_time_max)
+       (statvar_Innodb_row_lock_time_max)
      - Instantaneous
    * - innodb.row_lock_waits
      - The number of times a row lock had to be waited for.
-      (statvar_Innodb_row_lock_waits)
+       (statvar_Innodb_row_lock_waits)
      - Cumulative
    * - innodb.rows_deleted
      - The number of rows deleted from InnoDB tables.
@@ -559,14 +559,14 @@ Metrics
      - Cumulative
    * - innodb.rows_inserted
      - The number of rows inserted into InnoDB tables.
-      (statvar_Innodb_rows_inserted)
+       (statvar_Innodb_rows_inserted)
      - Cumulative
    * - innodb.rows_read
      - The number of rows read from InnoDB tables. (statvar_Innodb_rows_read)
      - Cumulative
    * - innodb.rows_updated
      - The number of rows updated in InnoDB tables.
-      (statvar_Innodb_rows_updated)
+       (statvar_Innodb_rows_updated)
      - Cumulative
    * - key.buffer_size
      - Index blocks for MyISAM tables are buffered and are shared by
@@ -582,7 +582,7 @@ Metrics
      - Instantaneous
    * - qcache.free_memory
      - The amount of free memory for the query cache.
-      (statvar_Qcache_free_memory)
+       (statvar_Qcache_free_memory)
      - Instantaneous
    * - qcache.hits
      - The number of query cache hits. (statvar_Qcache_hits)
@@ -600,7 +600,7 @@ Metrics
      - Instantaneous
    * - qcache.queries_in_cache
      - The number of queries registered in the query cache.
-      (statvar_Qcache_queries_in_cache)
+       (statvar_Qcache_queries_in_cache)
      - Cumulative
    * - qcache.size
      - The amount of memory allocated for caching query results.
@@ -608,7 +608,7 @@ Metrics
      - Instantaneous
    * - qcache.total_blocks
      - The total number of blocks in the query cache.
-      (statvar_Qcache_total_blocks)
+       (statvar_Qcache_total_blocks)
      - Cumulative
    * - replication.exec_master_log_pos
      - The position in the current master binary log file to which the SQL
@@ -673,14 +673,14 @@ Metrics
      - Boolean
    * - thread.cache_size
      - How many threads the server should cache for reuse.
-      (sysvar_thread_cache_size)
+       (sysvar_thread_cache_size)
      - Instantaneous
    * - threads.connected
      - The number of currently open connections. (statvar_Threads_connected)
      - Instantaneous
    * - threads.created
      - The number of threads created to handle connections.
-      (statvar_Threads_created)
+       (statvar_Threads_created)
      - Cumulative
    * - threads.running
      - The number of threads that are not sleeping. (statvar_Threads_running)
