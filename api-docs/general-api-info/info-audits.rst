@@ -16,7 +16,5 @@ state of the entity before modification.
 You can also use ``_who`` and ``_why`` parameters in the query string which
 will be included in the transaction object.
 
-Audits can be retrieved using the `list audits endpoint`_ endpoint.
-
-
-.. _list audits endpoint: ../api-reference/methods/get-audit-information.rst
+Audits can be retrieved using the
+:ref:`list audits endpoint <get-audit-information>`.
