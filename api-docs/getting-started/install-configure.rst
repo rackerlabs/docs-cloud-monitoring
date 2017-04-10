@@ -152,7 +152,7 @@ Ubuntu
       .. code::
 
           sudo sh -c 'echo "deb http://stable.packages.cloudmonitoring.rackspace.com/ubuntu-15.04-x86_64 cloudmonitoring main" > /etc/apt/sources.list.d/rackspace-monitoring-agent.list'
-	  
+
    -  **Ubuntu 16.04**:
 
       .. code::
@@ -873,8 +873,6 @@ To run the program, complete the following steps:
 
    -  On Windows, the agent location depends on the version of the agent
       installed and the architecture of the operating system.
-
-         style="margin-left: 0.5in; margin-right: 0.5in;">
 
       ..  note::
          If you are using PowerShell, precede the path with an ampersand
