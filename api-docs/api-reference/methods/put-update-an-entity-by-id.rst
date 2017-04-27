@@ -13,8 +13,8 @@ specify the parameters that you want to update.
 
 For Rackspace Managed Cloud resources, many fields are managed by
 Rackspace. If you update these entities, you can only update the
-``metadata`` and ``agent_id`` fields using this API operation.
-Otherwise, refer to the
+``metadata`` and ``agent_id`` fields using this API operation. Other attributes, like ``label`` and ``ip_addresses``, are updated based on the information from the source system.  For example, if you update the label of a cloud server instance in MyCloud control panel, the label of the matching entity will be updated automatically within seconds.
+For full entity attributes list, refer to the
 :ref:`Entities attributes table <entities-operations>`.
 
 The following table shows the possible response codes for this operation:
