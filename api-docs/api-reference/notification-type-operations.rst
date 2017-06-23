@@ -221,13 +221,16 @@ read the PagerDuty blog
 `Rackspace Monitoring Now Integrates with PagerDuty
 <https://www.pagerduty.com/blog/rackspace-cloud-monitoring-integration/>`_.
 
-+----------------+---------------------------------+---------------------------+
-| Name           | Description                     | Validation                |
-+================+=================================+===========================+
-|**service_key** | The PagerDuty service key to    | * Alphanumeric string     |
-|                | use                             | * String between 1 and    |
-|                |                                 |   32 characters long      |
-+----------------+---------------------------------+---------------------------+
++---------------------+---------------------------------+---------------------------+
+| Name                | Description                     | Validation                |
++=====================+=================================+===========================+
+|**service_key**      | The PagerDuty service key to    | * Alphanumeric string     |
+|                     | use                             | * String between 1 and    |
+|                     |                                 |   32 characters long      |
++---------------------+---------------------------------+---------------------------+
+|**service_endpoint** | The PagerDuty service endpoint  | * URL                     |
+|                     | to use                          | * Optional                |
++---------------------+---------------------------------+---------------------------+
 
 .. _sms-notification:
 
