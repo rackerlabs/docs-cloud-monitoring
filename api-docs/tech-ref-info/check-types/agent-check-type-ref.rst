@@ -283,7 +283,12 @@ Metrics
 agent.load_average
 ------------------
 
-The **agent.load_average** check will attempt to measure the Unix-style Load Average on a host.
+The **agent.load_average** check attempts to measure the UNIX style load
+average on a host.
+
+For more information about the commands used to get the load average, see
+`Check the System Load on Linux
+<https://support.rackspace.com/how-to/checking-system-load-on-linux/>`_.
 
 Attributes
 ^^^^^^^^^^
