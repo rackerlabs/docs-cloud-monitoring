@@ -110,11 +110,12 @@ service.
 |                        | configuration parameters for the open SSH daemon.         |
 +------------------------+-----------------------------------------------------------+
 | `fstab`_               | Reads /etc/fstab and retrieves information about          |
+|                        | the file system configuration.                            |
 +------------------------+-----------------------------------------------------------+
-| `fileperms`_           | Reads a pre-specified list of files and checks and	     |
+| `fileperms`_           | Reads a pre-specified list of files and checks and	       |
 |                        | retrieves their permissions.                              |
 +------------------------+-----------------------------------------------------------+
-| `services`_            | Reads a few folders and files and generates a list	     |
+| `services`_            | Reads a few folders and files and generates a list	       |
 |                        | of startup services.                                      |
 +------------------------+-----------------------------------------------------------+
 | `deleted\_libs`_       | Greps through the output of :code:`lsof -nnP` to          |
