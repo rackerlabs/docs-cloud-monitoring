@@ -118,7 +118,8 @@ service.
 | `services`_            | Reads a few folders and files and generates a list of     |
 |                        | startup services.                                         |
 +------------------------+-----------------------------------------------------------+
-| `deleted\_libs`_       | Greps through the output of :code:`lsof -nnP` to          |
+| `deleted\_libs`_       | Greps through the output of :code:`lsof -nnP` to find     |
+|                        | deleted or missing libraries for running processes.       |
 +------------------------+-----------------------------------------------------------+
 | `cve`_                 | Retrieves a unique sorted list of common                  |
 |                        | vulnerabilities and exposures that have been              |
