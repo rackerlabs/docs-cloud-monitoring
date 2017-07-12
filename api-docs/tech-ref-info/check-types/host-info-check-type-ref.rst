@@ -179,7 +179,7 @@ service.
      curl -H 'X-Auth-Token: $token' '\
           https://monitoring.api.rackspacecloud.com/v1.0/ \
           <tenandID>/agents/<agent_id>/host_info/<hostinfo_type>
-          
+
 For more information about how to work with checks using the Rackspace Monitoring API, see the
 Checks section in the Rackspace Monitoring Developer Guide. For more information working with Hostinfo checks,
 see the Agent host information.
@@ -221,7 +221,7 @@ see the Agent host information.
 
 .. _procs: https://github.com/virgo-agent-toolkit/rackspace-monitoring-agent/blob/master/hostinfo/debug/PROCS.json
 
-.. _system: https://github.com/virgo-agent-toolkit/rackspace-monitoring-agent/blob/master/hostinfo/debug/PROCS.json
+.. _system: https://github.com/virgo-agent-toolkit/rackspace-monitoring-agent/blob/master/hostinfo/debug/SYSTEM.json
 
 .. _who: https://github.com/virgo-agent-toolkit/rackspace-monitoring-agent/blob/master/hostinfo/debug/WHO.json
 
