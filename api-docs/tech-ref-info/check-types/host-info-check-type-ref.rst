@@ -109,14 +109,14 @@ service.
 | `sshd`_                | Runs the :code:`sshd -T` command and retrieves the        |
 |                        | configuration parameters for the open SSH daemon.         |
 +------------------------+-----------------------------------------------------------+
-| `fstab`_               | Reads /etc/fstab and retrieves information about          |
-|                        | the file system configuration.                            |
+| `fstab`_               | Reads /etc/fstab and retrieves information about the file |
+|                        | system configuration.                                     |
 +------------------------+-----------------------------------------------------------+
 | `fileperms`_           | Reads a pre-specified list of files and checks and	       |
 |                        | retrieves their permissions.                              |
 +------------------------+-----------------------------------------------------------+
-| `services`_            | Reads a few folders and files and generates a list	       |
-|                        | of startup services.                                      |
+| `services`_            | Reads a few folders and files and generates a list of     |
+|                        | startup services.                                         |
 +------------------------+-----------------------------------------------------------+
 | `deleted\_libs`_       | Greps through the output of :code:`lsof -nnP` to          |
 +------------------------+-----------------------------------------------------------+
