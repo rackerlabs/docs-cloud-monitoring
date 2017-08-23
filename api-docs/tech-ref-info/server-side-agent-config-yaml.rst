@@ -11,11 +11,11 @@ After you create the configuration files, they can serve as templates that can
 be shared, updated, and used with automation tools to standardize, maintain,
 and update monitoring configurations as required.
 
-For more information, see the 'Monitor Like a Pro With Server-Side
-Configuration`_ article on the Rackspace Blog.
+For more information, see the
+`Monitor Like a Pro With Server-Side Configuration
+<https://blog.rackspace.com/monitor-like-a-pro-with-server-side-configuration>`_
+article on the Rackspace Blog.
 
-
-.. _Monitor Like a Pro With Server-Side Configuration: http://blog.rackspace.com/monitor-like-a-pro-with-server-side-configuration/
 
 .. contents::
    :local:
@@ -31,6 +31,12 @@ This example agent plugin check YAML file for server-side agent
 configuration, shows how to setup a script,
 "Test-LatencyServer2Server.sh", to run with 2 parameters,
 ``10.10.10.123`` and ``destination.com``, passed on its command-lines.
+
+.. note::
+   YAML arrays, list, and sequences, such as the one shown in ``args`` in the
+   following example, require a comma-separated list inside the square
+   brackets. Although passing a space-separated list seems intuitively correct,
+   the result is a single argument passed to the script specified by file.
 
 .. code::
 
