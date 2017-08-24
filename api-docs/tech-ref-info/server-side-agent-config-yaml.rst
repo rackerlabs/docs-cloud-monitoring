@@ -36,7 +36,7 @@ configuration, shows how to setup a script,
    YAML arrays, list, and sequences, such as the one shown in ``args`` in the
    following example, require a comma-separated list inside the square
    brackets. Although passing a space-separated list seems intuitively correct,
-   the result is a single argument passed to the script specified by file.
+   the result is a single argument passed to the script specified by ``file``.
 
 .. code::
 
