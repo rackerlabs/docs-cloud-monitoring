@@ -31,11 +31,10 @@ The following table shows the possible response codes for this operation:
 +--------------------------+-------------------------+-------------------------+
 |Response Code             |Name                     |Description              |
 +==========================+=========================+=========================+
-|201                       |OK                       | The suppression has     |
-|                          |                         | been created.           |
-|                          |                         |                         |
-|                          |                         |                         |
-|                          |                         |                         |
+|201                       |OK                       |The 'Location' header    |
+|                          |                         |contains a link to the   |
+|                          |                         |newly created            |
+|                          |                         |suppression.             |
 +--------------------------+-------------------------+-------------------------+
 |400                       |Bad request              |The system received an   |
 |                          |                         |invalid value in a       |
