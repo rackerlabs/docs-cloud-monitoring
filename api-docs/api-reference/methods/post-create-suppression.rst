@@ -31,11 +31,10 @@ The following table shows the possible response codes for this operation:
 +--------------------------+-------------------------+-------------------------+
 |Response Code             |Name                     |Description              |
 +==========================+=========================+=========================+
-|201                       |Suppress notifications   |                         |
-|                          |for alarms on check      |                         |
-|                          |ch123 on entity en123    |                         |
-|                          |using the notification   |                         |
-|                          |plan npfooBar            |                         |
+|201                       |OK                       |The 'Location' header    |
+|                          |                         |contains a link to the   |
+|                          |                         |newly created            |
+|                          |                         |suppression.             |
 +--------------------------+-------------------------+-------------------------+
 |400                       |Bad request              |The system received an   |
 |                          |                         |invalid value in a       |
@@ -70,21 +69,6 @@ The following table shows the header parameters for the request:
 |                 |                |:ref:`Get your credentials <get-credentials>`  |
 +-----------------+----------------+-----------------------------------------------+
 
-
-**Example Create suppression for notifications for alarms on check ch123
-on entity en123 using the notification plan npfooBar: JSON request**
-
-.. code::
-
-   {
-       "notification_plans": ["npfooBar"],
-       "checks": ["en123:ch123"],
-       "start_time": 1378492433027,
-       "end_time": 1378492433027
-   }
-
-Response
---------
 
 **Example: Suppress notifications for alarms on check ch123 on entity
 en123 using the notification plan npfooBar**
@@ -152,3 +136,9 @@ on entity enMonkey for the notification plan npTechnical**
        "start_time": 1378492433027,
        "end_time": 1378492433027
    }
+
+
+Response
+--------
+
+This operation does not return a response body.
