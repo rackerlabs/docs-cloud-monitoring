@@ -21,7 +21,7 @@ example, you might set up a check with two alarms to ensure that an HTTPS
 server is responding and that it has a valid certificatej.
 
 .. note::
-   For more information, see the :rax-devdocs:`Check types reference
+   For more information, see the :ref:`Check types reference
    <check-types-ref>`.
 
 Checks are associated with a parent entity, therefore the REST URLs for
