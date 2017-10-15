@@ -13,7 +13,7 @@ in addition to offering a means of viewing the history of an alarm's statuses.
 Alarm notification history is accessible as a time series collection. When
 accessing a time series collection, two parameters beyond the base paginated
 collection API are available: from and to. For details, see
-:ref: `Time Series Collection <time-series-collections>`.
+:ref:`Time Series Collection <time-series-collections>`.
 
 By default alarm notification history is stored for 30 days and the
 API queries the last 7 days of information.
