@@ -8,7 +8,7 @@ Update an agent token
     PUT /agent_tokens/{tokenId}
 
 Update agent tokens using a valid set of parameters from the
-:ref: `agent tokens attributes <agent-token-operations>`
+:ref:`agent tokens attributes <agent-token-operations>`
 table.
 
 The following table shows the possible response codes for this operation:

@@ -12,7 +12,7 @@ List the alarms on the specified ``entityId``. Use
 include information about the specified alarms.
 
 This operation can be paginated. For information, see
-:ref: `Paginated collections <paginated-collections>`.
+:ref:`Paginated collections <paginated-collections>`.
 
 The following table shows the possible response codes for this operation:
 

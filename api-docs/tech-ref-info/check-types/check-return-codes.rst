@@ -26,7 +26,7 @@ provides a resolution for the issue.
      - Be sure that the content body of your web page is equal to or below the
        100k limit. If you are using compression, be sure that the compressed
        page is less than or equal to 100k.  See
-       :ref: `remote.http <remote_http>`.
+       :ref:`remote.http <remote_http>`.
    * - ``zlib: out-of-memory``
      - The size of the webpage is too large (> 500k) for the content check.
      - Reduce the page content or use a custom 'healthcheck' page that is less

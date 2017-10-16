@@ -12,7 +12,7 @@ Lists the suppressions. Use
 to only include information about the specified suppressions.
 
 This operation can be paginated. For information,
-see :ref: `Paginated collections <paginated-collections>`.
+see :ref:`Paginated collections <paginated-collections>`.
 
 The following table shows the possible response codes for this operation:
 
