@@ -12,8 +12,8 @@ API.
   :how-to:`Rackspace Monitoring FAQ <rackspace-monitoring-faq>`.
 
 - We welcome feedback, comments, and bug reports.
-  Email `<infodev@rackspace.com>`__ with your comments, suggestions, and
-  feedback.
+  Email `<infodev@rackspace.com>`__ with your comments, suggestions,
+  and feedback.
 
 - To get started using the Rackspace Monitoring API, see the
   :ref:`Getting Started Guide <getting-started>`.
