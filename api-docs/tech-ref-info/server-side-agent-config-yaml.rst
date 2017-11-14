@@ -171,6 +171,47 @@ memory check with alarm with an alarm, file name: "memory.yaml".
     warning
     threshold of 80%");
 
+.. _mysql-check-with-alarm:
+
+MySQL check; alarm
+~~~~~~~~~~~~~~~~~~~
+
+This example YAML file for the MySQL server-side configuration creates a
+check with an alarm, file name: "mysql_replication.yaml".
+
+.. note::
+
+   The monitor user ("raxmon") needs the REPLICATION CLIENT grant in MySQL.
+
+.. code::
+
+    type    : agent.mysql
+    label   : mysql_replication
+    period  : 60
+    timeout : 10
+    disabled: false
+    details:
+      host: 192.168.100.1
+      port: 3306
+      username: raxmon
+      password: your_password_here
+
+    alarms  :
+        MySQL-replication:
+            label: MySQL replication check
+            notification_plan_id: npTechnicalContactsEmail
+            criteria: |
+                if (metric['replication.slave_sql_running'] != "Yes") {
+                return new AlarmStatus(CRITICAL, 'Replica SQL thread is not
+                running with error number #{replication.last_errno} . ');
+                }
+                if (metric['replication.slave_io_running'] != "Yes") {
+                return new AlarmStatus(CRITICAL, 'Replica IO thread is not
+                running with error number #{replication.last_io_errno} and
+                error message #{replication.last_io_error}.');
+                }
+                return new AlarmStatus(OK, "Replica SQL and I/O threads are
+                running");
 
 .. _network-check-without-alarms:
 
