@@ -176,7 +176,7 @@ memory check with alarm with an alarm, file name: "memory.yaml".
 MySQL check; alarm
 ~~~~~~~~~~~~~~~~~~~
 
-This example YAML file for the MySQL server-side configuration creates a
+This example YAML file for the MySQL server-side replication check creates a
 check with an alarm, file name: "mysql_replication.yaml".
 
 .. note::
