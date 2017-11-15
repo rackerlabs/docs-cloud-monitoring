@@ -10,8 +10,8 @@ Create a check
 Create a new check in the monitoring system by using a valid set
 of attributes from the :ref:`checks attributes <check-operations>` table.
 For a tutorial on creating some basic checks,
-see `Create checks
-<http://docs.rackspace.com/cm/api/v1.0/cm-getting-started/content/concepts-tutorial-create-checks.html>`__
+see `Creating a check
+<https://developer.rackspace.com/docs/rackspace-monitoring/v1/getting-started/create-first-monitor/#creating-a-check>`__
 in the Rackspace Cloud Monitoring Getting Started Guide.
 
 A newly-created check does not trigger notifications until you
