@@ -400,37 +400,75 @@ Attributes
 Metrics
 ^^^^^^^
 
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| Metric                            | Description                                                                                                                                                                   | Type      |
-+===================================+===============================================================================================================================================================================+===========+
-| banner                            | The string sent from the server on connect.                                                                                                                                   | String    |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| banner_match                      | The matched string from the ``banner_match`` regular expression specified during check creation.                                                                              | String    |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| bytes                             | The number of bytes returned from a response payload.                                                                                                                         | Int32     |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| cert_end                          | The absolute timestamp in seconds for the certificate expiration. This is only available when performing a check on an HTTPS server.                                          | Uint32    |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| cert_end_in                       | The relative timestamp in seconds until certification expiration. This is only available when performing a check on an HTTPS server.                                          | Int32     |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| cert_error                        | A string describing a certificate error in our validation. This is only available when performing a check on an HTTPS server.                                                 | String    |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| cert_issuer                       | The issue string for the certificate. This is only available when performing a check on an HTTPS server.                                                                      | String    |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| cert_start                        | The absolute timestamp of the issue of the certificate. This is only available when performing a check on an HTTPS server.                                                    | Uint32    |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| cert_subject                      | The subject of the certificate. This is only available when performing a check on an HTTPS server.                                                                            | String    |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| cert_subject_alternative_name     | The alternative name for the subject of the certificate. This is only available when performing a check on an HTTPS server.                                                   |  String   |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| duration                          | The time it took to finish executing the check in milliseconds.                                                                                                               |  Uint32   |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| tt_connect                        | The time to connect measured in milliseconds.                                                                                                                                 |  Uint32   |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| tt_firstbyte                      | The time to first byte measured in milliseconds.                                                                                                                              |  Uint32   |
-+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+
+.. list-table::
+   :widths: 33 33 33
+   :header-rows: 1
+
+   * - Metric
+     - Description
+     - Type
+   * - banner
+     - The string sent from the server on connect.
+     - String
+   * - banner_match
+     - The matched string from the ``banner_match`` regular expression
+       specified during check creation.
+     - String
+   * - bytes
+     - The number of bytes returned from a response payload.
+     - Int32
+   * - cert_end
+     - The absolute timestamp in seconds for the certificate expiration.
+       This is only available when performing a check on an HTTPS server.
+     - Uint32
+   * - cert_end_in
+     - The relative timestamp in seconds until certification expiration.
+       This is only available when performing a check on an HTTPS server.
+     - Int32
+   * - cert_error
+     - A string describing a certificate error in our validation. This is
+       only available when performing a check on an HTTPS server.
+     - String
+   * - cert_issuer
+     - The issue string for the certificate. This is only available when
+       performing a check on an HTTPS server.
+     - String
+   * - cert_start
+     - The absolute timestamp of the issue of the certificate. This is only
+       available when performing a check on an HTTPS server.
+     - Uint32
+   * - cert_subject
+     - The subject of the certificate. This is only available when performing
+       a check on an HTTPS server.
+     - String
+   * - cert_subject_alternative_names
+     - The alternative name for the subject of the certificate. This is only
+       available when performing a check on an HTTPS server. (See an example
+       alarm following this table.)
+     - String
+   * - duration
+     - The time it took to finish executing the check in milliseconds..
+     - Uint32
+   * - tt_connect
+     - The time to connect measured in milliseconds.
+     - Uint32
+   * - tt_firstbyte
+     - The time to first byte measured in milliseconds.
+     - Uint32
 
 
+.. note::
+
+      The following is an example alarm for ``cert_subject_alternative_names``,
+      where you would replace ``example.com`` with an expected host name
+      on the certificate's SAN list:
+
+      .. code::
+
+          if (metric['cert_subject_alternative_names'] nregex '.*example.com.*') {
+            return new AlarmStatus(CRITICAL, 'Missing expected SAN');
+          }
 
 
 
