@@ -237,6 +237,7 @@ Metrics
 
 
 .. note::
+
       The following is an example alarm for ``cert_subject_alternative_names``,
       where you would replace ``example.com`` with an expected host name
       on the certificate's SAN list:
