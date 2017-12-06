@@ -404,7 +404,7 @@ Metrics
 +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
 | cert_subject                      | The subject of the certificate. This is only available when performing a check on an HTTPS server.                                                                            | String    |
 +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
-| cert_subject_alternative_name     | The alternative name for the subject of the certificate. This is only available when performing a check on an HTTPS server.                                                   |  String   |
+| cert_subject_alternative_names    | The alternative name for the subject of the certificate. This is only available when performing a check on an HTTPS server. (See an example alarm following this table.)      |  String   |
 +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
 | duration                          | The time it took to finish executing the check in milliseconds.                                                                                                               |  Uint32   |
 +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
@@ -412,6 +412,20 @@ Metrics
 +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
 | tt_firstbyte                      | The time to first byte measured in milliseconds.                                                                                                                              |  Uint32   |
 +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+
+
+..note::
+      Following is an example alarm for ``cert_subject_alternative_names``,
+      where you would replace ``example.com`` with an expected host name
+      on the certificate's SAN list:
+
+.. code::
+
+    if (metric['cert_subject_alternative_names'] nregex '.*example.com.*') {
+      return new AlarmStatus(CRITICAL, 'Missing expected SAN');
+    }
+
+
+
 
 .. _remote_smtp:
 
