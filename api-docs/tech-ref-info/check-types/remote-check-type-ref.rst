@@ -186,9 +186,6 @@ Metrics
    * - bytes
      - The number of bytes returned from a response payload.
      - Int32
-   * - bytes
-     - The number of bytes returned from a response payload.
-     - Int32
    * - cert_end
      - The absolute timestamp in seconds for the certificate expiration.
        This is only available when performing a check on an HTTPS server.
