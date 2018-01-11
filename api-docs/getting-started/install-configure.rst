@@ -1131,7 +1131,7 @@ associated alarms for those servers. The YAML configuration files are
 read every time you start the agent.
 
 .. note::
-  For Windows, the files should have the name of the network interface force
+  For Windows, the files should have the name of the network interface for
   the Windows network, and ``C:\`` or ``D:\`` for the Windows disk.
 
 The top-level fields in the YAML file represent the check's parameters.
