@@ -6,7 +6,7 @@ Install and configure the agent
 
 This section provides instructions for installing and configuring the
 Rackspace Monitoring Agent. Instructions are also provided in the How-To
-article :how-to:`Install and configure the Rackspace Monitoring Agent <https://support.rackspace.com/how-to/install-and-configure-the-rackspace-monitoring-agent/>`.
+article `Install and configure the Rackspace Monitoring Agent <https://support.rackspace.com/how-to/install-and-configure-the-rackspace-monitoring-agent/>`_.
 
 
 .. _install-agent:
