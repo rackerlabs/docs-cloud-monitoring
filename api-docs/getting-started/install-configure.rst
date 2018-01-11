@@ -5,7 +5,8 @@ Install and configure the agent
 ===============================
 
 This section provides instructions for installing and configuring the
-The Rackspace Monitoring Agent.
+Rackspace Monitoring Agent. Instructions are also provided in the How-To
+article `Install and configure the Rackspace Monitoring Agent <https://support.rackspace.com/how-to/install-and-configure-the-rackspace-monitoring-agent/>`_.
 
 
 .. _install-agent:
@@ -751,7 +752,7 @@ following directories on the customer's server.
 
 - On Linux systems, navigate to the ``/etc directory``.
 
--  On Windows systems, navigate to ``c:\ProgramData\Rackspace Monitoring\configuration\``.
+-  On Windows systems, navigate to ``C:\ProgramData\Rackspace Monitoring\config\``.
 
 You can also create or edit the configuration file manually to specify or
 update the following attributes:
@@ -827,7 +828,7 @@ agent. Setup completes the following configuration tasks for you:
    On Linux systems this file is located in the ``/etc`` directory
 
    On Windows systems, you can find it in
-   ``c:\ProgramData\Rackspace Monitoring\configuration\``.
+   ``C:\ProgramData\Rackspace Monitoring\config\``.
 
 -  Verifies connectivity to the Rackspace data centers.
 
@@ -1121,12 +1122,17 @@ monitoring more quickly.
 
 Server-side monitoring configuration files are written in YAML (`YAML
 Ain’t Markup Language <http://www.yaml.org/>`__), a text file with a
-column-based syntax. Each YAML configuration file can contain
+column-based syntax. You can name YAML files as you like, but they must end in
+``.yaml``. Each YAML configuration file can contain
 configurations for one check and its associated alarms. You create a
 series of YAML files, one for each check that you want. A single file
 can be used repeatedly on many servers to configure the same check and
 associated alarms for those servers. The YAML configuration files are
 read every time you start the agent.
+
+.. note::
+  For Windows, the files should have the name of the network interface for
+  the Windows network, and ``C:\`` or ``D:\`` for the Windows disk.
 
 The top-level fields in the YAML file represent the check's parameters.
 The alarms are configured under a top-level field named ``alarms``. Each
@@ -1269,7 +1275,7 @@ and other agent configuration options. The alarm has the handle of
 
 
 For additional server-side agent configuration file examples, see
-“Server-Side Agent Configuration YAML File Examples”
+“Server-Side Agent Configuration YAML File Examples”.
 
 
 .. _configure-use-server-side-YAML:
