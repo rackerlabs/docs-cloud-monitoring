@@ -1,25 +1,22 @@
-.. _create-a-notification-plan:
+.. _create-private-monitor-zone:
 
-Create a notification plan
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Create a private monitoring zone
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code::
 
-    POST /notification_plans
+    POST /monitoring_zones/
 
-Create a new notification in the monitoring system by using a valid set of
-attributes from the :ref:`notification plans <notification-plans-operations>`
-table.
+Create a new private monitoring zone.
 
 The following table shows the possible response codes for this operation:
 
 +--------------------------+-------------------------+-------------------------+
 |Response Code             |Name                     |Description              |
 +==========================+=========================+=========================+
-|201                       |Accepted                 |'Location' header        |
+|201                       |OK                       |The 'Location' header    |
 |                          |                         |contains a link to the   |
-|                          |                         |newly created            |
-|                          |                         |notification plan.       |
+|                          |                         |newly created entity.    |
 +--------------------------+-------------------------+-------------------------+
 |400                       |Bad request              |The system received an   |
 |                          |                         |invalid value in a       |
@@ -41,9 +38,9 @@ The following table shows the possible response codes for this operation:
 |                          |                         |or another system        |
 |                          |                         |failure.                 |
 +--------------------------+-------------------------+-------------------------+
-
 Request
 -------
+
 The following table shows the header parameters for the request:
 
 +-----------------+----------------+-----------------------------------------------+
@@ -55,21 +52,14 @@ The following table shows the header parameters for the request:
 +-----------------+----------------+-----------------------------------------------+
 
 
-**Example Create notification plan: JSON request**
+**Example Create a private monitoring zone: JSON request**
+
+The request body requires only a ``label`` field of type string.
 
 .. code::
 
    {
-       "label": "Notification Plan 1",
-       "critical_state": [
-           "ntAAAA"
-       ],
-       "warning_state": [
-           "ntCCCCC"
-       ],
-       "ok_state": [
-           "ntBBBB"
-       ]
+       "label": "Zone A Information"
    }
 
 Response

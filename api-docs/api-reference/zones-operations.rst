@@ -35,12 +35,20 @@ A check references a list of monitoring zones it should be run from.
 Use the following monitoring zones API operations to get information about
 monitoring zones and to run traceroutes.
 
+For Private Network Monitoring, API operations are included to create, update,
+and delete private monitoring zones.
+
 .. contents::
    :local:
    :depth: 1
 
-.. note:: Users cannot create, update, or delete monitoring zones.
+.. note::
+
+   Users cannot create, update, or delete monitoring zones, unless the monitoring zone is Private Network Monitoring.
 
 .. include:: methods/get-list-monitoring-zones.rst
 .. include:: methods/get-monitoring-zone-by-id.rst
 .. include:: methods/post-perform-a-traceroute.rst
+.. include:: methods/post-create-private-monitor-zone.rst
+.. include:: methods/put-update-private-monitor-zone.rst
+.. include:: methods/delete-private-monitor-zone.rst

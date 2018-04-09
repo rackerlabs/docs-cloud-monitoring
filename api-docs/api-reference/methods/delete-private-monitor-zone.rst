@@ -1,29 +1,23 @@
-.. _create-a-notification-plan:
+.. _delete-private-monitor-zone:
 
-Create a notification plan
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Delete a private monitoring zone by ID
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code::
 
-    POST /notification_plans
+    DELETE monitoring_zones/{monitoringZoneId}
 
-Create a new notification in the monitoring system by using a valid set of
-attributes from the :ref:`notification plans <notification-plans-operations>`
-table.
+Deletes a specified private monitoring zone from your account. Also deletes
+any checks and alarms defined for that monitoring zone.
 
 The following table shows the possible response codes for this operation:
 
 +--------------------------+-------------------------+-------------------------+
 |Response Code             |Name                     |Description              |
 +==========================+=========================+=========================+
-|201                       |Accepted                 |'Location' header        |
-|                          |                         |contains a link to the   |
-|                          |                         |newly created            |
-|                          |                         |notification plan.       |
-+--------------------------+-------------------------+-------------------------+
-|400                       |Bad request              |The system received an   |
-|                          |                         |invalid value in a       |
-|                          |                         |request.                 |
+|204                       |OK                       |The server has fulfilled |
+|                          |                         |the request. Does not    |
+|                          |                         |return a response body.  |
 +--------------------------+-------------------------+-------------------------+
 |401                       |Unauthorized             |The system received a    |
 |                          |                         |request from a user that |
@@ -32,6 +26,10 @@ The following table shows the possible response codes for this operation:
 |403                       |Forbidden                |The system received a    |
 |                          |                         |request that the user is |
 |                          |                         |not authorized to make.  |
++--------------------------+-------------------------+-------------------------+
+|404                       |Not Found                |The URL, entity, or      |
+|                          |                         |account requested is not |
+|                          |                         |found in the system.     |
 +--------------------------+-------------------------+-------------------------+
 |500                       |Internal Server Error    |An unexpected condition  |
 |                          |                         |was encountered.         |
@@ -44,6 +42,7 @@ The following table shows the possible response codes for this operation:
 
 Request
 -------
+
 The following table shows the header parameters for the request:
 
 +-----------------+----------------+-----------------------------------------------+
@@ -54,23 +53,7 @@ The following table shows the header parameters for the request:
 |                 |                |:ref:`Get your credentials <get-credentials>`  |
 +-----------------+----------------+-----------------------------------------------+
 
-
-**Example Create notification plan: JSON request**
-
-.. code::
-
-   {
-       "label": "Notification Plan 1",
-       "critical_state": [
-           "ntAAAA"
-       ],
-       "warning_state": [
-           "ntCCCCC"
-       ],
-       "ok_state": [
-           "ntBBBB"
-       ]
-   }
+.. note:: This operation does not accept a request body.
 
 Response
 --------

@@ -52,7 +52,6 @@ The following table shows the header parameters for the request:
 |                 |                |:ref:`Get your credentials <get-credentials>`  |
 +-----------------+----------------+-----------------------------------------------+
 
-.. note:: This operation does not accept a request body.
 
 **Example Traceroute: JSON request**
 

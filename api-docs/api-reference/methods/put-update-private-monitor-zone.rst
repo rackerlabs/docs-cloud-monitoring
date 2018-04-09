@@ -1,25 +1,25 @@
-.. _create-a-notification-plan:
+.. _update-private-monitor-zone:
 
-Create a notification plan
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Update a private monitor zone by ID
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code::
 
-    POST /notification_plans
+    PUT /monitoring_zones/{monitoringZoneId}
 
-Create a new notification in the monitoring system by using a valid set of
-attributes from the :ref:`notification plans <notification-plans-operations>`
-table.
+Updates the private monitoring zone specified by ``monitoringZoneId``. You
+can make partial updates to a private monitoring zone. When you submit the
+update request, only specify the parameters that you want to update.
 
 The following table shows the possible response codes for this operation:
 
 +--------------------------+-------------------------+-------------------------+
 |Response Code             |Name                     |Description              |
 +==========================+=========================+=========================+
-|201                       |Accepted                 |'Location' header        |
-|                          |                         |contains a link to the   |
-|                          |                         |newly created            |
-|                          |                         |notification plan.       |
+|204                       |OK                       |The server has fulfilled |
+|                          |                         |the request but does not |
+|                          |                         |need to return an entity-|
+|                          |                         |body.                    |
 +--------------------------+-------------------------+-------------------------+
 |400                       |Bad request              |The system received an   |
 |                          |                         |invalid value in a       |
@@ -33,6 +33,10 @@ The following table shows the possible response codes for this operation:
 |                          |                         |request that the user is |
 |                          |                         |not authorized to make.  |
 +--------------------------+-------------------------+-------------------------+
+|404                       |Not Found                |The URL, entity, or      |
+|                          |                         |account requested is not |
+|                          |                         |found in the system.     |
++--------------------------+-------------------------+-------------------------+
 |500                       |Internal Server Error    |An unexpected condition  |
 |                          |                         |was encountered.         |
 +--------------------------+-------------------------+-------------------------+
@@ -44,6 +48,7 @@ The following table shows the possible response codes for this operation:
 
 Request
 -------
+
 The following table shows the header parameters for the request:
 
 +-----------------+----------------+-----------------------------------------------+
@@ -54,22 +59,12 @@ The following table shows the header parameters for the request:
 |                 |                |:ref:`Get your credentials <get-credentials>`  |
 +-----------------+----------------+-----------------------------------------------+
 
-
-**Example Create notification plan: JSON request**
+**Example Update a private monitoring zone: JSON request**
 
 .. code::
 
    {
-       "label": "Notification Plan 1",
-       "critical_state": [
-           "ntAAAA"
-       ],
-       "warning_state": [
-           "ntCCCCC"
-       ],
-       "ok_state": [
-           "ntBBBB"
-       ]
+       "label": "Zone A Updated Information"
    }
 
 Response
