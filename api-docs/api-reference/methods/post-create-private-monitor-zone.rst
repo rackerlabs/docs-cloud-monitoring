@@ -1,7 +1,7 @@
 .. _create-private-monitor-zone:
 
 Create a private monitoring zone
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code::
 
