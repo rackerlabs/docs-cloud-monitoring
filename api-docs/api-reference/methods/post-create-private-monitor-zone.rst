@@ -51,23 +51,18 @@ The following table shows the header parameters for the request:
 |                 |                |:ref:`Get your credentials <get-credentials>`  |
 +-----------------+----------------+-----------------------------------------------+
 
-.. note:: This operation does not accept a request body.
 
 **Example Create a private monitoring zone: JSON request**
+
+The request body requires only a ``label`` field of type string.
 
 .. code::
 
    {
-       <!--Todo: process Request example -->
+       "label": "Zone A Information"
    }
 
 Response
 --------
 
-**Example Create a private monitoring zone: JSON response**
-
-.. code::
-
-   {
-       <!--Todo: process Response Object and its headers, schema, examples -->
-   }
+This operation does not return a response body.

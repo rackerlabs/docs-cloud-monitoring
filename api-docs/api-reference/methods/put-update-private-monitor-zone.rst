@@ -7,7 +7,7 @@ Update a private monitor zone by ID
 
     PUT /monitoring_zones/{monitoringZoneId}
 
-Updates the private monitoring zone specified by ``monitoringZoneId``. You 
+Updates the private monitoring zone specified by ``monitoringZoneId``. You
 can make partial updates to a private monitoring zone. When you submit the
 update request, only specify the parameters that you want to update.
 
@@ -59,17 +59,15 @@ The following table shows the header parameters for the request:
 |                 |                |:ref:`Get your credentials <get-credentials>`  |
 +-----------------+----------------+-----------------------------------------------+
 
-.. note:: This operation does not accept a request body.
-
 **Example Update a private monitoring zone: JSON request**
 
 .. code::
 
    {
-       <!--Todo: process Request example -->
+       "label": "Zone A Updated Information"
    }
 
 Response
 --------
 
-The following operation does not return a response body.
+This operation does not return a response body.
