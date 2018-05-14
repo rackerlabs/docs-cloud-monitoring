@@ -777,9 +777,9 @@ update the following attributes:
       - string
       - Optional. This option tells the agent to connect to the agent
         endpoints over the Rackspace ServiceNet (instead of over the public
-        Internet). Valid regions are DFW, ORD, LON, SYD, HKG, and IAD. If
-        option is set, the value must match the region of the agent and the
-        service it is running on.
+        Internet). Valid regions are dfw, ord, lon, syd, hkg, and iad. (Use
+        lower case.) If the option is set, the value must match the region of
+        the agent and the service it is running on.
     * - monitoring\_endpoints
       - comma-delimited sets of
         ``ip:port`` values
