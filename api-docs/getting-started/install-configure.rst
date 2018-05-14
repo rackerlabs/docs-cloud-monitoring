@@ -754,8 +754,8 @@ following directories on the customer's server.
 
 -  On Windows systems, navigate to ``C:\ProgramData\Rackspace Monitoring\config\``.
 
-You can also create or edit the configuration file manually to specify or
-update the following attributes:
+You can also create or edit the configuration file manually to specify
+or update the following attributes:
 
  .. list-table::
     :widths: 30 20 30
@@ -1061,7 +1061,7 @@ Configuring the agent manually
 
 
    You can optionally configure the agent to use a reverse proxy to look up
-   custom SRV records by having it proxy to LON, DFW, and ORD as shown in the
+   custom SRV records by having it proxy to lon, dfw, and ord as shown in the
    following example:
 
    .. code::
