@@ -548,8 +548,8 @@ Next, :ref:`run the agent setup program <run-agent-setup-program>`
 Red Hat, Fedora, or CentOS
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This section explains how to install the agent on a server that is
-running a Red Hat, Fedora, or CentOS operating system.
+This section explains how to install the agent on a server that
+is running a Red Hat, Fedora, or CentOS operating system.
 
  
 **To install the agent on Red Hat, Fedora, or CentOS step by step:**
