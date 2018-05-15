@@ -34,7 +34,7 @@ where:
 ``metricName``
   is the name of the metric.
 
-For example a metric called ``tt_connect``, generated from the ``DFW``
+For example a metric called ``tt_connect``, generated from the ``dfw``
 monitoring zone, is labeled as ``mzdfw.tt_connect``.
 
 .. note::
