@@ -511,21 +511,9 @@ most recent versions of Ubuntu or Debian.
 
        deb <repo-name> cloudmonitoring main
 
-   ``repo-name`` is one of the following available packages:
+   ``repo-name`` is replaced with the following link with the appropriate package inserted:
 
-   -  http://stable.packages.cloudmonitoring.rackspace.com/ubuntu-10.04-x86\_64
-
-   -  http://stable.packages.cloudmonitoring.rackspace.com/ubuntu-12.04-x86\_64
-
-   -  http://stable.packages.cloudmonitoring.rackspace.com/ubuntu-14.04-x86\_64
-
-   -  http://stable.packages.cloudmonitoring.rackspace.com/ubuntu-14.10-x86\_64
-
-   -  http://stable.packages.cloudmonitoring.rackspace.com/ubuntu-15.04-x86\_64
-
-   -  http://stable.packages.cloudmonitoring.rackspace.com/debian-squeeze-x86\_64
-
-   -  http://stable.packages.cloudmonitoring.rackspace.com/debian-wheezy-x86\_64
+   ``http://stable.packages.cloudmonitoring.rackspace.com/ubuntu-[Release Number, such as 14.04]-x86_64``
 
    For example, to install Ubuntu, version 14.04, your file would
    contain this content:
