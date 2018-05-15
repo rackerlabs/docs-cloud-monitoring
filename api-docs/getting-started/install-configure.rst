@@ -519,7 +519,7 @@ most recent versions of Ubuntu or Debian.
 
    For Debian:
 
-   ``http://stable.packages.cloudmonitoring.rackspace.com/ubuntu-[Code name, such as squeeze]``
+   ``http://stable.packages.cloudmonitoring.rackspace.com/debian-[Code name, such as squeeze]``
 
    For example, to install Ubuntu, version 14.04, your file would
    contain this content:
