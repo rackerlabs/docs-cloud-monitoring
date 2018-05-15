@@ -121,7 +121,8 @@ Ubuntu
 **To install the agent on Ubuntu with copy and paste:**
 
 #. For all supported releases of Ubuntu, run the following WHOLE COMMAND,
-   without line breaks, to add the monitoring agent package repository to APT:
+   without line breaks, to add the monitoring agent package repository to
+   APT:
 
       .. code::
 
