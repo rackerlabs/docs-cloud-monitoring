@@ -513,7 +513,13 @@ most recent versions of Ubuntu or Debian.
 
    ``repo-name`` is replaced with the following link with the appropriate package inserted:
 
+   For Ubuntu:
+
    ``http://stable.packages.cloudmonitoring.rackspace.com/ubuntu-[Release Number, such as 14.04]-x86_64``
+
+   For Debian:
+
+   ``http://stable.packages.cloudmonitoring.rackspace.com/ubuntu-[Code name, such as squeeze]``
 
    For example, to install Ubuntu, version 14.04, your file would
    contain this content:
