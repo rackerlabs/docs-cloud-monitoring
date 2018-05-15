@@ -120,45 +120,12 @@ Ubuntu
  
 **To install the agent on Ubuntu with copy and paste:**
 
-#. Find your Linux distribution and version and run the WHOLE COMMAND
-   listed, without line breaks, to add the monitoring agent package
-   repository to APT:
-
-   -  **Ubuntu 10.04**:
+#. For all supported releases of Ubuntu, run the following WHOLE COMMAND,
+   without line breaks, to add the monitoring agent package repository to APT:
 
       .. code::
 
-          sudo sh -c 'echo "deb http://stable.packages.cloudmonitoring.rackspace.com/ubuntu-10.04-x86_64 cloudmonitoring main" > /etc/apt/sources.list.d/rackspace-monitoring-agent.list'
-
-   -  **Ubuntu 12.04**:
-
-      .. code::
-
-          sudo sh -c 'echo "deb http://stable.packages.cloudmonitoring.rackspace.com/ubuntu-12.04-x86_64 cloudmonitoring main" > /etc/apt/sources.list.d/rackspace-monitoring-agent.list'
-
-   -  **Ubuntu 14.04**:
-
-      .. code::
-
-          sudo sh -c 'echo "deb http://stable.packages.cloudmonitoring.rackspace.com/ubuntu-14.04-x86_64 cloudmonitoring main" > /etc/apt/sources.list.d/rackspace-monitoring-agent.list'
-
-   -  **Ubuntu 14.10**:
-
-      .. code::
-
-          sudo sh -c 'echo "deb http://stable.packages.cloudmonitoring.rackspace.com/ubuntu-14.10-x86_64 cloudmonitoring main" > /etc/apt/sources.list.d/rackspace-monitoring-agent.list'
-
-   -  **Ubuntu 15.04**:
-
-      .. code::
-
-          sudo sh -c 'echo "deb http://stable.packages.cloudmonitoring.rackspace.com/ubuntu-15.04-x86_64 cloudmonitoring main" > /etc/apt/sources.list.d/rackspace-monitoring-agent.list'
-
-   -  **Ubuntu 16.04**:
-
-      .. code::
-
-          sudo sh -c 'echo "deb http://stable.packages.cloudmonitoring.rackspace.com/ubuntu-16.04-x86_64 cloudmonitoring main" > /etc/apt/sources.list.d/rackspace-monitoring-agent.list'
+         sudo sh -c "echo 'deb http://stable.packages.cloudmonitoring.rackspace.com/ubuntu-$(lsb_release -rs)-x86_64 cloudmonitoring main' > /etc/apt/sources.list.d/rackspace-monitoring-agent.list"
 
 #. Download the signing key for the agent repository and add it to APT:
 
