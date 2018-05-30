@@ -11,7 +11,8 @@ Create an agent token
 Create agent tokens using a valid set of parameters from the :ref:`agent
 token attributes <agent-token-operations>` table.
 
-The following table shows the possible response codes for this operation:
+The following table shows the possible response codes for this
+operation:
 
 +--------------------------+-------------------------+-------------------------+
 |Response Code             |Name                     |Description              |
