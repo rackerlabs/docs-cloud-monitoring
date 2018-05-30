@@ -11,7 +11,8 @@ Create an agent token
 Create agent tokens using a valid set of parameters from the :ref:`agent
 token attributes <agent-token-operations>` table.
 
-The following table shows the possible response codes for this operation:
+The following table shows the possible response codes for this
+operation:
 
 +--------------------------+-------------------------+-------------------------+
 |Response Code             |Name                     |Description              |
@@ -68,3 +69,15 @@ Response
 --------
 
 This operation does not return a response body.
+
+The newly created agent token is conveyed in the ``X-Object-ID``
+response header, as shown in the following example:
+
+.. code::
+
+   HTTP/1.1 201 Created
+   Date: Wed, 30 May 2018 18:43:04 GMT
+   Server: Apache/2.4.7 (Ubuntu) OpenSSL/1.0.1f
+   Location: https://monitoring.api.rackspacecloud.com/v1.0/hybrid:000000/agent_tokens/d9208af....hybrid:000000
+   Via: 1.1 Repose (Repose/8.8.3.0)
+   X-Object-ID: d9208af....hybrid:000000
