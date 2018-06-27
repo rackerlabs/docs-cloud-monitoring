@@ -761,8 +761,8 @@ or update the following attributes:
 You can use any of the following options to specify the configuration
 attributes for the monitoring agent:
 
--  For the simplest, fastest set up, use the `agent Setup
-   program: ref:<configure-agent-with-setup>` that automates the configuration
+-  For the simplest, fastest set up use the :ref:`agent Setup
+   program <configure-agent-with-setup>`, which automates the configuration
    process and simplifies the process.
 
 -  To step through each task in the configuration process at your own pace,
