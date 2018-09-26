@@ -32,7 +32,7 @@ The following table describes the attributes for the Alarms API resource:
 |                          | conditions and their       |   characters long                |
 |                          | output states.             | * Valid alarm                    |
 +--------------------------+----------------------------+----------------------------------+
-| **disabled**             | Disables the check.        | * Optional                       |
+| **disabled**             | Disables the alarm.        | * Optional                       |
 |                          |                            | * Boolean                        |
 +--------------------------+----------------------------+----------------------------------+
 | **label**                | A friendly label for       | * Optional                       |
