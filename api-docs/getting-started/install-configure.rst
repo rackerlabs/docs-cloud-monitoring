@@ -159,6 +159,12 @@ Debian
    listed, without line breaks, to add the monitoring agent package
    repository to APT.
 
+   -  **Debian Stretch**:
+
+      .. code::
+
+          sudo sh -c 'echo "deb http://stable.packages.cloudmonitoring.rackspace.com/debian-stretch-x86_64 cloudmonitoring main" > /etc/apt/sources.list.d/rackspace-monitoring-agent.list'
+
    -  **Debian Squeeze**:
 
       .. code::
