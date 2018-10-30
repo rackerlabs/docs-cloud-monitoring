@@ -37,5 +37,5 @@ For additional information about all |product name| API operations, see the
    `Rackspace Cloud Control Panel`_.
 
 
-.. _Rackspace Cloud Control Panel: https://mycloud.rackspace.com
+.. _Rackspace Cloud Control Panel: https://login.rackspace.com
 .. _sign up: https://cart.rackspace.com/cloud/
