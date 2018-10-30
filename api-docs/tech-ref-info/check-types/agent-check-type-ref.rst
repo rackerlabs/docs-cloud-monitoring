@@ -173,7 +173,13 @@ Metrics
 +-----------------+----------------------------------------------------------------------------------------------------------------------+----------+
 | Metric          | Description                                                                                                          | Type     |
 +=================+======================================================================================================================+==========+
-| queue           | Disk utilization time, the prefix  / will change depending on the mount points discovered.                           | Int64    |
+| queue           | Measured in seconds, this is the current disk queue length, which is an instantaneous measurement of the I/O queue   | Int64    | 
+|                 | for the given disk/partition.                                                                                        |          |
++-----------------+----------------------------------------------------------------------------------------------------------------------+----------+
+|qtime            | Measured in milliseconds, this is the weighted number of milliseconds spent doing I/Os. This field is incremented    | Int64    |
+|                 | at each I/O start, I/O completion, I/O merge, or read of these stats by the number of I/Os in progress times the     |          |
+|                 | number of milliseconds spent doing I/O since the last update of this field. This can provide an easy measure of both |          |
+|                 | I/O completion time and the backlog that might be accumulating.                                                      |          |
 +-----------------+----------------------------------------------------------------------------------------------------------------------+----------+
 | read_bytes      | The number of physical disk bytes read, the prefix / will change depending on the mount points discovered.           | Int64    |
 +-----------------+----------------------------------------------------------------------------------------------------------------------+----------+
