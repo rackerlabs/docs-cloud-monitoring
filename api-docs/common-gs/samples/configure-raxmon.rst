@@ -8,7 +8,7 @@ command-line options, it saves time to add them to the Rackspace Monitoring
 client configuration file.
 
 Complete the following steps to configure the client with your credentials
-and the URLs for Rackspace Monitoring and the Rackspace Identity Service.
+and the URLs for Rackspace Monitoring and the Rackspace Identity service.
 
 #. If you do not already have your API key, follow the
    instructions in :ref:`Get your credentials <get-credentials>`
@@ -16,7 +16,7 @@ and the URLs for Rackspace Monitoring and the Rackspace Identity Service.
 #. Using vi or your favorite text editor, open the ``.raxrc`` file in
    your home directory. Following is an example of the vi command to open the
    file.
-   
+
    .. code::
 
        $  vi ~/.raxrc
