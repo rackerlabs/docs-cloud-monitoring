@@ -38,6 +38,7 @@ The following table shows the possible response codes for this operation:
 |                          |                         |or another system        |
 |                          |                         |failure.                 |
 +--------------------------+-------------------------+-------------------------+
+
 Request
 -------
 
