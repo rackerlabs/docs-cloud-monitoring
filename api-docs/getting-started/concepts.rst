@@ -176,7 +176,6 @@ alarms for a given amount of time. For more details and examples, see the API
 operation reference for the :ref:`suppressions <suppressions-operations>`
 resource.
 
-
 .. _how-cloud-monitoring-works:
 
 How Rackspace Monitoring works
