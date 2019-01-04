@@ -173,7 +173,7 @@ Metrics
 +-----------------+----------------------------------------------------------------------------------------------------------------------+----------+
 | Metric          | Description                                                                                                          | Type     |
 +=================+======================================================================================================================+==========+
-| queue           | Measured in seconds, this is the current disk queue length, which is an instantaneous measurement of the I/O queue   | Int64    | 
+| queue           | Measured in seconds, this is the current disk queue length, which is an instantaneous measurement of the I/O queue   | Int64    |
 |                 | for the given disk/partition.                                                                                        |          |
 +-----------------+----------------------------------------------------------------------------------------------------------------------+----------+
 |qtime            | Measured in milliseconds, this is the weighted number of milliseconds spent doing I/Os. This field is incremented    | Int64    |
@@ -1179,4 +1179,3 @@ Metrics
        time interval. A thread is the basic executable entity that can execute
        instructions in a processor.
      - Uint32
-
