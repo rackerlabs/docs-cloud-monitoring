@@ -43,7 +43,6 @@ extensions = [
     'sphinx.ext.extlinks'
 ]
 
-
 if spelling is not None:
     extensions.append('sphinxcontrib.spelling')
 
