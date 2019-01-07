@@ -304,7 +304,7 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 
 man_pages = [
-    (master_doc, 'Rackspace Cloud Keep API documentation',
+    (master_doc, 'Rackspace Cloud Monitoring API documentation',
      'Rackspace developer documentation',
      'Rackspace', 1)
 ]
