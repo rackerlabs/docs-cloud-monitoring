@@ -8,7 +8,7 @@ command-line options, it saves time to add them to the Rackspace Monitoring
 client configuration file.
 
 Complete the following steps to configure the client with your credentials
-and the URLs for Rackspace Monitoring and the Rackspace Identity service.
+and the URLs for Rackspace Monitoring and the Identity service.
 
 #. If you do not already have your API key, follow the
    instructions in :ref:`Get your credentials <get-credentials>`
@@ -22,7 +22,7 @@ and the URLs for Rackspace Monitoring and the Rackspace Identity service.
        $  vi ~/.raxrc
 
 #. Edit the file to specify your Rackspace username and API key, and the
-   :rax-devdocs:`Rackspace Identity endpoint
+   :rax-devdocs:`Identity endpoint
    <cloud-identity/v2/general-api-info/service-access/>` for your account.
    Following is an example of the ``.raxrc`` file with Rackspace credentials
    and URLs:

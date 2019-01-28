@@ -25,7 +25,7 @@ specific permissions for accessing the capabilities of the next gen Cloud
 Servers service. Each account has only one account owner, and that role is
 assigned by default to any Rackspace Cloud account when the account is created.
 
-See the Rackspace Identity API guide for information about how to perform the
+See the Identity API guide for information about how to perform the
 following tasks:
 
 * :rax-devdocs:`Add account users <cloud-identity/v2/api-reference/users-operations/#add-user>`
