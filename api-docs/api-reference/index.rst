@@ -11,7 +11,7 @@ request and response examples.
 
      You can also perform operations by using the
      :rax-devdocs:`Rackspace Monitoring client <gsg-install-raxmon>`
-     or the `Cloud Control Panel <https://login.rackspace.com/>`_.
+      `Cloud Control Panel <https://login.rackspace.com/>`_.
 
 .. toctree::
    :maxdepth: 2
