@@ -24,9 +24,6 @@ API.
 - To get information about other Rackspace Cloud services APIs, see the
   :rax-devdocs:`Rackspace API Documentation < >`.
 
-- To learn about using Rackspace Cloud SDKs, see
-  :rax-devdocs:`Software Development Kits & Tools <#sdks>`.
-
 - This API uses standard HTTP 1.1 response codes as documented in the
   `HTTP Status Code Definitions`_ specification.
 

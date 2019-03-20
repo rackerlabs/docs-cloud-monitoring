@@ -10,8 +10,7 @@ request and response examples.
 .. note::
 
      You can also perform operations by using the
-     :rax-devdocs:`Rackspace Monitoring client <gsg-install-raxmon>`, one
-     of the language-specific :rax-devdocs:`software development kits <#sdks>`,
+     :rax-devdocs:`Rackspace Monitoring client <gsg-install-raxmon>`
      or the `Cloud Control Panel <https://login.rackspace.com/>`_.
 
 .. toctree::
