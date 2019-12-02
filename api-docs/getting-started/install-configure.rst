@@ -220,12 +220,6 @@ Red Hat
 #. Run the listed command to install the package signing key. Please run
    the WHOLE COMMAND.
 
-   -  **Red Hat 5**:
-
-      .. code::
-
-          curl https://monitoring.api.rackspacecloud.com/pki/agent/redhat-5.asc > /tmp/signing-key.asc
-          sudo rpm --import /tmp/signing-key.asc
 
    -  **Red Hat 6**:
 
@@ -248,14 +242,6 @@ Red Hat
    to the ``rackspace-cloud-monitoring.repo`` file to add the agent
    repository to yum (Please add the WHOLE BLOCK):
 
-   -  **Red Hat 5**:
-
-      .. code::
-
-          [rackspace]
-          name=Rackspace Monitoring
-          baseurl=http://stable.packages.cloudmonitoring.rackspace.com/redhat-5-x86_64
-          enabled=1
 
    -  **Red Hat 6**:
 
@@ -418,12 +404,6 @@ CentOS
 #. Run the listed command to install the package signing key. Please run
    the WHOLE COMMAND.
 
-   -  **CentOS 5**:
-
-      .. code::
-
-          curl https://monitoring.api.rackspacecloud.com/pki/agent/centos-5.asc > /tmp/signing-key.asc
-          sudo rpm --import /tmp/signing-key.asc
 
    -  **CentOS 6**:
 
@@ -446,14 +426,6 @@ CentOS
    to the rackspace-cloud-monitoring.repo file to add the agent
    repository to yum (Please add the WHOLE BLOCK).
 
-   -  **CentOS 5**:
-
-      .. code::
-
-          [rackspace]
-          name=Rackspace Monitoring
-          baseurl=http://stable.packages.cloudmonitoring.rackspace.com/centos-5-x86_64
-          enabled=1
 
    -  **CentOS 6**:
 
@@ -581,8 +553,6 @@ is running a Red Hat, Fedora, or CentOS operating system.
    +--------------------------------------+--------------------------------------+
    | OS                                   | Signing Key                          |
    +======================================+======================================+
-   | Red Hat Enterprise Linux 5, x86-64   | redhat-5.asc                         |
-   +--------------------------------------+--------------------------------------+
    | Red Hat Enterprise Linux 6, x86-64   | redhat-6.asc                         |
    +--------------------------------------+--------------------------------------+
    | Red Hat Enterprise Linux 7, x86-64   | redhat-7.asc                         |
@@ -598,8 +568,6 @@ is running a Red Hat, Fedora, or CentOS operating system.
    | Fedora 20, x86-64                    | fedora-20.asc                        |
    +--------------------------------------+--------------------------------------+
    | Fedora 21, x86-64                    | fedora-21.asc                        |
-   +--------------------------------------+--------------------------------------+
-   | CentOS 5, x86-64                     | centos-5.asc                         |
    +--------------------------------------+--------------------------------------+
    | CentOS 6, x86-64                     | centos-6.asc                         |
    +--------------------------------------+--------------------------------------+
@@ -631,8 +599,6 @@ is running a Red Hat, Fedora, or CentOS operating system.
 
    where ``<repo-name>`` is one of the following available packages:
 
-   -  http://stable.packages.cloudmonitoring.rackspace.com/redhat-5-x86\_64
-
    -  http://stable.packages.cloudmonitoring.rackspace.com/redhat-6-x86\_64
 
    -  http://stable.packages.cloudmonitoring.rackspace.com/redhat-7-x86\_64
@@ -648,8 +614,6 @@ is running a Red Hat, Fedora, or CentOS operating system.
    -  http://stable.packages.cloudmonitoring.rackspace.com/fedora-20-x86\_64
 
    -  http://stable.packages.cloudmonitoring.rackspace.com/fedora-21-x86\_64
-
-   -  http://stable.packages.cloudmonitoring.rackspace.com/centos-5-x86\_64
 
    -  http://stable.packages.cloudmonitoring.rackspace.com/centos-6-x86\_64
 
@@ -1446,4 +1410,3 @@ some agent checks.
 
 .. _entity: http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-entities.html
 .. _checks: http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/service-checks.html
-
