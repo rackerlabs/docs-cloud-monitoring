@@ -325,7 +325,7 @@ Fedora
          curl https://monitoring.api.rackspacecloud.com/pki/agent/fedora-29.asc > /tmp/signing-key.asc
          sudo rpm --import /tmp/signing-key.asc
 
-   -  **Fedora 30 **:
+   -  **Fedora 30**:
 
       .. code::
 
