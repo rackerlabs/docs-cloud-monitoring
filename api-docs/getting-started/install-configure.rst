@@ -159,35 +159,23 @@ Debian
    listed, without line breaks, to add the monitoring agent package
    repository to APT.
 
+   -  **Debian Buster**:
+
+      .. code::
+
+        sudo sh -c 'echo "deb http://stable.packages.cloudmonitoring.rackspace.com/debian-buster-x86_64 cloudmonitoring main" > /etc/apt/sources.list.d/rackspace-monitoring-agent.list'
+
+   -  **Debian Jessie**:
+
+      .. code::
+
+         sudo sh -c 'echo "deb http://stable.packages.cloudmonitoring.rackspace.com/debian-jessie-x86_64 cloudmonitoring main" > /etc/apt/sources.list.d/rackspace-monitoring-agent.list'
+
    -  **Debian Stretch**:
 
       .. code::
 
-          sudo sh -c 'echo "deb http://stable.packages.cloudmonitoring.rackspace.com/debian-stretch-x86_64 cloudmonitoring main" > /etc/apt/sources.list.d/rackspace-monitoring-agent.list'
-
-   -  **Debian Squeeze**:
-
-      .. code::
-
-          sudo sh -c 'echo "deb http://stable.packages.cloudmonitoring.rackspace.com/debian-squeeze-x86_64 cloudmonitoring main" > /etc/apt/sources.list.d/rackspace-monitoring-agent.list'
-
-   -  **Debian Testing**:
-
-      .. code::
-
-          sudo sh -c 'echo "deb http://stable.packages.cloudmonitoring.rackspace.com/debian-testing-x86_64 cloudmonitoring main" > /etc/apt/sources.list.d/rackspace-monitoring-agent.list'
-
-   -  **Debian Unstable**:
-
-      .. code::
-
-          sudo sh -c 'echo "deb http://stable.packages.cloudmonitoring.rackspace.com/debian-unstable-x86_64 cloudmonitoring main" > /etc/apt/sources.list.d/rackspace-monitoring-agent.list'
-
-   -  **Debian Wheezy**:
-
-      .. code::
-
-          sudo sh -c 'echo "deb http://stable.packages.cloudmonitoring.rackspace.com/debian-wheezy-x86_64 cloudmonitoring main" > /etc/apt/sources.list.d/rackspace-monitoring-agent.list'
+         sudo sh -c 'echo "deb http://stable.packages.cloudmonitoring.rackspace.com/debian-stretch-x86_64 cloudmonitoring main" > /etc/apt/sources.list.d/rackspace-monitoring-agent.list'
 
 #. Download the signing key for the agent repository and add it to APT.
 
@@ -281,47 +269,68 @@ Fedora
 #. Run the listed command to install the package signing key. Please run
    the WHOLE COMMAND.
 
-   -  **Fedora 16**:
+   -  **Fedora 22**:
 
       .. code::
 
-          curl https://monitoring.api.rackspacecloud.com/pki/agent/fedora-16.asc > /tmp/signing-key.asc
-          sudo rpm --import /tmp/signing-key.asc
+         curl https://monitoring.api.rackspacecloud.com/pki/agent/fedora-22.asc > /tmp/signing-key.asc
+         sudo rpm --import /tmp/signing-key.asc
 
-   -  **Fedora 17**:
-
-      .. code::
-
-          curl https://monitoring.api.rackspacecloud.com/pki/agent/fedora-17.asc > /tmp/signing-key.asc
-          sudo rpm --import /tmp/signing-key.asc
-
-   -  **Fedora 18**:
+   -  **Fedora 23**:
 
       .. code::
 
-          curl https://monitoring.api.rackspacecloud.com/pki/agent/fedora-18.asc > /tmp/signing-key.asc
-          sudo rpm --import /tmp/signing-key.asc
+         curl https://monitoring.api.rackspacecloud.com/pki/agent/fedora-23.asc > /tmp/signing-key.asc
+         sudo rpm --import /tmp/signing-key.asc
 
-   -  **Fedora 19**:
-
-      .. code::
-
-          curl https://monitoring.api.rackspacecloud.com/pki/agent/fedora-19.asc > /tmp/signing-key.asc
-          sudo rpm --import /tmp/signing-key.asc
-
-   -  **Fedora 20**:
+   -  **Fedora 24**:
 
       .. code::
 
-          curl https://monitoring.api.rackspacecloud.com/pki/agent/fedora-20.asc > /tmp/signing-key.asc
-          sudo rpm --import /tmp/signing-key.asc
+         curl https://monitoring.api.rackspacecloud.com/pki/agent/fedora-24.asc > /tmp/signing-key.asc
+         sudo rpm --import /tmp/signing-key.asc
 
-   -  **Fedora 21**:
+   -  **Fedora 25**:
 
       .. code::
 
-          curl https://monitoring.api.rackspacecloud.com/pki/agent/fedora-21.asc > /tmp/signing-key.asc
-          sudo rpm --import /tmp/signing-key.asc
+         curl https://monitoring.api.rackspacecloud.com/pki/agent/fedora-25.asc > /tmp/signing-key.asc
+         sudo rpm --import /tmp/signing-key.asc
+
+   -  **Fedora 26**:
+
+      .. code::
+
+         curl https://monitoring.api.rackspacecloud.com/pki/agent/fedora-26.asc > /tmp/signing-key.asc
+         sudo rpm --import /tmp/signing-key.asc
+
+   -  **Fedora 27**:
+
+      .. code::
+
+         curl https://monitoring.api.rackspacecloud.com/pki/agent/fedora-27.asc > /tmp/signing-key.asc
+         sudo rpm --import /tmp/signing-key.asc
+
+   -  **Fedora 28**:
+
+      .. code::
+
+         curl https://monitoring.api.rackspacecloud.com/pki/agent/fedora-28.asc > /tmp/signing-key.asc
+         sudo rpm --import /tmp/signing-key.asc
+
+   -  **Fedora 29**:
+
+      .. code::
+
+         curl https://monitoring.api.rackspacecloud.com/pki/agent/fedora-29.asc > /tmp/signing-key.asc
+         sudo rpm --import /tmp/signing-key.asc
+
+   -  **Fedora 30 **:
+
+      .. code::
+
+         curl https://monitoring.api.rackspacecloud.com/pki/agent/fedora-30.asc > /tmp/signing-key.asc
+               sudo rpm --import /tmp/signing-key.asc
 
 #. Create and edit a text file at
    /etc/yum.repos.d/rackspace-cloud-monitoring.repo with your favorite
@@ -330,59 +339,86 @@ Fedora
    to the rackspace-cloud-monitoring.repo file to add the agent
    repository to yum (Please add the WHOLE BLOCK).
 
-   -  **Fedora 16**:
+   -  **Fedora 22**:
 
       .. code::
 
-          [rackspace]
-          name=Rackspace Monitoring
-          baseurl=http://stable.packages.cloudmonitoring.rackspace.com/fedora-16-x86_64
-          enabled=1
+         [rackspace]
+         name=Rackspace Monitoring
+         baseurl=http://stable.packages.cloudmonitoring.rackspace.com/fedora-22-x86_64
+         enabled=1
 
-   -  **Fedora 17**:
-
-      .. code::
-
-          [rackspace]
-          name=Rackspace Monitoring
-          baseurl=http://stable.packages.cloudmonitoring.rackspace.com/fedora-17-x86_64
-          enabled=1
-
-   -  **Fedora 18**:
+   -  **Fedora 23**:
 
       .. code::
 
-          [rackspace]
-          name=Rackspace Monitoring
-          baseurl=http://stable.packages.cloudmonitoring.rackspace.com/fedora-18-x86_64
-          enabled=1
+         [rackspace]
+         name=Rackspace Monitoring
+         baseurl=http://stable.packages.cloudmonitoring.rackspace.com/fedora-23-x86_64
+         enabled=1
 
-   -  **Fedora 19**:
-
-      .. code::
-
-          [rackspace]
-          name=Rackspace Monitoring
-          baseurl=http://stable.packages.cloudmonitoring.rackspace.com/fedora-19-x86_64
-          enabled=1
-
-   -  **Fedora 20**:
+   -  **Fedora 24**:
 
       .. code::
 
-          [rackspace]
-          name=Rackspace Monitoring
-          baseurl=http://stable.packages.cloudmonitoring.rackspace.com/fedora-20-x86_64
-          enabled=1
+         [rackspace]
+         name=Rackspace Monitoring
+         baseurl=http://stable.packages.cloudmonitoring.rackspace.com/fedora-24-x86_64
+         enabled=1
 
-   -  **Fedora 21**:
+   -  **Fedora 25**:
 
       .. code::
 
-          [rackspace]
-          name=Rackspace Monitoring
-          baseurl=http://stable.packages.cloudmonitoring.rackspace.com/fedora-21-x86_64
-          enabled=1
+         [rackspace]
+         name=Rackspace Monitoring
+         baseurl=http://stable.packages.cloudmonitoring.rackspace.com/fedora-25-x86_64
+         enabled=1
+
+   -  **Fedora 26**:
+
+      .. code::
+
+         [rackspace]
+         name=Rackspace Monitoring
+         baseurl=http://stable.packages.cloudmonitoring.rackspace.com/fedora-26-x86_64
+         enabled=1
+
+   -  **Fedora 27**:
+
+      .. code::
+
+         [rackspace]
+         name=Rackspace Monitoring
+         baseurl=http://stable.packages.cloudmonitoring.rackspace.com/fedora-27-x86_64
+         enabled=1
+
+   -  **Fedora 28**:
+
+      .. code::
+
+         [rackspace]
+         name=Rackspace Monitoring
+         baseurl=http://stable.packages.cloudmonitoring.rackspace.com/fedora-28-x86_64
+         enabled=1
+
+   -  **Fedora 29**:
+
+      .. code::
+
+         [rackspace]
+         name=Rackspace Monitoring
+         baseurl=http://stable.packages.cloudmonitoring.rackspace.com/fedora-29-x86_64
+         enabled=1
+
+   -  **Fedora 30**:
+
+      .. code::
+
+         [rackspace]
+         name=Rackspace Monitoring
+         baseurl=http://stable.packages.cloudmonitoring.rackspace.com/fedora-30-x86_64
+         enabled=1
 
 #. Install the agent.
 
@@ -557,17 +593,23 @@ is running a Red Hat, Fedora, or CentOS operating system.
    +--------------------------------------+--------------------------------------+
    | Red Hat Enterprise Linux 7, x86-64   | redhat-7.asc                         |
    +--------------------------------------+--------------------------------------+
-   | Fedora 16, x86-64                    | fedora-16.asc                        |
+   | Fedora 22, x86-64                    | fedora-22.asc                        |
    +--------------------------------------+--------------------------------------+
-   | Fedora 17, x86-64                    | fedora-17.asc                        |
+   | Fedora 23, x86-64                    | fedora-23.asc                        |
    +--------------------------------------+--------------------------------------+
-   | Fedora 18, x86-64                    | fedora-18.asc                        |
+   | Fedora 24, x86-64                    | fedora-24.asc                        |
    +--------------------------------------+--------------------------------------+
-   | Fedora 19, x86-64                    | fedora-19.asc                        |
+   | Fedora 25, x86-64                    | fedora-25.asc                        |
    +--------------------------------------+--------------------------------------+
-   | Fedora 20, x86-64                    | fedora-20.asc                        |
+   | Fedora 26, x86-64                    | fedora-26.asc                        |
    +--------------------------------------+--------------------------------------+
-   | Fedora 21, x86-64                    | fedora-21.asc                        |
+   | Fedora 27, x86-64                    | fedora-27.asc                        |
+   +--------------------------------------+--------------------------------------+
+   | Fedora 28, x86-64                    | fedora-28.asc                        |
+   +--------------------------------------+--------------------------------------+
+   | Fedora 29, x86-64                    | fedora-29.asc                        |
+   +--------------------------------------+--------------------------------------+
+   | Fedora 30, x86-64                    | fedora-30.asc                        |
    +--------------------------------------+--------------------------------------+
    | CentOS 6, x86-64                     | centos-6.asc                         |
    +--------------------------------------+--------------------------------------+
@@ -603,17 +645,23 @@ is running a Red Hat, Fedora, or CentOS operating system.
 
    -  http://stable.packages.cloudmonitoring.rackspace.com/redhat-7-x86\_64
 
-   -  http://stable.packages.cloudmonitoring.rackspace.com/fedora-16-x86\_64
+   -  http://stable.packages.cloudmonitoring.rackspace.com/fedora-22-x86\_64
 
-   -  http://stable.packages.cloudmonitoring.rackspace.com/fedora-17-x86\_64
+   -  http://stable.packages.cloudmonitoring.rackspace.com/fedora-23-x86\_64
 
-   -  http://stable.packages.cloudmonitoring.rackspace.com/fedora-18-x86\_64
+   -  http://stable.packages.cloudmonitoring.rackspace.com/fedora-24-x86\_64
 
-   -  http://stable.packages.cloudmonitoring.rackspace.com/fedora-19-x86\_64
+   -  http://stable.packages.cloudmonitoring.rackspace.com/fedora-25-x86\_64
 
-   -  http://stable.packages.cloudmonitoring.rackspace.com/fedora-20-x86\_64
+   -  http://stable.packages.cloudmonitoring.rackspace.com/fedora-26-x86\_64
 
-   -  http://stable.packages.cloudmonitoring.rackspace.com/fedora-21-x86\_64
+   -  http://stable.packages.cloudmonitoring.rackspace.com/fedora-27-x86\_64
+
+   -  http://stable.packages.cloudmonitoring.rackspace.com/fedora-28-x86\_64
+
+   -  http://stable.packages.cloudmonitoring.rackspace.com/fedora-29-x86\_64
+
+   -  http://stable.packages.cloudmonitoring.rackspace.com/fedora-30-x86\_64
 
    -  http://stable.packages.cloudmonitoring.rackspace.com/centos-6-x86\_64
 
