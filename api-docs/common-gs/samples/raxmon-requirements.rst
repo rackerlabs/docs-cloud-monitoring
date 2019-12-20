@@ -43,7 +43,7 @@ Prerequisites for using raxmon
 |                    |                                                        |
 |                    |        $ sudo easy_install pip                         |
 |                    |                                                        |
-|                    | -  Ubuntu                                              |
+|                    | -  The Ubuntu operating system                         |
 |                    |                                                        |
 |                    |    .. code::                                           |
 |                    |                                                        |
