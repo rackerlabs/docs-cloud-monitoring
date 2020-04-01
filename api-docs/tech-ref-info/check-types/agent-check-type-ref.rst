@@ -368,12 +368,14 @@ calculation in your head.
 agent.mysql
 -----------
 
-The **agent.mysql** check will retrieve MySQL server metrics
+The **agent.mysql** check retrieves MySQL server metrics.
 
 ..  note::
 
     Except for the replication.slave\_running' metric, all metrics starting
-    with replication will not show up if there is no slave running.
+    with replication do not show up if there is no slave running.
+
+    If the libmysqlclient-dev package is not already present, you should install it on the host where the agent.mysql plug-in runs.
 
 
 Attributes
