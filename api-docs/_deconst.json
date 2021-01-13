@@ -1,8 +1,0 @@
-{
-  "contentIDBase": "https://github.com/rackerlabs/docs-cloud-monitoring/",
-  "githubUrl": "https://github.com/rackerlabs/docs-cloud-monitoring/",
-  "githubBranch": "master",
-  "meta": {
-    "preferGithubIssues": true
-  }
-}
