@@ -14,8 +14,7 @@ following methods:
 To learn about other ways to use Rackspace Cloud API services, see the
 following resources:
 
-   -  If you are developing applications or automation, try using
-      `Rackspace SDKs`_, the `Rackspace CLI`_, or
+   -  If you are developing applications or automation, see
       `OpenStack client applications`_.
 
    -  For API development, testing and workflow management in a graphical
